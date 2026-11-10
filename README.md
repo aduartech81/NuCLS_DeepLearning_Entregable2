@@ -8,7 +8,7 @@ Evolución independiente del [Entregable 1](https://github.com/aduartech81/NuCLS
 
 El cierre anterior contiene 11 semillas por modelo. Este bloque completa exclusivamente el plan original de 22, con los mismos modelos, hiperparámetros, partición y motor. **No ejecuta búsqueda ni piloto, no selecciona otro baseline y no evalúa la reserva.** ResNet50 continúa como referencia heredada.
 
-Notebook: `colab/Continuar_NuCLS_E2.ipynb` (publicado junto al código; abrir como cuaderno nuevo).
+[Abrir notebook nuevo en Colab](https://colab.research.google.com/github/aduartech81/NuCLS_DeepLearning_Entregable2/blob/main/colab/Continuar_NuCLS_E2.ipynb) · [Ver archivo](colab/Continuar_NuCLS_E2.ipynb). Código de continuación fijado en `da26ec58e232d3079d6c69e21f7f0ef1af36ca53`.
 
 1. Seleccionar GPU en el nuevo Colab y conectar Drive.
 2. Preparar el código y datos de desarrollo con las celdas en orden.
