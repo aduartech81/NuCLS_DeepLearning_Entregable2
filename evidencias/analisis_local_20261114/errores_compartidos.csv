@@ -1,0 +1,4 @@
+modelo_a,modelo_b,errores_a,errores_b,errores_compartidos,jaccard_error,desacuerdo
+densenet121,resnet50,278,264,230,0.7371794871794872,0.04148365056124939
+densenet121,softmaxcnn_bn,278,324,201,0.5012468827930174,0.10395314787701318
+resnet50,softmaxcnn_bn,264,324,207,0.5433070866141733,0.09077598828696926

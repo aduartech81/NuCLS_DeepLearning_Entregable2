@@ -1,0 +1,16 @@
+NuCLS · Entregable 2 · Tres modelos nuevos V1
+
+NO EJECUTAR MIENTRAS SIGUE LA BÚSQUEDA ACTUAL.
+Cuaderno: NuCLS_E2_Tres_Nuevos_V1.ipynb
+Modelos: ConvNeXt-Tiny, InceptionV3, Sequencer2D-S.
+Salida exclusiva: MyDrive/NuCLS_E2_TRES_NUEVOS_V1.
+
+Cuando termine la búsqueda anterior, guardar su notebook ejecutado y ZIP. Abrir este cuaderno separado en Safari/Colab y ejecutar1–3. El perfil de GPU determina compatibilidad, memoria y estimación de tiempo. Si todo pasa y el presupuesto es adecuado, ejecutar4 y escribir la frase solicitada. La búsqueda comprende12 corridas. El piloto es otra celda,15 corridas opcionales. No usar la reserva.
+
+Las cuatro configuraciones son lr1e-4/1e-3 por weight_decay0/1e-4, batch32, máximo25 épocas, mínimo5 y paciencia5. El piloto usa semillas6101–6105. Sigue siendo exploratorio: no es el benchmark final ni el cumplimiento total de la guía. No se completan aquí los siete candidatos que ya se buscan en el cuaderno anterior.
+
+Reanudar: tras una interrupción, verificar que no hay otro proceso vivo y ejecutar preparación, entorno y perfil antes de la fase requerida. El motor comprueba configuraciones/entorno; omite corridas completas y retoma checkpoints propios. Si existe EJECUCION_ACTIVA.json, no borrarlo a ciegas: un bloqueo puede representar un proceso aún activo o una interrupción forzada. El cuaderno se detiene para comprobarlo.
+
+Validación local: seis pruebas de protección/continuidad aprobadas; forward/backward de los tres modelos a128 con gradientes finitos en CPU. PyTorch2.15.0 local y timm1.0.22. GPU y entorno real de Colab pendientes; el cuaderno verifica las versiones contra la configuración base y no reemplaza PyTorch. El motor base es idéntico por hash al utilizado anteriormente.
+
+Conservación: la ejecución actual, su código, sus resultados y el Entregable1 no se modifican. La carpeta de datos temporal también es exclusiva de este complemento. Los ZIP de resultados no incluyen pesos; los checkpoints permanecen en Drive.

@@ -1,0 +1,39 @@
+{
+  "paciente": "TCGA-OL-A5RW",
+  "archivo": "validation/nonTILnonMQ_stromal/TCGA-OL-A5RW-DX1_id-5ea40a8cddda5f83989910d6_left-6517_top-7335_bottom-7615_right-6813__31.png",
+  "clase_real": "nonTILnonMQ_stromal",
+  "clase_predicha": "tumor_nonMitotic",
+  "p_tumor": "0.9475318789482117",
+  "p_linfocito": "0.0015836461680009961",
+  "p_estroma": "0.05088447034358978",
+  "modelo": "softmaxcnn_bn",
+  "semilla": 6113,
+  "acierto": false,
+  "imagen": "TCGA-OL-A5RW-DX1_id-5ea40a8cddda5f83989910d6_left-6517_top-7335_bottom-7615_right-6813",
+  "fila": "31",
+  "tipo": "polyline",
+  "sha_anotaciones": "8e8cd2f849653a672eeef065e4018aa3e33dbe14cc01a67fac3924a4c357fa91",
+  "sha_predicciones": "1a99f8b9f6dde72e338281ec1dd967630e1d4f2e2f7be6a20e71a397393b0ec6",
+  "fuente_predicciones": "final/softmaxcnn_bn_6113/predicciones_validacion.csv",
+  "anotacion": {
+    "": "31",
+    "raw_classification": "fibroblast",
+    "main_classification": "nonTILnonMQ_stromal",
+    "super_classification": "nonTIL_stromal",
+    "type": "polyline",
+    "xmin": "180",
+    "ymin": "159",
+    "xmax": "200",
+    "ymax": "180",
+    "coords_x": "181,180,181,184,190,195,199,200,200,195,186,181",
+    "coords_y": "179,174,172,167,161,159,162,163,168,174,180,179"
+  },
+  "sha_campo": "f9ee25b6eb6799878ed491ab7705424e4e3127ad8832ebcc4966e235b491d16c",
+  "sha_visualizacion": "b2dfd3ad47525963236a9bba99a89aca97322f54d8dfe71e3655c6ac43bcf042",
+  "dimensiones_campo": [
+    296,
+    280
+  ],
+  "vista": "Campo original con núcleo objetivo señalado; no se afirma que el campo completo sea la entrada de128px del modelo",
+  "revision_humana_nueva": false
+}

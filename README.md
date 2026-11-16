@@ -1,50 +1,21 @@
 # NuCLS · Entregable 2
 
-**Andrés Duarte Chaves · Maestría en Ingeniería Biomédica · Fecha límite: 14 de noviembre de 2026**
+Andrés Duarte Chaves · Deep Learning · 15 de noviembre de 2026.
 
-Evolución independiente del [Entregable 1](https://github.com/aduartech81/NuCLS_DeepLearning), fijado como antecedente en el commit `9eb1c3037a648e0ff5bbf9748445fedf653b441a`. Este repositorio no despliega ni modifica el dashboard, el libro o los resultados anteriores.
+## Acceso
 
-## Primero: completar las semillas de los modelos base
+Abrir `ABRIR_ENTREGA.html` después de extraer el ZIP completo. El portal enlaza el Jupyter Book, el dashboard y las evidencias numéricas. La entrega es independiente de E1.
 
-El cierre anterior contiene 11 semillas por modelo. Este bloque completa exclusivamente el plan original de 22, con los mismos modelos, hiperparámetros, partición y motor. **No ejecuta búsqueda ni piloto, no selecciona otro baseline y no evalúa la reserva.** ResNet50 continúa como referencia heredada.
+## Contenido científico
 
-[Abrir notebook nuevo en Colab](https://colab.research.google.com/github/aduartech81/NuCLS_DeepLearning_Entregable2/blob/main/colab/Continuar_NuCLS_E2.ipynb) · [Ver archivo](colab/Continuar_NuCLS_E2.ipynb). Código de continuación fijado en `da26ec58e232d3079d6c69e21f7f0ef1af36ca53`.
+Diez arquitecturas adicionales con cinco semillas cada una: 50 corridas y 102.450 predicciones de validación verificadas. Se incluye el análisis de 22 semillas de las tres bases, PRISMA, selección bibliográfica, EDA y 36 ejemplos visuales de 21 pacientes con anotaciones originales.
 
-1. Seleccionar GPU en el nuevo Colab y conectar Drive.
-2. Preparar el código y datos de desarrollo con las celdas en orden.
-3. Revisar el inventario: completas / reanudar / nuevas.
-4. Ejecutar la continuación. Los resultados completos se omiten. Los checkpoints parciales propios se copian antes de reanudar, preservando el origen.
+ResNet50 conserva su papel de baseline. Los intervalos entre semillas están condicionados a selección en validación; no son incertidumbre entre pacientes. La reserva fue consultada en E1 y no se presenta como prueba inédita. Los resultados tabulados de esta edición corresponden a validación.
 
-Origen, solo lectura: `/content/drive/MyDrive/NuCLS_V2_RESULTADOS_pool_corregido`.
-Salida nueva: `/content/drive/MyDrive/NuCLS_E2_CONTINUACION_BASES_22`.
+## Reproducibilidad
 
-No ejecutar `modelos/experimento_v2.py`: se conserva íntegro para verificar procedencia, pero incluye el pipeline antiguo completo. El único punto de entrada de continuación es `scripts/continuar_semillas.py`.
+`evidencias/` contiene resultados originales y cálculos. `book/` y `dashboard/` contienen la presentación. `modelos/`, `scripts/` y los cuadernos documentan la implementación. Las salidas experimentales se distinguen del código preparado; los notebooks sin salidas no se presentan como ejecutados. Los pesos permanecen en el almacenamiento experimental.
 
-## Garantías y límites de recuperación
+## Cuaderno ejecutado
 
-- Inventario de 66 combinaciones (6101–6122 × tres modelos), no de archivos ZIP de resumen.
-- Para omitir una corrida se validan resultado, historia, predicciones, identidad, hiperparámetros y presencia del checkpoint; se contrastan los hashes fijados cuando existen.
-- Si falta evidencia del cierre 6101–6111 o una corrida declarada completa está dañada, se detiene; no se reentrena silenciosamente.
-- Reanudación desde `ultimo.pt`: pesos, optimizador, historia, mejor modelo y estados aleatorios. Una época interrumpida antes de guardar se repite desde el último checkpoint; no hay recuperación a mitad de lote.
-- No cambia épocas, paciencia, batch, precisión, aumentos ni optimizador. CUDA determinista y versiones de PyTorch, torchvision, NumPy y Python compatibles con el origen.
-- Checkpoints y curvas siguen guardándose cada época. La recompresión de todas las evidencias se hace al final, evitando el ZIP redundante de cada época.
-- Un bloqueo impide dos entrenadores sobre la salida nueva. Tras una desconexión brusca, verificar que el proceso anterior terminó antes de retirar el bloqueo con `--liberar-bloqueo`. Una desconexión del navegador no necesariamente detiene Colab.
-- El inventario no inicia entrenamiento. El notebook se entrega sin resultados inventados: las pruebas locales verifican coordinación e integridad, no rendimiento GPU.
-
-## Estado de las siguientes fases
-
-El Top 10, benchmark completo, nuevo Jupyter Book y nuevo dashboard están **en preparación**, no se presentan como ejecutados. La guía exige diez modelos adicionales, los tres modelos base y comparadores clásico y trivial, con al menos cuatro familias en el Top 10. El número de semillas del nuevo benchmark debe planificarse por separado: 22 no garantiza su potencia.
-
-La reserva anterior ya fue abierta. Su exposición queda documentada; no se denominará inédita ni se utilizará para ajustar los nuevos modelos. La política confirmatoria del benchmark debe quedar fijada antes de sus entrenamientos.
-
-## Estructura independiente
-
-- `modelos/`: motor original exacto para continuidad de las bases.
-- `scripts/`: inventario, continuación y preparación de desarrollo.
-- `colab/`: nuevos cuadernos del Entregable 2.
-- `protocolo/`: procedencia, configuración y alcance del bloque inicial.
-- `tests/`: pruebas de omisión, recuperación y protección del origen.
-- `book/`: espacio propio del informe del Entregable 2.
-- `dashboard/`: aplicación futura separada; no tiene acceso al despliegue anterior.
-
-Pruebas sin GPU: `python -m unittest discover -s tests -v`.
+Se incluye `colab/ejecutados/NuCLS_E2_Cola_Unica_Ejecutado.ipynb`, con diez celdas de código con salidas y sin errores registrados. Su salida final acredita `COLA_EXPLORATORIA_COMPLETADA`; no acredita evaluación de reserva.

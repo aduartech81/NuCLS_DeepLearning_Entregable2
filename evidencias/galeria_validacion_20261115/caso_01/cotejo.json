@@ -1,0 +1,41 @@
+{
+  "paciente": "TCGA-BH-A0BW",
+  "archivo": "validation/tumor_nonMitotic/TCGA-BH-A0BW-DX1_id-5ea4098cddda5f839897f8c4_left-44086_top-35419_bottom-35720_right-44445__0.png",
+  "clase_real": "tumor_nonMitotic",
+  "clase_predicha": "tumor_nonMitotic",
+  "p_tumor": "0.7539891004562378",
+  "p_linfocito": "0.004285740666091442",
+  "p_estroma": "0.24172517657279968",
+  "modelo": "resnet50",
+  "semilla": 6113,
+  "acierto": true,
+  "fila": "0",
+  "imagen": "TCGA-BH-A0BW-DX1_id-5ea4098cddda5f839897f8c4_left-44086_top-35419_bottom-35720_right-44445",
+  "sha_pixeles": "35884701b7e415f9b766981514f5c8cd4768b7e60b550f68b6a4b0ad2aeaafd6",
+  "sha_imagen": "e33771b6483e381e2ff13c25a8e8901f3ec4de84cf62b02dd8e6b5b3bc4ac6d3",
+  "sha_anotaciones": "ae75038bf95a115c56c5df2df1b973772452a8fbc59cf3cec7a56669946fb133",
+  "particion_historica": "entrenamiento",
+  "particion_evaluacion": "validation",
+  "fuente_predicciones": "final/resnet50_6113/predicciones_validacion.csv",
+  "sha_predicciones": "a89e0226864f4351eaed2714d38de64b07ab8f661188050ba5b59aef3289d8d8",
+  "anotacion": {
+    "": "0",
+    "raw_classification": "tumor",
+    "main_classification": "tumor_nonMitotic",
+    "super_classification": "tumor_any",
+    "type": "rectangle",
+    "xmin": "84",
+    "ymin": "172",
+    "xmax": "175",
+    "ymax": "239",
+    "coords_x": "84,175,175,84,84",
+    "coords_y": "172,172,239,239,172"
+  },
+  "ventana_recorte": {
+    "left": "65",
+    "top": "141",
+    "right": "193",
+    "bottom": "269"
+  },
+  "nota": "Cotejo automático contra referencia existente; no adjudicación humana nueva. Partición actual según predicción V2. El recorte histórico coincide píxel a píxel con el campo original y su manifiesto."
+}

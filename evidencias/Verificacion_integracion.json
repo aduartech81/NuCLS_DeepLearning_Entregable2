@@ -1,0 +1,11 @@
+{
+  "fecha": "2026-11-12",
+  "compilacion_jupyter_book": "Correcta; 0 advertencias",
+  "version": "0.15.1; Sphinx5.0.2",
+  "paginas_html_comprobadas": 12,
+  "enlaces_locales_rotos": [],
+  "dashboard": "JavaScript sintácticamente válido; gráfico SVG calculado desde resumen.csv; diez fichas y filtro de requisitos",
+  "revision_visual": "Intentada, no completada: navegador de prueba termina con SIGABRT; sin validación visual desktop/móvil",
+  "colab": "Sin acceso",
+  "ejecucion_notebooks": "Desactivada durante compilación"
+}

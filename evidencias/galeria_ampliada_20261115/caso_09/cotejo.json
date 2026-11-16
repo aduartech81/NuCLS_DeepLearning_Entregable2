@@ -1,0 +1,39 @@
+{
+  "paciente": "TCGA-BH-A0BL",
+  "archivo": "validation/tumor_nonMitotic/TCGA-BH-A0BL-DX1_id-5ea40977ddda5f839897c4d8_left-30574_top-45399_bottom-45700_right-30857__9.png",
+  "clase_real": "tumor_nonMitotic",
+  "clase_predicha": "nonTILnonMQ_stromal",
+  "p_tumor": "0.15635953843593597",
+  "p_linfocito": "0.14847508072853088",
+  "p_estroma": "0.6951653957366943",
+  "modelo": "densenet121",
+  "semilla": 6113,
+  "acierto": false,
+  "imagen": "TCGA-BH-A0BL-DX1_id-5ea40977ddda5f839897c4d8_left-30574_top-45399_bottom-45700_right-30857",
+  "fila": "9",
+  "tipo": "rectangle",
+  "sha_anotaciones": "5c1d605d7fc1846e757e098f8320f1a2741075530d657418e9117d907ea2035d",
+  "sha_predicciones": "c87c850b5a0546e84667a09f0d3d0c28b2367f4834312e99854a10ff9d1533ee",
+  "fuente_predicciones": "final/densenet121_6113/predicciones_validacion.csv",
+  "anotacion": {
+    "": "9",
+    "raw_classification": "tumor",
+    "main_classification": "tumor_nonMitotic",
+    "super_classification": "tumor_any",
+    "type": "rectangle",
+    "xmin": "85",
+    "ymin": "227",
+    "xmax": "113",
+    "ymax": "277",
+    "coords_x": "85,113,113,85",
+    "coords_y": "227,227,277,277"
+  },
+  "sha_campo": "27f331039fbf7b26d27e3949b7870bcbb5ae670fba98ff26e305c7ff9e0d8116",
+  "sha_visualizacion": "a4f8c0ba75be806e039fc66734af7d8a25189770419f7c58bf62cc9af95480e4",
+  "dimensiones_campo": [
+    354,
+    376
+  ],
+  "vista": "Campo original con núcleo objetivo señalado; no se afirma que el campo completo sea la entrada de128px del modelo",
+  "revision_humana_nueva": false
+}

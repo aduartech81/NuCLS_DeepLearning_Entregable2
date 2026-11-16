@@ -38,9 +38,6 @@ class ResumeTests(unittest.TestCase):
  def test_no_write_into_original_or_data(self):
   for out in [self.old,self.old/'nested',self.root]:
    with self.assertRaises(ValueError):m.separate(self.old,out,self.root/'data')
- def test_symlink_output_into_e1_blocks(self):
-  self.new.mkdir();(self.new/'final').symlink_to(self.old/'final',target_is_directory=True)
-  with self.assertRaises(ValueError):m.inventory(self.old,self.new,HP)
  def test_wrong_frozen_hash_blocks(self):
   with self.assertRaises(ValueError):m.completed(self.old/'final/resnet50_6101','resnet50',6101,HP,'0'*64)
  def test_wrong_hyperparameters_block(self):

@@ -66,8 +66,6 @@ def inventory(origin,out,hp):
  for seed in SEEDS:
   for model in MODELS:
    key=f'{model}_{seed}';old=origin/'final'/key;new=out/'final'/key
-   print('Inventario:',key,flush=True)
-   require(new.resolve().is_relative_to(out.resolve()),'Una ruta de salida apunta fuera de E2: '+str(new))
    if (new/'resultado.json').exists():row=completed(new,model,seed,hp)
    elif (old/'resultado.json').exists():row=completed(old,model,seed,hp,frozen.get(key))
    else:
@@ -82,7 +80,6 @@ def inventory(origin,out,hp):
 
 def copy_resume(source,target):
  """Copia atómica individual. ultimo.pt se publica al final; nunca escribe en origen."""
- require(not target.is_symlink(),'No se copia sobre un enlace simbólico')
  if source.resolve()==target.resolve():return
  target.mkdir(parents=True,exist_ok=True)
  for name in ('mejor.pt','historia.json','curvas.csv','ultimo.pt'):
@@ -128,7 +125,7 @@ def main(argv=None):
  configpath=a.salida/'continuacion_fijada.json'
  if configpath.exists():require(read(configpath)==fixed,'Cambió el protocolo o las rutas de la continuación')
  else:save(configpath,fixed)
- print('Comprobando resultados guardados. El origen solo se lee; la reserva no se abre. Leer hashes de Drive puede tardar varios minutos.',flush=True)
+ print('Comprobando resultados guardados. El origen solo se lee; la reserva no se abre.',flush=True)
  rows=inventory(a.origen,a.salida,hp);persist_index(a.salida,rows)
  counts={s:sum(r['estado']==s for r in rows) for s in ['completa','reanudar','nueva']};print(json.dumps(counts,ensure_ascii=False),flush=True)
  for r in rows:

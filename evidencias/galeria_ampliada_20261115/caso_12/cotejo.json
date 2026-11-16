@@ -1,0 +1,39 @@
+{
+  "paciente": "TCGA-BH-A1F6",
+  "archivo": "validation/tumor_nonMitotic/TCGA-BH-A1F6-DX1_id-5ea40983ddda5f839897e4e7_left-54530_top-51423_bottom-51697_right-54857__5.png",
+  "clase_real": "tumor_nonMitotic",
+  "clase_predicha": "nonTILnonMQ_stromal",
+  "p_tumor": "0.285268098115921",
+  "p_linfocito": "0.005848568864166737",
+  "p_estroma": "0.7088833451271057",
+  "modelo": "softmaxcnn_bn",
+  "semilla": 6113,
+  "acierto": false,
+  "imagen": "TCGA-BH-A1F6-DX1_id-5ea40983ddda5f839897e4e7_left-54530_top-51423_bottom-51697_right-54857",
+  "fila": "5",
+  "tipo": "rectangle",
+  "sha_anotaciones": "69a52cbab295af47af8f5f5b02f3a75193ad98035abb60678a390ae570c65db2",
+  "sha_predicciones": "1a99f8b9f6dde72e338281ec1dd967630e1d4f2e2f7be6a20e71a397393b0ec6",
+  "fuente_predicciones": "final/softmaxcnn_bn_6113/predicciones_validacion.csv",
+  "anotacion": {
+    "": "5",
+    "raw_classification": "tumor",
+    "main_classification": "tumor_nonMitotic",
+    "super_classification": "tumor_any",
+    "type": "rectangle",
+    "xmin": "67",
+    "ymin": "182",
+    "xmax": "115",
+    "ymax": "237",
+    "coords_x": "67,115,115,67,67",
+    "coords_y": "182,182,237,237,182"
+  },
+  "sha_campo": "2596ca607250b396ad98a6b74cfa1555aa07699e6fdcbf2db3c9d91a034611d0",
+  "sha_visualizacion": "8f6c7499e4f73aaa5ac4d4f0535de44614715c12961f66659e9a6abe2b7a221e",
+  "dimensiones_campo": [
+    409,
+    343
+  ],
+  "vista": "Campo original con núcleo objetivo señalado; no se afirma que el campo completo sea la entrada de128px del modelo",
+  "revision_humana_nueva": false
+}

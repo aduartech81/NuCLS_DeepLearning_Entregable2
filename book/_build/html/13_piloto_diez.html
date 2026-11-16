@@ -1,0 +1,549 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="es" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Diez modelos: resultados con cinco semillas &#8212; NuCLS · Entregable 2</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/e2.css" />
+    <link rel="stylesheet" type="text/css" href="_static/e2.css" />
+    <link rel="stylesheet" type="text/css" href="_static/e2.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Haz clic para mostrar';</script>
+    <script>let toggleHintHide = 'Haz clic para ocultar';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '13_piloto_diez';</script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="next" title="Galería ampliada: imágenes limpias, anotaciones y predicciones" href="12_galeria_histologica.html" />
+    <link rel="prev" title="Validación de los modelos base — 22 semillas" href="05_resultados.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="es"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Saltar al contenido principal</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Volver arriba</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Advertencia de versión"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">NuCLS · Entregable 2</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="01_problema.html">Problema y preguntas de investigación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_eda.html">EDA orientado a decisiones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_estado_del_arte.html">NuCLS · Estado del arte y selección del Entregable 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_metodos.html">Métodos y plan de evaluación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_resultados.html">Validación de los modelos base — 22 semillas</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Diez modelos: resultados con cinco semillas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_galeria_histologica.html">Galería ampliada: imágenes limpias, anotaciones y predicciones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_discusion.html">Discusión, paper guía y gap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07_reproducibilidad.html">Reproducibilidad</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Descarga esta pagina">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/13_piloto_diez.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Descargar archivo fuente"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimir en PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Modo de pantalla completa"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="claro/oscuro" aria-label="claro/oscuro" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Diez modelos: resultados con cinco semillas</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenido </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretacion">Interpretación</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#curvas-de-aprendizaje">Curvas de aprendizaje</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#costos-y-calibracion">Costos y calibración</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evidencia">Evidencia</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="diez-modelos-resultados-con-cinco-semillas">
+<h1>Diez modelos: resultados con cinco semillas<a class="headerlink" href="#diez-modelos-resultados-con-cinco-semillas" title="Permalink to this heading">#</a></h1>
+<p>Se verificaron 50 corridas y 102.450 predicciones, sobre 2.049 recortes de 21 pacientes de validación. Las matrices de confusión y macro-F1 coinciden con los resultados guardados; las historias son continuas y la época seleccionada coincide con el máximo registrado.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Modelo</p></th>
+<th class="head text-right"><p>Media macro-F1</p></th>
+<th class="head text-right"><p>DE</p></th>
+<th class="head"><p>IC95 entre semillas</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>inception_v3</p></td>
+<td class="text-right"><p>0.8235</p></td>
+<td class="text-right"><p>0.0132</p></td>
+<td><p>[0.8072; 0.8399]</p></td>
+</tr>
+<tr class="row-odd"><td><p>efficientnet_b0</p></td>
+<td class="text-right"><p>0.8138</p></td>
+<td class="text-right"><p>0.0128</p></td>
+<td><p>[0.7979; 0.8296]</p></td>
+</tr>
+<tr class="row-even"><td><p>resnet18</p></td>
+<td class="text-right"><p>0.8041</p></td>
+<td class="text-right"><p>0.0102</p></td>
+<td><p>[0.7915; 0.8168]</p></td>
+</tr>
+<tr class="row-odd"><td><p>mobilenetv3_small_100</p></td>
+<td class="text-right"><p>0.7758</p></td>
+<td class="text-right"><p>0.0099</p></td>
+<td><p>[0.7634; 0.7881]</p></td>
+</tr>
+<tr class="row-even"><td><p>mixer_s16_224</p></td>
+<td class="text-right"><p>0.7758</p></td>
+<td class="text-right"><p>0.0356</p></td>
+<td><p>[0.7315; 0.8200]</p></td>
+</tr>
+<tr class="row-odd"><td><p>mobilevit_xxs</p></td>
+<td class="text-right"><p>0.7746</p></td>
+<td class="text-right"><p>0.0205</p></td>
+<td><p>[0.7492; 0.8000]</p></td>
+</tr>
+<tr class="row-even"><td><p>swin_tiny_patch4_window7_224</p></td>
+<td class="text-right"><p>0.7647</p></td>
+<td class="text-right"><p>0.0065</p></td>
+<td><p>[0.7566; 0.7727]</p></td>
+</tr>
+<tr class="row-odd"><td><p>convnext_tiny</p></td>
+<td class="text-right"><p>0.7509</p></td>
+<td class="text-right"><p>0.0247</p></td>
+<td><p>[0.7202; 0.7817]</p></td>
+</tr>
+<tr class="row-even"><td><p>deit_tiny_patch16_224</p></td>
+<td class="text-right"><p>0.7417</p></td>
+<td class="text-right"><p>0.0122</p></td>
+<td><p>[0.7265; 0.7569]</p></td>
+</tr>
+<tr class="row-odd"><td><p>sequencer2d_s</p></td>
+<td class="text-right"><p>0.7356</p></td>
+<td class="text-right"><p>0.0230</p></td>
+<td><p>[0.7070; 0.7642]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><img alt="Comparación" src="_images/comparacion.png" /></p>
+<section id="interpretacion">
+<h2>Interpretación<a class="headerlink" href="#interpretacion" title="Permalink to this heading">#</a></h2>
+<p>Inception V3 presenta la mayor media descriptiva (0,8235), seguido de EfficientNet B0 (0,8138). Este orden no acredita superioridad estadística ni cambia el baseline ResNet50. Los intervalos t de la media describen variación entre cinco semillas sobre una partición fija, condicionada a la selección de hiperparámetros y época en validación. No son intervalos de generalización a pacientes nuevos. El piloto no demuestra potencia suficiente para equivalencia.</p>
+</section>
+<section id="curvas-de-aprendizaje">
+<h2>Curvas de aprendizaje<a class="headerlink" href="#curvas-de-aprendizaje" title="Permalink to this heading">#</a></h2>
+<p><img alt="Validación" src="_images/curvas_validacion.png" /></p>
+<p><img alt="Pérdidas" src="_images/curvas_perdida.png" /></p>
+</section>
+<section id="costos-y-calibracion">
+<h2>Costos y calibración<a class="headerlink" href="#costos-y-calibracion" title="Permalink to this heading">#</a></h2>
+<p>Los valores de Brier, ECE con diez intervalos, parámetros, tiempos registrados y latencia reportada se incluyen en <a class="reference download internal" download="" href="_downloads/96fe3e5c641edb0c7f495cb0df462511/resumen.csv"><span class="xref download myst">la tabla completa</span></a>. Los tiempos acumulados son los registrados por las corridas, no una medición del tiempo total de pared incluyendo desconexiones; la latencia no reemplaza un perfilado homogéneo.</p>
+</section>
+<section id="evidencia">
+<h2>Evidencia<a class="headerlink" href="#evidencia" title="Permalink to this heading">#</a></h2>
+<p><a class="reference download internal" download="" href="_downloads/8d34e172870b37bf496ecdc1542ae950/verificacion.json"><span class="xref download myst">Verificación</span></a> · <a class="reference download internal" download="" href="_downloads/6767e71d8a48765407b91a4f8bfa7512/metricas_recalculadas.csv"><span class="xref download myst">Métricas por corrida</span></a>. La evaluación presentada corresponde a validación. La reserva histórica, ya consultada en E1, se distingue de esta evaluación de desarrollo.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="05_resultados.html"
+       title="página anterior">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">anterior</p>
+        <p class="prev-next-title">Validación de los modelos base — 22 semillas</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="12_galeria_histologica.html"
+       title="siguiente página">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title">Galería ampliada: imágenes limpias, anotaciones y predicciones</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenido
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretacion">Interpretación</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#curvas-de-aprendizaje">Curvas de aprendizaje</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#costos-y-calibracion">Costos y calibración</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evidencia">Evidencia</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Por Andrés Duarte Chaves
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  E2 · Clasificación nuclear reproducible · 15 de noviembre de 2026
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

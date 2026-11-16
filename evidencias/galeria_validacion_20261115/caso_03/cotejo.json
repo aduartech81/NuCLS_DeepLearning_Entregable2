@@ -1,0 +1,41 @@
+{
+  "paciente": "TCGA-BH-A0BW",
+  "archivo": "validation/nonTILnonMQ_stromal/TCGA-BH-A0BW-DX1_id-5ea4098cddda5f839897f8c4_left-44902_top-32878_bottom-33175_right-45187__15.png",
+  "clase_real": "nonTILnonMQ_stromal",
+  "clase_predicha": "nonTILnonMQ_stromal",
+  "p_tumor": "0.1553872525691986",
+  "p_linfocito": "0.03118019737303257",
+  "p_estroma": "0.8134325742721558",
+  "modelo": "resnet50",
+  "semilla": 6113,
+  "acierto": true,
+  "fila": "15",
+  "imagen": "TCGA-BH-A0BW-DX1_id-5ea4098cddda5f839897f8c4_left-44902_top-32878_bottom-33175_right-45187",
+  "sha_pixeles": "d2516719b7d8f834382a52e9806350e4c968ee694ecdebdbbe8fe85f34b5578d",
+  "sha_imagen": "9f43325e7e305e49e28cfb262d9773c6111741e80e0d6ae15d584b166f9a1b99",
+  "sha_anotaciones": "de202001186ffaa66b477c569b90266f03407f50896d0fadecb34330340ee7a7",
+  "particion_historica": "entrenamiento",
+  "particion_evaluacion": "validation",
+  "fuente_predicciones": "final/resnet50_6113/predicciones_validacion.csv",
+  "sha_predicciones": "a89e0226864f4351eaed2714d38de64b07ab8f661188050ba5b59aef3289d8d8",
+  "anotacion": {
+    "": "15",
+    "raw_classification": "fibroblast",
+    "main_classification": "nonTILnonMQ_stromal",
+    "super_classification": "nonTIL_stromal",
+    "type": "rectangle",
+    "xmin": "94",
+    "ymin": "81",
+    "xmax": "147",
+    "ymax": "136",
+    "coords_x": "94,147,147,94,94",
+    "coords_y": "81,81,136,136,81"
+  },
+  "ventana_recorte": {
+    "left": "56",
+    "top": "44",
+    "right": "184",
+    "bottom": "172"
+  },
+  "nota": "Cotejo automático contra referencia existente; no adjudicación humana nueva. Partición actual según predicción V2. El recorte histórico coincide píxel a píxel con el campo original y su manifiesto."
+}

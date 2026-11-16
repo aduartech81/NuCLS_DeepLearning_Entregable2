@@ -1,0 +1,39 @@
+{
+  "paciente": "TCGA-AQ-A54N",
+  "archivo": "validation/tumor_nonMitotic/TCGA-AQ-A54N-DX1_id-5ea40a47ddda5f839898d34a_left-33707_top-29368_bottom-29637_right-34002__10.png",
+  "clase_real": "tumor_nonMitotic",
+  "clase_predicha": "nonTILnonMQ_stromal",
+  "p_tumor": "0.3441305458545685",
+  "p_linfocito": "0.2753506004810333",
+  "p_estroma": "0.3805188536643982",
+  "modelo": "resnet50",
+  "semilla": 6113,
+  "acierto": false,
+  "imagen": "TCGA-AQ-A54N-DX1_id-5ea40a47ddda5f839898d34a_left-33707_top-29368_bottom-29637_right-34002",
+  "fila": "10",
+  "tipo": "polyline",
+  "sha_anotaciones": "c45b3e5368ef8370ec34937903f39c87c6c6a1dda184c3cc65f5b306a6fb2c22",
+  "sha_predicciones": "a89e0226864f4351eaed2714d38de64b07ab8f661188050ba5b59aef3289d8d8",
+  "fuente_predicciones": "final/resnet50_6113/predicciones_validacion.csv",
+  "anotacion": {
+    "": "10",
+    "raw_classification": "tumor",
+    "main_classification": "tumor_nonMitotic",
+    "super_classification": "tumor_any",
+    "type": "polyline",
+    "xmin": "276",
+    "ymin": "217",
+    "xmax": "302",
+    "ymax": "255",
+    "coords_x": "300,295,286,285,279,276,276,277,279,284,289,296,301,302,302,300",
+    "coords_y": "248,255,254,253,245,239,224,222,221,217,218,222,226,232,234,248"
+  },
+  "sha_campo": "ab92e6ff4fec4b31f1d56c6b0fa46abf0cf42e62a911420a6a2ce98b2d964761",
+  "sha_visualizacion": "e01a27679e10cc6de3e52c874e593d7631bca5491205064b68fdb04be615ba81",
+  "dimensiones_campo": [
+    364,
+    332
+  ],
+  "vista": "Campo original con núcleo objetivo señalado; no se afirma que el campo completo sea la entrada de128px del modelo",
+  "revision_humana_nueva": false
+}

@@ -1,0 +1,39 @@
+{
+  "paciente": "TCGA-BH-A0WA",
+  "archivo": "validation/nonTILnonMQ_stromal/TCGA-BH-A0WA-DX1_id-5ea40a32ddda5f839898bdb3_left-61940_top-31417_bottom-31709_right-62223__30.png",
+  "clase_real": "nonTILnonMQ_stromal",
+  "clase_predicha": "lymphocyte",
+  "p_tumor": "0.010058359242975712",
+  "p_linfocito": "0.891963005065918",
+  "p_estroma": "0.09797857701778412",
+  "modelo": "densenet121",
+  "semilla": 6113,
+  "acierto": false,
+  "imagen": "TCGA-BH-A0WA-DX1_id-5ea40a32ddda5f839898bdb3_left-61940_top-31417_bottom-31709_right-62223",
+  "fila": "30",
+  "tipo": "polyline",
+  "sha_anotaciones": "02af9d024161e4cfef51caaf78a85bdb1148708586eff8f8b4cbebc19b6890e7",
+  "sha_predicciones": "c87c850b5a0546e84667a09f0d3d0c28b2367f4834312e99854a10ff9d1533ee",
+  "fuente_predicciones": "final/densenet121_6113/predicciones_validacion.csv",
+  "anotacion": {
+    "": "30",
+    "raw_classification": "vascular_endothelium",
+    "main_classification": "nonTILnonMQ_stromal",
+    "super_classification": "nonTIL_stromal",
+    "type": "polyline",
+    "xmin": "60",
+    "ymin": "172",
+    "xmax": "93",
+    "ymax": "200",
+    "coords_x": "60,61,80,86,91,93,93,92,86,80,74,67,64,62,61,60",
+    "coords_y": "187,184,172,172,173,174,188,190,197,200,199,197,194,193,190,187"
+  },
+  "sha_campo": "a0c7c580369749d5de8ceaa5a246b50c0a17f02b91c1f73422360f14165bc5a1",
+  "sha_visualizacion": "65ca341112f5e1281bb9aca3d8cda2d4877f3cfafbf2241a8770ef20cf44e302",
+  "dimensiones_campo": [
+    351,
+    362
+  ],
+  "vista": "Campo original con núcleo objetivo señalado; no se afirma que el campo completo sea la entrada de128px del modelo",
+  "revision_humana_nueva": false
+}

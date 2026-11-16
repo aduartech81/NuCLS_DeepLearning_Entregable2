@@ -1,0 +1,10 @@
+{
+  "fecha": "2026-11-12",
+  "pruebas_cola": 5,
+  "resultado": "aprobadas",
+  "validacion": "Compilación de celdas, orden de fases, conservación de bloqueo ajeno, detención ante error, omisión de perfil completo",
+  "GPU": "No ejecutado localmente; requiere verificación Colab",
+  "evaluacion_desarrollo": "Código preparado; no se ha ejecutado con checkpoints reales",
+  "reserva": "No se lee",
+  "E1": "Sin modificaciones"
+}

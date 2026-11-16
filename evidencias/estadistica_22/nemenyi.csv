@@ -1,0 +1,4 @@
+comparacion,p_Nemenyi
+softmaxcnn_bn - densenet121,0.02800958033320322
+softmaxcnn_bn - resnet50,7.212017158120254e-05
+densenet121 - resnet50,0.22142986508575957

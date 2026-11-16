@@ -1,0 +1,660 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="es" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>EDA orientado a decisiones &#8212; NuCLS · Entregable 2</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/e2.css" />
+    <link rel="stylesheet" type="text/css" href="_static/e2.css" />
+    <link rel="stylesheet" type="text/css" href="_static/e2.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Haz clic para mostrar';</script>
+    <script>let toggleHintHide = 'Haz clic para ocultar';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '02_eda';</script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="next" title="NuCLS · Estado del arte y selección del Entregable 2" href="03_estado_del_arte.html" />
+    <link rel="prev" title="Problema y preguntas de investigación" href="01_problema.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="es"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Saltar al contenido principal</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Volver arriba</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Advertencia de versión"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">NuCLS · Entregable 2</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="01_problema.html">Problema y preguntas de investigación</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">EDA orientado a decisiones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_estado_del_arte.html">NuCLS · Estado del arte y selección del Entregable 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_metodos.html">Métodos y plan de evaluación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_resultados.html">Validación de los modelos base — 22 semillas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="13_piloto_diez.html">Diez modelos: resultados con cinco semillas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_galeria_histologica.html">Galería ampliada: imágenes limpias, anotaciones y predicciones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_discusion.html">Discusión, paper guía y gap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07_reproducibilidad.html">Reproducibilidad</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Descarga esta pagina">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/02_eda.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Descargar archivo fuente"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimir en PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Modo de pantalla completa"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="claro/oscuro" aria-label="claro/oscuro" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>EDA orientado a decisiones</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenido </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evidencia-heredada-recuperada-en-la-revision-docente">Evidencia heredada recuperada en la revisión docente</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alcance-de-los-controles">Alcance de los controles</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verificacion-independiente-de-metadatos-de-validacion-15-de-noviembre">Verificación independiente de metadatos de validación · 15 de noviembre</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#protocolo-de-revision-de-etiquetas">Protocolo de revisión de etiquetas</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-card-del-conjunto-derivado-v2">Data Card del conjunto derivado V2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#anotaciones-disponibles-y-cotejo-visual">Anotaciones disponibles y cotejo visual</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ampliacion-visual-verificada">Ampliación visual verificada</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="eda-orientado-a-decisiones">
+<h1>EDA orientado a decisiones<a class="headerlink" href="#eda-orientado-a-decisiones" title="Permalink to this heading">#</a></h1>
+<p>Se heredan 14.539 recortes / 83 pacientes de train y 2.049 / 21 de validación. La reserva histórica contiene 969 recortes / seis pacientes y ya fue consultada en E1. No se inspeccionan nuevamente sus imágenes en esta ampliación.</p>
+<p>Los siguientes resultados proceden de la evidencia heredada <code class="docutils literal notranslate"><span class="pre">evidencias/eda_heredado/resumen.json</span></code>; no son análisis nuevos ni el desempeño de los clasificadores nucleares.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Hallazgo</p></th>
+<th class="head"><p>Evidencia</p></th>
+<th class="head"><p>Decisión</p></th>
+<th class="head"><p>Impacto y riesgo</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Dependencia entre recortes</p></td>
+<td><p>104 pacientes de desarrollo</p></td>
+<td><p>Agrupar remuestreo por paciente</p></td>
+<td><p>Un recorte no es una observación clínica independiente</p></td>
+</tr>
+<tr class="row-odd"><td><p>Dominio train/validación distinguible</p></td>
+<td><p>Balanced accuracy 0,677; IC95 [0,558; 0,785]</p></td>
+<td><p>Conservar separación por grupos y reportar desplazamiento</p></td>
+<td><p>Intervalo sobre predicciones OOF fijas, no incluye reentrenamiento</p></td>
+</tr>
+<tr class="row-even"><td><p>Señal de adquisición por sitio</p></td>
+<td><p>Balanced accuracy 0,398 en ocho clases / 77 pacientes</p></td>
+<td><p>Examinar desempeño estratificado por TSS</p></td>
+<td><p>Evidencia exploratoria de información de sitio; no prueba por sí sola un atajo causal</p></td>
+</tr>
+<tr class="row-odd"><td><p>Pacientes atípicos según rasgos de imagen</p></td>
+<td><p>Cinco train y uno validación sobre umbral p95 de train</p></td>
+<td><p>Priorizar inspección, no excluir automáticamente</p></td>
+<td><p>Un valor atípico no demuestra etiqueta errónea</p></td>
+</tr>
+<tr class="row-even"><td><p>Escalas de intensidad y textura</p></td>
+<td><p>Mediana/IQR calculados en train</p></td>
+<td><p>Ajustar transformaciones solo con train</p></td>
+<td><p>Evitar recalcular normalización con validación o reserva</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="evidencia-heredada-recuperada-en-la-revision-docente">
+<h2>Evidencia heredada recuperada en la revisión docente<a class="headerlink" href="#evidencia-heredada-recuperada-en-la-revision-docente" title="Permalink to this heading">#</a></h2>
+<p>El capítulo de desarrollo V2 de E1 documenta el análisis de <strong>29.790.411 pares train–validación</strong> mediante dHash de 64 bits, sin candidatos con distancia Hamming ≤4. Ese total coincide con 14.539 × 2.049. Se reutiliza como control previo de la misma partición; no se presenta como un nuevo cálculo. No excluye todas las rotaciones, escalas, solapamientos o similitudes semánticas. Los hashes originales exportados aún deben acompañar la reproducción independiente; la fuente documental se conserva en <code class="docutils literal notranslate"><span class="pre">evidencias/revision_docente_20261114/EDA_E1_fuente.md</span></code>.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Hallazgo heredado</p></th>
+<th class="head"><p>Valor</p></th>
+<th class="head"><p>Decisión y límite</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Integridad de desarrollo</p></td>
+<td><p>16.588 recortes; cero campos críticos vacíos</p></td>
+<td><p>Conservar identidad por paciente; integridad no certifica etiquetas</p></td>
+</tr>
+<tr class="row-odd"><td><p>Balance de clases</p></td>
+<td><p>Entropía train 1,5068 bits; validación 1,4302 bits</p></td>
+<td><p>Macro-F1 y resultados por clase; entropía no mide dificultad</p></td>
+</tr>
+<tr class="row-even"><td><p>Razón clase mayor/menor</p></td>
+<td><p>2,25 train; 3,22 validación</p></td>
+<td><p>No interpretar exactitud aislada como mejora</p></td>
+</tr>
+<tr class="row-odd"><td><p>Casi duplicados train–validación</p></td>
+<td><p>0 candidatos dHash ≤4 en 29.790.411 pares</p></td>
+<td><p>Control específico heredado; no prueba ausencia de cualquier similitud</p></td>
+</tr>
+<tr class="row-even"><td><p>Clasificador adversarial</p></td>
+<td><p>AUC registrada 0,7097; balanced accuracy 0,6770</p></td>
+<td><p>Reconocer desplazamiento; AUC no recalculada por faltar probabilidades OOF</p></td>
+</tr>
+<tr class="row-odd"><td><p>Normalización RGB</p></td>
+<td><p>Medias 0,63920 / 0,45917 / 0,62775; DE 0,21397 / 0,22150 / 0,17429</p></td>
+<td><p>Parámetros de train; no constituyen normalización de tinción</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="alcance-de-los-controles">
+<h2>Alcance de los controles<a class="headerlink" href="#alcance-de-los-controles" title="Permalink to this heading">#</a></h2>
+<p>Los controles dHash y de dominio se heredan de E1. Esta edición no cuantifica ruido de etiqueta mediante adjudicación independiente ni acredita una prueba de sanidad de sobreajuste de un lote. Estas restricciones limitan la interpretación del EDA; no equivalen a ausencia del control de duplicados heredado.</p>
+</section>
+<section id="verificacion-independiente-de-metadatos-de-validacion-15-de-noviembre">
+<h2>Verificación independiente de metadatos de validación · 15 de noviembre<a class="headerlink" href="#verificacion-independiente-de-metadatos-de-validacion-15-de-noviembre" title="Permalink to this heading">#</a></h2>
+<p>Se recalcularon los conteos a partir de <strong>31 archivos de predicciones</strong> locales. Todos contienen las mismas 2049 identidades únicas, etiquetas y pacientes, sin campos críticos vacíos. Estos archivos no multiplican el tamaño de la muestra: son predicciones repetidas de los mismos recortes. No se inspeccionaron imágenes de reserva.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Clase</p></th>
+<th class="head text-right"><p>Recortes</p></th>
+<th class="head text-right"><p>Porcentaje</p></th>
+<th class="head text-right"><p>Pacientes con la clase</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>lymphocyte</p></td>
+<td class="text-right"><p>597</p></td>
+<td class="text-right"><p>29.14%</p></td>
+<td class="text-right"><p>18</p></td>
+</tr>
+<tr class="row-odd"><td><p>nonTILnonMQ_stromal</p></td>
+<td class="text-right"><p>344</p></td>
+<td class="text-right"><p>16.79%</p></td>
+<td class="text-right"><p>19</p></td>
+</tr>
+<tr class="row-even"><td><p>tumor_nonMitotic</p></td>
+<td class="text-right"><p>1108</p></td>
+<td class="text-right"><p>54.08%</p></td>
+<td class="text-right"><p>20</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>La entropía recalculada es <strong>1.4302 bits</strong> y la razón mayor/menor <strong>3.22</strong>. Hay entre 2 y 231 recortes por paciente; el paciente con más recortes aporta 11.27% del conjunto. 4 pacientes no contienen las tres clases. Por ello, el macro-F1 por paciente con tres clases fijas necesita acompañarse de soporte por clase; no debe interpretarse aisladamente como calidad clínica individual.</p>
+<p>La tabla <code class="docutils literal notranslate"><span class="pre">Validacion_pacientes.csv</span></code> explicita los denominadores. La verificación confirma consistencia de los metadatos exportados, <strong>no</strong> integridad de píxeles, ausencia de fuga ni corrección de etiquetas. El dHash heredado sigue siendo un control distinto.</p>
+<section id="protocolo-de-revision-de-etiquetas">
+<h3>Protocolo de revisión de etiquetas<a class="headerlink" href="#protocolo-de-revision-de-etiquetas" title="Permalink to this heading">#</a></h3>
+<p>Se seleccionaron aleatoriamente 200 recortes de validación, sin condicionar por error del modelo, para una revisión independiente. El formulario conserva la etiqueta original y deja vacíos el dictamen, el motivo y el revisor. Antes de adjudicar, ocultar la etiqueta original al revisor; después comparar y resolver discrepancias con un segundo revisor. Reportar desacuerdo y casos no evaluables, agrupando por paciente. Esta muestra puede diagnosticar discrepancias en validación, pero no estima ruido de entrenamiento ni autoriza cambiar retrospectivamente el benchmark. Las300 muestras de errores del capítulo10 responden a otra pregunta. <strong>No se ha realizado aún la adjudicación histológica.</strong></p>
+<p><img alt="Distribución de clases y soporte por paciente de validación" src="_images/Soporte_validacion_paciente.svg" /></p>
+</section>
+</section>
+<section id="data-card-del-conjunto-derivado-v2">
+<h2>Data Card del conjunto derivado V2<a class="headerlink" href="#data-card-del-conjunto-derivado-v2" title="Permalink to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Campo</p></th>
+<th class="head"><p>Especificación y evidencia</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Procedencia</p></td>
+<td><p>NuCLS, imágenes histológicas H&amp;E de cáncer de mama procedentes de TCGA; <a class="reference external" href="https://doi.org/10.1093/gigascience/giac037">artículo primario</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Licencia del dataset fuente</p></td>
+<td><p>CC0 1.0, según <a class="reference external" href="https://nucls.grand-challenge.org/License/">portal oficial</a>, consultado el 15/11/2026. El código del repositorio fuente declara MIT; no confundir ambas licencias</p></td>
+</tr>
+<tr class="row-even"><td><p>Versión utilizada</p></td>
+<td><p>Derivado local V2, fijado por manifiesto. No se le atribuye un número de versión oficial no verificado</p></td>
+</tr>
+<tr class="row-odd"><td><p>SHA256 esperado del manifiesto</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">623adf36520751addc324e44cd1b89d95e47842e53cda494914c0248a8be86d4</span></code>; valor fijado en el motor y comprobado por el lector de datos</p></td>
+</tr>
+<tr class="row-even"><td><p>Unidad de análisis</p></td>
+<td><p>Recorte nuclear RGB de 128 × 128 píxeles; paciente como unidad de agrupación</p></td>
+</tr>
+<tr class="row-odd"><td><p>Objetivo</p></td>
+<td><p>Clasificación en tumor_nonMitotic, lymphocyte y nonTILnonMQ_stromal; no representa todas las categorías de NuCLS</p></td>
+</tr>
+<tr class="row-even"><td><p>Particiones heredadas</p></td>
+<td><p>Train: 14.539 recortes /83 pacientes. Validación: 2.049 /21. Reserva: 969 /6; ya observada en E1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Campos requeridos</p></td>
+<td><p>archivo, paciente, clase, particion, estado; filas incluidas con identidad y etiqueta válidas</p></td>
+</tr>
+<tr class="row-even"><td><p>Transformaciones</p></td>
+<td><p>Estadísticos RGB ajustados en train; aumentos y recetas fijados en el código, sin reajuste usando reserva</p></td>
+</tr>
+<tr class="row-odd"><td><p>Reproducción</p></td>
+<td><p>Archivo NuCLS_V2_DATOS.zip y manifiesto coincidente necesarios; el ZIP documental no distribuye imágenes ni pesos</p></td>
+</tr>
+<tr class="row-even"><td><p>Alcance</p></td>
+<td><p>Experimento académico de clasificación nuclear, sin validación de utilidad clínica ni diagnóstico de pacientes</p></td>
+</tr>
+<tr class="row-odd"><td><p>Limitación de procedencia</p></td>
+<td><p>La cadena completa desde la descarga fuente hasta cada recorte y los archivos primarios dHash no quedan acreditados únicamente por un hash de manifiesto; recuperar sus exportaciones</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>La licencia del dataset fuente se verificó en una fuente primaria. Esta ficha no certifica por sí misma la procedencia de cada imagen del derivado local. Se conserva la distinción entre el conjunto original, el subconjunto de tres clases y sus particiones experimentales.</p>
+</section>
+<section id="anotaciones-disponibles-y-cotejo-visual">
+<h2>Anotaciones disponibles y cotejo visual<a class="headerlink" href="#anotaciones-disponibles-y-cotejo-visual" title="Permalink to this heading">#</a></h2>
+<p>Se recuperaron imágenes limpias y CSV de anotaciones originales para66 núcleos de validación V2; no requieren volver a etiquetarse. El capítulo <a class="reference internal" href="12_galeria_histologica.html"><span class="doc std std-doc">Galería histológica</span></a> presenta tres clases, aciertos y discrepancias. Esta verificación automática no sustituye la adjudicación de causas ambiguas, la revisión de100 errores por modelo ni el acuerdo multi-rater.</p>
+<section id="ampliacion-visual-verificada">
+<h3>Ampliación visual verificada<a class="headerlink" href="#ampliacion-visual-verificada" title="Permalink to this heading">#</a></h3>
+<p>El archivo QC permitió ampliar el cotejo a2.049 núcleos de21 pacientes y6.147 predicciones. La galería actual reúne36 núcleos de21 pacientes, con18 aciertos y18 discrepancias; sustituye la selección inicial de seis comparaciones de un paciente. Se muestran campos originales y objetivos anotados, no una reconstrucción del recorte usado en Colab.</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="01_problema.html"
+       title="página anterior">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">anterior</p>
+        <p class="prev-next-title">Problema y preguntas de investigación</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="03_estado_del_arte.html"
+       title="siguiente página">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title">NuCLS · Estado del arte y selección del Entregable 2</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenido
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evidencia-heredada-recuperada-en-la-revision-docente">Evidencia heredada recuperada en la revisión docente</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alcance-de-los-controles">Alcance de los controles</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verificacion-independiente-de-metadatos-de-validacion-15-de-noviembre">Verificación independiente de metadatos de validación · 15 de noviembre</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#protocolo-de-revision-de-etiquetas">Protocolo de revisión de etiquetas</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-card-del-conjunto-derivado-v2">Data Card del conjunto derivado V2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#anotaciones-disponibles-y-cotejo-visual">Anotaciones disponibles y cotejo visual</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ampliacion-visual-verificada">Ampliación visual verificada</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Por Andrés Duarte Chaves
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  E2 · Clasificación nuclear reproducible · 15 de noviembre de 2026
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

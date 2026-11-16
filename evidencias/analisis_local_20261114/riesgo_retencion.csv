@@ -1,0 +1,13 @@
+modelo,fraccion_retenida,error_retenidos,nota
+densenet121,0.24987798926305516,0.0,Curva descriptiva; no garantía de cobertura conforme
+densenet121,0.4997559785261103,0.005859375,Curva descriptiva; no garantía de cobertura conforme
+densenet121,0.7496339677891655,0.046223958333333336,Curva descriptiva; no garantía de cobertura conforme
+densenet121,1.0,0.13567593948267448,Curva descriptiva; no garantía de cobertura conforme
+resnet50,0.24987798926305516,0.0,Curva descriptiva; no garantía de cobertura conforme
+resnet50,0.4997559785261103,0.0107421875,Curva descriptiva; no garantía de cobertura conforme
+resnet50,0.7496339677891655,0.048828125,Curva descriptiva; no garantía de cobertura conforme
+resnet50,1.0,0.12884333821376281,Curva descriptiva; no garantía de cobertura conforme
+softmaxcnn_bn,0.24987798926305516,0.00390625,Curva descriptiva; no garantía de cobertura conforme
+softmaxcnn_bn,0.4997559785261103,0.0244140625,Curva descriptiva; no garantía de cobertura conforme
+softmaxcnn_bn,0.7496339677891655,0.072265625,Curva descriptiva; no garantía de cobertura conforme
+softmaxcnn_bn,1.0,0.1581259150805271,Curva descriptiva; no garantía de cobertura conforme

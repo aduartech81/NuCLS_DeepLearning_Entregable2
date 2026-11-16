@@ -1,0 +1,128 @@
+[
+  {
+    "id": "mobilevit",
+    "url": "https://arxiv.org/pdf/2110.02178",
+    "paginas": 26,
+    "sha256": "f0257b993891fcc8ebfd17bfe29c949cc5be97af7ae2cbc7fb899165c7533281",
+    "recuperado": true
+  },
+  {
+    "id": "mixer",
+    "url": "https://arxiv.org/pdf/2105.01601",
+    "paginas": 16,
+    "sha256": "e35cd320326cc4d59318edf2f70b23964aca94696693a5ca8bd028d277cb6e47",
+    "recuperado": true
+  },
+  {
+    "id": "resnet",
+    "url": "https://arxiv.org/pdf/1512.03385",
+    "paginas": 12,
+    "sha256": "1e0651b6810ecba34a3dbc5b5b0209226f889004607c1f203540a48d64e5a93a",
+    "recuperado": true
+  },
+  {
+    "id": "resnext",
+    "url": "https://arxiv.org/pdf/1611.05431",
+    "paginas": 10,
+    "sha256": "8bc101f654a100ce8c71dc36d1e326875b40d564e49d1a8fc0f51f4505d57705",
+    "recuperado": true
+  },
+  {
+    "id": "mobilenetv3",
+    "url": "https://arxiv.org/pdf/1905.02244",
+    "paginas": 11,
+    "sha256": "12bd89cf0d8309bf130b77bda626c495e4bceea0acfcc4f571d0828e6f62c78f",
+    "recuperado": true
+  },
+  {
+    "id": "efficientnet",
+    "url": "https://arxiv.org/pdf/1905.11946",
+    "paginas": 11,
+    "sha256": "af6b1bd620f81bfaea81edf8227484588e1fcc2427d6b5020fa17454d7566c70",
+    "recuperado": true
+  },
+  {
+    "id": "deit",
+    "url": "https://arxiv.org/pdf/2012.12877",
+    "paginas": 22,
+    "sha256": "a0fbdd27c115594326fd75b3a0f569fb94cbf0b5c34c84fdc204d993064188bb",
+    "recuperado": true
+  },
+  {
+    "id": "swin",
+    "url": "https://arxiv.org/pdf/2103.14030",
+    "paginas": 14,
+    "sha256": "dfdc7631fe2a35bb5892080b9c0eeadc4432d55cf1856f84bc88802efa877a7c",
+    "recuperado": true
+  },
+  {
+    "id": "resmlp",
+    "url": "https://arxiv.org/pdf/2105.03404",
+    "paginas": 18,
+    "sha256": "1f71603ad96687afc804fd27c08949a8bdfb854309d7023eb259de247e124d01",
+    "recuperado": true
+  },
+  {
+    "id": "convnext",
+    "url": "https://arxiv.org/pdf/2201.03545",
+    "paginas": 15,
+    "sha256": "1fde2340370d0eb8045bda97fc94da7adb2a7abe8e6ded1a473d22475b945e1a",
+    "recuperado": true
+  },
+  {
+    "id": "inception",
+    "url": "https://arxiv.org/pdf/1512.00567",
+    "paginas": 10,
+    "sha256": "80e30acdfa89bcb41a00c8b221cb9a1dc44256897e75af8762f171ec9dc77b85",
+    "recuperado": true
+  },
+  {
+    "id": "histobenchmark",
+    "url": "https://arxiv.org/pdf/2204.05044",
+    "paginas": 14,
+    "sha256": "cc9fcc1091162a8cb90fdc6dca4fa88db9068d8dec59e576bb3b3a297b6f0011",
+    "recuperado": true
+  },
+  {
+    "id": "nlppathology",
+    "url": "https://arxiv.org/pdf/2302.10406",
+    "paginas": 33,
+    "sha256": "794011e8ba7cd4d46ab15bb9baad24fbb3139022a10a2e4601073fc69ca669b0",
+    "recuperado": true
+  },
+  {
+    "id": "cellvit",
+    "url": "https://arxiv.org/pdf/2306.15350",
+    "paginas": 23,
+    "sha256": "eeb9e9051f5c2944d58f4f15dca28e8fb0976bb43fe9a689fee08e0a427b5f25",
+    "recuperado": true
+  },
+  {
+    "id": "attention",
+    "url": "https://arxiv.org/pdf/1706.03762",
+    "paginas": 15,
+    "sha256": "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+    "recuperado": true
+  },
+  {
+    "id": "patchtst",
+    "url": "https://arxiv.org/pdf/2211.14730",
+    "paginas": 24,
+    "sha256": "ffd4021d25b4959883242f256b0fe4ec42f477f66db78c61bfacf7baa7848b0e",
+    "recuperado": true
+  },
+  {
+    "id": "conformer",
+    "url": "https://arxiv.org/pdf/2005.08100",
+    "paginas": 5,
+    "sha256": "4d53a2d87f7b68b3b5a86d8e4301c5092ae61e260f9c76dab48af34faac9a81f",
+    "recuperado": true
+  },
+  {
+    "id": "mamba",
+    "url": "https://arxiv.org/pdf/2312.00752",
+    "paginas": 36,
+    "sha256": "adf70ed1803c85b1899dec3e21f3af0b124411439e8654b840ea65f7b9f52b2e",
+    "recuperado": true
+  }
+]

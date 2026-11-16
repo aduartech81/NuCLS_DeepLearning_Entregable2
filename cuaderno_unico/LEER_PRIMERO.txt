@@ -1,0 +1,13 @@
+CONTINUACIÓN PARA ENTREGAR HOY
+
+1. Esperar el mensaje de terminación de la cola actual. No abrir este cuaderno mientras la otra ejecución siga activa.
+2. Abrir en Colab, desde Safari, cuaderno_unico/NuCLS_E2_Cierre_y_Pendientes_Unico.ipynb. Conectar la misma cuenta de Drive y GPU. Elegir Ejecutar todo una sola vez y autorizar Drive.
+3. Cuando aparezca CIERRE_URGENTE_RESPALDADO, descargar el ZIP señalado en MyDrive/NuCLS_E2_ENTREGA_URGENTE y guardar este notebook con salidas. Ese ZIP permite integrar el cierre mientras siguen los experimentos largos.
+
+El cuaderno comprueba las65 fuentes antes de preparar dependencias o referencias. No entrena los modelos profundos ya completos. Reutiliza inferencias que pasan comprobaciones de identidad y hash; una inferencia incompleta puede repetirse. Si falta la regresión logística, se ajusta solo con train antes de evaluar reserva. Las15 ablaciones y PCam son experimentos nuevos, posteriores al respaldo urgente.
+
+Si hay una marca de otra sesión, una cuenta equivocada, datos faltantes o un resultado alterado, se detiene sin borrar bloqueos ni reemplazar evidencia. No eliminar la protección para forzar el cierre. El inventario temprano verifica presencia e identidad; el cierre hace después la comprobación profunda de historias, predicciones, hashes y checkpoints.
+
+No se ejecutó este cuaderno en la GPU durante su preparación local. Las pruebas locales no garantizan disponibilidad de GPU, continuidad de Colab ni plazo de finalización. Notebook con salidas y resultados experimentales reales siguen siendo necesarios para entregar.
+
+El cuaderno de solo reserva es una alternativa limitada: no es necesario ejecutarlo además del cuaderno único. E1 permanece intacto.

@@ -1,0 +1,17 @@
+{
+  "celdas": 16,
+  "paquetes_embebidos_verificados": [
+    "d6d6e84818216e7c68d1bcbc5042dd01159a1311de2315a69df81327344efe51",
+    "0850839ac32a6d7fcce3e9608529fc9d7e5f9b483a6a4ba25d6dc1314c4bdd78"
+  ],
+  "sintaxis": "OK",
+  "salidas_fabricadas": false,
+  "ejecutado_en_Colab": false,
+  "PCam_habilitado": true,
+  "limite_epocas_ablacion": 25,
+  "semillas_ablacion": 5,
+  "intervenciones": 3,
+  "pruebas_respaldo_urgente": 3,
+  "resultado_pruebas": "OK con datos sint\u00e9ticos temporales",
+  "orden": "cierre -> ZIP verificado y copia independiente -> experimentos largos"
+}

@@ -1,0 +1,8 @@
+{
+  "estado": "14_PRUEBAS_LOCALES_OK",
+  "entrenamientos_ejecutados": 0,
+  "reserva_real_evaluada": false,
+  "notebook_sha256": "9aa3670d5f5a41cf333b3afd0412cf932adfa73c1432ddd1ef4b0c57e82dad53",
+  "codigo_zip_sha256": "d6d6e84818216e7c68d1bcbc5042dd01159a1311de2315a69df81327344efe51",
+  "nota": "Pruebas numéricas sintéticas y protecciones de reanudación; compatibilidad GPU y checkpoints reales pendiente de ejecución en Colab."
+}

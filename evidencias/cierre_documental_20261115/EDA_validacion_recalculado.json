@@ -1,0 +1,19 @@
+{
+  "fuente_zip": "NuCLS_E2_CONTINUACION_BASES_22_RESULTADOS.zip",
+  "sha256_zip": "58c7fe7ec0c09cd4887f2d1a5c5eaf785c92a60c56682d5ef0c8d9ad7b690862",
+  "archivos_verificados": 31,
+  "recortes": 2049,
+  "pacientes": 21,
+  "clases": {
+    "tumor_nonMitotic": 1108,
+    "nonTILnonMQ_stromal": 344,
+    "lymphocyte": 597
+  },
+  "entropia_bits": 1.4302069986378396,
+  "razon_mayor_menor": 3.2209302325581395,
+  "min_recortes_paciente": 2,
+  "max_recortes_paciente": 231,
+  "fraccion_paciente_mayor": 0.11273792093704246,
+  "pacientes_con_menos_tres_clases": 4,
+  "alcance": "Identidad/etiquetas registradas en predicciones de validación; no verifica imágenes, dHash, etiquetas histológicas ni partición train/reserva"
+}

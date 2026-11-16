@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: nucls-entregable2
+    runtime: static
+    buildCommand: echo "Sitio precompilado y verificado"
+    staticPublishPath: .
+    autoDeploy: true

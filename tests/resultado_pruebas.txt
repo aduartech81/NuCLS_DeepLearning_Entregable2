@@ -1,0 +1,22 @@
+test_configuracion_distinta_no_sobrescribe (test_archivos.Archivos.test_configuracion_distinta_no_sobrescribe) ... ok
+test_exportacion_no_modifica_origen_y_verifica_hash (test_archivos.Archivos.test_exportacion_no_modifica_origen_y_verifica_hash) ... ok
+test_resultado_incompleto_no_se_omite (test_archivos.Archivos.test_resultado_incompleto_no_se_omite) ... ok
+test_checkpoint_equivale_a_ejecucion_continua (test_continuidad.Continuidad.test_checkpoint_equivale_a_ejecucion_continua) ... Exportación de las 66 corridas: /var/folders/1p/00tnhhf919d6kgl2j2vg8r780000gn/T/tmp6hqwdjuu/NuCLS_E2_BASES_66_EVIDENCIAS.zip
+toy semilla=6101 época=1 loss=1.1020 val_F1=0.1667 tiempo=0.1s
+AVISO: predice una sola clase; se registra para revisión, no se oculta.
+toy semilla=6101 época=2 loss=1.1012 val_F1=0.1667 tiempo=0.0s
+AVISO: predice una sola clase; se registra para revisión, no se oculta.
+Evidencia: /var/folders/1p/00tnhhf919d6kgl2j2vg8r780000gn/T/tmp_zjwikg9/full
+toy semilla=6101 época=1 loss=1.1020 val_F1=0.1667 tiempo=0.0s
+AVISO: predice una sola clase; se registra para revisión, no se oculta.
+Evidencia: /var/folders/1p/00tnhhf919d6kgl2j2vg8r780000gn/T/tmp_zjwikg9/resume
+Reanudando toy 6101 época 2
+toy semilla=6101 época=2 loss=1.1012 val_F1=0.1667 tiempo=0.0s
+AVISO: predice una sola clase; se registra para revisión, no se oculta.
+Evidencia: /var/folders/1p/00tnhhf919d6kgl2j2vg8r780000gn/T/tmp_zjwikg9/resume
+ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.464s
+
+OK

@@ -1,0 +1,63 @@
+{
+  "fecha": "2026-11-15",
+  "estado": "EXTENSION_DOCUMENTAL_E1_CONCILIADA_CON_LIMITACIONES",
+  "e1_corte_conservado": true,
+  "recuperacion_heredada": {
+    "pendientes_al_corte_e1": 13,
+    "manuscritos_recuperados_ahora": 1,
+    "aun_no_recuperados": 12
+  },
+  "sintesis_dominio": {
+    "previos": 8,
+    "adicionales": 4,
+    "total": 12,
+    "advertencia": "Referencias de síntesis focalizada; no cifra global de estudios incluidos por PRISMA"
+  },
+  "registros_nuevas_busquedas_institucionales": 0,
+  "estudios_incluidos_prisma_global": null,
+  "deduplicacion": "ViT-DeiT preprint 2211.00749 y congreso 10.1109/ICAISC56366.2023.10085467 representan el mismo estudio; H12 ya pertenece al corpus E1. No sumar como estudios nuevos.",
+  "pendiente": [
+    "Historial original de cadenas y filtros por plataforma no disponible; no reconstruirlo como ejecutado",
+    "Adjudicación de identidad de estudios y versiones para una cifra global única de incluidos; se conserva NR"
+  ],
+  "cruce_doi_dominio": {
+    "referencias": 12,
+    "coincidencias_exactas_e1": 4,
+    "resto": "No equivalente a registros nuevos: requiere revisión de títulos/versiones"
+  },
+  "recuperacion_20261112": "Sin nuevos textos completos verificados; fichas y páginas de autores no se cuentan como recuperación",
+  "bases_heredadas": {
+    "Scopus": 1097,
+    "Web_of_Science": 328,
+    "IEEE_Xplore": 292
+  },
+  "exportaciones_originales": "Tres archivos copiados a base_heredada y verificados por SHA256",
+  "busquedas_nuevas_esta_revision": 0,
+  "interpretacion": "Los 12 no recuperados son una limitación de cobertura, no lecturas pendientes obligatorias; la ampliación E2 es focalizada, no una nueva búsqueda exhaustiva.",
+  "conciliacion_20261115": {
+    "registros_identificados": 1717,
+    "eliminados_automaticamente": 69,
+    "duplicados": 318,
+    "registros_unificados": 1330,
+    "lecturas_heredadas": 166,
+    "categorias": {
+      "sistema_conjunto_o_contextual": 83,
+      "tarea_o_modalidad_adyacente": 49,
+      "sintesis_focal_clasificacion": 21,
+      "fuente_secundaria_o_comentario": 12,
+      "sensibilidad_alerta_editorial": 1
+    },
+    "no_recuperados_E1": 13,
+    "recuperados_E2": 1,
+    "no_recuperados_actuales": 12,
+    "referencias_dominio": 12,
+    "coincidencias_exactas_con_E1": 4,
+    "pares_titulo_similares": 2,
+    "doi_duplicados_entre166": 0,
+    "titulo_duplicado_entre166": 0,
+    "estudios_globales_independientes": null,
+    "limite": "166 informes no equivalen automáticamente a166 estudios independientes; no reconstruir cadenas originales ausentes"
+  },
+  "busquedas_transversales_web_20261115": 3,
+  "nuevas_recuperaciones_20261115": 0
+}

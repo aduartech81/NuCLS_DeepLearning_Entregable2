@@ -1,0 +1,12 @@
+format: jb-book
+root: intro
+chapters:
+  - file: 01_problema
+  - file: 02_eda
+  - file: 03_estado_del_arte
+  - file: 04_metodos
+  - file: 05_resultados
+  - file: 13_piloto_diez
+  - file: 12_galeria_histologica
+  - file: 06_discusion
+  - file: 07_reproducibilidad

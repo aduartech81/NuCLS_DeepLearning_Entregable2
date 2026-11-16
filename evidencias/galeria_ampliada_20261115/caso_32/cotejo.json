@@ -1,0 +1,39 @@
+{
+  "paciente": "TCGA-BH-A0BG",
+  "archivo": "validation/nonTILnonMQ_stromal/TCGA-BH-A0BG-DX1_id-5ea40b3addda5f839899a696_left-65035_top-29826_bottom-30098_right-65316__12.png",
+  "clase_real": "nonTILnonMQ_stromal",
+  "clase_predicha": "lymphocyte",
+  "p_tumor": "0.14071503281593323",
+  "p_linfocito": "0.43530064821243286",
+  "p_estroma": "0.4239843785762787",
+  "modelo": "resnet50",
+  "semilla": 6113,
+  "acierto": false,
+  "imagen": "TCGA-BH-A0BG-DX1_id-5ea40b3addda5f839899a696_left-65035_top-29826_bottom-30098_right-65316",
+  "fila": "12",
+  "tipo": "polyline",
+  "sha_anotaciones": "c264b282a99737745bedeee4acba7bfa107461ac7310c72e3a20ab8fbac8033c",
+  "sha_predicciones": "a89e0226864f4351eaed2714d38de64b07ab8f661188050ba5b59aef3289d8d8",
+  "fuente_predicciones": "final/resnet50_6113/predicciones_validacion.csv",
+  "anotacion": {
+    "": "12",
+    "raw_classification": "fibroblast",
+    "main_classification": "nonTILnonMQ_stromal",
+    "super_classification": "nonTIL_stromal",
+    "type": "polyline",
+    "xmin": "208",
+    "ymin": "165",
+    "xmax": "246",
+    "ymax": "199",
+    "coords_x": "246,246,241,238,222,217,209,208,208,214,219,231,234,243,246",
+    "coords_y": "171,186,193,194,199,198,193,191,186,180,176,169,168,165,171"
+  },
+  "sha_campo": "9dd708c640a799e1147a4cf03eec1bf7c7cbb1bf467db61ea3ad49492ad748a0",
+  "sha_visualizacion": "7f01e42936e70031eb1f580b23038005f37e3b4ea0376c9410dc69b8253f9046",
+  "dimensiones_campo": [
+    351,
+    340
+  ],
+  "vista": "Campo original con núcleo objetivo señalado; no se afirma que el campo completo sea la entrada de128px del modelo",
+  "revision_humana_nueva": false
+}

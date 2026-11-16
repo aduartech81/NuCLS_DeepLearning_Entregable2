@@ -1,0 +1,24 @@
+{
+  "friedman_estadistico": 18.090909090909122,
+  "friedman_p": 0.00011792584709833975,
+  "kendall_W": 0.4111570247933891,
+  "rangos_medios": {
+    "softmaxcnn_bn": 2.6818181818181817,
+    "densenet121": 1.9090909090909092,
+    "resnet50": 1.4090909090909092
+  },
+  "nemenyi": [
+    {
+      "comparacion": "softmaxcnn_bn - densenet121",
+      "p_Nemenyi": 0.02800958033320322
+    },
+    {
+      "comparacion": "softmaxcnn_bn - resnet50",
+      "p_Nemenyi": 7.212017158120254e-05
+    },
+    {
+      "comparacion": "densenet121 - resnet50",
+      "p_Nemenyi": 0.22142986508575957
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+﻿id,requisito,estado,evidencia,pendiente
+01,"Problema, tres RQ e hipótesis",Preparado,book/01_problema.md,Validar diseño final antes de nuevas corridas confirmatorias
+02,EDA orientado a decisiones,Parcial,book/02_eda.md,"Completar casi duplicados, ruido de etiqueta y auditoría de metadatos"
+03,PRISMA y dos bases institucionales,Base heredada verificada,evidencias/literatura_20261111/PRISMA_E2_estado.json,Historial exacto y adjudicación de estudios únicos
+04,Top 10 y cuatro familias como mínimo,Selección documentada; perfil recibido,book/03_estado_del_arte.md,Completar entrenamiento y piloto de los tres entrantes
+05,"Tres modelos base, 22 semillas",Resultados disponibles,evidencias/estadistica_22/resumen.csv,Verificar bytes de evidencias antiguas referenciadas
+06,"Diez adicionales, ajuste y repeticiones",Búsqueda provisional recibida; entrantes parciales,evidencias/drive_20261114/busqueda_seleccionada.csv,Recibir cierre de tres entrantes y pilotos; auditar empates exactos
+07,Referencias trivial y clásica fuerte,Código exploratorio preparado,scripts/baselines_simples.py,Ejecutar; evaluar si descriptores requieren ampliación
+08,Potencia y tamaño final,Escenarios calculados,evidencias/estadistica_22/analisis_completo.json,Estimar dispersión de diferencias con piloto de nuevos modelos
+09,"Pruebas, efectos y multiplicidad",Bases analizadas,book/05_resultados.md,Repetir análisis predefinido con matriz final completa
+10,Calibración e incertidumbre de tres mejores,Plan preparado,book/04_metodos.md,Predicciones por paciente; modelos congelados y diseño de evaluación
+11,Robustez a tres severidades,Plan preparado,book/04_metodos.md,Ejecutar perturbaciones en desarrollo sin selección por reserva
+12,"Interpretabilidad, fidelidad y estabilidad",Pendiente,book/04_metodos.md,Checkpoints y muestras estratificadas predefinidas
+13,"Paper guía, replicación y gap",Propuesta documentada,book/06_discusion.md,Replicación cuantitativa independiente aún no realizada
+14,Techo multi-rater y distancia normalizada,Pendiente,book/06_discusion.md,Correspondencia de anotaciones y evaluación comparable
+15,Jupyter Book y dashboard independientes,Libro compilado y dashboard local,dashboard/index.html,Revisión visual en navegador; publicación independiente pendiente
+16,Reproducción independiente y paquete final,Paquete de avance,SHA256.json,Datos/checkpoints completos y ejecución externa

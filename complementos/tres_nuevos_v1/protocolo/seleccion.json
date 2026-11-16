@@ -1,0 +1,14 @@
+{
+  "version": "TRES_NUEVOS_V1",
+  "modelos": [
+    "convnext_tiny",
+    "inception_v3",
+    "sequencer2d_s"
+  ],
+  "salida": "/content/drive/MyDrive/NuCLS_E2_TRES_NUEVOS_V1",
+  "cuaderno": "NuCLS_E2_Tres_Nuevos_V1.ipynb",
+  "estado": "PREPARADO_NO_EJECUTADO_EN_COLAB",
+  "reserva": "NO_LEER",
+  "origen_motor": "/private/tmp/nucls_e2_next",
+  "nota": "12 corridas de búsqueda y 15 de piloto; piloto opcional separado, no confirmatorio. No sustituye búsqueda provisional actual."
+}

@@ -1,0 +1,15 @@
+title: "NuCLS · Entregable 2"
+author: "Andrés Duarte Chaves"
+execute:
+  execute_notebooks: "off"
+only_build_toc_files: true
+sphinx:
+  config:
+    language: es
+    html_static_path: ["_static"]
+    html_css_files: ["e2.css"]
+    html_theme_options:
+      show_navbar_depth: 2
+      extra_footer: "E2 · Clasificación nuclear reproducible · 15 de noviembre de 2026"
+
+copyright: "2026"

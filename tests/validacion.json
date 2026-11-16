@@ -1,0 +1,8 @@
+{
+  "fecha": "2026-11-11",
+  "pruebas_unitarias": 4,
+  "arquitecturas_con_forward_backward_CPU_verificado": 10,
+  "CUDA_verificado": false,
+  "entrenamientos_adicionales_reales_ejecutados": 0,
+  "nota": "Prueba local con Torch 2.15.0/Torchvision 0.29.2; Colab conserva entorno base 2.14.1/0.29.1 y ejecuta perfil de compatibilidad antes de entrenar."
+}

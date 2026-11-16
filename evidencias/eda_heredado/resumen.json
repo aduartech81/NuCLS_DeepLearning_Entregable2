@@ -1,0 +1,80 @@
+{
+  "dominio": {
+    "pacientes": 104,
+    "clases": 2,
+    "balanced_accuracy": 0.6769936890418818,
+    "ic95_percentil": [
+      0.5579388984509467,
+      0.7845668387837063
+    ],
+    "sha256": "9ce15c8997cb3794c51e2f2c16fcf93f5c3ccb9192c1e44b4e852fba4c5bb7b4"
+  },
+  "sitio": {
+    "pacientes": 77,
+    "clases": 8,
+    "balanced_accuracy": 0.39826388888888886,
+    "ic95_percentil": [
+      0.2937413194444445,
+      0.5038194444444444
+    ],
+    "sha256": "2bd1ef67066bb861de374b7279a5d8de11435fa3c49e3c28a83fb027c6daa67f"
+  },
+  "atipicos": {
+    "variables": [
+      "R_media",
+      "G_media",
+      "B_media",
+      "R_sd",
+      "G_sd",
+      "B_sd",
+      "saturacion_media",
+      "fondo_fraccion",
+      "laplaciano_var",
+      "entropia_gris"
+    ],
+    "transformacion": "log1p de Laplaciano; mediana e IQR de entrenamiento",
+    "umbral_p95_train": 139.38126849996846,
+    "pacientes_por_grupo": {
+      "train": 83,
+      "validation": 21
+    },
+    "priorizados_por_grupo": {
+      "train": 5,
+      "validation": 1
+    },
+    "mediana_train": {
+      "R_media": 0.642214546951617,
+      "G_media": 0.4413459329044087,
+      "B_media": 0.6345642089843868,
+      "R_sd": 0.1847363204758977,
+      "G_sd": 0.1880405097420307,
+      "B_sd": 0.1475664565743804,
+      "saturacion_media": 0.3653821151094216,
+      "fondo_fraccion": 0.005615234375,
+      "laplaciano_var": 0.0019246389868217031,
+      "entropia_gris": 4.415434925125344
+    },
+    "iqr_train": {
+      "R_media": 0.12055981205961075,
+      "G_media": 0.1661254882812946,
+      "B_media": 0.11255858178229894,
+      "R_sd": 0.03574592342810043,
+      "G_sd": 0.04819951803595096,
+      "B_sd": 0.03347934035397085,
+      "saturacion_media": 0.1486360776375515,
+      "fondo_fraccion": 0.016510009765625,
+      "laplaciano_var": 0.0009531807214303153,
+      "entropia_gris": 0.18144818182635003
+    },
+    "sha256_fuente": "783951a1cd16a3e849f5d8afe0849c9e3ceec79b27ec967ebe99fa1fc1a5ea83"
+  },
+  "metodo": {
+    "semilla": 4101,
+    "replicas": 5000,
+    "unidad": "paciente",
+    "intervalos": "Remuestreo estratificado por etiqueta real de predicciones OOF fijas; sin reentrenamiento. Condicionados a TSS y partición observados; no incluyen incertidumbre de ajuste ni entre centros.",
+    "outliers": "Priorización exploratoria, no exclusión. Umbral empírico; no p-valores ni diagnóstico de mala calidad.",
+    "reserva_abierta": false
+  }
+}
+

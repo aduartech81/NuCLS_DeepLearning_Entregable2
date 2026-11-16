@@ -1,0 +1,7 @@
+{
+  "pruebas_unitarias": 4,
+  "resultado": "aprobadas",
+  "corridas_reales_procesadas": 31,
+  "coincidencia_macro_f1": "tolerancia 1e-7",
+  "alcance": "Solo predicciones presentes; 35 corridas antiguas requieren exportaci\u00f3n completa"
+}

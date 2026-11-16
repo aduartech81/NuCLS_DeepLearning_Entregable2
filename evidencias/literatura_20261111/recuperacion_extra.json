@@ -1,0 +1,31 @@
+[
+  {
+    "id": "fuera_alcance_landslide",
+    "url": "https://arxiv.org/pdf/2206.00515",
+    "paginas": 17,
+    "sha256": "c632de2769908227766a67f2a8c1155427d32ef0f6bc0cae3720ab80bcc1ff12",
+    "recuperado": true,
+    "excluir": "T\u00edtulo no corresponde a Sequencer; no usado como evidencia"
+  },
+  {
+    "id": "deit_histo",
+    "url": "https://arxiv.org/pdf/2211.00749",
+    "paginas": 8,
+    "sha256": "0dc4f9288074c5b4c7c0a657a00daa56350caef9074900ff492f12cafe09f451",
+    "recuperado": true
+  },
+  {
+    "id": "resnext_histo",
+    "url": "https://link.springer.com/content/pdf/10.1186/s13000-023-01380-2.pdf",
+    "paginas": 11,
+    "sha256": "dc238f23a4789b4dcdb92ad29ea03a44af422d5d547d324a720c3915bfbed286",
+    "recuperado": true
+  },
+  {
+    "id": "sequencer",
+    "url": "https://arxiv.org/pdf/2205.01972",
+    "paginas": 26,
+    "sha256": "09e4913f136d910140d0500b5b9ccc19f8c2221540ad5207f21983feff4a7eaa",
+    "recuperado": true
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "timm": "1.0.22",
+  "torch": "2.15.0",
+  "entrada": [
+    2,
+    3,
+    128,
+    128
+  ],
+  "pruebas": [
+    {
+      "modelo": "convnext_tiny",
+      "parametros_3_clases": 27822435,
+      "salida": [
+        2,
+        3
+      ],
+      "forward_backward_cpu": true,
+      "segundos_cpu_prueba": 1.446
+    },
+    {
+      "modelo": "inception_v3",
+      "parametros_3_clases": 21791715,
+      "salida": [
+        2,
+        3
+      ],
+      "forward_backward_cpu": true,
+      "segundos_cpu_prueba": 0.564
+    },
+    {
+      "modelo": "sequencer2d_s",
+      "parametros_3_clases": 27267843,
+      "salida": [
+        2,
+        3
+      ],
+      "forward_backward_cpu": true,
+      "segundos_cpu_prueba": 0.457
+    }
+  ]
+}

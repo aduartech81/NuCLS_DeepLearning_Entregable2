@@ -1,3 +1,3 @@
-# Jupyter Book del Entregable 2
+# Jupyter Book · NuCLS E2
 
-Informe independiente en preparación. Incorporará evolución desde las bases, protocolo, revisión Top 10, EDA orientado a decisiones, benchmark, incertidumbre, costos y reproducibilidad. El libro publicado del Entregable 1 permanece intacto.
+Fuente del informe compilado. Abrir `_build/html/index.html`.

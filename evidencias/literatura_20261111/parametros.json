@@ -1,0 +1,106 @@
+[
+  {
+    "modelo": "resnet18",
+    "parametros": 11178051,
+    "timm": "1.0.22",
+    "img_size": 128,
+    "pretrained": false,
+    "num_classes": 3
+  },
+  {
+    "modelo": "resnext50_32x4d",
+    "parametros": 22986051,
+    "timm": "1.0.22",
+    "img_size": 128,
+    "pretrained": false,
+    "num_classes": 3
+  },
+  {
+    "modelo": "mobilenetv3_small_100",
+    "parametros": 1520931,
+    "timm": "1.0.22",
+    "img_size": 128,
+    "pretrained": false,
+    "num_classes": 3
+  },
+  {
+    "modelo": "efficientnet_b0",
+    "parametros": 4011391,
+    "timm": "1.0.22",
+    "img_size": 128,
+    "pretrained": false,
+    "num_classes": 3
+  },
+  {
+    "modelo": "deit_tiny_patch16_224",
+    "parametros": 5499651,
+    "timm": "1.0.22",
+    "img_size": 128,
+    "pretrained": false,
+    "num_classes": 3
+  },
+  {
+    "modelo": "swin_tiny_patch4_window7_224",
+    "parametros": 27515901,
+    "timm": "1.0.22",
+    "img_size": 128,
+    "pretrained": false,
+    "num_classes": 3
+  },
+  {
+    "modelo": "mobilevit_xxs",
+    "parametros": 951987,
+    "timm": "1.0.22",
+    "img_size": 128,
+    "pretrained": false,
+    "num_classes": 3
+  },
+  {
+    "modelo": "mobilevit_xs",
+    "parametros": 1934003,
+    "timm": "1.0.22",
+    "img_size": 128,
+    "pretrained": false,
+    "num_classes": 3
+  },
+  {
+    "modelo": "mixer_s16_224",
+    "parametros": 17475075,
+    "timm": "1.0.22",
+    "img_size": 128,
+    "pretrained": false,
+    "num_classes": 3
+  },
+  {
+    "modelo": "resmlp_12_224",
+    "parametros": 14553603,
+    "timm": "1.0.22",
+    "img_size": 128,
+    "pretrained": false,
+    "num_classes": 3
+  },
+  {
+    "modelo": "convnext_tiny",
+    "parametros": 27822435,
+    "timm": "1.0.22",
+    "img_size": 128,
+    "pretrained": false,
+    "num_classes": 3
+  },
+  {
+    "modelo": "inception_v3",
+    "parametros": 21791715,
+    "timm": "1.0.22",
+    "img_size": 128,
+    "pretrained": false,
+    "num_classes": 3
+  },
+  {
+    "modelo": "sequencer2d_s",
+    "parametros": 27267843,
+    "timm": "1.0.22",
+    "img_size": 128,
+    "pretrained": false,
+    "num_classes": 3
+  }
+]

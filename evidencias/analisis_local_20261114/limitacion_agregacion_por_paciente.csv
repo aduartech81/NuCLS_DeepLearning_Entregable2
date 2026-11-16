@@ -1,0 +1,4 @@
+modelo,macro_f1_global,min_macro_f1_paciente,max_macro_f1_paciente,brecha_global_peor_paciente,nota
+densenet121,0.8165631855345818,0.3333333333333333,0.9663299663299663,0.48322985220124853,Heterogeneidad descriptiva: soporte y clases por paciente distintos; no efecto causal ni límite del paper original
+resnet50,0.8208710212578119,0.3333333333333333,0.9179879715691635,0.48753768792447855,Heterogeneidad descriptiva: soporte y clases por paciente distintos; no efecto causal ni límite del paper original
+softmaxcnn_bn,0.7808523704718479,0.3333333333333333,0.9765143587954889,0.44751903713851454,Heterogeneidad descriptiva: soporte y clases por paciente distintos; no efecto causal ni límite del paper original

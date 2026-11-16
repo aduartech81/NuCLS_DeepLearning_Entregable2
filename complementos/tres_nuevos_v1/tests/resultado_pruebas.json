@@ -1,0 +1,14 @@
+{
+  "fecha": "2026-11-11",
+  "pruebas": 6,
+  "resultado": "OK",
+  "incluye": [
+    "reanudación equivalente a ejecución continua en modelo pequeño",
+    "rechazo de carpeta anterior",
+    "respeto de bloqueo previo",
+    "autorización obligatoria",
+    "configuración inmutable",
+    "resultado incompleto no omitido"
+  ],
+  "limite": "No equivale a entrenamiento ni prueba CUDA de los tres modelos"
+}

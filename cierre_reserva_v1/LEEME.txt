@@ -1,0 +1,23 @@
+NuCLS E2 — Cierre de reserva y estadística V1
+
+Ejecutar SOLO cuando la cola actual haya terminado y en la misma cuenta de Drive que conserva los checkpoints.
+Abrir NuCLS_E2_Cierre_Reserva_Estadistica_V1.ipynb en Colab desde Safari, seleccionar GPU y Ejecutar todo. Autorizar Drive al inicio. Después la ejecución es secuencial.
+No ejecutar simultáneamente otro cuaderno sobre estas carpetas.
+
+Entradas: NuCLS_V2_DATOS.zip; índice de NuCLS_E2_CONTINUACION_BASES_22 y sus rutas originales; mejor.pt, resultado.json, historia.json y predicciones_validacion.csv de 13 modelos × semillas 6101–6105; carpetas piloto de adicionales y tres nuevos. La búsqueda con semilla 7001 NO sustituye al piloto. Para la referencia clásica se requieren los archivos ya guardados de NuCLS_E2_REFERENCIAS_SIMPLES.
+
+El cuaderno verifica las 65 corridas y reproduce validación antes de abrir imágenes de reserva. Si falta una corrida o un checkpoint, se detiene e informa los faltantes; no entrena ni rellena resultados. Los checkpoints de E1 solo se leen. Reutiliza la evaluación histórica de E1 cuando coinciden las huellas y las identidades. Las demás predicciones se guardan y se reutilizan en una reanudación con las mismas entradas, código y entorno. Una inferencia interrumpida antes de guardar puede repetirse; nunca se repite entrenamiento.
+
+Escribe solo en MyDrive/NuCLS_E2_CIERRE_RESERVA_V1 y su ZIP de resultados, además del espacio temporal /content. Una marca de ejecución de otra sesión se conserva y requiere verificar que esa sesión terminó. No se eliminan archivos de E1 ni bloqueos ajenos. La cuenta de Drive debe contener también las rutas antiguas referenciadas por el índice.
+
+Produce: métricas y predicciones por corrida; calibración fija/adaptativa, Brier, pendiente/intercepto; bootstrap emparejado por paciente (2.000); t pareado, Wilcoxon, permutación de signos y por paciente, Holm10; d_z e IC; MDE aproximada; Friedman/Nemenyi y diferencia crítica; DeLong/McNemar/binomial/AUC frente a 0,5 como diagnósticos iid; brecha train-val-reserva; latencia, memoria de inferencia y FLOPs parciales; frontera de Pareto por validación; curvas existentes; referencias simples guardadas; HTML y ZIP.
+
+Los 5 pares no acreditan potencia suficiente. La reserva ya fue vista en E1 y contiene 6 pacientes, no 969 pacientes. Las pruebas por recorte son diagnósticas y no reemplazan inferencia agrupada. El bootstrap fija el conjunto de semillas y remuestrea pacientes. El margen de brecha 0,02 es operativo del cierre, no criterio clínico ni preregistro temprano. La aproximación de potencia usa alfa 0,005 bilateral y 80%; no demuestra retrospectivamente equivalencia. El cierre no ejecuta nuevos pilotos, ablaciones, réplica PCam, robustez, Grad-CAM ni predicción conforme.
+
+Al finalizar: descargar NuCLS_E2_CIERRE_RESERVA_V1_RESULTADOS.zip y guardar el notebook ejecutado con sus salidas. Para el HTML, extraer el ZIP completo y abrir informe.html; los gráficos usan rutas relativas.
+
+Validación local: pruebas numéricas con datos sintéticos; las predicciones reales y la compatibilidad de GPU se verifican al ejecutar el cuaderno. No se han ejecutado aquí los checkpoints reales de Drive.
+
+Referencias técnicas:
+https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.studentized_range.html
+https://docs.pytorch.org/docs/stable/generated/torch.load.html

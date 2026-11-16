@@ -1,0 +1,3 @@
+informe_a,informe_b,similitud_titulo,decision,fundamento,fuente_a,fuente_b
+LIT-0542,LIT-0991,0.8538011695906432,No fusionar automáticamente,STi-HoverNet con distilación y TRG-DilatedHoVer: variantes distintas según fichas; independencia de datos no acreditada,https://doi.org/10.1109/icipca61593.2024.10709145,https://link.springer.com/article/10.1007/s00521-023-08394-3
+LIT-0545,LIT-0966,0.8427672955974843,No fusionar automáticamente,DT-Yolact y StarDist: métodos distintos,https://hpcn.exeter.ac.uk/iucc2021/proceedings/pdfs/IUCC-CIT-DSCI-SmartCNS2021-40WP54zLa9Wagib9WOs48p/666700a416/666700a416.pdf,https://ieeexplore-ieee-org.ezproxy.uninorte.edu.co/document/9854534

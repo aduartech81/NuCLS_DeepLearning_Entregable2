@@ -1,0 +1,20 @@
+{
+  "celdas": 16,
+  "codigo_compila": true,
+  "paquetes": [
+    {
+      "celda": 4,
+      "sha256": "49997080c0e84ecae5544d8fb4227339da81e104bdc255c0fb684c838167523a",
+      "archivos": 9
+    },
+    {
+      "celda": 13,
+      "sha256": "0850839ac32a6d7fcce3e9608529fc9d7e5f9b483a6a4ba25d6dc1314c4bdd78",
+      "archivos": 13
+    }
+  ],
+  "ejecucion_GPU_verificada": false,
+  "correccion": "MDE: acotaci\u00f3n progresiva para evitar NaN por no centralidad extrema",
+  "pruebas_locales": 24,
+  "GPU_ejecutada": false
+}

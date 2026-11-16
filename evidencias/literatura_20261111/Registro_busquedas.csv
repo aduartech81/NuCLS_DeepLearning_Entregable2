@@ -1,0 +1,37 @@
+﻿fecha,canal,consulta,resultados_reportados,registros_recuperados,estado
+2026-11-11,OpenAlex API / metadatos,https://api.openalex.org/works?search=CellViT%3A+Vision+Transformers+for+precise+cell+segmentation+and+classification&per-page=3,265,3,"Ejecutada; búsqueda por relevancia, no censo de cribado"
+2026-11-11,OpenAlex API / metadatos,https://api.openalex.org/works?search=CMT%3A+Convolutional+Neural+Networks+Meet+Vision+Transformers&per-page=3,783,3,"Ejecutada; búsqueda por relevancia, no censo de cribado"
+2026-11-11,OpenAlex API / metadatos,https://api.openalex.org/works?search=A+ConvNet+for+the+2020s&per-page=3,7525,3,"Ejecutada; búsqueda por relevancia, no censo de cribado"
+2026-11-11,OpenAlex API / metadatos,https://api.openalex.org/works?search=Transformer-based+unsupervised+contrastive+learning+for+histopathological+image+classification&per-page=3,3286,3,"Ejecutada; búsqueda por relevancia, no censo de cribado"
+2026-11-11,OpenAlex API / metadatos,https://api.openalex.org/works?search=Training+data-efficient+image+transformers+%26+distillation+through+attention&per-page=3,53771,3,"Ejecutada; búsqueda por relevancia, no censo de cribado"
+2026-11-11,OpenAlex API / metadatos,https://api.openalex.org/works?search=EfficientNet%3A+Rethinking+Model+Scaling+for+Convolutional+Neural+Networks&per-page=3,21585,3,"Ejecutada; búsqueda por relevancia, no censo de cribado"
+2026-11-11,OpenAlex API / metadatos,https://api.openalex.org/works?search=Rethinking+the+Inception+Architecture+for+Computer+Vision&per-page=3,32561,3,"Ejecutada; búsqueda por relevancia, no censo de cribado"
+2026-11-11,OpenAlex API / metadatos,https://api.openalex.org/works?search=MLP-Mixer%3A+An+all-MLP+Architecture+for+Vision&per-page=3,5463,3,"Ejecutada; búsqueda por relevancia, no censo de cribado"
+2026-11-11,OpenAlex API / metadatos,https://api.openalex.org/works?search=Searching+for+MobileNetV3&per-page=3,7087,3,"Ejecutada; búsqueda por relevancia, no censo de cribado"
+2026-11-11,OpenAlex API / metadatos,https://api.openalex.org/works?search=MobileViT%3A+Light-weight%2C+General-purpose%2C+and+Mobile-friendly+Vision+Transformer&per-page=3,1506,3,"Ejecutada; búsqueda por relevancia, no censo de cribado"
+2026-11-11,OpenAlex API / metadatos,https://api.openalex.org/works?search=A+Comparative+Analysis+of+Machine+Learning+and+Deep+Learning+Approaches+for+Multiclass+Nucleus+Classification+in+Histological+Images&per-page=3,308,3,"Ejecutada; búsqueda por relevancia, no censo de cribado"
+2026-11-11,OpenAlex API / metadatos,https://api.openalex.org/works?search=ResMLP%3A+Feedforward+networks+for+image+classification+with+data-efficient+training&per-page=3,575,3,"Ejecutada; búsqueda por relevancia, no censo de cribado"
+2026-11-11,OpenAlex API / metadatos,https://api.openalex.org/works?search=Deep+Residual+Learning+for+Image+Recognition&per-page=3,395506,3,"Ejecutada; búsqueda por relevancia, no censo de cribado"
+2026-11-11,OpenAlex API / metadatos,https://api.openalex.org/works?search=Aggregated+Residual+Transformations+for+Deep+Neural+Networks&per-page=3,91934,3,"Ejecutada; búsqueda por relevancia, no censo de cribado"
+2026-11-11,OpenAlex API / metadatos,https://api.openalex.org/works?search=Sequencer%3A+Deep+LSTM+for+Image+Classification&per-page=3,127657,3,"Ejecutada; búsqueda por relevancia, no censo de cribado"
+2026-11-11,OpenAlex API / metadatos,https://api.openalex.org/works?search=Swin+Transformer%3A+Hierarchical+Vision+Transformer+using+Shifted+Windows&per-page=3,25828,3,"Ejecutada; búsqueda por relevancia, no censo de cribado"
+2026-11-11,OpenAlex API / metadatos,https://api.openalex.org/works?search=Towards+a+general-purpose+foundation+model+for+computational+pathology&per-page=3,33602,3,"Ejecutada; búsqueda por relevancia, no censo de cribado"
+2026-11-11,OpenAlex API / metadatos,https://api.openalex.org/works?search=Very+Deep+Convolutional+Networks+for+Large-Scale+Image+Recognition&per-page=3,344828,3,"Ejecutada; búsqueda por relevancia, no censo de cribado"
+2026-11-11,OpenAlex API / metadatos,https://api.openalex.org/works?search=An+Image+is+Worth+16x16+Words%3A+Transformers+for+Image+Recognition+at+Scale&per-page=3,47203,3,"Ejecutada; búsqueda por relevancia, no censo de cribado"
+2026-11-11,OpenAlex API / metadatos,https://api.openalex.org/works?search=VMamba%3A+Visual+State+Space+Model&per-page=3,2153,3,"Ejecutada; búsqueda por relevancia, no censo de cribado"
+2026-11-11,Motor web / descubrimiento,NuCLS nucleus classification MobileViT Swin Transformer EfficientNet ResNeXt histopathology benchmark,NR,No exportación exhaustiva,Ejecutada; no sustituye Scopus/WoS/IEEE
+2026-11-11,Motor web / descubrimiento,histopathology nuclei classification MLP Mixer ResMLP MobileViT,NR,No exportación exhaustiva,Ejecutada; no sustituye Scopus/WoS/IEEE
+2026-11-11,Motor web / descubrimiento,"(""self-attention"" OR ""Transformer"") ""machine translation"" ""transfer""",NR,No exportación exhaustiva,Ejecutada; no sustituye Scopus/WoS/IEEE
+2026-11-11,Motor web / descubrimiento,"(""convolution"" AND ""attention"") ""speech recognition"" ""Conformer""",NR,No exportación exhaustiva,Ejecutada; no sustituye Scopus/WoS/IEEE
+2026-11-11,Motor web / descubrimiento,"(""patch"" AND ""Transformer"") ""time series"" ""transfer"" PatchTST",NR,No exportación exhaustiva,Ejecutada; no sustituye Scopus/WoS/IEEE
+2026-11-11,Motor web / descubrimiento,"site.ieeexplore.ieee.org ""nuclei classification"" transformer histopathology",NR,No exportación exhaustiva,Ejecutada; no sustituye Scopus/WoS/IEEE
+2026-11-11,Motor web / descubrimiento,"site.scopus.com ""nuclei"" ""classification"" ""transformer""",NR,No exportación exhaustiva,Ejecutada; no sustituye Scopus/WoS/IEEE
+2026-11-11,Motor web / descubrimiento,"histopathology ""ResMLP"" classification",NR,No exportación exhaustiva,Ejecutada; no sustituye Scopus/WoS/IEEE
+2026-11-11,Motor web / descubrimiento,"histopathology ""MLP-Mixer"" classification",NR,No exportación exhaustiva,Ejecutada; no sustituye Scopus/WoS/IEEE
+2026-11-11,Motor web / descubrimiento,"""histopathology"" ""ResNeXt50"" classification",NR,No exportación exhaustiva,Ejecutada; no sustituye Scopus/WoS/IEEE
+2026-11-11,Motor web / descubrimiento,"""histopathology"" ""MobileNetV3"" classification",NR,No exportación exhaustiva,Ejecutada; no sustituye Scopus/WoS/IEEE
+2026-11-11,Motor web / descubrimiento,"""histopathology"" ""DeiT"" classification",NR,No exportación exhaustiva,Ejecutada; no sustituye Scopus/WoS/IEEE
+2026-11-11,Motor web / descubrimiento,"""histopathology"" ""ResMLP""",NR,No exportación exhaustiva,Ejecutada; no sustituye Scopus/WoS/IEEE
+2026-11-11,Motor web / descubrimiento,"""10.1016/j.jpi.2024.100377"" PMC",NR,No exportación exhaustiva,Ejecutada; no sustituye Scopus/WoS/IEEE
+2026-11-11,Motor web / descubrimiento,"""10.1016/j.media.2022.102685"" ResNet18",NR,No exportación exhaustiva,Ejecutada; no sustituye Scopus/WoS/IEEE
+2026-11-11,Motor web / descubrimiento,Sequencer Deep LSTM for Image Classification arxiv Tatsunami Taki,NR,No exportación exhaustiva,Ejecutada; no sustituye Scopus/WoS/IEEE

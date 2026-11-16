@@ -1,0 +1,39 @@
+{
+  "paciente": "TCGA-BH-A0B3",
+  "archivo": "validation/lymphocyte/TCGA-BH-A0B3-DX1_id-5ea40a41ddda5f839898cda9_left-83799_top-42424_bottom-42708_right-84062__25.png",
+  "clase_real": "lymphocyte",
+  "clase_predicha": "nonTILnonMQ_stromal",
+  "p_tumor": "0.01951763778924942",
+  "p_linfocito": "0.1349656730890274",
+  "p_estroma": "0.8455166816711426",
+  "modelo": "resnet50",
+  "semilla": 6113,
+  "acierto": false,
+  "imagen": "TCGA-BH-A0B3-DX1_id-5ea40a41ddda5f839898cda9_left-83799_top-42424_bottom-42708_right-84062",
+  "fila": "25",
+  "tipo": "rectangle",
+  "sha_anotaciones": "5b1a289bc9f464037916be344db5e9b926673bc4059a44b4334120bbc1bf8cb0",
+  "sha_predicciones": "a89e0226864f4351eaed2714d38de64b07ab8f661188050ba5b59aef3289d8d8",
+  "fuente_predicciones": "final/resnet50_6113/predicciones_validacion.csv",
+  "anotacion": {
+    "": "25",
+    "raw_classification": "lymphocyte",
+    "main_classification": "lymphocyte",
+    "super_classification": "sTIL",
+    "type": "rectangle",
+    "xmin": "66",
+    "ymin": "80",
+    "xmax": "96",
+    "ymax": "115",
+    "coords_x": "66,96,96,66,66",
+    "coords_y": "80,80,115,115,80"
+  },
+  "sha_campo": "05334f72ca7e4efd9b05a60638d1b0d762fafdcefb6813d49960ded1366ea66e",
+  "sha_visualizacion": "0c669d46026a6cf1bca59b64c2001627674a46bbd6f7f36f760fafc45242648f",
+  "dimensiones_campo": [
+    326,
+    352
+  ],
+  "vista": "Campo original con núcleo objetivo señalado; no se afirma que el campo completo sea la entrada de128px del modelo",
+  "revision_humana_nueva": false
+}

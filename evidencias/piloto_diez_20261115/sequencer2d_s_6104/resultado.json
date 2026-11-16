@@ -1,0 +1,59 @@
+{
+  "modelo": "sequencer2d_s",
+  "semilla": 6104,
+  "mejor_epoca": 18,
+  "epocas_ejecutadas": 23,
+  "parametros": 27267843,
+  "segundos": 4104.146391787985,
+  "validacion": {
+    "macro_f1": 0.772142886768716,
+    "accuracy": 0.8218643240605173,
+    "balanced_accuracy": 0.7673515819754,
+    "confusion": [
+      [
+        992,
+        23,
+        93
+      ],
+      [
+        59,
+        491,
+        47
+      ],
+      [
+        101,
+        42,
+        201
+      ]
+    ],
+    "clases": [
+      {
+        "clase": "tumor_nonMitotic",
+        "precision": 0.8611111111111112,
+        "recall": 0.8953068592057761,
+        "f1": 0.8778761061946904,
+        "soporte": 1108
+      },
+      {
+        "clase": "lymphocyte",
+        "precision": 0.8830935251798561,
+        "recall": 0.8224455611390284,
+        "f1": 0.8516912402428447,
+        "soporte": 597
+      },
+      {
+        "clase": "nonTILnonMQ_stromal",
+        "precision": 0.5894428152492669,
+        "recall": 0.5843023255813954,
+        "f1": 0.5868613138686132,
+        "soporte": 344
+      }
+    ]
+  },
+  "val_loss": 0.5210006134270924,
+  "lr": 0.0001,
+  "weight_decay": 0.0,
+  "inferencia_ms_por_recorte_mediana": 3.4476621406156482,
+  "inferencia_batch": 32,
+  "estado": "FASE_COMPLETADA_VALIDACION"
+}

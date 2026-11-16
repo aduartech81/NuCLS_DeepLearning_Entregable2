@@ -1,0 +1,522 @@
+{
+  "resnet": [
+    {
+      "id": "https://openalex.org/W2949650786",
+      "doi": "https://doi.org/10.48550/arxiv.1512.03385",
+      "title": "Deep Residual Learning for Image Recognition",
+      "publication_year": 2015,
+      "publication_date": "2015-12-10",
+      "cited_by_count": 12953
+    },
+    {
+      "id": "https://openalex.org/W2194775991",
+      "doi": "https://doi.org/10.1109/cvpr.2016.90",
+      "title": "Deep Residual Learning for Image Recognition",
+      "publication_year": 2016,
+      "publication_date": "2016-06-01",
+      "cited_by_count": 243173
+    },
+    {
+      "id": "https://openalex.org/W4295122555",
+      "doi": "https://doi.org/10.3390/app12188972",
+      "title": "Deep Residual Learning for Image Recognition: A Survey",
+      "publication_year": 2022,
+      "publication_date": "2022-09-07",
+      "cited_by_count": 1181
+    }
+  ],
+  "resnext": [
+    {
+      "id": "https://openalex.org/W2549139847",
+      "doi": "https://doi.org/10.1109/cvpr.2017.634",
+      "title": "Aggregated Residual Transformations for Deep Neural Networks",
+      "publication_year": 2017,
+      "publication_date": "2017-07-01",
+      "cited_by_count": 12812
+    },
+    {
+      "id": "https://openalex.org/W4312645466",
+      "doi": "https://doi.org/10.1109/itc-cscc55581.2022.9895054",
+      "title": "Automatic Fall Detection using Deep Neural Networks with Aggregated Residual Transformation",
+      "publication_year": 2022,
+      "publication_date": "2022-07-05",
+      "cited_by_count": 10
+    },
+    {
+      "id": "https://openalex.org/W3170540448",
+      "doi": "https://doi.org/10.48550/arxiv.2102.04159",
+      "title": "Deep Residual Learning in Spiking Neural Networks",
+      "publication_year": 2021,
+      "publication_date": "2021-02-08",
+      "cited_by_count": 365
+    }
+  ],
+  "mobilenetv3": [
+    {
+      "id": "https://openalex.org/W2944779197",
+      "doi": "https://doi.org/10.1109/iccv.2019.00140",
+      "title": "Searching for MobileNetV3",
+      "publication_year": 2019,
+      "publication_date": "2019-10-01",
+      "cited_by_count": 10794
+    },
+    {
+      "id": "https://openalex.org/W3015362971",
+      "doi": "https://doi.org/10.1109/icassp40776.2020.9054428",
+      "title": "MoGA: Searching Beyond Mobilenetv3",
+      "publication_year": 2020,
+      "publication_date": "2020-04-09",
+      "cited_by_count": 56
+    },
+    {
+      "id": "https://openalex.org/W3025231304",
+      "doi": null,
+      "title": "[Slide] MOGA: Searching Beyond MobileNetV3",
+      "publication_year": 2020,
+      "publication_date": "2020-05-13",
+      "cited_by_count": 0
+    }
+  ],
+  "efficientnet": [
+    {
+      "id": "https://openalex.org/W2946948417",
+      "doi": "https://doi.org/10.48550/arxiv.1905.11946",
+      "title": "EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks",
+      "publication_year": 2019,
+      "publication_date": "2019-05-28",
+      "cited_by_count": 19602
+    },
+    {
+      "id": "https://openalex.org/W3080406710",
+      "doi": "https://doi.org/10.1016/j.asoc.2020.106691",
+      "title": "Automated medical diagnosis of COVID-19 through EfficientNet convolutional neural network",
+      "publication_year": 2020,
+      "publication_date": "2020-08-29",
+      "cited_by_count": 415
+    },
+    {
+      "id": "https://openalex.org/W3036289652",
+      "doi": "https://doi.org/10.48550/arxiv.2006.11538",
+      "title": "Pyramidal Convolution: Rethinking Convolutional Neural Networks for Visual Recognition",
+      "publication_year": 2020,
+      "publication_date": "2020-06-20",
+      "cited_by_count": 210
+    }
+  ],
+  "deit": [
+    {
+      "id": "https://openalex.org/W3116489684",
+      "doi": "https://doi.org/10.48550/arxiv.2012.12877",
+      "title": "Training data-efficient image transformers & distillation through attention",
+      "publication_year": 2020,
+      "publication_date": "2020-12-23",
+      "cited_by_count": 4577
+    },
+    {
+      "id": "https://openalex.org/W4376983091",
+      "doi": null,
+      "title": "Training data-efficient image transformers & distillation through attention",
+      "publication_year": 2021,
+      "publication_date": "2021-07-19",
+      "cited_by_count": 36
+    },
+    {
+      "id": "https://openalex.org/W4312677967",
+      "doi": "https://doi.org/10.1109/cvpr52688.2022.01174",
+      "title": "DearKD: Data-Efficient Early Knowledge Distillation for Vision Transformers",
+      "publication_year": 2022,
+      "publication_date": "2022-06-01",
+      "cited_by_count": 84
+    }
+  ],
+  "swin": [
+    {
+      "id": "https://openalex.org/W3138516171",
+      "doi": "https://doi.org/10.1109/iccv48922.2021.00986",
+      "title": "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows",
+      "publication_year": 2021,
+      "publication_date": "2021-10-01",
+      "cited_by_count": 38556
+    },
+    {
+      "id": "https://openalex.org/W4392902646",
+      "doi": "https://doi.org/10.1109/icassp48485.2024.10447726",
+      "title": "Speech Swin-Transformer: Exploring a Hierarchical Transformer with Shifted Windows for Speech Emotion Recognition",
+      "publication_year": 2024,
+      "publication_date": "2024-03-18",
+      "cited_by_count": 45
+    },
+    {
+      "id": "https://openalex.org/W4221163766",
+      "doi": "https://doi.org/10.1007/978-3-031-08999-2_22",
+      "title": "Swin UNETR: Swin Transformers for Semantic Segmentation of Brain Tumors in MRI Images",
+      "publication_year": 2022,
+      "publication_date": "2022-01-01",
+      "cited_by_count": 2614
+    }
+  ],
+  "mobilevit": [
+    {
+      "id": "https://openalex.org/W3203105104",
+      "doi": "https://doi.org/10.48550/arxiv.2110.02178",
+      "title": "MobileViT: Light-weight, General-purpose, and Mobile-friendly Vision Transformer",
+      "publication_year": 2021,
+      "publication_date": "2021-10-05",
+      "cited_by_count": 2034
+    },
+    {
+      "id": "https://openalex.org/W4313170858",
+      "doi": "https://doi.org/10.1007/978-3-031-20083-0_18",
+      "title": "EdgeViTs: Competing Light-Weight CNNs on Mobile Devices with Vision Transformers",
+      "publication_year": 2022,
+      "publication_date": "2022-01-01",
+      "cited_by_count": 323
+    },
+    {
+      "id": "https://openalex.org/W4320459518",
+      "doi": "https://doi.org/10.48550/arxiv.2206.02680",
+      "title": "Separable Self-attention for Mobile Vision Transformers",
+      "publication_year": 2022,
+      "publication_date": "2022-06-06",
+      "cited_by_count": 431
+    }
+  ],
+  "mixer": [
+    {
+      "id": "https://openalex.org/W3157506437",
+      "doi": "https://doi.org/10.48550/arxiv.2105.01601",
+      "title": "MLP-Mixer: An all-MLP Architecture for Vision",
+      "publication_year": 2021,
+      "publication_date": "2021-05-04",
+      "cited_by_count": 2406
+    },
+    {
+      "id": "https://openalex.org/W4313056180",
+      "doi": "https://doi.org/10.1109/cvpr52688.2022.00090",
+      "title": "Hire-MLP: Vision MLP via Hierarchical Rearrangement",
+      "publication_year": 2022,
+      "publication_date": "2022-06-01",
+      "cited_by_count": 113
+    },
+    {
+      "id": "https://openalex.org/W3186979696",
+      "doi": "https://doi.org/10.48550/arxiv.2107.08391",
+      "title": "AS-MLP: An Axial Shifted MLP Architecture for Vision",
+      "publication_year": 2021,
+      "publication_date": "2021-07-18",
+      "cited_by_count": 205
+    }
+  ],
+  "resmlp": [
+    {
+      "id": "https://openalex.org/W3163465952",
+      "doi": "https://doi.org/10.1109/tpami.2022.3206148",
+      "title": "ResMLP: Feedforward Networks for Image Classification With Data-Efficient Training",
+      "publication_year": 2022,
+      "publication_date": "2022-09-12",
+      "cited_by_count": 944
+    },
+    {
+      "id": "https://openalex.org/W4391967793",
+      "doi": "https://doi.org/10.1007/s00217-024-04469-0",
+      "title": "Hybrid convolutional neural network and multilayer perceptron vision transformer model for wheat species classification task: E-ResMLP+",
+      "publication_year": 2024,
+      "publication_date": "2024-02-20",
+      "cited_by_count": 13
+    },
+    {
+      "id": "https://openalex.org/W4387019753",
+      "doi": "https://doi.org/10.3390/electronics12194027",
+      "title": "Efficient Hyperbolic Perceptron for Image Classification",
+      "publication_year": 2023,
+      "publication_date": "2023-09-25",
+      "cited_by_count": 2
+    }
+  ],
+  "convnext": [
+    {
+      "id": "https://openalex.org/W4312443924",
+      "doi": "https://doi.org/10.1109/cvpr52688.2022.01167",
+      "title": "A ConvNet for the 2020s",
+      "publication_year": 2022,
+      "publication_date": "2022-06-01",
+      "cited_by_count": 10049
+    },
+    {
+      "id": "https://openalex.org/W4386076493",
+      "doi": "https://doi.org/10.1109/cvpr52729.2023.01548",
+      "title": "ConvNeXt V2: Co-designing and Scaling ConvNets with Masked Autoencoders",
+      "publication_year": 2023,
+      "publication_date": "2023-06-01",
+      "cited_by_count": 2109
+    },
+    {
+      "id": "https://openalex.org/W4283033279",
+      "doi": "https://doi.org/10.48550/arxiv.2206.07700",
+      "title": "Masked Siamese ConvNets",
+      "publication_year": 2022,
+      "publication_date": "2022-06-15",
+      "cited_by_count": 33
+    }
+  ],
+  "inception": [
+    {
+      "id": "https://openalex.org/W2183341477",
+      "doi": "https://doi.org/10.1109/cvpr.2016.308",
+      "title": "Rethinking the Inception Architecture for Computer Vision",
+      "publication_year": 2016,
+      "publication_date": "2016-06-01",
+      "cited_by_count": 33158
+    },
+    {
+      "id": "https://openalex.org/W2949605076",
+      "doi": "https://doi.org/10.48550/arxiv.1512.00567",
+      "title": "Rethinking the Inception Architecture for Computer Vision",
+      "publication_year": 2015,
+      "publication_date": "2015-12-02",
+      "cited_by_count": 2009
+    },
+    {
+      "id": "https://openalex.org/W3206824631",
+      "doi": "https://doi.org/10.3390/electronics10202470",
+      "title": "CNN Variants for Computer Vision: History, Architecture, Application, Challenges and Future Scope",
+      "publication_year": 2021,
+      "publication_date": "2021-10-11",
+      "cited_by_count": 996
+    }
+  ],
+  "vgg": [
+    {
+      "id": "https://openalex.org/W1686810756",
+      "doi": "https://doi.org/10.48550/arxiv.1409.1556",
+      "title": "Very Deep Convolutional Networks for Large-Scale Image Recognition",
+      "publication_year": 2014,
+      "publication_date": "2014-09-04",
+      "cited_by_count": 116091
+    },
+    {
+      "id": "https://openalex.org/W3209259379",
+      "doi": null,
+      "title": "Very deep convolutional networks for large-scale image recognition",
+      "publication_year": 2015,
+      "publication_date": "2015-01-01",
+      "cited_by_count": 33
+    },
+    {
+      "id": "https://openalex.org/W2293499654",
+      "doi": "https://doi.org/10.1109/icmew.2015.7169816",
+      "title": "Food image recognition using deep convolutional network with pre-training and fine-tuning",
+      "publication_year": 2015,
+      "publication_date": "2015-06-01",
+      "cited_by_count": 342
+    }
+  ],
+  "vit": [
+    {
+      "id": "https://openalex.org/W3094502228",
+      "doi": "https://doi.org/10.48550/arxiv.2010.11929",
+      "title": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale",
+      "publication_year": 2020,
+      "publication_date": "2020-10-22",
+      "cited_by_count": 50897
+    },
+    {
+      "id": "https://openalex.org/W3119786062",
+      "doi": null,
+      "title": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale",
+      "publication_year": 2021,
+      "publication_date": "2021-05-03",
+      "cited_by_count": 550
+    },
+    {
+      "id": "https://openalex.org/W3170188883",
+      "doi": "https://doi.org/10.48550/arxiv.2105.15075",
+      "title": "Not All Images are Worth 16x16 Words: Dynamic Transformers for Efficient Image Recognition",
+      "publication_year": 2021,
+      "publication_date": "2021-05-31",
+      "cited_by_count": 113
+    }
+  ],
+  "cellvit": [
+    {
+      "id": "https://openalex.org/W4392883923",
+      "doi": "https://doi.org/10.1016/j.media.2024.103143",
+      "title": "CellViT: Vision Transformers for precise cell segmentation and classification",
+      "publication_year": 2024,
+      "publication_date": "2024-03-16",
+      "cited_by_count": 412
+    },
+    {
+      "id": "https://openalex.org/W7119828867",
+      "doi": "https://doi.org/10.1016/j.cmpb.2025.109206",
+      "title": "CellViT++: Energy-efficient and adaptive cell segmentation and classification using foundation models",
+      "publication_year": 2026,
+      "publication_date": "2026-01-09",
+      "cited_by_count": 61
+    },
+    {
+      "id": "https://openalex.org/W4414871465",
+      "doi": "https://doi.org/10.1109/access.2025.3618215",
+      "title": "A Recent Survey of Vision Transformers for Medical Image Segmentation",
+      "publication_year": 2025,
+      "publication_date": "2025-01-01",
+      "cited_by_count": 115
+    }
+  ],
+  "ctranspath": [
+    {
+      "id": "https://openalex.org/W4288809219",
+      "doi": "https://doi.org/10.1016/j.media.2022.102559",
+      "title": "Transformer-based unsupervised contrastive learning for histopathological image classification",
+      "publication_year": 2022,
+      "publication_date": "2022-07-30",
+      "cited_by_count": 843
+    },
+    {
+      "id": "https://openalex.org/W4221161490",
+      "doi": "https://doi.org/10.1109/wacv56688.2023.00611",
+      "title": "ScoreNet: Learning Non-Uniform Attention and Augmentation for Transformer-Based Histopathological Image Classification",
+      "publication_year": 2023,
+      "publication_date": "2023-01-01",
+      "cited_by_count": 59
+    },
+    {
+      "id": "https://openalex.org/W4387021831",
+      "doi": "https://doi.org/10.1186/s12938-023-01157-0",
+      "title": "A survey of Transformer applications for histopathological image analysis: New developments and future directions",
+      "publication_year": 2023,
+      "publication_date": "2023-09-25",
+      "cited_by_count": 116
+    }
+  ],
+  "uni": [
+    {
+      "id": "https://openalex.org/W4392947521",
+      "doi": "https://doi.org/10.1038/s41591-024-02857-3",
+      "title": "Towards a general-purpose foundation model for computational pathology",
+      "publication_year": 2024,
+      "publication_date": "2024-03-01",
+      "cited_by_count": 1876
+    },
+    {
+      "id": "https://openalex.org/W4400889241",
+      "doi": "https://doi.org/10.1038/s41591-024-03141-0",
+      "title": "A foundation model for clinical-grade computational pathology and rare cancers detection",
+      "publication_year": 2024,
+      "publication_date": "2024-07-22",
+      "cited_by_count": 877
+    },
+    {
+      "id": "https://openalex.org/W4386303022",
+      "doi": "https://doi.org/10.48550/arxiv.2308.15474",
+      "title": "A General-Purpose Self-Supervised Model for Computational Pathology",
+      "publication_year": 2023,
+      "publication_date": "2023-08-29",
+      "cited_by_count": 69
+    }
+  ],
+  "vmamba": [
+    {
+      "id": "https://openalex.org/W4415796023",
+      "doi": "https://doi.org/10.52202/079017-3273",
+      "title": "VMamba: Visual State Space Model",
+      "publication_year": 2024,
+      "publication_date": "2024-01-01",
+      "cited_by_count": 2817
+    },
+    {
+      "id": "https://openalex.org/W4415798456",
+      "doi": "https://doi.org/10.52202/079017-0808",
+      "title": "Multi-Scale VMamba: Hierarchy in Hierarchy Visual State Space Model",
+      "publication_year": 2024,
+      "publication_date": "2024-01-01",
+      "cited_by_count": 116
+    },
+    {
+      "id": "https://openalex.org/W4392223672",
+      "doi": "https://doi.org/10.48550/arxiv.2402.15761",
+      "title": "Res-VMamba: Fine-Grained Food Category Visual Classification Using Selective State Space Models with Deep Residual Learning",
+      "publication_year": 2024,
+      "publication_date": "2024-02-24",
+      "cited_by_count": 53
+    }
+  ],
+  "sequencer": [
+    {
+      "id": "https://openalex.org/W7133245466",
+      "doi": "https://doi.org/10.52202/068431-2768",
+      "title": "Sequencer: Deep LSTM for Image Classification",
+      "publication_year": 2022,
+      "publication_date": "2022-01-01",
+      "cited_by_count": 98
+    },
+    {
+      "id": "https://openalex.org/W2952651429",
+      "doi": "https://doi.org/10.1186/s13007-018-0333-4",
+      "title": "Deep phenotyping: deep learning for temporal phenotype/genotype classification",
+      "publication_year": 2018,
+      "publication_date": "2018-08-03",
+      "cited_by_count": 210
+    },
+    {
+      "id": "https://openalex.org/W2900677911",
+      "doi": "https://doi.org/10.1109/igarss.2018.8518517",
+      "title": "Exploring Convolutional Lstm for Polsar Image Classification",
+      "publication_year": 2018,
+      "publication_date": "2018-07-01",
+      "cited_by_count": 33
+    }
+  ],
+  "cmt": [
+    {
+      "id": "https://openalex.org/W4312950730",
+      "doi": "https://doi.org/10.1109/cvpr52688.2022.01186",
+      "title": "CMT: Convolutional Neural Networks Meet Vision Transformers",
+      "publication_year": 2022,
+      "publication_date": "2022-06-01",
+      "cited_by_count": 1098
+    },
+    {
+      "id": "https://openalex.org/W4385062106",
+      "doi": "https://doi.org/10.1109/access.2023.3297206",
+      "title": "CA-CMT: Coordinate Attention for Optimizing CMT Networks",
+      "publication_year": 2023,
+      "publication_date": "2023-01-01",
+      "cited_by_count": 16
+    },
+    {
+      "id": "https://openalex.org/W4402726980",
+      "doi": "https://doi.org/10.1109/cvpr52733.2024.00539",
+      "title": "RMT: Retentive Networks Meet Vision Transformers",
+      "publication_year": 2024,
+      "publication_date": "2024-06-16",
+      "cited_by_count": 300
+    }
+  ],
+  "nuclei2026": [
+    {
+      "id": "https://openalex.org/W7126160316",
+      "doi": "https://doi.org/10.1155/acis/4540418",
+      "title": "A Comparative Analysis of Machine Learning and Deep Learning Approaches for Multiclass Nucleus Classification in Histological Images",
+      "publication_year": 2026,
+      "publication_date": "2026-01-01",
+      "cited_by_count": 0
+    },
+    {
+      "id": "https://openalex.org/W3083756345",
+      "doi": "https://doi.org/10.1109/access.2020.3021557",
+      "title": "Deep Learning Applied for Histological Diagnosis of Breast Cancer",
+      "publication_year": 2020,
+      "publication_date": "2020-01-01",
+      "cited_by_count": 160
+    },
+    {
+      "id": "https://openalex.org/W4377234480",
+      "doi": "https://doi.org/10.18280/ts.400204",
+      "title": "Multiclass Classification of Cervical Pap Smear Images Using Deep Learning-Based Model",
+      "publication_year": 2023,
+      "publication_date": "2023-04-30",
+      "cited_by_count": 8
+    }
+  ]
+}

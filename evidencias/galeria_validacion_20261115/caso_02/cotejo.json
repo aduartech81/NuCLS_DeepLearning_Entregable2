@@ -1,0 +1,41 @@
+{
+  "paciente": "TCGA-BH-A0BW",
+  "archivo": "validation/lymphocyte/TCGA-BH-A0BW-DX1_id-5ea4098cddda5f839897f8c4_left-44902_top-32878_bottom-33175_right-45187__18.png",
+  "clase_real": "lymphocyte",
+  "clase_predicha": "lymphocyte",
+  "p_tumor": "0.07941225916147232",
+  "p_linfocito": "0.7033711671829224",
+  "p_estroma": "0.21721656620502472",
+  "modelo": "resnet50",
+  "semilla": 6113,
+  "acierto": true,
+  "fila": "18",
+  "imagen": "TCGA-BH-A0BW-DX1_id-5ea4098cddda5f839897f8c4_left-44902_top-32878_bottom-33175_right-45187",
+  "sha_pixeles": "bbb1b234563c2ecec6a8da3b212c2e08661d67d8137a670442b6ff99b89b4e8e",
+  "sha_imagen": "9f43325e7e305e49e28cfb262d9773c6111741e80e0d6ae15d584b166f9a1b99",
+  "sha_anotaciones": "de202001186ffaa66b477c569b90266f03407f50896d0fadecb34330340ee7a7",
+  "particion_historica": "entrenamiento",
+  "particion_evaluacion": "validation",
+  "fuente_predicciones": "final/resnet50_6113/predicciones_validacion.csv",
+  "sha_predicciones": "a89e0226864f4351eaed2714d38de64b07ab8f661188050ba5b59aef3289d8d8",
+  "anotacion": {
+    "": "18",
+    "raw_classification": "lymphocyte",
+    "main_classification": "lymphocyte",
+    "super_classification": "sTIL",
+    "type": "rectangle",
+    "xmin": "54",
+    "ymin": "163",
+    "xmax": "79",
+    "ymax": "191",
+    "coords_x": "54,79,79,54,54",
+    "coords_y": "163,163,191,191,163"
+  },
+  "ventana_recorte": {
+    "left": "2",
+    "top": "113",
+    "right": "130",
+    "bottom": "241"
+  },
+  "nota": "Cotejo automático contra referencia existente; no adjudicación humana nueva. Partición actual según predicción V2. El recorte histórico coincide píxel a píxel con el campo original y su manifiesto."
+}

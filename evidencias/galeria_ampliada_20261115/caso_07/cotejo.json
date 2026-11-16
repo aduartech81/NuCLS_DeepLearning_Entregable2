@@ -1,0 +1,39 @@
+{
+  "paciente": "TCGA-AQ-A04J",
+  "archivo": "validation/tumor_nonMitotic/TCGA-AQ-A04J-DX1_id-5ea40996ddda5f8398980f76_left-65889_top-14596_bottom-14939_right-66186__30.png",
+  "clase_real": "tumor_nonMitotic",
+  "clase_predicha": "lymphocyte",
+  "p_tumor": "0.2746990919113159",
+  "p_linfocito": "0.5764477849006653",
+  "p_estroma": "0.1488531529903412",
+  "modelo": "resnet50",
+  "semilla": 6113,
+  "acierto": false,
+  "imagen": "TCGA-AQ-A04J-DX1_id-5ea40996ddda5f8398980f76_left-65889_top-14596_bottom-14939_right-66186",
+  "fila": "30",
+  "tipo": "rectangle",
+  "sha_anotaciones": "9ebb749447b01d1ebab344ed106a210b2ab1ec81626b4ef8f7884b1520479283",
+  "sha_predicciones": "a89e0226864f4351eaed2714d38de64b07ab8f661188050ba5b59aef3289d8d8",
+  "fuente_predicciones": "final/resnet50_6113/predicciones_validacion.csv",
+  "anotacion": {
+    "": "30",
+    "raw_classification": "tumor",
+    "main_classification": "tumor_nonMitotic",
+    "super_classification": "tumor_any",
+    "type": "rectangle",
+    "xmin": "149",
+    "ymin": "196",
+    "xmax": "176",
+    "ymax": "225",
+    "coords_x": "149,176,176,149,149",
+    "coords_y": "196,196,225,225,196"
+  },
+  "sha_campo": "119a9fbfc0e67ce5004db4c8e2ec5b87c2b6b742a03274d3d92d9758898b3be0",
+  "sha_visualizacion": "ca7c45ba3f6485ce4cba5a560a989bf11c0ddd860bcada2e0bf2cab3718c7a21",
+  "dimensiones_campo": [
+    368,
+    425
+  ],
+  "vista": "Campo original con núcleo objetivo señalado; no se afirma que el campo completo sea la entrada de128px del modelo",
+  "revision_humana_nueva": false
+}

@@ -1,0 +1,21 @@
+{
+  "fecha_utc": "2026-11-16T02:03:26.906323+00:00",
+  "corridas": 50,
+  "modelos": 10,
+  "semillas": [
+    6101,
+    6102,
+    6103,
+    6104,
+    6105
+  ],
+  "predicciones_verificadas": 102450,
+  "identidades": 2049,
+  "pacientes": 21,
+  "macro_f1_y_confusion_coinciden": true,
+  "historias_y_mejor_epoca_coinciden": true,
+  "reserva_consultada": false,
+  "checkpoints_descargados": false,
+  "Colab_intervenido": false,
+  "E1_modificado": false
+}

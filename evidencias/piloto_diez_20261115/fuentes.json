@@ -1,0 +1,902 @@
+[
+  {
+    "run": "mixer_s16_224_6105",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/1lEfD0SgQ3_RJGyQWY2iBv0_obrpzyBwL/view?usp=drivesdk",
+    "modified": "2026-11-15T04:54:54.717Z"
+  },
+  {
+    "run": "mixer_s16_224_6105",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/1qfvNyMGJfrYalbq6GATHgiWFy6-5ObOx/view?usp=drivesdk",
+    "modified": "2026-11-15T04:54:54.552Z"
+  },
+  {
+    "run": "mixer_s16_224_6105",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1SOPf9Z_4n1qK2xnsS5lgrwYFRllc9Wn9/view?usp=drivesdk",
+    "modified": "2026-11-15T04:54:53.527Z"
+  },
+  {
+    "run": "mobilevit_xxs_6105",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/1Aws1JXYJVwMU4j1Xj20gLLb6AclGKV4C/view?usp=drivesdk",
+    "modified": "2026-11-15T04:28:03.736Z"
+  },
+  {
+    "run": "mobilevit_xxs_6105",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/1z5nol0nHPQVnv83X3W6XJ2EVaDuBA8yN/view?usp=drivesdk",
+    "modified": "2026-11-15T04:27:57.338Z"
+  },
+  {
+    "run": "mobilevit_xxs_6105",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1nE9db_P5JaS9EUa8Nn1hczcql3H4Vbli/view?usp=drivesdk",
+    "modified": "2026-11-15T04:27:56.866Z"
+  },
+  {
+    "run": "swin_tiny_patch4_window7_224_6105",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/1mcUAv11rktPam96h2DygUUQYL_xQQJzX/view?usp=drivesdk",
+    "modified": "2026-11-15T04:13:01.045Z"
+  },
+  {
+    "run": "swin_tiny_patch4_window7_224_6105",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/1d3MdHlo-bXUMLhU8206Bu3iTwKdLwam2/view?usp=drivesdk",
+    "modified": "2026-11-15T04:13:00.762Z"
+  },
+  {
+    "run": "swin_tiny_patch4_window7_224_6105",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1f74ynEIpDW4fJ33P1sp2o2amP2l8JfKK/view?usp=drivesdk",
+    "modified": "2026-11-15T04:12:59.037Z"
+  },
+  {
+    "run": "deit_tiny_patch16_224_6105",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/1K3WTtLMs73yJqo1UhKVC2yFQVTQhfLhy/view?usp=drivesdk",
+    "modified": "2026-11-15T03:48:04.465Z"
+  },
+  {
+    "run": "deit_tiny_patch16_224_6105",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/13tUmgsc3qUKpmFBA2WjD5sYyX9unRGvQ/view?usp=drivesdk",
+    "modified": "2026-11-15T03:48:02.361Z"
+  },
+  {
+    "run": "deit_tiny_patch16_224_6105",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1d2WeGDB6oHU-mQXEW7hCl_znOQAXRPEC/view?usp=drivesdk",
+    "modified": "2026-11-15T03:48:01.854Z"
+  },
+  {
+    "run": "efficientnet_b0_6105",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/1sPAnNZy_GeU8jaHF0NparMkmGVEJL30F/view?usp=drivesdk",
+    "modified": "2026-11-15T03:40:09.206Z"
+  },
+  {
+    "run": "efficientnet_b0_6105",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/1P3GhL_YVcI87C5zvhSoab97Z0uvG1L4M/view?usp=drivesdk",
+    "modified": "2026-11-15T03:40:03.693Z"
+  },
+  {
+    "run": "efficientnet_b0_6105",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1Rgh7mNTO3295YtUqa8WwQtZ8XGb4FP2g/view?usp=drivesdk",
+    "modified": "2026-11-15T03:40:03.105Z"
+  },
+  {
+    "run": "mobilenetv3_small_100_6105",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/1Dl1AZoseKiYNUyKYeRzLRmD5Y7XZ6ATN/view?usp=drivesdk",
+    "modified": "2026-11-15T03:24:18.766Z"
+  },
+  {
+    "run": "mobilenetv3_small_100_6105",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/1SBGRxAY5Nq6znjV0Y_3vtvnRbLQi6wul/view?usp=drivesdk",
+    "modified": "2026-11-15T03:24:15.711Z"
+  },
+  {
+    "run": "mobilenetv3_small_100_6105",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1CKwfKXShDd74n5ZgkvEwqeRjnZoQlU7l/view?usp=drivesdk",
+    "modified": "2026-11-15T03:24:15.402Z"
+  },
+  {
+    "run": "resnet18_6105",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/1vKapbMxYNMLqp_z_mQVUp3pt2f8wJl4_/view?usp=drivesdk",
+    "modified": "2026-11-15T03:12:08.506Z"
+  },
+  {
+    "run": "resnet18_6105",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/1By4ERz9Wl5dHBbhT52v2fPRcKSTIG0pB/view?usp=drivesdk",
+    "modified": "2026-11-15T03:12:02.926Z"
+  },
+  {
+    "run": "resnet18_6105",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1wrn-2dHT369JF7KJsO3xpnDK5ixGvxCg/view?usp=drivesdk",
+    "modified": "2026-11-15T03:12:02.447Z"
+  },
+  {
+    "run": "mixer_s16_224_6104",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/1Mi9oBSmDt13Add0XAfo8tcuyGi4PRs--/view?usp=drivesdk",
+    "modified": "2026-11-15T02:54:13.330Z"
+  },
+  {
+    "run": "mixer_s16_224_6104",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/1NpB_CL_nKWu9KFfxlVkYMF0M03KOOt5C/view?usp=drivesdk",
+    "modified": "2026-11-15T02:54:10.796Z"
+  },
+  {
+    "run": "mixer_s16_224_6104",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1jQfYNNG6VY7grdRzZhvC3cS0xuYbs7GZ/view?usp=drivesdk",
+    "modified": "2026-11-15T02:54:09.715Z"
+  },
+  {
+    "run": "mobilevit_xxs_6104",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/1-t_Dk7N4rJX3zi3TR03znx_L-5KNg7aq/view?usp=drivesdk",
+    "modified": "2026-11-15T02:45:28.704Z"
+  },
+  {
+    "run": "mobilevit_xxs_6104",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/1daph26UVNxP36EJ_yuUBGBzd-SKeFo3R/view?usp=drivesdk",
+    "modified": "2026-11-15T02:45:26.711Z"
+  },
+  {
+    "run": "mobilevit_xxs_6104",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1SGDPVh3VmO9zDNj7EqVRrvwzmeahvxO3/view?usp=drivesdk",
+    "modified": "2026-11-15T02:45:26.259Z"
+  },
+  {
+    "run": "swin_tiny_patch4_window7_224_6104",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/1mxvys5x-9PRRoYRVZMmG9qqhmE05Uzzq/view?usp=drivesdk",
+    "modified": "2026-11-15T02:33:55.957Z"
+  },
+  {
+    "run": "swin_tiny_patch4_window7_224_6104",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/1FK_hVQROmKBLDW7Tk1NdDBVzW7DsxoT3/view?usp=drivesdk",
+    "modified": "2026-11-15T02:33:55.263Z"
+  },
+  {
+    "run": "swin_tiny_patch4_window7_224_6104",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1CNpst0Z8p0bRT8qkX-bQ1hegeEtIjEyG/view?usp=drivesdk",
+    "modified": "2026-11-15T02:33:53.207Z"
+  },
+  {
+    "run": "deit_tiny_patch16_224_6104",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/17RbjmpCAxAd8i5UfuWe16n6WzkHxb1FH/view?usp=drivesdk",
+    "modified": "2026-11-15T01:42:23.410Z"
+  },
+  {
+    "run": "deit_tiny_patch16_224_6104",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/1obJf0dXoVINA103aD7CcAjWwj8xELK3G/view?usp=drivesdk",
+    "modified": "2026-11-15T01:42:19.517Z"
+  },
+  {
+    "run": "deit_tiny_patch16_224_6104",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1TCsphZ-1d47nFZ60rXmzvywRqL5Delmz/view?usp=drivesdk",
+    "modified": "2026-11-15T01:42:18.852Z"
+  },
+  {
+    "run": "efficientnet_b0_6104",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/1z7JeQMA3GqtnjDBZU7Vx8xDNgFpnIItK/view?usp=drivesdk",
+    "modified": "2026-11-15T01:36:28.049Z"
+  },
+  {
+    "run": "efficientnet_b0_6104",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/1s490B7zMG0rEPvO2eFcWnQR1pHJdreLn/view?usp=drivesdk",
+    "modified": "2026-11-15T01:36:25.469Z"
+  },
+  {
+    "run": "efficientnet_b0_6104",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1Lw9mM-c4yfn__hVTy8wPF5f-twUq7Lth/view?usp=drivesdk",
+    "modified": "2026-11-15T01:36:24.938Z"
+  },
+  {
+    "run": "mobilenetv3_small_100_6104",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/1npKLgp73YN0xeIUhzYFz74LAG84owm3q/view?usp=drivesdk",
+    "modified": "2026-11-15T01:23:08.001Z"
+  },
+  {
+    "run": "mobilenetv3_small_100_6104",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/1HmTbf6JbCHNC8XkR_eblNCh_vnpd59M-/view?usp=drivesdk",
+    "modified": "2026-11-15T01:23:04.360Z"
+  },
+  {
+    "run": "mobilenetv3_small_100_6104",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1dp9lBLkE7dC_E9h0UdP23jxL-lT6lIRn/view?usp=drivesdk",
+    "modified": "2026-11-15T01:23:04.063Z"
+  },
+  {
+    "run": "resnet18_6104",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/15qWHlIodcdVOnkcwlnjs-Yvg6C14_Kv9/view?usp=drivesdk",
+    "modified": "2026-11-15T01:09:14.409Z"
+  },
+  {
+    "run": "resnet18_6104",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/1nLxtzgIBtdU-6IpNW8TbhicuP1q10iAY/view?usp=drivesdk",
+    "modified": "2026-11-15T01:09:10.483Z"
+  },
+  {
+    "run": "resnet18_6104",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1bE-_uAPD-wpNzKkJw4Iv8YOpBhEG3FjP/view?usp=drivesdk",
+    "modified": "2026-11-15T01:09:10.021Z"
+  },
+  {
+    "run": "mixer_s16_224_6103",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/1Mf_FGlGAfOhrpwVZXwuSVCQLBNkle-We/view?usp=drivesdk",
+    "modified": "2026-11-15T00:58:52.205Z"
+  },
+  {
+    "run": "mixer_s16_224_6103",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/1TigFfdO64vuJM-t9LabJYWyFAj8f0VNG/view?usp=drivesdk",
+    "modified": "2026-11-15T00:58:51.244Z"
+  },
+  {
+    "run": "mixer_s16_224_6103",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1TdIxnUyoM3vkQcuzG39cWsukgYsqEDm3/view?usp=drivesdk",
+    "modified": "2026-11-15T00:58:50.218Z"
+  },
+  {
+    "run": "mobilevit_xxs_6103",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/1ytxhZvjMLhrzN2-vgOtTTEPdoA7d4pWQ/view?usp=drivesdk",
+    "modified": "2026-11-15T00:44:12.481Z"
+  },
+  {
+    "run": "mobilevit_xxs_6103",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/1xByaRFQ29ypipDkgkrfWrHIgi0Pmesnd/view?usp=drivesdk",
+    "modified": "2026-11-15T00:44:08.488Z"
+  },
+  {
+    "run": "mobilevit_xxs_6103",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1LhHkzDDsMkhkLV7lZOptULZKJZ1w-jvC/view?usp=drivesdk",
+    "modified": "2026-11-15T00:44:08.049Z"
+  },
+  {
+    "run": "swin_tiny_patch4_window7_224_6103",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/1g-yT0aJh8-scspF2GW7TUcY15tnAE8jN/view?usp=drivesdk",
+    "modified": "2026-11-15T00:29:11.906Z"
+  },
+  {
+    "run": "swin_tiny_patch4_window7_224_6103",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/159_bV5CZb_Nazh0tMNRbv9Z_M32gA55_/view?usp=drivesdk",
+    "modified": "2026-11-15T00:29:00.846Z"
+  },
+  {
+    "run": "swin_tiny_patch4_window7_224_6103",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/1K04RjwYSbbXBdg2W93-ev9draWW9oV40/view?usp=drivesdk",
+    "modified": "2026-11-15T00:29:00.059Z"
+  },
+  {
+    "run": "deit_tiny_patch16_224_6103",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/1yJM7jjjGLy8UhnHBe9g7ZwWDbUV5h5Ii/view?usp=drivesdk",
+    "modified": "2026-11-14T23:46:43.649Z"
+  },
+  {
+    "run": "deit_tiny_patch16_224_6103",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/11CHPpbGszh_fZox0OziyY5vXgaNBQjdx/view?usp=drivesdk",
+    "modified": "2026-11-14T23:46:42.312Z"
+  },
+  {
+    "run": "deit_tiny_patch16_224_6103",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1XR9DTLy9NVfcp0c6POTotP_oTa4GXw6F/view?usp=drivesdk",
+    "modified": "2026-11-14T23:46:41.708Z"
+  },
+  {
+    "run": "efficientnet_b0_6103",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/1CpuzQTb0RwUw-dXBCguLq36iG8C-eLDI/view?usp=drivesdk",
+    "modified": "2026-11-14T23:30:18.181Z"
+  },
+  {
+    "run": "efficientnet_b0_6103",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/1enLJXUzga6OVC0ClSm6DnBpTIB5VR9B3/view?usp=drivesdk",
+    "modified": "2026-11-14T23:30:13.525Z"
+  },
+  {
+    "run": "efficientnet_b0_6103",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1tjnSz24btdndZ15QgN9EYjIJtkc-nhyR/view?usp=drivesdk",
+    "modified": "2026-11-14T23:30:12.925Z"
+  },
+  {
+    "run": "mobilenetv3_small_100_6103",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/1QKNLuIL2iVj8B542zPKBJq2ETPfGwHpS/view?usp=drivesdk",
+    "modified": "2026-11-14T23:07:27.636Z"
+  },
+  {
+    "run": "mobilenetv3_small_100_6103",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/1vha9Zb4dH4BX_xA-DGtHUPRcLByOiRwm/view?usp=drivesdk",
+    "modified": "2026-11-14T23:07:25.142Z"
+  },
+  {
+    "run": "mobilenetv3_small_100_6103",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/18FJsKZe0STTLayYzAWinLjc4uCwtIPJP/view?usp=drivesdk",
+    "modified": "2026-11-14T23:07:24.729Z"
+  },
+  {
+    "run": "resnet18_6103",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/1FW-fUC7TUTS4GXshhvwxuWIusDk_8P-k/view?usp=drivesdk",
+    "modified": "2026-11-14T22:59:46.771Z"
+  },
+  {
+    "run": "resnet18_6103",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/1dfsAovv7VVYR7x3Go-EQvEVFY95Vw-Qs/view?usp=drivesdk",
+    "modified": "2026-11-14T22:59:33.283Z"
+  },
+  {
+    "run": "resnet18_6103",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1Hf7jSXakWGVuqsGP6wlqD6AnzuClNmHj/view?usp=drivesdk",
+    "modified": "2026-11-14T22:59:32.802Z"
+  },
+  {
+    "run": "mixer_s16_224_6102",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/105_Ew-BcXU-N9CHOrQWk68n873hxmxkw/view?usp=drivesdk",
+    "modified": "2026-11-14T22:45:57.806Z"
+  },
+  {
+    "run": "mixer_s16_224_6102",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/1E4A4UFd8QOGosFdDzHM_BqK2-CCtD_Cm/view?usp=drivesdk",
+    "modified": "2026-11-14T22:45:55.669Z"
+  },
+  {
+    "run": "mixer_s16_224_6102",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1Pn4fEIpL3BgIKeR94T-JsrNnIrevsb76/view?usp=drivesdk",
+    "modified": "2026-11-14T22:45:54.638Z"
+  },
+  {
+    "run": "mobilevit_xxs_6102",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/1pCwq07qybfV4UdECD2DpSJ2TI9lzYcVg/view?usp=drivesdk",
+    "modified": "2026-11-14T22:19:32.349Z"
+  },
+  {
+    "run": "mobilevit_xxs_6102",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/1qspoRpiynv3mhyqusWC9xTOwJ3Zjs6Yx/view?usp=drivesdk",
+    "modified": "2026-11-14T22:19:26.533Z"
+  },
+  {
+    "run": "mobilevit_xxs_6102",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1nAB79GSCpY39n8wLm_s5OQK6FhQ5kAW-/view?usp=drivesdk",
+    "modified": "2026-11-14T22:19:25.898Z"
+  },
+  {
+    "run": "swin_tiny_patch4_window7_224_6102",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/1KoFPCaFjyXavtT37RWjLFJPteNxxbZcg/view?usp=drivesdk",
+    "modified": "2026-11-14T22:10:23.084Z"
+  },
+  {
+    "run": "swin_tiny_patch4_window7_224_6102",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/1a29GSCPWILXr8HEwuh1KlQpl3czVugt0/view?usp=drivesdk",
+    "modified": "2026-11-14T22:10:21.571Z"
+  },
+  {
+    "run": "swin_tiny_patch4_window7_224_6102",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1jcFMneaPY3vTLGmI-ds08LqkiCrJadqN/view?usp=drivesdk",
+    "modified": "2026-11-14T22:10:19.550Z"
+  },
+  {
+    "run": "deit_tiny_patch16_224_6102",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/1K7jjpKHa3uwFfpozqhhAzymC-tm0LRsg/view?usp=drivesdk",
+    "modified": "2026-11-14T21:30:01.515Z"
+  },
+  {
+    "run": "deit_tiny_patch16_224_6102",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/1BdXCrJ8qP9qOchYHte_SS3MEmDDVQmhA/view?usp=drivesdk",
+    "modified": "2026-11-14T21:29:55.153Z"
+  },
+  {
+    "run": "deit_tiny_patch16_224_6102",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1XozXv5RZ0fHiKmvYfW2k6FKFAUyKD2HJ/view?usp=drivesdk",
+    "modified": "2026-11-14T21:29:54.630Z"
+  },
+  {
+    "run": "efficientnet_b0_6102",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/1XA40NxxvOInBLKjfjsTJTsn94n_PHtLq/view?usp=drivesdk",
+    "modified": "2026-11-14T21:23:15.944Z"
+  },
+  {
+    "run": "efficientnet_b0_6102",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/17vsjDZ51BEqaMr7x8cS8P1FM-yRVdABN/view?usp=drivesdk",
+    "modified": "2026-11-14T21:23:10.339Z"
+  },
+  {
+    "run": "efficientnet_b0_6102",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1esJWoM9Ga_FpjnpQlrcjgBjwrlJkPLw8/view?usp=drivesdk",
+    "modified": "2026-11-14T21:23:09.785Z"
+  },
+  {
+    "run": "mobilenetv3_small_100_6102",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/1EzAtA_zAbg8fsTawA_ca8TVdXEsPiNyb/view?usp=drivesdk",
+    "modified": "2026-11-14T21:14:00.543Z"
+  },
+  {
+    "run": "mobilenetv3_small_100_6102",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/1pB5qP3uUXei_9AdCbru-tXJqGdbOQLJ2/view?usp=drivesdk",
+    "modified": "2026-11-14T21:13:58.594Z"
+  },
+  {
+    "run": "mobilenetv3_small_100_6102",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1QwHURhZ82k8NsKRAGaSdSVxIq14_7GBt/view?usp=drivesdk",
+    "modified": "2026-11-14T21:13:58.312Z"
+  },
+  {
+    "run": "resnet18_6102",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/1nZ2fCTgxMOuwewJhMJEbTo_bxXL-P9xQ/view?usp=drivesdk",
+    "modified": "2026-11-14T21:03:50.419Z"
+  },
+  {
+    "run": "resnet18_6102",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/11D5YxclPLqfUeajcHnp2-b63YsYy2i_3/view?usp=drivesdk",
+    "modified": "2026-11-14T21:03:47.479Z"
+  },
+  {
+    "run": "resnet18_6102",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1hng-P-yi65u_M-OjK1SGNYMg8ltExxKs/view?usp=drivesdk",
+    "modified": "2026-11-14T21:03:47.041Z"
+  },
+  {
+    "run": "mixer_s16_224_6101",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/1rs7XvjwXniaisXlneVVTZxTv_OgzEFbJ/view?usp=drivesdk",
+    "modified": "2026-11-14T20:47:18.308Z"
+  },
+  {
+    "run": "mixer_s16_224_6101",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/1HDmUjB5lT9di08xofOgWrWRk2BEC06Cl/view?usp=drivesdk",
+    "modified": "2026-11-14T20:47:13.477Z"
+  },
+  {
+    "run": "mixer_s16_224_6101",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/11loZXN0QpPG8UXqcNWgaGpJoVaLlrkCi/view?usp=drivesdk",
+    "modified": "2026-11-14T20:47:12.456Z"
+  },
+  {
+    "run": "mobilevit_xxs_6101",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/1Wqoo5QmHCHoQ5RWFUjC5hYSA6dKH63TK/view?usp=drivesdk",
+    "modified": "2026-11-14T20:17:36.716Z"
+  },
+  {
+    "run": "mobilevit_xxs_6101",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/1koELVYoGpxebWdTdPht5ZPqD-VhpbcEZ/view?usp=drivesdk",
+    "modified": "2026-11-14T20:17:30.498Z"
+  },
+  {
+    "run": "mobilevit_xxs_6101",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1zjdYY66pVeKdaWoZr3SMZYhWnyiEgUij/view?usp=drivesdk",
+    "modified": "2026-11-14T20:17:30.055Z"
+  },
+  {
+    "run": "swin_tiny_patch4_window7_224_6101",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/1PF7l9MLLJRx8w38i8Al8-T9v3XoQ1UgW/view?usp=drivesdk",
+    "modified": "2026-11-14T20:02:59.257Z"
+  },
+  {
+    "run": "swin_tiny_patch4_window7_224_6101",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/1UXlouJJ_qbEAM870tKt3lJ-H0w6i5dLm/view?usp=drivesdk",
+    "modified": "2026-11-14T20:02:59.249Z"
+  },
+  {
+    "run": "swin_tiny_patch4_window7_224_6101",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1rQryO2fAlMa7obC8Yra6G50PmS2vNDXc/view?usp=drivesdk",
+    "modified": "2026-11-14T20:02:57.263Z"
+  },
+  {
+    "run": "deit_tiny_patch16_224_6101",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/1v92TiK3Bp66CxeQqPqbosQ_wjUB9bIyi/view?usp=drivesdk",
+    "modified": "2026-11-14T19:33:58.244Z"
+  },
+  {
+    "run": "deit_tiny_patch16_224_6101",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/1a9LxpAISahDSiNr3GtyO0c7IQ_E3kWeS/view?usp=drivesdk",
+    "modified": "2026-11-14T19:33:56.066Z"
+  },
+  {
+    "run": "deit_tiny_patch16_224_6101",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1v7o8L7p9VAaNkwOMIP8ZP4ND3ZO7ssTj/view?usp=drivesdk",
+    "modified": "2026-11-14T19:33:55.577Z"
+  },
+  {
+    "run": "efficientnet_b0_6101",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/1WSuVVgxm5zFc6_0iSBnKL3QEg90rMVRe/view?usp=drivesdk",
+    "modified": "2026-11-14T19:23:07.937Z"
+  },
+  {
+    "run": "efficientnet_b0_6101",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/1-NecG3fiHxG5_ieNb1mUnGnyTqzoINpV/view?usp=drivesdk",
+    "modified": "2026-11-14T19:23:05.381Z"
+  },
+  {
+    "run": "efficientnet_b0_6101",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1cWKR9tFCiq1eCf27B56i9_ewy5HUkJm3/view?usp=drivesdk",
+    "modified": "2026-11-14T19:23:04.869Z"
+  },
+  {
+    "run": "mobilenetv3_small_100_6101",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/1kl2ZpfE1wG7j-6cEZ3dPoZBJP_VTxTV0/view?usp=drivesdk",
+    "modified": "2026-11-14T19:11:52.678Z"
+  },
+  {
+    "run": "mobilenetv3_small_100_6101",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/1_1kBeGaJa3tT4lHXLICqCq_u-CNPkqKQ/view?usp=drivesdk",
+    "modified": "2026-11-14T19:11:50.122Z"
+  },
+  {
+    "run": "mobilenetv3_small_100_6101",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/115idVlAAWfemzVMgjDO4v9oa5UaoVKyW/view?usp=drivesdk",
+    "modified": "2026-11-14T19:11:49.837Z"
+  },
+  {
+    "run": "resnet18_6101",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/1QmFHq3ZuOGfNP53ZtbdVxh_ECGcbSXse/view?usp=drivesdk",
+    "modified": "2026-11-14T19:03:22.817Z"
+  },
+  {
+    "run": "resnet18_6101",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/1iuj-_zoqbV-4QRHVH0Y_jf_yTqVzFFtK/view?usp=drivesdk",
+    "modified": "2026-11-14T19:03:20.567Z"
+  },
+  {
+    "run": "resnet18_6101",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1DLV0wxJeH2Yib5s_2ck1eHDNkhv3i05E/view?usp=drivesdk",
+    "modified": "2026-11-14T19:03:20.116Z"
+  },
+  {
+    "run": "sequencer2d_s_6105",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/1b7lOM0hgTvqhuOg4-8xImHas1gt1Amto/view?usp=drivesdk",
+    "modified": "2026-11-15T16:52:32.700Z"
+  },
+  {
+    "run": "sequencer2d_s_6105",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/1uqjmLegBxoXIsaqDVBHezzINUyNW71iC/view?usp=drivesdk",
+    "modified": "2026-11-15T16:52:29.909Z"
+  },
+  {
+    "run": "sequencer2d_s_6105",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1BuzDRyArrAoBYocADtXgVPcYTJIRHZwn/view?usp=drivesdk",
+    "modified": "2026-11-15T16:52:24.484Z"
+  },
+  {
+    "run": "inception_v3_6105",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/10qzd8fonPHvyi4FFZeqozzUvD37Z114L/view?usp=drivesdk",
+    "modified": "2026-11-15T16:18:44.221Z"
+  },
+  {
+    "run": "inception_v3_6105",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/1xLBJtriX97Bd2WfKSf833afIpOeqpx5V/view?usp=drivesdk",
+    "modified": "2026-11-15T16:18:43.536Z"
+  },
+  {
+    "run": "inception_v3_6105",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/11ZFyvx9UinI8ZhA7PCCp2hG7i97DwvaK/view?usp=drivesdk",
+    "modified": "2026-11-15T16:18:42.820Z"
+  },
+  {
+    "run": "convnext_tiny_6105",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/1G0DaO1celHFx9eaX-Z3fNmN22MLcCYSe/view?usp=drivesdk",
+    "modified": "2026-11-15T15:53:48.507Z"
+  },
+  {
+    "run": "convnext_tiny_6105",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/1C4240f3yWGO7si9hkD3Wq94Cab-uo-XV/view?usp=drivesdk",
+    "modified": "2026-11-15T15:53:48.343Z"
+  },
+  {
+    "run": "convnext_tiny_6105",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1FC_tiMPtBH7MOXEQ_jq8RBzGiyYShR3h/view?usp=drivesdk",
+    "modified": "2026-11-15T15:53:47.106Z"
+  },
+  {
+    "run": "sequencer2d_s_6104",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/1lzFy_s6dy8MPdv67lJkvUuJ50_Zr6nkk/view?usp=drivesdk",
+    "modified": "2026-11-15T15:29:16.891Z"
+  },
+  {
+    "run": "sequencer2d_s_6104",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1cNEVlJ105ZvaPuX_Ne1fmBYKk3gHrwBT/view?usp=drivesdk",
+    "modified": "2026-11-15T15:29:06.772Z"
+  },
+  {
+    "run": "sequencer2d_s_6104",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/1_nXYn3h5cfWTmY35uOUWy5xqXWnn_DTv/view?usp=drivesdk",
+    "modified": "2026-11-15T15:29:05.158Z"
+  },
+  {
+    "run": "inception_v3_6104",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/1BZkkyHMltzVlr_wQJmW7L2Ogc-XQ3Xfy/view?usp=drivesdk",
+    "modified": "2026-11-15T14:19:14.893Z"
+  },
+  {
+    "run": "inception_v3_6104",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/1KCt8mrA8U9wqBzIYl51nYv12IYMkjPwC/view?usp=drivesdk",
+    "modified": "2026-11-15T14:19:14.770Z"
+  },
+  {
+    "run": "inception_v3_6104",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1kDfF6toQQBBkwrU2oCv6TYkV3uvnfK9B/view?usp=drivesdk",
+    "modified": "2026-11-15T14:19:13.964Z"
+  },
+  {
+    "run": "convnext_tiny_6104",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/1mneO3vf9HGB1fbWdsP_olwYiRG_qFcml/view?usp=drivesdk",
+    "modified": "2026-11-15T13:53:23.314Z"
+  },
+  {
+    "run": "convnext_tiny_6104",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/1GUETIGDrxYkDr0kZmXWqHFO1YaqFrH3k/view?usp=drivesdk",
+    "modified": "2026-11-15T13:53:13.495Z"
+  },
+  {
+    "run": "convnext_tiny_6104",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1FOU0Vx145yyKzr1_47fLDESTggzOt8JB/view?usp=drivesdk",
+    "modified": "2026-11-15T13:53:13.003Z"
+  },
+  {
+    "run": "sequencer2d_s_6103",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/17pXYb3GKLLqej2k5vHt17ErmEvzL0gxg/view?usp=drivesdk",
+    "modified": "2026-11-15T13:17:43.763Z"
+  },
+  {
+    "run": "sequencer2d_s_6103",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1e84NEzxdSuunb1BGqacju00v75yhzmHU/view?usp=drivesdk",
+    "modified": "2026-11-15T13:17:33.528Z"
+  },
+  {
+    "run": "sequencer2d_s_6103",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/1f981teTk-Qt9Ido1bS56FPHkyxTto4ys/view?usp=drivesdk",
+    "modified": "2026-11-15T13:17:30.224Z"
+  },
+  {
+    "run": "inception_v3_6103",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/1p-h-vfqbUMpswtWjUjaa0NqKpQHUX8Td/view?usp=drivesdk",
+    "modified": "2026-11-15T12:19:57.606Z"
+  },
+  {
+    "run": "inception_v3_6103",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/1c6ZysHv0Jx4OVbuWObeWL_z-yUux10xm/view?usp=drivesdk",
+    "modified": "2026-11-15T12:19:54.231Z"
+  },
+  {
+    "run": "inception_v3_6103",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1NffZ2CMK3S_3P01_aPPtWdpyU8EEf9Zn/view?usp=drivesdk",
+    "modified": "2026-11-15T12:19:53.520Z"
+  },
+  {
+    "run": "convnext_tiny_6103",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/1qdICWQc03cFJjq4ZRAoSvvlB4cusKuW6/view?usp=drivesdk",
+    "modified": "2026-11-15T11:48:35.314Z"
+  },
+  {
+    "run": "convnext_tiny_6103",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/12CVBRkdvMxDZE1q1FrI1bdGyjDxpVqWW/view?usp=drivesdk",
+    "modified": "2026-11-15T11:48:25.607Z"
+  },
+  {
+    "run": "convnext_tiny_6103",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1Arn0avRdfDJEeLnjVQio6aQKNKwGmXGh/view?usp=drivesdk",
+    "modified": "2026-11-15T11:48:25.220Z"
+  },
+  {
+    "run": "sequencer2d_s_6102",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/1J80E1bbztbvsz3iCdhRv2_CSLwdzHT5i/view?usp=drivesdk",
+    "modified": "2026-11-15T10:54:59.795Z"
+  },
+  {
+    "run": "sequencer2d_s_6102",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1-A9LzJddHo0E3qjriRD4P1zM4eKmALXR/view?usp=drivesdk",
+    "modified": "2026-11-15T10:54:50.291Z"
+  },
+  {
+    "run": "sequencer2d_s_6102",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/1-dyonHpdYSYMYd6svc5zMKuBVr8IVQBI/view?usp=drivesdk",
+    "modified": "2026-11-15T10:54:47.274Z"
+  },
+  {
+    "run": "inception_v3_6102",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/1D8bwa2sYYMEOC0fjOWo8RaNpgfwd9vsO/view?usp=drivesdk",
+    "modified": "2026-11-15T10:18:33.102Z"
+  },
+  {
+    "run": "inception_v3_6102",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/13szhNT0tgajmiKg0w1IvxTJr43vHGGTg/view?usp=drivesdk",
+    "modified": "2026-11-15T10:18:30.783Z"
+  },
+  {
+    "run": "inception_v3_6102",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1HNgT0ewaw6yG3U3Iwa6WOkgp8o2L3rxS/view?usp=drivesdk",
+    "modified": "2026-11-15T10:18:29.997Z"
+  },
+  {
+    "run": "convnext_tiny_6102",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/1O3jOsF84_e3D1f_4ZBGd0geKBbUMuPk_/view?usp=drivesdk",
+    "modified": "2026-11-15T06:49:53.554Z"
+  },
+  {
+    "run": "convnext_tiny_6102",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/1a3osQ5M2FbvBDgnFZ6cyJ6HUUcd8vx4-/view?usp=drivesdk",
+    "modified": "2026-11-15T06:49:53.320Z"
+  },
+  {
+    "run": "convnext_tiny_6102",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1HGmdlioU11PNP4Tw4Nyql9TRIEEWeDCk/view?usp=drivesdk",
+    "modified": "2026-11-15T06:49:52.260Z"
+  },
+  {
+    "run": "sequencer2d_s_6101",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/1bkuYwKyAJJaYRlTOlxLrktcgO0YHzail/view?usp=drivesdk",
+    "modified": "2026-11-15T06:32:19.301Z"
+  },
+  {
+    "run": "sequencer2d_s_6101",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1le089ZwgkFdyXtVuYWv5EUqqF-uOV6VO/view?usp=drivesdk",
+    "modified": "2026-11-15T06:32:08.620Z"
+  },
+  {
+    "run": "sequencer2d_s_6101",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/1uqCANNOp9qOo7xxSVAp_4iyiZIM8HGW9/view?usp=drivesdk",
+    "modified": "2026-11-15T06:32:08.384Z"
+  },
+  {
+    "run": "inception_v3_6101",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/19_yVdIFnvpM-HxRp2RXPyeiweQ2sUYRz/view?usp=drivesdk",
+    "modified": "2026-11-15T05:53:54.710Z"
+  },
+  {
+    "run": "inception_v3_6101",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/1d_wmCee4m4htNEL3VBFzLniGixxzpoBo/view?usp=drivesdk",
+    "modified": "2026-11-15T05:53:54.367Z"
+  },
+  {
+    "run": "inception_v3_6101",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1Tkq01yELWz-U7EZDjQ2R1RnB7xSrlF4t/view?usp=drivesdk",
+    "modified": "2026-11-15T05:53:48.207Z"
+  },
+  {
+    "run": "convnext_tiny_6101",
+    "name": "historia.json",
+    "url": "https://drive.google.com/file/d/1zTR5qSS_jMgJ-YUZ-q34fWPTTj3AdZzI/view?usp=drivesdk",
+    "modified": "2026-11-15T05:30:55.708Z"
+  },
+  {
+    "run": "convnext_tiny_6101",
+    "name": "resultado.json",
+    "url": "https://drive.google.com/file/d/1QLL298GD4nBHGzzTIqcmj4PSmS2m_5Zf/view?usp=drivesdk",
+    "modified": "2026-11-15T05:30:53.500Z"
+  },
+  {
+    "run": "convnext_tiny_6101",
+    "name": "predicciones_validacion.csv",
+    "url": "https://drive.google.com/file/d/1JwIo-qTm-c_xHAhSRYPdhQsrZaKZujLQ/view?usp=drivesdk",
+    "modified": "2026-11-15T05:30:52.216Z"
+  }
+]

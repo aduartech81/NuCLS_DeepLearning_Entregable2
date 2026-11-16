@@ -1,0 +1,6 @@
+{
+  "alcance": "Provisional local: validación, 3 bases, diez semillas comunes6113–6122. No sustituye selección Top3 final ni evaluación en reserva.",
+  "bootstrap_paciente": 2000,
+  "seleccion": "Definida exclusivamente con validación; pesos uniformes",
+  "nota": "MI entre semillas es un indicador de desacuerdo, no separa inequívocamente incertidumbre epistémica y aleatoria. Revisión humana pendiente. IC condicionado al protocolo y partición."
+}

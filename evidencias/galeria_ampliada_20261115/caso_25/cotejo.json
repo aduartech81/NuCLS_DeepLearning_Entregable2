@@ -1,0 +1,39 @@
+{
+  "paciente": "TCGA-AQ-A54N",
+  "archivo": "validation/nonTILnonMQ_stromal/TCGA-AQ-A54N-DX1_id-5ea40a47ddda5f839898d34a_left-34465_top-29828_bottom-30187_right-34776__7.png",
+  "clase_real": "nonTILnonMQ_stromal",
+  "clase_predicha": "nonTILnonMQ_stromal",
+  "p_tumor": "0.1759978085756302",
+  "p_linfocito": "0.061777424067258835",
+  "p_estroma": "0.7622247338294983",
+  "modelo": "resnet50",
+  "semilla": 6113,
+  "acierto": true,
+  "imagen": "TCGA-AQ-A54N-DX1_id-5ea40a47ddda5f839898d34a_left-34465_top-29828_bottom-30187_right-34776",
+  "fila": "7",
+  "tipo": "rectangle",
+  "sha_anotaciones": "3d56017ae30ea7ce7f00b2bb406b3cea8bbe269d61ad5a7c0198846923fd0301",
+  "sha_predicciones": "a89e0226864f4351eaed2714d38de64b07ab8f661188050ba5b59aef3289d8d8",
+  "fuente_predicciones": "final/resnet50_6113/predicciones_validacion.csv",
+  "anotacion": {
+    "": "7",
+    "raw_classification": "fibroblast",
+    "main_classification": "nonTILnonMQ_stromal",
+    "super_classification": "nonTIL_stromal",
+    "type": "rectangle",
+    "xmin": "85",
+    "ymin": "313",
+    "xmax": "117",
+    "ymax": "347",
+    "coords_x": "85,117,117,85",
+    "coords_y": "313,313,347,347"
+  },
+  "sha_campo": "04608414f88051ac345859784281d659593bd555cc6b8aee46f4b8ef03bf5aa6",
+  "sha_visualizacion": "e61eeb7caf54c2e3caf818604dd97facb9ebe752cf5a4a494897391dfa7ab353",
+  "dimensiones_campo": [
+    384,
+    443
+  ],
+  "vista": "Campo original con núcleo objetivo señalado; no se afirma que el campo completo sea la entrada de128px del modelo",
+  "revision_humana_nueva": false
+}

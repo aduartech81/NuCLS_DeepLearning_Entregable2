@@ -1,0 +1,41 @@
+{
+  "paciente": "TCGA-BH-A0BW",
+  "archivo": "validation/tumor_nonMitotic/TCGA-BH-A0BW-DX1_id-5ea4098cddda5f839897f8c4_left-44086_top-35419_bottom-35720_right-44445__11.png",
+  "clase_real": "tumor_nonMitotic",
+  "clase_predicha": "nonTILnonMQ_stromal",
+  "p_tumor": "0.48206838965415955",
+  "p_linfocito": "0.021789543330669403",
+  "p_estroma": "0.49614205956459045",
+  "modelo": "densenet121",
+  "semilla": 6113,
+  "acierto": false,
+  "fila": "11",
+  "imagen": "TCGA-BH-A0BW-DX1_id-5ea4098cddda5f839897f8c4_left-44086_top-35419_bottom-35720_right-44445",
+  "sha_pixeles": "c57667b295ddfbc5c69838d9dbf0d2f583bc15d1d38fc465572118ced035d78a",
+  "sha_imagen": "e33771b6483e381e2ff13c25a8e8901f3ec4de84cf62b02dd8e6b5b3bc4ac6d3",
+  "sha_anotaciones": "ae75038bf95a115c56c5df2df1b973772452a8fbc59cf3cec7a56669946fb133",
+  "particion_historica": "entrenamiento",
+  "particion_evaluacion": "validation",
+  "fuente_predicciones": "final/densenet121_6113/predicciones_validacion.csv",
+  "sha_predicciones": "c87c850b5a0546e84667a09f0d3d0c28b2367f4834312e99854a10ff9d1533ee",
+  "anotacion": {
+    "": "11",
+    "raw_classification": "tumor",
+    "main_classification": "tumor_nonMitotic",
+    "super_classification": "tumor_any",
+    "type": "rectangle",
+    "xmin": "339",
+    "ymin": "124",
+    "xmax": "396",
+    "ymax": "179",
+    "coords_x": "339,396,396,339,339",
+    "coords_y": "124,124,179,179,124"
+  },
+  "ventana_recorte": {
+    "left": "303",
+    "top": "87",
+    "right": "431",
+    "bottom": "215"
+  },
+  "nota": "Cotejo automático contra referencia existente; no adjudicación humana nueva. Partición actual según predicción V2. El recorte histórico coincide píxel a píxel con el campo original y su manifiesto."
+}

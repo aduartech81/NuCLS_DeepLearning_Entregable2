@@ -1,0 +1,56 @@
+{
+  "fecha_local": "2026-11-08",
+  "zona_horaria": "America/Bogota",
+  "estado": "CIERRE DOCUMENTAL DE ENTREGA; revisión crítica dirigida con limitaciones",
+  "identificacion": {
+    "Scopus": 1097,
+    "Web_of_Science": 328,
+    "IEEE_Xplore": 292,
+    "total": 1717,
+    "fuera_periodo": 69,
+    "en_periodo": 1648,
+    "duplicados_doi_retirados": 318,
+    "unidades_cribado": 1330,
+    "doi_distintos": 1287,
+    "sin_doi": 43,
+    "grupos_titulo_sin_fusion": 7
+  },
+  "estados_mutuamente_excluyentes": {
+    "excluir_por_titulo": 723,
+    "revision_secundaria": 137,
+    "excluir_por_resumen": 97,
+    "texto_completo_revisado": 163,
+    "fuente_metodologica": 50,
+    "contexto_tarea_distinta": 143,
+    "texto_completo_extraido": 3,
+    "no_recuperado_al_corte": 13,
+    "duplicado_tardio": 1
+  },
+  "con_decision_o_derivacion": 1330,
+  "sin_revision": 0,
+  "exclusiones_explicitas_titulo_resumen": 820,
+  "contexto_y_metodologia": 330,
+  "pendientes_resumen": 0,
+  "pendientes_texto_completo": 0,
+  "registros_con_lectura_texto_documentada": 166,
+  "informes_no_recuperados": 13,
+  "informes_evaluados_elegibilidad_final": 166,
+  "estudios_incluidos_finales": null,
+  "nota": "Flujo adaptado a revisión crítica dirigida. 13 no recuperados al corte, no exclusiones por pertinencia. 166 informes adjudicados por capas a partir del nivel de lectura registrado; no todos con lectura íntegra de apéndices. 21 informes focales, no 21 estudios independientes. Sin segundo revisor independiente.",
+  "fuente_metodologica": "https://www.prisma-statement.org/prisma-2020-flow-diagram",
+  "ecuaciones": [
+    "1717 = 69 + 318 + 1330",
+    "1330 = 820 + 330 + 1 + 13 + 166",
+    "180 = 1 + 13 + 166",
+    "166 = 21 + 83 + 49 + 12 + 1"
+  ],
+  "duplicados_tardios": 1,
+  "capas_sintesis": {
+    "sistema_conjunto_o_contextual": 83,
+    "tarea_o_modalidad_adyacente": 49,
+    "sintesis_focal_clasificacion": 21,
+    "fuente_secundaria_o_comentario": 12,
+    "sensibilidad_alerta_editorial": 1
+  },
+  "informes_sintesis_focal": 21
+}

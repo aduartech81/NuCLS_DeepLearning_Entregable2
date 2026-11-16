@@ -1,0 +1,39 @@
+{
+  "paciente": "TCGA-BH-A0E0",
+  "archivo": "validation/nonTILnonMQ_stromal/TCGA-BH-A0E0-DX1_id-5ea409edddda5f839898809d_left-19945_top-47328_bottom-47601_right-20232__4.png",
+  "clase_real": "nonTILnonMQ_stromal",
+  "clase_predicha": "nonTILnonMQ_stromal",
+  "p_tumor": "0.35038095712661743",
+  "p_linfocito": "0.049216803163290024",
+  "p_estroma": "0.6004022359848022",
+  "modelo": "densenet121",
+  "semilla": 6113,
+  "acierto": true,
+  "imagen": "TCGA-BH-A0E0-DX1_id-5ea409edddda5f839898809d_left-19945_top-47328_bottom-47601_right-20232",
+  "fila": "4",
+  "tipo": "polyline",
+  "sha_anotaciones": "8bc7e37765520323113113b0db1241295101898365219597a28c1adec4a5bf99",
+  "sha_predicciones": "c87c850b5a0546e84667a09f0d3d0c28b2367f4834312e99854a10ff9d1533ee",
+  "fuente_predicciones": "final/densenet121_6113/predicciones_validacion.csv",
+  "anotacion": {
+    "": "4",
+    "raw_classification": "fibroblast",
+    "main_classification": "nonTILnonMQ_stromal",
+    "super_classification": "nonTIL_stromal",
+    "type": "polyline",
+    "xmin": "181",
+    "ymin": "118",
+    "xmax": "228",
+    "ymax": "177",
+    "coords_x": "227,228,225,222,219,215,193,187,183,181,183,192,209,214,220,227",
+    "coords_y": "125,136,145,155,160,164,177,177,175,171,163,144,123,118,119,125"
+  },
+  "sha_campo": "af49a5e0b28ca1443c841e2b4c4164b0f32a7295be88b60bad17eb0aaf129ed3",
+  "sha_visualizacion": "d623a72293a2d16a3eaada80132ccd09dbd179e901ea8204eccaafa6a02e2cf5",
+  "dimensiones_campo": [
+    356,
+    339
+  ],
+  "vista": "Campo original con núcleo objetivo señalado; no se afirma que el campo completo sea la entrada de128px del modelo",
+  "revision_humana_nueva": false
+}

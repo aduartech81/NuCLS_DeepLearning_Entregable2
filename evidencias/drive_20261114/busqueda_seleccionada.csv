@@ -1,0 +1,11 @@
+modelo,seleccion_final,configuracion,lr,weight_decay,macro_f1,epocas,segundos,fuente
+resnet18,retenido,3,0.001,0.0001,0.8044944750046508,14,685.9314119689989,https://drive.google.com/file/d/10EQ71FlNrLbXr3TKdmF2FehdaVWaXh4g/view?usp=drivesdk
+resnext50_32x4d,exploratorio_fuera_Top10,2,0.001,0,0.8162402252722681,14,1556.0850409380073,https://drive.google.com/file/d/1F7IDFQENEi2GG_cw9hMJM30XyCG8q0M3/view?usp=drivesdk
+mobilenetv3_small_100,retenido,2,0.001,0,0.784636535653871,14,610.257494333986,https://drive.google.com/file/d/14qVaQnCIgNs6jUuSq2gi-j7bRz-DrgMe/view?usp=drivesdk
+efficientnet_b0,retenido,3,0.001,0.0001,0.824540706535982,21,1233.1871411949992,https://drive.google.com/file/d/1JGa5be3mS-DEG4ow6XouBQ94QvzihQ9N/view?usp=drivesdk
+deit_tiny_patch16_224,retenido,0,0.0001,0,0.7305046964722312,14,678.1350610960026,https://drive.google.com/file/d/1jbh7kXK6IBibejY_guTeTHuiiZB_fuRF/view?usp=drivesdk
+swin_tiny_patch4_window7_224,retenido,0,0.0001,0,0.7333482853353911,8,1020.6340139639979,https://drive.google.com/file/d/1Hs-8G_rArXYoauvOggw_mOaa-iiLjkpq/view?usp=drivesdk
+mobilevit_xxs,retenido,0,0.0001,0,0.7761863603806486,19,1088.2883068709962,https://drive.google.com/file/d/1qFXDU-2s_kQ1kw7BYd6pKCfo9y9Y3JS9/view?usp=drivesdk
+mobilevit_xs,exploratorio_fuera_Top10,0,0.0001,0,0.7764573927364625,14,891.1827581210018,https://drive.google.com/file/d/1rfV0vmQkTMApTk0WyfQRtHoaakAow28e/view?usp=drivesdk
+mixer_s16_224,retenido,0,0.0001,0,0.7687853884230534,21,1427.416001509995,https://drive.google.com/file/d/1siGnmjHYIvup0YVxpbIEDl82qtVQeVqn/view?usp=drivesdk
+resmlp_12_224,exploratorio_fuera_Top10,0,0.0001,0,0.7738717361184725,25,1490.3567831170003,https://drive.google.com/file/d/1zGURW-Fc-XAdmY7W7q3rw2wQmQFniM4v/view?usp=drivesdk

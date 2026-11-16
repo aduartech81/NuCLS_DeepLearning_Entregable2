@@ -1,0 +1,126 @@
+{
+  "zip": "NuCLS_E2_CONTINUACION_BASES_22_RESULTADOS.zip",
+  "sha256": "58c7fe7ec0c09cd4887f2d1a5c5eaf785c92a60c56682d5ef0c8d9ad7b690862",
+  "archivos": [
+    {
+      "archivo": "final/softmaxcnn_bn_6113/predicciones_validacion.csv",
+      "sha256": "1a99f8b9f6dde72e338281ec1dd967630e1d4f2e2f7be6a20e71a397393b0ec6"
+    },
+    {
+      "archivo": "final/softmaxcnn_bn_6114/predicciones_validacion.csv",
+      "sha256": "3dfb6f69915d9d5e23edf4a78cd144414b59f90b764f7455bba7a404a500a4d6"
+    },
+    {
+      "archivo": "final/softmaxcnn_bn_6115/predicciones_validacion.csv",
+      "sha256": "6fcff75898654b458677153f2ba3ec05b9d15732edd50e62bdbfea44a6d3cccd"
+    },
+    {
+      "archivo": "final/softmaxcnn_bn_6116/predicciones_validacion.csv",
+      "sha256": "ed80c3ede6dc45e01d06f2f1614580e5d4f331b4201eecebb5100fcf2ecbceed"
+    },
+    {
+      "archivo": "final/softmaxcnn_bn_6117/predicciones_validacion.csv",
+      "sha256": "fb2a1bbde28e02992ae5079b98381180f5f733077e1469d5ab3a5ebe3a66eee7"
+    },
+    {
+      "archivo": "final/softmaxcnn_bn_6118/predicciones_validacion.csv",
+      "sha256": "8f56e9a4460cea161542aef81aefec53786cf665b74c5bd1e2406e4456005f79"
+    },
+    {
+      "archivo": "final/softmaxcnn_bn_6119/predicciones_validacion.csv",
+      "sha256": "e409e0064fb1694a2d0b37287519a21c171ff850796146b0ef080bb6820d6bee"
+    },
+    {
+      "archivo": "final/softmaxcnn_bn_6120/predicciones_validacion.csv",
+      "sha256": "3165b6ed37bf837099f28fdad5b850e94b0fe0e757a1734014ad7fb2fa0928a1"
+    },
+    {
+      "archivo": "final/softmaxcnn_bn_6121/predicciones_validacion.csv",
+      "sha256": "bae4ef98ff3b6d7f0ea9eef56eed62b667d78d2961bc45bb111dfac380341358"
+    },
+    {
+      "archivo": "final/softmaxcnn_bn_6122/predicciones_validacion.csv",
+      "sha256": "4fd8c9d0c37b48e02423d0b457ab6575e164329e062d0ba06033edd8b12554c2"
+    },
+    {
+      "archivo": "final/densenet121_6113/predicciones_validacion.csv",
+      "sha256": "c87c850b5a0546e84667a09f0d3d0c28b2367f4834312e99854a10ff9d1533ee"
+    },
+    {
+      "archivo": "final/densenet121_6114/predicciones_validacion.csv",
+      "sha256": "727948931be625ff4928908478597270205db20cc155b53243541c68fd60bd48"
+    },
+    {
+      "archivo": "final/densenet121_6115/predicciones_validacion.csv",
+      "sha256": "a67e88573dd7f32ffe7eb0e948f3ead8656074de50b4fab85b2c2475ba13b476"
+    },
+    {
+      "archivo": "final/densenet121_6116/predicciones_validacion.csv",
+      "sha256": "2e7c74cb666ef7b1317b7a8701d270a6d901deceb0760e05551d3308d6264f01"
+    },
+    {
+      "archivo": "final/densenet121_6117/predicciones_validacion.csv",
+      "sha256": "a8c5dda7a1f0262df0fd27cf37d0593e8a897d31f734a250d4db3d7a7b50fc60"
+    },
+    {
+      "archivo": "final/densenet121_6118/predicciones_validacion.csv",
+      "sha256": "06699cadcc2a5b49f377d7772a24b3ee72fcd78bc64859edfbb3512a6ada079f"
+    },
+    {
+      "archivo": "final/densenet121_6119/predicciones_validacion.csv",
+      "sha256": "5f58f3c9a1a30818df8ba0345a5acc4cbfc6b5339c308c6c17c1b64199b66800"
+    },
+    {
+      "archivo": "final/densenet121_6120/predicciones_validacion.csv",
+      "sha256": "6a14b04c9d35c12987865b146adad909818c5671d9e55a00bddfb82054ff643b"
+    },
+    {
+      "archivo": "final/densenet121_6121/predicciones_validacion.csv",
+      "sha256": "188c34f8b202a0403f0f7fc90bb33c5fa4b24c8d7d0d0da35f16503abb2d8c9e"
+    },
+    {
+      "archivo": "final/densenet121_6122/predicciones_validacion.csv",
+      "sha256": "f69646b72b0b087cc8642ff802027ee1ff943d0c2dd78029d4d37a24cb6626be"
+    },
+    {
+      "archivo": "final/resnet50_6113/predicciones_validacion.csv",
+      "sha256": "a89e0226864f4351eaed2714d38de64b07ab8f661188050ba5b59aef3289d8d8"
+    },
+    {
+      "archivo": "final/resnet50_6114/predicciones_validacion.csv",
+      "sha256": "aa821f1dfc3a7f8c0d282f1a418d9d93d8435d7da92fd9980f16e3e539a0ed1a"
+    },
+    {
+      "archivo": "final/resnet50_6115/predicciones_validacion.csv",
+      "sha256": "367be26f1aa1fb198794dd4ee131ec7823b3e8e81811597806351ae608d9487a"
+    },
+    {
+      "archivo": "final/resnet50_6116/predicciones_validacion.csv",
+      "sha256": "7a681fb68614e512dca9d55bf4ad1c1ca42c78f5effca1969fb28315de6ba499"
+    },
+    {
+      "archivo": "final/resnet50_6117/predicciones_validacion.csv",
+      "sha256": "38c1bb18627887fe42af3c351bb42f05fde7b0e47f7b8964b624f4f9eab27df7"
+    },
+    {
+      "archivo": "final/resnet50_6118/predicciones_validacion.csv",
+      "sha256": "36274cdf8434db0c9890724c9724191f8d556d7bb4c49e5233c78777dbfeee39"
+    },
+    {
+      "archivo": "final/resnet50_6119/predicciones_validacion.csv",
+      "sha256": "a17681a44d399cd509599eeb9a8b8f2a4032116943045201564bb2dc16622d83"
+    },
+    {
+      "archivo": "final/resnet50_6120/predicciones_validacion.csv",
+      "sha256": "73d09b4127a292040ca8b1f93b1fbe906d378d4cb57f8755579c75bf91cd7e1b"
+    },
+    {
+      "archivo": "final/resnet50_6121/predicciones_validacion.csv",
+      "sha256": "510cce13c3ace9e469cb172be75352ca45132adf8f6142af86674e987991a1a4"
+    },
+    {
+      "archivo": "final/resnet50_6122/predicciones_validacion.csv",
+      "sha256": "3c43f663139eada2869c44aebbda03afea7763dbd9369140481869d931e6e151"
+    }
+  ]
+}

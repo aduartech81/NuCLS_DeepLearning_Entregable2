@@ -1,0 +1,30 @@
+{
+  "nucleos_cotejados": 66,
+  "predicciones_cotejadas": 198,
+  "modelos": [
+    "resnet50",
+    "densenet121",
+    "softmaxcnn_bn"
+  ],
+  "semilla": 6113,
+  "casos_galeria": 6,
+  "nucleos_galeria": 5,
+  "pacientes_galeria": [
+    "TCGA-BH-A0BW"
+  ],
+  "clases_galeria": [
+    "lymphocyte",
+    "nonTILnonMQ_stromal",
+    "tumor_nonMitotic"
+  ],
+  "aciertos": 3,
+  "discrepancias": 3,
+  "fuente_zip": "/Users/andresduarte/Downloads/NuCLS_E2_CONTINUACION_BASES_22_RESULTADOS.zip",
+  "sha_zip": "58c7fe7ec0c09cd4887f2d1a5c5eaf785c92a60c56682d5ef0c8d9ad7b690862",
+  "hashes_origen_y_csv_verificados": true,
+  "recortes_pixeles_verificados": true,
+  "revision_humana_nueva": false,
+  "Colab_intervenido": false,
+  "E1_modificado": false,
+  "limitacion": "Muestra de conveniencia; fuentes históricas cotejadas con identificadores de predicción V2, sin reauditar ZIP de datos actual en Colab."
+}

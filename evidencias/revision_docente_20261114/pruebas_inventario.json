@@ -1,0 +1,1 @@
+{"pruebas":5,"resultado":"OK","casos":["faltantes","integridad sin mutación","identidad incorrecta","historia incoherente","predicciones duplicadas"],"alcance":"Pruebas sintéticas de inventario; no evaluación de checkpoints reales ni inferencia GPU"}

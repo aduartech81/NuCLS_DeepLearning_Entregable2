@@ -1,0 +1,59 @@
+{
+  "modelo": "deit_tiny_patch16_224",
+  "semilla": 6105,
+  "mejor_epoca": 4,
+  "epocas_ejecutadas": 9,
+  "parametros": 5499651,
+  "segundos": 466.83303897400765,
+  "validacion": {
+    "macro_f1": 0.7426545758434839,
+    "accuracy": 0.8091752074182528,
+    "balanced_accuracy": 0.7266303813585601,
+    "confusion": [
+      [
+        1022,
+        22,
+        64
+      ],
+      [
+        89,
+        480,
+        28
+      ],
+      [
+        133,
+        55,
+        156
+      ]
+    ],
+    "clases": [
+      {
+        "clase": "tumor_nonMitotic",
+        "precision": 0.8215434083601286,
+        "recall": 0.9223826714801444,
+        "f1": 0.869047619047619,
+        "soporte": 1108
+      },
+      {
+        "clase": "lymphocyte",
+        "precision": 0.8617594254937163,
+        "recall": 0.8040201005025126,
+        "f1": 0.8318890814558059,
+        "soporte": 597
+      },
+      {
+        "clase": "nonTILnonMQ_stromal",
+        "precision": 0.6290322580645161,
+        "recall": 0.45348837209302323,
+        "f1": 0.527027027027027,
+        "soporte": 344
+      }
+    ]
+  },
+  "val_loss": 0.5325479787870289,
+  "lr": 0.0001,
+  "weight_decay": 0.0,
+  "inferencia_ms_por_recorte_mediana": 0.4745084219166529,
+  "inferencia_batch": 32,
+  "estado": "FASE_COMPLETADA_VALIDACION"
+}

@@ -1,0 +1,14 @@
+ORDEN DE EJECUCIÓN
+1. Dejar terminar la cola actual.
+2. Ejecutar el cuaderno de cierre de reserva ya preparado y conservar sus resultados.
+3. Abrir NuCLS_E2_Experimentos_Adicionales_V1.ipynb en Colab/Safari, en la misma cuenta de Drive. Ejecutar todo. No usar simultáneamente con otros entrenamientos.
+4. PCam está desactivado por defecto. Habilitar EJECUTAR_PCAM solo para reservar tiempo a cinco entrenamientos de20 épocas con datos externos; no confundir con cumplimiento ya obtenido.
+5. Descargar ZIP de adicionales y guardar notebook con salidas. Los pesos permanecen en Drive.
+
+Reanuda épocas guardadas y omite ablaciones completas verificadas. Puede repetir la última época interrumpida. Ante otro entorno activo o identidad incompatible, se detiene sin borrar resultados. La reanudación entre sesiones requiere comprobar marcas antiguas; no se borran de otra sesión automáticamente.
+
+REVISIONES HUMANAS
+Los CSV de100 errores/modelo requieren revisar recortes y categorizar. La muestra aleatoria de300 recortes train es separada para ruido de etiqueta. techo_multirater.py exige anotaciones reales con archivo,paciente,anotador,clase; no genera un techo ficticio.
+
+VALIDACIÓN
+Diez pruebas locales y compilación. No se ejecutó el cuaderno en GPU ni se descargó PCam en esta preparación. No se modificó E1 ni la ejecución Colab.

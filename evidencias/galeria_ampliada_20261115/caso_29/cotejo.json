@@ -1,0 +1,39 @@
+{
+  "paciente": "TCGA-BH-A1F6",
+  "archivo": "validation/nonTILnonMQ_stromal/TCGA-BH-A1F6-DX1_id-5ea40983ddda5f839897e4e7_left-55065_top-50901_bottom-51198_right-55348__15.png",
+  "clase_real": "nonTILnonMQ_stromal",
+  "clase_predicha": "nonTILnonMQ_stromal",
+  "p_tumor": "0.4565337896347046",
+  "p_linfocito": "0.04264633730053902",
+  "p_estroma": "0.5008199214935303",
+  "modelo": "softmaxcnn_bn",
+  "semilla": 6113,
+  "acierto": true,
+  "imagen": "TCGA-BH-A1F6-DX1_id-5ea40983ddda5f839897e4e7_left-55065_top-50901_bottom-51198_right-55348",
+  "fila": "15",
+  "tipo": "rectangle",
+  "sha_anotaciones": "23c0a1f3085a5caa38fac88c44cf8bd92189bd98fbbc2a869b1c6e2b66b6e50d",
+  "sha_predicciones": "1a99f8b9f6dde72e338281ec1dd967630e1d4f2e2f7be6a20e71a397393b0ec6",
+  "fuente_predicciones": "final/softmaxcnn_bn_6113/predicciones_validacion.csv",
+  "anotacion": {
+    "": "15",
+    "raw_classification": "fibroblast",
+    "main_classification": "nonTILnonMQ_stromal",
+    "super_classification": "nonTIL_stromal",
+    "type": "rectangle",
+    "xmin": "249",
+    "ymin": "117",
+    "xmax": "296",
+    "ymax": "137",
+    "coords_x": "249,296,296,249,249",
+    "coords_y": "117,117,137,137,117"
+  },
+  "sha_campo": "ca6ab27e34a9134772b68f2535e143a28b22c6a4db3dd1497107010a2bdb42a0",
+  "sha_visualizacion": "9d1bcf98b767728b35eca7cc45c44495513719fd5eb77f160a54d5236ac0174e",
+  "dimensiones_campo": [
+    354,
+    371
+  ],
+  "vista": "Campo original con núcleo objetivo señalado; no se afirma que el campo completo sea la entrada de128px del modelo",
+  "revision_humana_nueva": false
+}

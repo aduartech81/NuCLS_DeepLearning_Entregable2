@@ -1,0 +1,24 @@
+{
+  "registros_identificados": 1717,
+  "eliminados_automaticamente": 69,
+  "duplicados": 318,
+  "registros_unificados": 1330,
+  "lecturas_heredadas": 166,
+  "categorias": {
+    "sistema_conjunto_o_contextual": 83,
+    "tarea_o_modalidad_adyacente": 49,
+    "sintesis_focal_clasificacion": 21,
+    "fuente_secundaria_o_comentario": 12,
+    "sensibilidad_alerta_editorial": 1
+  },
+  "no_recuperados_E1": 13,
+  "recuperados_E2": 1,
+  "no_recuperados_actuales": 12,
+  "referencias_dominio": 12,
+  "coincidencias_exactas_con_E1": 4,
+  "pares_titulo_similares": 2,
+  "doi_duplicados_entre166": 0,
+  "titulo_duplicado_entre166": 0,
+  "estudios_globales_independientes": null,
+  "limite": "166 informes no equivalen automáticamente a166 estudios independientes; no reconstruir cadenas originales ausentes"
+}

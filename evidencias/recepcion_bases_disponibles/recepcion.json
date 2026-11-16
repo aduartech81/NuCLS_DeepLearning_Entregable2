@@ -1,0 +1,7085 @@
+{
+  "estado": "ANALISIS_DESCRIPTIVO_VALIDACION",
+  "fuentes": [
+    {
+      "archivo": "NuCLS_E2_CONTINUACION_BASES_22_RESULTADOS.zip",
+      "sha256": "58c7fe7ec0c09cd4887f2d1a5c5eaf785c92a60c56682d5ef0c8d9ad7b690862"
+    }
+  ],
+  "corridas": [
+    {
+      "modelo": "densenet121",
+      "semilla": 6113,
+      "fase": "otro_validar_protocolo",
+      "ruta": "final/densenet121_6113",
+      "predicciones_sha256": "c87c850b5a0546e84667a09f0d3d0c28b2367f4834312e99854a10ff9d1533ee",
+      "metricas": {
+        "n": 2049,
+        "macro_f1": 0.7956542278195577,
+        "accuracy": 0.8335773548072231,
+        "mcc": 0.7192974085846666,
+        "brier_multiclase_suma": 0.23882299316459232,
+        "ece_10": 0.01561791727227548,
+        "auc_por_clase": [
+          0.9387432526270155,
+          0.9814095731181157,
+          0.8975107413216941
+        ],
+        "ap_por_clase": [
+          0.9437521007590283,
+          0.9645039852053554,
+          0.6525972091644148
+        ],
+        "matriz_confusion": [
+          [
+            986,
+            16,
+            106
+          ],
+          [
+            63,
+            497,
+            37
+          ],
+          [
+            102,
+            17,
+            225
+          ]
+        ],
+        "calibracion": [
+          {
+            "bin": 3,
+            "limite_inferior": 0.3,
+            "limite_superior": 0.4,
+            "n": 8,
+            "accuracy": 0.375,
+            "confianza": 0.37785065919160843
+          },
+          {
+            "bin": 4,
+            "limite_inferior": 0.4,
+            "limite_superior": 0.5,
+            "n": 80,
+            "accuracy": 0.475,
+            "confianza": 0.4664345722645521
+          },
+          {
+            "bin": 5,
+            "limite_inferior": 0.5,
+            "limite_superior": 0.6,
+            "n": 186,
+            "accuracy": 0.5698924731182796,
+            "confianza": 0.5506144390311293
+          },
+          {
+            "bin": 6,
+            "limite_inferior": 0.6,
+            "limite_superior": 0.7,
+            "n": 180,
+            "accuracy": 0.6888888888888889,
+            "confianza": 0.6505479378832711
+          },
+          {
+            "bin": 7,
+            "limite_inferior": 0.7,
+            "limite_superior": 0.8,
+            "n": 235,
+            "accuracy": 0.7489361702127659,
+            "confianza": 0.7537948572889287
+          },
+          {
+            "bin": 8,
+            "limite_inferior": 0.8,
+            "limite_superior": 0.9,
+            "n": 348,
+            "accuracy": 0.7988505747126436,
+            "confianza": 0.8542325280863663
+          },
+          {
+            "bin": 9,
+            "limite_inferior": 0.9,
+            "limite_superior": 1.0,
+            "n": 1012,
+            "accuracy": 0.9713438735177866,
+            "confianza": 0.9709572369166514
+          }
+        ]
+      },
+      "por_paciente": [
+        {
+          "paciente": "TCGA-AQ-A04J",
+          "n": 79,
+          "macro_f1": 0.7702781383373662,
+          "accuracy": 0.7974683544303798
+        },
+        {
+          "paciente": "TCGA-AQ-A54N",
+          "n": 116,
+          "macro_f1": 0.8468995573247314,
+          "accuracy": 0.9310344827586207
+        },
+        {
+          "paciente": "TCGA-BH-A0AV",
+          "n": 231,
+          "macro_f1": 0.931599348548501,
+          "accuracy": 0.9307359307359307
+        },
+        {
+          "paciente": "TCGA-BH-A0B3",
+          "n": 87,
+          "macro_f1": 0.6765413903217882,
+          "accuracy": 0.7701149425287356
+        },
+        {
+          "paciente": "TCGA-BH-A0B9",
+          "n": 161,
+          "macro_f1": 0.533301764838691,
+          "accuracy": 0.6335403726708074
+        },
+        {
+          "paciente": "TCGA-BH-A0BG",
+          "n": 72,
+          "macro_f1": 0.6583863275039746,
+          "accuracy": 0.7916666666666666
+        },
+        {
+          "paciente": "TCGA-BH-A0BL",
+          "n": 26,
+          "macro_f1": 0.7074190177638453,
+          "accuracy": 0.7307692307692307
+        },
+        {
+          "paciente": "TCGA-BH-A0BW",
+          "n": 64,
+          "macro_f1": 0.686462324393359,
+          "accuracy": 0.90625
+        },
+        {
+          "paciente": "TCGA-BH-A0E0",
+          "n": 64,
+          "macro_f1": 0.7255870249334301,
+          "accuracy": 0.796875
+        },
+        {
+          "paciente": "TCGA-BH-A0E6",
+          "n": 52,
+          "macro_f1": 0.8299910873440286,
+          "accuracy": 0.8653846153846154
+        },
+        {
+          "paciente": "TCGA-BH-A0WA",
+          "n": 164,
+          "macro_f1": 0.49794238683127573,
+          "accuracy": 0.9878048780487805
+        },
+        {
+          "paciente": "TCGA-BH-A18G",
+          "n": 184,
+          "macro_f1": 0.6605357918917241,
+          "accuracy": 0.7880434782608695
+        },
+        {
+          "paciente": "TCGA-BH-A18V",
+          "n": 27,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-BH-A1EW",
+          "n": 95,
+          "macro_f1": 0.5714699792960662,
+          "accuracy": 0.8105263157894737
+        },
+        {
+          "paciente": "TCGA-BH-A1F6",
+          "n": 103,
+          "macro_f1": 0.7604617604617605,
+          "accuracy": 0.8932038834951457
+        },
+        {
+          "paciente": "TCGA-OL-A5D6",
+          "n": 2,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-OL-A5D7",
+          "n": 46,
+          "macro_f1": 0.9179879715691635,
+          "accuracy": 0.8913043478260869
+        },
+        {
+          "paciente": "TCGA-OL-A5RW",
+          "n": 47,
+          "macro_f1": 0.5988455988455988,
+          "accuracy": 0.9148936170212766
+        },
+        {
+          "paciente": "TCGA-OL-A66I",
+          "n": 42,
+          "macro_f1": 0.7499478840942255,
+          "accuracy": 0.8571428571428571
+        },
+        {
+          "paciente": "TCGA-OL-A66P",
+          "n": 172,
+          "macro_f1": 0.7634124447000561,
+          "accuracy": 0.7906976744186046
+        },
+        {
+          "paciente": "TCGA-OL-A6VO",
+          "n": 215,
+          "macro_f1": 0.5436179012019781,
+          "accuracy": 0.7534883720930232
+        }
+      ]
+    },
+    {
+      "modelo": "densenet121",
+      "semilla": 6114,
+      "fase": "otro_validar_protocolo",
+      "ruta": "final/densenet121_6114",
+      "predicciones_sha256": "727948931be625ff4928908478597270205db20cc155b53243541c68fd60bd48",
+      "metricas": {
+        "n": 2049,
+        "macro_f1": 0.7860620696143803,
+        "accuracy": 0.8448023426061494,
+        "mcc": 0.7341581546516831,
+        "brier_multiclase_suma": 0.21873684041038088,
+        "ece_10": 0.0430148590943358,
+        "auc_por_clase": [
+          0.9643190092727224,
+          0.984613148386561,
+          0.9068932005728705
+        ],
+        "ap_por_clase": [
+          0.9702886866883553,
+          0.9672269384680033,
+          0.6563070129646259
+        ],
+        "matriz_confusion": [
+          [
+            1048,
+            12,
+            48
+          ],
+          [
+            49,
+            505,
+            43
+          ],
+          [
+            134,
+            32,
+            178
+          ]
+        ],
+        "calibracion": [
+          {
+            "bin": 3,
+            "limite_inferior": 0.3,
+            "limite_superior": 0.4,
+            "n": 12,
+            "accuracy": 0.5833333333333334,
+            "confianza": 0.37797923386096954
+          },
+          {
+            "bin": 4,
+            "limite_inferior": 0.4,
+            "limite_superior": 0.5,
+            "n": 62,
+            "accuracy": 0.5161290322580645,
+            "confianza": 0.46223480182309307
+          },
+          {
+            "bin": 5,
+            "limite_inferior": 0.5,
+            "limite_superior": 0.6,
+            "n": 123,
+            "accuracy": 0.4959349593495935,
+            "confianza": 0.5559356081776503
+          },
+          {
+            "bin": 6,
+            "limite_inferior": 0.6,
+            "limite_superior": 0.7,
+            "n": 118,
+            "accuracy": 0.4830508474576271,
+            "confianza": 0.6517621086815656
+          },
+          {
+            "bin": 7,
+            "limite_inferior": 0.7,
+            "limite_superior": 0.8,
+            "n": 162,
+            "accuracy": 0.5925925925925926,
+            "confianza": 0.7498010650829032
+          },
+          {
+            "bin": 8,
+            "limite_inferior": 0.8,
+            "limite_superior": 0.9,
+            "n": 224,
+            "accuracy": 0.7991071428571429,
+            "confianza": 0.8507398800658328
+          },
+          {
+            "bin": 9,
+            "limite_inferior": 0.9,
+            "limite_superior": 1.0,
+            "n": 1348,
+            "accuracy": 0.9636498516320475,
+            "confianza": 0.9770105641655823
+          }
+        ]
+      },
+      "por_paciente": [
+        {
+          "paciente": "TCGA-AQ-A04J",
+          "n": 79,
+          "macro_f1": 0.801289252661424,
+          "accuracy": 0.8354430379746836
+        },
+        {
+          "paciente": "TCGA-AQ-A54N",
+          "n": 116,
+          "macro_f1": 0.7776344086021506,
+          "accuracy": 0.896551724137931
+        },
+        {
+          "paciente": "TCGA-BH-A0AV",
+          "n": 231,
+          "macro_f1": 0.7346118063937771,
+          "accuracy": 0.7835497835497836
+        },
+        {
+          "paciente": "TCGA-BH-A0B3",
+          "n": 87,
+          "macro_f1": 0.5939632545931759,
+          "accuracy": 0.7586206896551724
+        },
+        {
+          "paciente": "TCGA-BH-A0B9",
+          "n": 161,
+          "macro_f1": 0.8339526978365454,
+          "accuracy": 0.8944099378881988
+        },
+        {
+          "paciente": "TCGA-BH-A0BG",
+          "n": 72,
+          "macro_f1": 0.7925925925925926,
+          "accuracy": 0.875
+        },
+        {
+          "paciente": "TCGA-BH-A0BL",
+          "n": 26,
+          "macro_f1": 0.4585964912280702,
+          "accuracy": 0.46153846153846156
+        },
+        {
+          "paciente": "TCGA-BH-A0BW",
+          "n": 64,
+          "macro_f1": 0.7136752136752137,
+          "accuracy": 0.9375
+        },
+        {
+          "paciente": "TCGA-BH-A0E0",
+          "n": 64,
+          "macro_f1": 0.7187198766146135,
+          "accuracy": 0.90625
+        },
+        {
+          "paciente": "TCGA-BH-A0E6",
+          "n": 52,
+          "macro_f1": 0.7882263934895514,
+          "accuracy": 0.8269230769230769
+        },
+        {
+          "paciente": "TCGA-BH-A0WA",
+          "n": 164,
+          "macro_f1": 0.46357069143446855,
+          "accuracy": 0.9817073170731707
+        },
+        {
+          "paciente": "TCGA-BH-A18G",
+          "n": 184,
+          "macro_f1": 0.7555718385540696,
+          "accuracy": 0.8206521739130435
+        },
+        {
+          "paciente": "TCGA-BH-A18V",
+          "n": 27,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-BH-A1EW",
+          "n": 95,
+          "macro_f1": 0.7126984126984127,
+          "accuracy": 0.9368421052631579
+        },
+        {
+          "paciente": "TCGA-BH-A1F6",
+          "n": 103,
+          "macro_f1": 0.8255047862651631,
+          "accuracy": 0.9805825242718447
+        },
+        {
+          "paciente": "TCGA-OL-A5D6",
+          "n": 2,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-OL-A5D7",
+          "n": 46,
+          "macro_f1": 0.9,
+          "accuracy": 0.8695652173913043
+        },
+        {
+          "paciente": "TCGA-OL-A5RW",
+          "n": 47,
+          "macro_f1": 0.24648786717752236,
+          "accuracy": 0.40425531914893614
+        },
+        {
+          "paciente": "TCGA-OL-A66I",
+          "n": 42,
+          "macro_f1": 0.8648723257418909,
+          "accuracy": 0.9523809523809523
+        },
+        {
+          "paciente": "TCGA-OL-A66P",
+          "n": 172,
+          "macro_f1": 0.6764810863041744,
+          "accuracy": 0.7267441860465116
+        },
+        {
+          "paciente": "TCGA-OL-A6VO",
+          "n": 215,
+          "macro_f1": 0.6633211588522334,
+          "accuracy": 0.8325581395348837
+        }
+      ]
+    },
+    {
+      "modelo": "densenet121",
+      "semilla": 6115,
+      "fase": "otro_validar_protocolo",
+      "ruta": "final/densenet121_6115",
+      "predicciones_sha256": "a67e88573dd7f32ffe7eb0e948f3ead8656074de50b4fab85b2c2475ba13b476",
+      "metricas": {
+        "n": 2049,
+        "macro_f1": 0.7813131837101234,
+        "accuracy": 0.8321132259638848,
+        "mcc": 0.7159962654399895,
+        "brier_multiclase_suma": 0.25076024807885955,
+        "ece_10": 0.024488985014869374,
+        "auc_por_clase": [
+          0.9394721799146004,
+          0.9785901500154583,
+          0.866272249880652
+        ],
+        "ap_por_clase": [
+          0.9515134131699684,
+          0.9589691518099237,
+          0.5159174304544537
+        ],
+        "matriz_confusion": [
+          [
+            1016,
+            13,
+            79
+          ],
+          [
+            38,
+            483,
+            76
+          ],
+          [
+            119,
+            19,
+            206
+          ]
+        ],
+        "calibracion": [
+          {
+            "bin": 3,
+            "limite_inferior": 0.3,
+            "limite_superior": 0.4,
+            "n": 16,
+            "accuracy": 0.125,
+            "confianza": 0.374292416498065
+          },
+          {
+            "bin": 4,
+            "limite_inferior": 0.4,
+            "limite_superior": 0.5,
+            "n": 92,
+            "accuracy": 0.5434782608695652,
+            "confianza": 0.45555621741906455
+          },
+          {
+            "bin": 5,
+            "limite_inferior": 0.5,
+            "limite_superior": 0.6,
+            "n": 178,
+            "accuracy": 0.5617977528089888,
+            "confianza": 0.548778379566214
+          },
+          {
+            "bin": 6,
+            "limite_inferior": 0.6,
+            "limite_superior": 0.7,
+            "n": 189,
+            "accuracy": 0.6931216931216931,
+            "confianza": 0.6482952924632521
+          },
+          {
+            "bin": 7,
+            "limite_inferior": 0.7,
+            "limite_superior": 0.8,
+            "n": 221,
+            "accuracy": 0.7828054298642534,
+            "confianza": 0.7547311836777769
+          },
+          {
+            "bin": 8,
+            "limite_inferior": 0.8,
+            "limite_superior": 0.9,
+            "n": 317,
+            "accuracy": 0.8485804416403786,
+            "confianza": 0.8558601891204762
+          },
+          {
+            "bin": 9,
+            "limite_inferior": 0.9,
+            "limite_superior": 1.0,
+            "n": 1036,
+            "accuracy": 0.9459459459459459,
+            "confianza": 0.964091406480686
+          }
+        ]
+      },
+      "por_paciente": [
+        {
+          "paciente": "TCGA-AQ-A04J",
+          "n": 79,
+          "macro_f1": 0.7965811965811965,
+          "accuracy": 0.8227848101265823
+        },
+        {
+          "paciente": "TCGA-AQ-A54N",
+          "n": 116,
+          "macro_f1": 0.8104327617611959,
+          "accuracy": 0.9224137931034483
+        },
+        {
+          "paciente": "TCGA-BH-A0AV",
+          "n": 231,
+          "macro_f1": 0.7596287316788964,
+          "accuracy": 0.8008658008658008
+        },
+        {
+          "paciente": "TCGA-BH-A0B3",
+          "n": 87,
+          "macro_f1": 0.5982536987630366,
+          "accuracy": 0.7586206896551724
+        },
+        {
+          "paciente": "TCGA-BH-A0B9",
+          "n": 161,
+          "macro_f1": 0.80506348133123,
+          "accuracy": 0.8819875776397516
+        },
+        {
+          "paciente": "TCGA-BH-A0BG",
+          "n": 72,
+          "macro_f1": 0.7255955255110252,
+          "accuracy": 0.8194444444444444
+        },
+        {
+          "paciente": "TCGA-BH-A0BL",
+          "n": 26,
+          "macro_f1": 0.52,
+          "accuracy": 0.5
+        },
+        {
+          "paciente": "TCGA-BH-A0BW",
+          "n": 64,
+          "macro_f1": 0.4400527009222661,
+          "accuracy": 0.890625
+        },
+        {
+          "paciente": "TCGA-BH-A0E0",
+          "n": 64,
+          "macro_f1": 0.5623257666268419,
+          "accuracy": 0.84375
+        },
+        {
+          "paciente": "TCGA-BH-A0E6",
+          "n": 52,
+          "macro_f1": 0.8326923076923077,
+          "accuracy": 0.8653846153846154
+        },
+        {
+          "paciente": "TCGA-BH-A0WA",
+          "n": 164,
+          "macro_f1": 0.46357069143446855,
+          "accuracy": 0.9817073170731707
+        },
+        {
+          "paciente": "TCGA-BH-A18G",
+          "n": 184,
+          "macro_f1": 0.7755102414866583,
+          "accuracy": 0.8260869565217391
+        },
+        {
+          "paciente": "TCGA-BH-A18V",
+          "n": 27,
+          "macro_f1": 0.3270440251572327,
+          "accuracy": 0.9629629629629629
+        },
+        {
+          "paciente": "TCGA-BH-A1EW",
+          "n": 95,
+          "macro_f1": 0.5957854406130269,
+          "accuracy": 0.9052631578947369
+        },
+        {
+          "paciente": "TCGA-BH-A1F6",
+          "n": 103,
+          "macro_f1": 0.810266072856001,
+          "accuracy": 0.9611650485436893
+        },
+        {
+          "paciente": "TCGA-OL-A5D6",
+          "n": 2,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-OL-A5D7",
+          "n": 46,
+          "macro_f1": 0.8121369422815473,
+          "accuracy": 0.8913043478260869
+        },
+        {
+          "paciente": "TCGA-OL-A5RW",
+          "n": 47,
+          "macro_f1": 0.16129032258064516,
+          "accuracy": 0.3191489361702128
+        },
+        {
+          "paciente": "TCGA-OL-A66I",
+          "n": 42,
+          "macro_f1": 0.7294942783314876,
+          "accuracy": 0.8809523809523809
+        },
+        {
+          "paciente": "TCGA-OL-A66P",
+          "n": 172,
+          "macro_f1": 0.6858886872875333,
+          "accuracy": 0.7325581395348837
+        },
+        {
+          "paciente": "TCGA-OL-A6VO",
+          "n": 215,
+          "macro_f1": 0.6947576404851898,
+          "accuracy": 0.7767441860465116
+        }
+      ]
+    },
+    {
+      "modelo": "densenet121",
+      "semilla": 6116,
+      "fase": "otro_validar_protocolo",
+      "ruta": "final/densenet121_6116",
+      "predicciones_sha256": "2e7c74cb666ef7b1317b7a8701d270a6d901deceb0760e05551d3308d6264f01",
+      "metricas": {
+        "n": 2049,
+        "macro_f1": 0.7900676419083035,
+        "accuracy": 0.8350414836505613,
+        "mcc": 0.7170605089175706,
+        "brier_multiclase_suma": 0.241728517282386,
+        "ece_10": 0.03484159107322285,
+        "auc_por_clase": [
+          0.9413472494504272,
+          0.962184660677123,
+          0.9211416490486258
+        ],
+        "ap_por_clase": [
+          0.9467832998796392,
+          0.9280873847086849,
+          0.7574214997104618
+        ],
+        "matriz_confusion": [
+          [
+            1020,
+            73,
+            15
+          ],
+          [
+            64,
+            503,
+            30
+          ],
+          [
+            133,
+            23,
+            188
+          ]
+        ],
+        "calibracion": [
+          {
+            "bin": 3,
+            "limite_inferior": 0.3,
+            "limite_superior": 0.4,
+            "n": 2,
+            "accuracy": 0.5,
+            "confianza": 0.3735358268022537
+          },
+          {
+            "bin": 4,
+            "limite_inferior": 0.4,
+            "limite_superior": 0.5,
+            "n": 61,
+            "accuracy": 0.4098360655737705,
+            "confianza": 0.4630827043877273
+          },
+          {
+            "bin": 5,
+            "limite_inferior": 0.5,
+            "limite_superior": 0.6,
+            "n": 155,
+            "accuracy": 0.5612903225806452,
+            "confianza": 0.5478627539450123
+          },
+          {
+            "bin": 6,
+            "limite_inferior": 0.6,
+            "limite_superior": 0.7,
+            "n": 148,
+            "accuracy": 0.6148648648648649,
+            "confianza": 0.6501793728486912
+          },
+          {
+            "bin": 7,
+            "limite_inferior": 0.7,
+            "limite_superior": 0.8,
+            "n": 172,
+            "accuracy": 0.7267441860465116,
+            "confianza": 0.7498495173315669
+          },
+          {
+            "bin": 8,
+            "limite_inferior": 0.8,
+            "limite_superior": 0.9,
+            "n": 275,
+            "accuracy": 0.76,
+            "confianza": 0.8571154776486484
+          },
+          {
+            "bin": 9,
+            "limite_inferior": 0.9,
+            "limite_superior": 1.0,
+            "n": 1236,
+            "accuracy": 0.9490291262135923,
+            "confianza": 0.9732206740618524
+          }
+        ]
+      },
+      "por_paciente": [
+        {
+          "paciente": "TCGA-AQ-A04J",
+          "n": 79,
+          "macro_f1": 0.7350463156914769,
+          "accuracy": 0.759493670886076
+        },
+        {
+          "paciente": "TCGA-AQ-A54N",
+          "n": 116,
+          "macro_f1": 0.8443197755960729,
+          "accuracy": 0.9310344827586207
+        },
+        {
+          "paciente": "TCGA-BH-A0AV",
+          "n": 231,
+          "macro_f1": 0.584761160731382,
+          "accuracy": 0.5887445887445888
+        },
+        {
+          "paciente": "TCGA-BH-A0B3",
+          "n": 87,
+          "macro_f1": 0.6452380952380953,
+          "accuracy": 0.7931034482758621
+        },
+        {
+          "paciente": "TCGA-BH-A0B9",
+          "n": 161,
+          "macro_f1": 0.880677464298154,
+          "accuracy": 0.9316770186335404
+        },
+        {
+          "paciente": "TCGA-BH-A0BG",
+          "n": 72,
+          "macro_f1": 0.7850529100529101,
+          "accuracy": 0.8611111111111112
+        },
+        {
+          "paciente": "TCGA-BH-A0BL",
+          "n": 26,
+          "macro_f1": 0.5650428753877029,
+          "accuracy": 0.6538461538461539
+        },
+        {
+          "paciente": "TCGA-BH-A0BW",
+          "n": 64,
+          "macro_f1": 0.7749766573295984,
+          "accuracy": 0.96875
+        },
+        {
+          "paciente": "TCGA-BH-A0E0",
+          "n": 64,
+          "macro_f1": 0.6076225045372051,
+          "accuracy": 0.890625
+        },
+        {
+          "paciente": "TCGA-BH-A0E6",
+          "n": 52,
+          "macro_f1": 0.8336423186256333,
+          "accuracy": 0.8846153846153846
+        },
+        {
+          "paciente": "TCGA-BH-A0WA",
+          "n": 164,
+          "macro_f1": 0.3302564102564102,
+          "accuracy": 0.9817073170731707
+        },
+        {
+          "paciente": "TCGA-BH-A18G",
+          "n": 184,
+          "macro_f1": 0.7984162710274895,
+          "accuracy": 0.8695652173913043
+        },
+        {
+          "paciente": "TCGA-BH-A18V",
+          "n": 27,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-BH-A1EW",
+          "n": 95,
+          "macro_f1": 0.6189406900484745,
+          "accuracy": 0.8947368421052632
+        },
+        {
+          "paciente": "TCGA-BH-A1F6",
+          "n": 103,
+          "macro_f1": 0.7744651483781918,
+          "accuracy": 0.9514563106796117
+        },
+        {
+          "paciente": "TCGA-OL-A5D6",
+          "n": 2,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-OL-A5D7",
+          "n": 46,
+          "macro_f1": 0.8617511520737328,
+          "accuracy": 0.8260869565217391
+        },
+        {
+          "paciente": "TCGA-OL-A5RW",
+          "n": 47,
+          "macro_f1": 0.583554376657825,
+          "accuracy": 0.8936170212765957
+        },
+        {
+          "paciente": "TCGA-OL-A66I",
+          "n": 42,
+          "macro_f1": 0.8745602745602746,
+          "accuracy": 0.9047619047619048
+        },
+        {
+          "paciente": "TCGA-OL-A66P",
+          "n": 172,
+          "macro_f1": 0.7622267450625659,
+          "accuracy": 0.7965116279069767
+        },
+        {
+          "paciente": "TCGA-OL-A6VO",
+          "n": 215,
+          "macro_f1": 0.5245808881775709,
+          "accuracy": 0.7255813953488373
+        }
+      ]
+    },
+    {
+      "modelo": "densenet121",
+      "semilla": 6117,
+      "fase": "otro_validar_protocolo",
+      "ruta": "final/densenet121_6117",
+      "predicciones_sha256": "a8c5dda7a1f0262df0fd27cf37d0593e8a897d31f734a250d4db3d7a7b50fc60",
+      "metricas": {
+        "n": 2049,
+        "macro_f1": 0.7995569571389717,
+        "accuracy": 0.8452903855539288,
+        "mcc": 0.7367219340319177,
+        "brier_multiclase_suma": 0.21792817535108183,
+        "ece_10": 0.03452634204882654,
+        "auc_por_clase": [
+          0.9567995488323736,
+          0.9813507390026348,
+          0.9057832639978176
+        ],
+        "ap_por_clase": [
+          0.9619249816176516,
+          0.9608329474062849,
+          0.708727653884412
+        ],
+        "matriz_confusion": [
+          [
+            1010,
+            29,
+            69
+          ],
+          [
+            45,
+            516,
+            36
+          ],
+          [
+            107,
+            31,
+            206
+          ]
+        ],
+        "calibracion": [
+          {
+            "bin": 3,
+            "limite_inferior": 0.3,
+            "limite_superior": 0.4,
+            "n": 8,
+            "accuracy": 0.25,
+            "confianza": 0.3702722229063511
+          },
+          {
+            "bin": 4,
+            "limite_inferior": 0.4,
+            "limite_superior": 0.5,
+            "n": 57,
+            "accuracy": 0.3508771929824561,
+            "confianza": 0.46415684411400243
+          },
+          {
+            "bin": 5,
+            "limite_inferior": 0.5,
+            "limite_superior": 0.6,
+            "n": 142,
+            "accuracy": 0.5422535211267606,
+            "confianza": 0.5526591266544771
+          },
+          {
+            "bin": 6,
+            "limite_inferior": 0.6,
+            "limite_superior": 0.7,
+            "n": 138,
+            "accuracy": 0.5652173913043478,
+            "confianza": 0.6507675950077997
+          },
+          {
+            "bin": 7,
+            "limite_inferior": 0.7,
+            "limite_superior": 0.8,
+            "n": 165,
+            "accuracy": 0.6545454545454545,
+            "confianza": 0.7480881105769764
+          },
+          {
+            "bin": 8,
+            "limite_inferior": 0.8,
+            "limite_superior": 0.9,
+            "n": 206,
+            "accuracy": 0.8203883495145631,
+            "confianza": 0.8549175100419127
+          },
+          {
+            "bin": 9,
+            "limite_inferior": 0.9,
+            "limite_superior": 1.0,
+            "n": 1333,
+            "accuracy": 0.9587396849212303,
+            "confianza": 0.9793655570521
+          }
+        ]
+      },
+      "por_paciente": [
+        {
+          "paciente": "TCGA-AQ-A04J",
+          "n": 79,
+          "macro_f1": 0.7948215909698817,
+          "accuracy": 0.8227848101265823
+        },
+        {
+          "paciente": "TCGA-AQ-A54N",
+          "n": 116,
+          "macro_f1": 0.8294963222499455,
+          "accuracy": 0.9310344827586207
+        },
+        {
+          "paciente": "TCGA-BH-A0AV",
+          "n": 231,
+          "macro_f1": 0.7399587216525408,
+          "accuracy": 0.7792207792207793
+        },
+        {
+          "paciente": "TCGA-BH-A0B3",
+          "n": 87,
+          "macro_f1": 0.6613756613756613,
+          "accuracy": 0.7701149425287356
+        },
+        {
+          "paciente": "TCGA-BH-A0B9",
+          "n": 161,
+          "macro_f1": 0.8660057801011517,
+          "accuracy": 0.9192546583850931
+        },
+        {
+          "paciente": "TCGA-BH-A0BG",
+          "n": 72,
+          "macro_f1": 0.6853151046351263,
+          "accuracy": 0.8194444444444444
+        },
+        {
+          "paciente": "TCGA-BH-A0BL",
+          "n": 26,
+          "macro_f1": 0.547008547008547,
+          "accuracy": 0.5769230769230769
+        },
+        {
+          "paciente": "TCGA-BH-A0BW",
+          "n": 64,
+          "macro_f1": 0.7403820285176218,
+          "accuracy": 0.953125
+        },
+        {
+          "paciente": "TCGA-BH-A0E0",
+          "n": 64,
+          "macro_f1": 0.5839177185600748,
+          "accuracy": 0.859375
+        },
+        {
+          "paciente": "TCGA-BH-A0E6",
+          "n": 52,
+          "macro_f1": 0.8458931959880727,
+          "accuracy": 0.8846153846153846
+        },
+        {
+          "paciente": "TCGA-BH-A0WA",
+          "n": 164,
+          "macro_f1": 0.49794238683127573,
+          "accuracy": 0.9878048780487805
+        },
+        {
+          "paciente": "TCGA-BH-A18G",
+          "n": 184,
+          "macro_f1": 0.6795472230796934,
+          "accuracy": 0.8369565217391305
+        },
+        {
+          "paciente": "TCGA-BH-A18V",
+          "n": 27,
+          "macro_f1": 0.32051282051282054,
+          "accuracy": 0.9259259259259259
+        },
+        {
+          "paciente": "TCGA-BH-A1EW",
+          "n": 95,
+          "macro_f1": 0.625989960959286,
+          "accuracy": 0.8736842105263158
+        },
+        {
+          "paciente": "TCGA-BH-A1F6",
+          "n": 103,
+          "macro_f1": 0.9153864005569737,
+          "accuracy": 0.970873786407767
+        },
+        {
+          "paciente": "TCGA-OL-A5D6",
+          "n": 2,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-OL-A5D7",
+          "n": 46,
+          "macro_f1": 0.8121369422815473,
+          "accuracy": 0.8913043478260869
+        },
+        {
+          "paciente": "TCGA-OL-A5RW",
+          "n": 47,
+          "macro_f1": 0.2655286865813182,
+          "accuracy": 0.425531914893617
+        },
+        {
+          "paciente": "TCGA-OL-A66I",
+          "n": 42,
+          "macro_f1": 0.9086580086580088,
+          "accuracy": 0.9523809523809523
+        },
+        {
+          "paciente": "TCGA-OL-A66P",
+          "n": 172,
+          "macro_f1": 0.814396295528371,
+          "accuracy": 0.8255813953488372
+        },
+        {
+          "paciente": "TCGA-OL-A6VO",
+          "n": 215,
+          "macro_f1": 0.60304234311573,
+          "accuracy": 0.7395348837209302
+        }
+      ]
+    },
+    {
+      "modelo": "densenet121",
+      "semilla": 6118,
+      "fase": "otro_validar_protocolo",
+      "ruta": "final/densenet121_6118",
+      "predicciones_sha256": "06699cadcc2a5b49f377d7772a24b3ee72fcd78bc64859edfbb3512a6ada079f",
+      "metricas": {
+        "n": 2049,
+        "macro_f1": 0.8008937861282454,
+        "accuracy": 0.8379697413372377,
+        "mcc": 0.7376800631922225,
+        "brier_multiclase_suma": 0.24010944075463156,
+        "ece_10": 0.016101288833287715,
+        "auc_por_clase": [
+          0.965350057738714,
+          0.9710132388295935,
+          0.9085333833458364
+        ],
+        "ap_por_clase": [
+          0.9700593778117531,
+          0.947747066221848,
+          0.6609731098489482
+        ],
+        "matriz_confusion": [
+          [
+            949,
+            46,
+            113
+          ],
+          [
+            9,
+            517,
+            71
+          ],
+          [
+            56,
+            37,
+            251
+          ]
+        ],
+        "calibracion": [
+          {
+            "bin": 3,
+            "limite_inferior": 0.3,
+            "limite_superior": 0.4,
+            "n": 17,
+            "accuracy": 0.47058823529411764,
+            "confianza": 0.38087841342477236
+          },
+          {
+            "bin": 4,
+            "limite_inferior": 0.4,
+            "limite_superior": 0.5,
+            "n": 82,
+            "accuracy": 0.4146341463414634,
+            "confianza": 0.46465420831994314
+          },
+          {
+            "bin": 5,
+            "limite_inferior": 0.5,
+            "limite_superior": 0.6,
+            "n": 191,
+            "accuracy": 0.6282722513089005,
+            "confianza": 0.5556763825616288
+          },
+          {
+            "bin": 6,
+            "limite_inferior": 0.6,
+            "limite_superior": 0.7,
+            "n": 186,
+            "accuracy": 0.6720430107526881,
+            "confianza": 0.6480672567762354
+          },
+          {
+            "bin": 7,
+            "limite_inferior": 0.7,
+            "limite_superior": 0.8,
+            "n": 230,
+            "accuracy": 0.7391304347826086,
+            "confianza": 0.7506874237371528
+          },
+          {
+            "bin": 8,
+            "limite_inferior": 0.8,
+            "limite_superior": 0.9,
+            "n": 363,
+            "accuracy": 0.8705234159779615,
+            "confianza": 0.8556693096134617
+          },
+          {
+            "bin": 9,
+            "limite_inferior": 0.9,
+            "limite_superior": 1.0,
+            "n": 980,
+            "accuracy": 0.963265306122449,
+            "confianza": 0.962255735178383
+          }
+        ]
+      },
+      "por_paciente": [
+        {
+          "paciente": "TCGA-AQ-A04J",
+          "n": 79,
+          "macro_f1": 0.7454747981063771,
+          "accuracy": 0.7721518987341772
+        },
+        {
+          "paciente": "TCGA-AQ-A54N",
+          "n": 116,
+          "macro_f1": 0.7991181318093282,
+          "accuracy": 0.9137931034482759
+        },
+        {
+          "paciente": "TCGA-BH-A0AV",
+          "n": 231,
+          "macro_f1": 0.8635565639428853,
+          "accuracy": 0.8658008658008658
+        },
+        {
+          "paciente": "TCGA-BH-A0B3",
+          "n": 87,
+          "macro_f1": 0.703042328042328,
+          "accuracy": 0.7241379310344828
+        },
+        {
+          "paciente": "TCGA-BH-A0B9",
+          "n": 161,
+          "macro_f1": 0.7376999608800922,
+          "accuracy": 0.8012422360248447
+        },
+        {
+          "paciente": "TCGA-BH-A0BG",
+          "n": 72,
+          "macro_f1": 0.7454966190001109,
+          "accuracy": 0.7777777777777778
+        },
+        {
+          "paciente": "TCGA-BH-A0BL",
+          "n": 26,
+          "macro_f1": 0.7428571428571429,
+          "accuracy": 0.8076923076923077
+        },
+        {
+          "paciente": "TCGA-BH-A0BW",
+          "n": 64,
+          "macro_f1": 0.5891311872620283,
+          "accuracy": 0.78125
+        },
+        {
+          "paciente": "TCGA-BH-A0E0",
+          "n": 64,
+          "macro_f1": 0.5598570462667826,
+          "accuracy": 0.734375
+        },
+        {
+          "paciente": "TCGA-BH-A0E6",
+          "n": 52,
+          "macro_f1": 0.8217263917061076,
+          "accuracy": 0.8461538461538461
+        },
+        {
+          "paciente": "TCGA-BH-A0WA",
+          "n": 164,
+          "macro_f1": 0.49794238683127573,
+          "accuracy": 0.9878048780487805
+        },
+        {
+          "paciente": "TCGA-BH-A18G",
+          "n": 184,
+          "macro_f1": 0.7641362508594147,
+          "accuracy": 0.8206521739130435
+        },
+        {
+          "paciente": "TCGA-BH-A18V",
+          "n": 27,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-BH-A1EW",
+          "n": 95,
+          "macro_f1": 0.4843137254901961,
+          "accuracy": 0.8947368421052632
+        },
+        {
+          "paciente": "TCGA-BH-A1F6",
+          "n": 103,
+          "macro_f1": 0.9153864005569737,
+          "accuracy": 0.970873786407767
+        },
+        {
+          "paciente": "TCGA-OL-A5D6",
+          "n": 2,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-OL-A5D7",
+          "n": 46,
+          "macro_f1": 0.7797619047619048,
+          "accuracy": 0.9130434782608695
+        },
+        {
+          "paciente": "TCGA-OL-A5RW",
+          "n": 47,
+          "macro_f1": 0.16393442622950818,
+          "accuracy": 0.3191489361702128
+        },
+        {
+          "paciente": "TCGA-OL-A66I",
+          "n": 42,
+          "macro_f1": 1.0,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-OL-A66P",
+          "n": 172,
+          "macro_f1": 0.7878566054616808,
+          "accuracy": 0.8023255813953488
+        },
+        {
+          "paciente": "TCGA-OL-A6VO",
+          "n": 215,
+          "macro_f1": 0.669580539315489,
+          "accuracy": 0.8186046511627907
+        }
+      ]
+    },
+    {
+      "modelo": "densenet121",
+      "semilla": 6119,
+      "fase": "otro_validar_protocolo",
+      "ruta": "final/densenet121_6119",
+      "predicciones_sha256": "5f58f3c9a1a30818df8ba0345a5acc4cbfc6b5339c308c6c17c1b64199b66800",
+      "metricas": {
+        "n": 2049,
+        "macro_f1": 0.7533388669620923,
+        "accuracy": 0.8340653977550024,
+        "mcc": 0.7154695617858435,
+        "brier_multiclase_suma": 0.2350172968511882,
+        "ece_10": 0.031263814401836024,
+        "auc_por_clase": [
+          0.9499696919706742,
+          0.983443387737586,
+          0.8833253767987451
+        ],
+        "ap_por_clase": [
+          0.9541984131127969,
+          0.9659007572543946,
+          0.6071562650266079
+        ],
+        "matriz_confusion": [
+          [
+            1051,
+            20,
+            37
+          ],
+          [
+            42,
+            529,
+            26
+          ],
+          [
+            180,
+            35,
+            129
+          ]
+        ],
+        "calibracion": [
+          {
+            "bin": 3,
+            "limite_inferior": 0.3,
+            "limite_superior": 0.4,
+            "n": 12,
+            "accuracy": 0.4166666666666667,
+            "confianza": 0.3779279539982478
+          },
+          {
+            "bin": 4,
+            "limite_inferior": 0.4,
+            "limite_superior": 0.5,
+            "n": 80,
+            "accuracy": 0.4,
+            "confianza": 0.4563063934445381
+          },
+          {
+            "bin": 5,
+            "limite_inferior": 0.5,
+            "limite_superior": 0.6,
+            "n": 121,
+            "accuracy": 0.512396694214876,
+            "confianza": 0.5491132957876221
+          },
+          {
+            "bin": 6,
+            "limite_inferior": 0.6,
+            "limite_superior": 0.7,
+            "n": 131,
+            "accuracy": 0.6106870229007634,
+            "confianza": 0.6527559388684863
+          },
+          {
+            "bin": 7,
+            "limite_inferior": 0.7,
+            "limite_superior": 0.8,
+            "n": 182,
+            "accuracy": 0.6868131868131868,
+            "confianza": 0.7555097908109099
+          },
+          {
+            "bin": 8,
+            "limite_inferior": 0.8,
+            "limite_superior": 0.9,
+            "n": 302,
+            "accuracy": 0.7980132450331126,
+            "confianza": 0.8559987612117995
+          },
+          {
+            "bin": 9,
+            "limite_inferior": 0.9,
+            "limite_superior": 1.0,
+            "n": 1221,
+            "accuracy": 0.9533169533169533,
+            "confianza": 0.9689779157134766
+          }
+        ]
+      },
+      "por_paciente": [
+        {
+          "paciente": "TCGA-AQ-A04J",
+          "n": 79,
+          "macro_f1": 0.7487727619932802,
+          "accuracy": 0.7848101265822784
+        },
+        {
+          "paciente": "TCGA-AQ-A54N",
+          "n": 116,
+          "macro_f1": 0.8212588065529243,
+          "accuracy": 0.9137931034482759
+        },
+        {
+          "paciente": "TCGA-BH-A0AV",
+          "n": 231,
+          "macro_f1": 0.6431187001772344,
+          "accuracy": 0.7359307359307359
+        },
+        {
+          "paciente": "TCGA-BH-A0B3",
+          "n": 87,
+          "macro_f1": 0.5856126482213438,
+          "accuracy": 0.7586206896551724
+        },
+        {
+          "paciente": "TCGA-BH-A0B9",
+          "n": 161,
+          "macro_f1": 0.8697849798165563,
+          "accuracy": 0.9254658385093167
+        },
+        {
+          "paciente": "TCGA-BH-A0BG",
+          "n": 72,
+          "macro_f1": 0.6397135656770546,
+          "accuracy": 0.8472222222222222
+        },
+        {
+          "paciente": "TCGA-BH-A0BL",
+          "n": 26,
+          "macro_f1": 0.487032967032967,
+          "accuracy": 0.5
+        },
+        {
+          "paciente": "TCGA-BH-A0BW",
+          "n": 64,
+          "macro_f1": 0.8861340679522498,
+          "accuracy": 0.984375
+        },
+        {
+          "paciente": "TCGA-BH-A0E0",
+          "n": 64,
+          "macro_f1": 0.62531328320802,
+          "accuracy": 0.90625
+        },
+        {
+          "paciente": "TCGA-BH-A0E6",
+          "n": 52,
+          "macro_f1": 0.6844714897453233,
+          "accuracy": 0.8076923076923077
+        },
+        {
+          "paciente": "TCGA-BH-A0WA",
+          "n": 164,
+          "macro_f1": 0.3302564102564102,
+          "accuracy": 0.9817073170731707
+        },
+        {
+          "paciente": "TCGA-BH-A18G",
+          "n": 184,
+          "macro_f1": 0.7406056587091069,
+          "accuracy": 0.8260869565217391
+        },
+        {
+          "paciente": "TCGA-BH-A18V",
+          "n": 27,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-BH-A1EW",
+          "n": 95,
+          "macro_f1": 0.5477272727272727,
+          "accuracy": 0.8947368421052632
+        },
+        {
+          "paciente": "TCGA-BH-A1F6",
+          "n": 103,
+          "macro_f1": 0.8017214397496089,
+          "accuracy": 0.9514563106796117
+        },
+        {
+          "paciente": "TCGA-OL-A5D6",
+          "n": 2,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-OL-A5D7",
+          "n": 46,
+          "macro_f1": 0.6901388888888889,
+          "accuracy": 0.7608695652173914
+        },
+        {
+          "paciente": "TCGA-OL-A5RW",
+          "n": 47,
+          "macro_f1": 0.2058823529411765,
+          "accuracy": 0.3617021276595745
+        },
+        {
+          "paciente": "TCGA-OL-A66I",
+          "n": 42,
+          "macro_f1": 0.9830687830687831,
+          "accuracy": 0.9761904761904762
+        },
+        {
+          "paciente": "TCGA-OL-A66P",
+          "n": 172,
+          "macro_f1": 0.6116127833519137,
+          "accuracy": 0.6918604651162791
+        },
+        {
+          "paciente": "TCGA-OL-A6VO",
+          "n": 215,
+          "macro_f1": 0.7183897183897184,
+          "accuracy": 0.8465116279069768
+        }
+      ]
+    },
+    {
+      "modelo": "densenet121",
+      "semilla": 6120,
+      "fase": "otro_validar_protocolo",
+      "ruta": "final/densenet121_6120",
+      "predicciones_sha256": "6a14b04c9d35c12987865b146adad909818c5671d9e55a00bddfb82054ff643b",
+      "metricas": {
+        "n": 2049,
+        "macro_f1": 0.780178563980285,
+        "accuracy": 0.8448023426061494,
+        "mcc": 0.7363269101342925,
+        "brier_multiclase_suma": 0.2268934923026527,
+        "ece_10": 0.05676876879017666,
+        "auc_por_clase": [
+          0.956309441142958,
+          0.9750001153610106,
+          0.9204784150583101
+        ],
+        "ap_por_clase": [
+          0.959392997979108,
+          0.9554265391543247,
+          0.7565386879403677
+        ],
+        "matriz_confusion": [
+          [
+            1082,
+            10,
+            16
+          ],
+          [
+            80,
+            495,
+            22
+          ],
+          [
+            162,
+            28,
+            154
+          ]
+        ],
+        "calibracion": [
+          {
+            "bin": 3,
+            "limite_inferior": 0.3,
+            "limite_superior": 0.4,
+            "n": 6,
+            "accuracy": 0.0,
+            "confianza": 0.38401029507319134
+          },
+          {
+            "bin": 4,
+            "limite_inferior": 0.4,
+            "limite_superior": 0.5,
+            "n": 43,
+            "accuracy": 0.5581395348837209,
+            "confianza": 0.4584947990816693
+          },
+          {
+            "bin": 5,
+            "limite_inferior": 0.5,
+            "limite_superior": 0.6,
+            "n": 112,
+            "accuracy": 0.5446428571428571,
+            "confianza": 0.5535786300897598
+          },
+          {
+            "bin": 6,
+            "limite_inferior": 0.6,
+            "limite_superior": 0.7,
+            "n": 118,
+            "accuracy": 0.4915254237288136,
+            "confianza": 0.6485575680005349
+          },
+          {
+            "bin": 7,
+            "limite_inferior": 0.7,
+            "limite_superior": 0.8,
+            "n": 128,
+            "accuracy": 0.640625,
+            "confianza": 0.7546550184488297
+          },
+          {
+            "bin": 8,
+            "limite_inferior": 0.8,
+            "limite_superior": 0.9,
+            "n": 231,
+            "accuracy": 0.7662337662337663,
+            "confianza": 0.8568854386156256
+          },
+          {
+            "bin": 9,
+            "limite_inferior": 0.9,
+            "limite_superior": 1.0,
+            "n": 1411,
+            "accuracy": 0.9418851878100638,
+            "confianza": 0.9806261116692904
+          }
+        ]
+      },
+      "por_paciente": [
+        {
+          "paciente": "TCGA-AQ-A04J",
+          "n": 79,
+          "macro_f1": 0.8047700889491934,
+          "accuracy": 0.8481012658227848
+        },
+        {
+          "paciente": "TCGA-AQ-A54N",
+          "n": 116,
+          "macro_f1": 0.831590285938112,
+          "accuracy": 0.9224137931034483
+        },
+        {
+          "paciente": "TCGA-BH-A0AV",
+          "n": 231,
+          "macro_f1": 0.7111771749452909,
+          "accuracy": 0.7705627705627706
+        },
+        {
+          "paciente": "TCGA-BH-A0B3",
+          "n": 87,
+          "macro_f1": 0.6577681577681578,
+          "accuracy": 0.7931034482758621
+        },
+        {
+          "paciente": "TCGA-BH-A0B9",
+          "n": 161,
+          "macro_f1": 0.8996485363875438,
+          "accuracy": 0.9440993788819876
+        },
+        {
+          "paciente": "TCGA-BH-A0BG",
+          "n": 72,
+          "macro_f1": 0.7236714975845411,
+          "accuracy": 0.8472222222222222
+        },
+        {
+          "paciente": "TCGA-BH-A0BL",
+          "n": 26,
+          "macro_f1": 0.7515151515151516,
+          "accuracy": 0.7692307692307693
+        },
+        {
+          "paciente": "TCGA-BH-A0BW",
+          "n": 64,
+          "macro_f1": 0.7749766573295984,
+          "accuracy": 0.96875
+        },
+        {
+          "paciente": "TCGA-BH-A0E0",
+          "n": 64,
+          "macro_f1": 0.6146400483968542,
+          "accuracy": 0.90625
+        },
+        {
+          "paciente": "TCGA-BH-A0E6",
+          "n": 52,
+          "macro_f1": 0.7777036213076257,
+          "accuracy": 0.8461538461538461
+        },
+        {
+          "paciente": "TCGA-BH-A0WA",
+          "n": 164,
+          "macro_f1": 0.3302564102564102,
+          "accuracy": 0.9817073170731707
+        },
+        {
+          "paciente": "TCGA-BH-A18G",
+          "n": 184,
+          "macro_f1": 0.7028971212898306,
+          "accuracy": 0.8369565217391305
+        },
+        {
+          "paciente": "TCGA-BH-A18V",
+          "n": 27,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-BH-A1EW",
+          "n": 95,
+          "macro_f1": 0.4627030002752546,
+          "accuracy": 0.9052631578947369
+        },
+        {
+          "paciente": "TCGA-BH-A1F6",
+          "n": 103,
+          "macro_f1": 0.810266072856001,
+          "accuracy": 0.9611650485436893
+        },
+        {
+          "paciente": "TCGA-OL-A5D6",
+          "n": 2,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-OL-A5D7",
+          "n": 46,
+          "macro_f1": 0.7347670250896057,
+          "accuracy": 0.8043478260869565
+        },
+        {
+          "paciente": "TCGA-OL-A5RW",
+          "n": 47,
+          "macro_f1": 0.5577082298393773,
+          "accuracy": 0.851063829787234
+        },
+        {
+          "paciente": "TCGA-OL-A66I",
+          "n": 42,
+          "macro_f1": 0.7499478840942255,
+          "accuracy": 0.8571428571428571
+        },
+        {
+          "paciente": "TCGA-OL-A66P",
+          "n": 172,
+          "macro_f1": 0.6112970400118994,
+          "accuracy": 0.6976744186046512
+        },
+        {
+          "paciente": "TCGA-OL-A6VO",
+          "n": 215,
+          "macro_f1": 0.4738821088331278,
+          "accuracy": 0.7023255813953488
+        }
+      ]
+    },
+    {
+      "modelo": "densenet121",
+      "semilla": 6121,
+      "fase": "otro_validar_protocolo",
+      "ruta": "final/densenet121_6121",
+      "predicciones_sha256": "188c34f8b202a0403f0f7fc90bb33c5fa4b24c8d7d0d0da35f16503abb2d8c9e",
+      "metricas": {
+        "n": 2049,
+        "macro_f1": 0.8107397395211599,
+        "accuracy": 0.8555392874572962,
+        "mcc": 0.7539084596842801,
+        "brier_multiclase_suma": 0.20946757930911167,
+        "ece_10": 0.03688880471033604,
+        "auc_por_clase": [
+          0.9620900263564762,
+          0.9862708861109958,
+          0.9210973197844915
+        ],
+        "ap_por_clase": [
+          0.967331287198652,
+          0.9698566073670217,
+          0.7567824570525444
+        ],
+        "matriz_confusion": [
+          [
+            1056,
+            8,
+            44
+          ],
+          [
+            65,
+            484,
+            48
+          ],
+          [
+            112,
+            19,
+            213
+          ]
+        ],
+        "calibracion": [
+          {
+            "bin": 3,
+            "limite_inferior": 0.3,
+            "limite_superior": 0.4,
+            "n": 4,
+            "accuracy": 0.5,
+            "confianza": 0.3711169436573982
+          },
+          {
+            "bin": 4,
+            "limite_inferior": 0.4,
+            "limite_superior": 0.5,
+            "n": 43,
+            "accuracy": 0.3953488372093023,
+            "confianza": 0.46522815490877906
+          },
+          {
+            "bin": 5,
+            "limite_inferior": 0.5,
+            "limite_superior": 0.6,
+            "n": 115,
+            "accuracy": 0.5304347826086957,
+            "confianza": 0.5500980760740197
+          },
+          {
+            "bin": 6,
+            "limite_inferior": 0.6,
+            "limite_superior": 0.7,
+            "n": 141,
+            "accuracy": 0.6170212765957447,
+            "confianza": 0.652217576689754
+          },
+          {
+            "bin": 7,
+            "limite_inferior": 0.7,
+            "limite_superior": 0.8,
+            "n": 153,
+            "accuracy": 0.6535947712418301,
+            "confianza": 0.7556376803934185
+          },
+          {
+            "bin": 8,
+            "limite_inferior": 0.8,
+            "limite_superior": 0.9,
+            "n": 228,
+            "accuracy": 0.8070175438596491,
+            "confianza": 0.8578356886119173
+          },
+          {
+            "bin": 9,
+            "limite_inferior": 0.9,
+            "limite_superior": 1.0,
+            "n": 1365,
+            "accuracy": 0.9538461538461539,
+            "confianza": 0.9814225339190864
+          }
+        ]
+      },
+      "por_paciente": [
+        {
+          "paciente": "TCGA-AQ-A04J",
+          "n": 79,
+          "macro_f1": 0.8338434583807404,
+          "accuracy": 0.8607594936708861
+        },
+        {
+          "paciente": "TCGA-AQ-A54N",
+          "n": 116,
+          "macro_f1": 0.8135636878806277,
+          "accuracy": 0.9224137931034483
+        },
+        {
+          "paciente": "TCGA-BH-A0AV",
+          "n": 231,
+          "macro_f1": 0.826968143691956,
+          "accuracy": 0.8398268398268398
+        },
+        {
+          "paciente": "TCGA-BH-A0B3",
+          "n": 87,
+          "macro_f1": 0.6992774024024024,
+          "accuracy": 0.8045977011494253
+        },
+        {
+          "paciente": "TCGA-BH-A0B9",
+          "n": 161,
+          "macro_f1": 0.8263684831927657,
+          "accuracy": 0.8881987577639752
+        },
+        {
+          "paciente": "TCGA-BH-A0BG",
+          "n": 72,
+          "macro_f1": 0.8076704222146353,
+          "accuracy": 0.8194444444444444
+        },
+        {
+          "paciente": "TCGA-BH-A0BL",
+          "n": 26,
+          "macro_f1": 0.5706385118149824,
+          "accuracy": 0.5769230769230769
+        },
+        {
+          "paciente": "TCGA-BH-A0BW",
+          "n": 64,
+          "macro_f1": 0.4729344729344729,
+          "accuracy": 0.921875
+        },
+        {
+          "paciente": "TCGA-BH-A0E0",
+          "n": 64,
+          "macro_f1": 0.7478882391163092,
+          "accuracy": 0.921875
+        },
+        {
+          "paciente": "TCGA-BH-A0E6",
+          "n": 52,
+          "macro_f1": 0.7307263814616757,
+          "accuracy": 0.8076923076923077
+        },
+        {
+          "paciente": "TCGA-BH-A0WA",
+          "n": 164,
+          "macro_f1": 0.48945147679324896,
+          "accuracy": 0.9390243902439024
+        },
+        {
+          "paciente": "TCGA-BH-A18G",
+          "n": 184,
+          "macro_f1": 0.6725016231865547,
+          "accuracy": 0.7934782608695652
+        },
+        {
+          "paciente": "TCGA-BH-A18V",
+          "n": 27,
+          "macro_f1": 0.32051282051282054,
+          "accuracy": 0.9259259259259259
+        },
+        {
+          "paciente": "TCGA-BH-A1EW",
+          "n": 95,
+          "macro_f1": 0.7103174603174603,
+          "accuracy": 0.9263157894736842
+        },
+        {
+          "paciente": "TCGA-BH-A1F6",
+          "n": 103,
+          "macro_f1": 0.7955268575706533,
+          "accuracy": 0.941747572815534
+        },
+        {
+          "paciente": "TCGA-OL-A5D6",
+          "n": 2,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-OL-A5D7",
+          "n": 46,
+          "macro_f1": 0.7047619047619048,
+          "accuracy": 0.8260869565217391
+        },
+        {
+          "paciente": "TCGA-OL-A5RW",
+          "n": 47,
+          "macro_f1": 0.583554376657825,
+          "accuracy": 0.8936170212765957
+        },
+        {
+          "paciente": "TCGA-OL-A66I",
+          "n": 42,
+          "macro_f1": 0.8561092654115909,
+          "accuracy": 0.9285714285714286
+        },
+        {
+          "paciente": "TCGA-OL-A66P",
+          "n": 172,
+          "macro_f1": 0.7064861064861065,
+          "accuracy": 0.7441860465116279
+        },
+        {
+          "paciente": "TCGA-OL-A6VO",
+          "n": 215,
+          "macro_f1": 0.7341233633136676,
+          "accuracy": 0.827906976744186
+        }
+      ]
+    },
+    {
+      "modelo": "densenet121",
+      "semilla": 6122,
+      "fase": "otro_validar_protocolo",
+      "ruta": "final/densenet121_6122",
+      "predicciones_sha256": "f69646b72b0b087cc8642ff802027ee1ff943d0c2dd78029d4d37a24cb6626be",
+      "metricas": {
+        "n": 2049,
+        "macro_f1": 0.7928074755730652,
+        "accuracy": 0.8452903855539288,
+        "mcc": 0.7360390178908868,
+        "brier_multiclase_suma": 0.22122617642618367,
+        "ece_10": 0.02438020186926918,
+        "auc_por_clase": [
+          0.9539308363097864,
+          0.9713812404538763,
+          0.9256632339903157
+        ],
+        "ap_por_clase": [
+          0.9554585768819533,
+          0.9488160217348439,
+          0.7601215650835145
+        ],
+        "matriz_confusion": [
+          [
+            1069,
+            13,
+            26
+          ],
+          [
+            93,
+            486,
+            18
+          ],
+          [
+            138,
+            29,
+            177
+          ]
+        ],
+        "calibracion": [
+          {
+            "bin": 3,
+            "limite_inferior": 0.3,
+            "limite_superior": 0.4,
+            "n": 5,
+            "accuracy": 0.6,
+            "confianza": 0.37708452343940735
+          },
+          {
+            "bin": 4,
+            "limite_inferior": 0.4,
+            "limite_superior": 0.5,
+            "n": 72,
+            "accuracy": 0.4027777777777778,
+            "confianza": 0.4624944180250168
+          },
+          {
+            "bin": 5,
+            "limite_inferior": 0.5,
+            "limite_superior": 0.6,
+            "n": 138,
+            "accuracy": 0.5507246376811594,
+            "confianza": 0.5475009299706721
+          },
+          {
+            "bin": 6,
+            "limite_inferior": 0.6,
+            "limite_superior": 0.7,
+            "n": 137,
+            "accuracy": 0.5693430656934306,
+            "confianza": 0.6520407713242691
+          },
+          {
+            "bin": 7,
+            "limite_inferior": 0.7,
+            "limite_superior": 0.8,
+            "n": 179,
+            "accuracy": 0.6871508379888268,
+            "confianza": 0.7537185816125497
+          },
+          {
+            "bin": 8,
+            "limite_inferior": 0.8,
+            "limite_superior": 0.9,
+            "n": 300,
+            "accuracy": 0.8366666666666667,
+            "confianza": 0.8560896412531535
+          },
+          {
+            "bin": 9,
+            "limite_inferior": 0.9,
+            "limite_superior": 1.0,
+            "n": 1218,
+            "accuracy": 0.9622331691297209,
+            "confianza": 0.9745680478895434
+          }
+        ]
+      },
+      "por_paciente": [
+        {
+          "paciente": "TCGA-AQ-A04J",
+          "n": 79,
+          "macro_f1": 0.7939537286246363,
+          "accuracy": 0.8227848101265823
+        },
+        {
+          "paciente": "TCGA-AQ-A54N",
+          "n": 116,
+          "macro_f1": 0.8565323565323566,
+          "accuracy": 0.9310344827586207
+        },
+        {
+          "paciente": "TCGA-BH-A0AV",
+          "n": 231,
+          "macro_f1": 0.7706268210194809,
+          "accuracy": 0.8051948051948052
+        },
+        {
+          "paciente": "TCGA-BH-A0B3",
+          "n": 87,
+          "macro_f1": 0.6952331716111244,
+          "accuracy": 0.8390804597701149
+        },
+        {
+          "paciente": "TCGA-BH-A0B9",
+          "n": 161,
+          "macro_f1": 0.879306476051679,
+          "accuracy": 0.937888198757764
+        },
+        {
+          "paciente": "TCGA-BH-A0BG",
+          "n": 72,
+          "macro_f1": 0.744138634046891,
+          "accuracy": 0.8333333333333334
+        },
+        {
+          "paciente": "TCGA-BH-A0BL",
+          "n": 26,
+          "macro_f1": 0.5100250626566416,
+          "accuracy": 0.46153846153846156
+        },
+        {
+          "paciente": "TCGA-BH-A0BW",
+          "n": 64,
+          "macro_f1": 0.8166666666666668,
+          "accuracy": 0.96875
+        },
+        {
+          "paciente": "TCGA-BH-A0E0",
+          "n": 64,
+          "macro_f1": 0.7478882391163092,
+          "accuracy": 0.921875
+        },
+        {
+          "paciente": "TCGA-BH-A0E6",
+          "n": 52,
+          "macro_f1": 0.8299910873440286,
+          "accuracy": 0.8653846153846154
+        },
+        {
+          "paciente": "TCGA-BH-A0WA",
+          "n": 164,
+          "macro_f1": 0.49794238683127573,
+          "accuracy": 0.9878048780487805
+        },
+        {
+          "paciente": "TCGA-BH-A18G",
+          "n": 184,
+          "macro_f1": 0.604775828460039,
+          "accuracy": 0.7554347826086957
+        },
+        {
+          "paciente": "TCGA-BH-A18V",
+          "n": 27,
+          "macro_f1": 0.3270440251572327,
+          "accuracy": 0.9629629629629629
+        },
+        {
+          "paciente": "TCGA-BH-A1EW",
+          "n": 95,
+          "macro_f1": 0.7421568627450981,
+          "accuracy": 0.9473684210526315
+        },
+        {
+          "paciente": "TCGA-BH-A1F6",
+          "n": 103,
+          "macro_f1": 0.810266072856001,
+          "accuracy": 0.9611650485436893
+        },
+        {
+          "paciente": "TCGA-OL-A5D6",
+          "n": 2,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-OL-A5D7",
+          "n": 46,
+          "macro_f1": 0.9179879715691635,
+          "accuracy": 0.8913043478260869
+        },
+        {
+          "paciente": "TCGA-OL-A5RW",
+          "n": 47,
+          "macro_f1": 0.56045197740113,
+          "accuracy": 0.851063829787234
+        },
+        {
+          "paciente": "TCGA-OL-A66I",
+          "n": 42,
+          "macro_f1": 0.9497171590194847,
+          "accuracy": 0.9285714285714286
+        },
+        {
+          "paciente": "TCGA-OL-A66P",
+          "n": 172,
+          "macro_f1": 0.6133788250493056,
+          "accuracy": 0.686046511627907
+        },
+        {
+          "paciente": "TCGA-OL-A6VO",
+          "n": 215,
+          "macro_f1": 0.5244616630453681,
+          "accuracy": 0.7209302325581395
+        }
+      ]
+    },
+    {
+      "modelo": "resnet50",
+      "semilla": 6112,
+      "fase": "otro_validar_protocolo",
+      "ruta": "final/resnet50_6112",
+      "predicciones_sha256": "46e49c162c73dd47cc4657543792df346ec59d7bd21ff17b954863ed7d6a9d1d",
+      "metricas": {
+        "n": 2049,
+        "macro_f1": 0.8160678925199832,
+        "accuracy": 0.8682284040995608,
+        "mcc": 0.7750126518202964,
+        "brier_multiclase_suma": 0.2052843920446072,
+        "ece_10": 0.023991511646510887,
+        "auc_por_clase": [
+          0.9566647931956556,
+          0.9880705178786495,
+          0.899742549273682
+        ],
+        "ap_por_clase": [
+          0.9597685292815578,
+          0.9725087057172288,
+          0.6764866858224742
+        ],
+        "matriz_confusion": [
+          [
+            1052,
+            15,
+            41
+          ],
+          [
+            37,
+            542,
+            18
+          ],
+          [
+            126,
+            33,
+            185
+          ]
+        ],
+        "calibracion": [
+          {
+            "bin": 3,
+            "limite_inferior": 0.3,
+            "limite_superior": 0.4,
+            "n": 2,
+            "accuracy": 1.0,
+            "confianza": 0.3710338920354843
+          },
+          {
+            "bin": 4,
+            "limite_inferior": 0.4,
+            "limite_superior": 0.5,
+            "n": 44,
+            "accuracy": 0.5,
+            "confianza": 0.468354385684837
+          },
+          {
+            "bin": 5,
+            "limite_inferior": 0.5,
+            "limite_superior": 0.6,
+            "n": 128,
+            "accuracy": 0.625,
+            "confianza": 0.549048681743443
+          },
+          {
+            "bin": 6,
+            "limite_inferior": 0.6,
+            "limite_superior": 0.7,
+            "n": 148,
+            "accuracy": 0.6756756756756757,
+            "confianza": 0.6505380393685521
+          },
+          {
+            "bin": 7,
+            "limite_inferior": 0.7,
+            "limite_superior": 0.8,
+            "n": 174,
+            "accuracy": 0.7471264367816092,
+            "confianza": 0.7486914516180411
+          },
+          {
+            "bin": 8,
+            "limite_inferior": 0.8,
+            "limite_superior": 0.9,
+            "n": 284,
+            "accuracy": 0.8063380281690141,
+            "confianza": 0.8545893132686615
+          },
+          {
+            "bin": 9,
+            "limite_inferior": 0.9,
+            "limite_superior": 1.0,
+            "n": 1269,
+            "accuracy": 0.9582348305752562,
+            "confianza": 0.9732785277051001
+          }
+        ]
+      },
+      "por_paciente": [
+        {
+          "paciente": "TCGA-AQ-A04J",
+          "n": 79,
+          "macro_f1": 0.8079624126309498,
+          "accuracy": 0.8354430379746836
+        },
+        {
+          "paciente": "TCGA-AQ-A54N",
+          "n": 116,
+          "macro_f1": 0.8538647342995169,
+          "accuracy": 0.9396551724137931
+        },
+        {
+          "paciente": "TCGA-BH-A0AV",
+          "n": 231,
+          "macro_f1": 0.7508798391151332,
+          "accuracy": 0.7878787878787878
+        },
+        {
+          "paciente": "TCGA-BH-A0B3",
+          "n": 87,
+          "macro_f1": 0.6952331716111244,
+          "accuracy": 0.8390804597701149
+        },
+        {
+          "paciente": "TCGA-BH-A0B9",
+          "n": 161,
+          "macro_f1": 0.8176849169626824,
+          "accuracy": 0.906832298136646
+        },
+        {
+          "paciente": "TCGA-BH-A0BG",
+          "n": 72,
+          "macro_f1": 0.6103136629452418,
+          "accuracy": 0.8333333333333334
+        },
+        {
+          "paciente": "TCGA-BH-A0BL",
+          "n": 26,
+          "macro_f1": 0.7187812187812188,
+          "accuracy": 0.7307692307692307
+        },
+        {
+          "paciente": "TCGA-BH-A0BW",
+          "n": 64,
+          "macro_f1": 0.8222222222222223,
+          "accuracy": 0.984375
+        },
+        {
+          "paciente": "TCGA-BH-A0E0",
+          "n": 64,
+          "macro_f1": 0.8075886787788901,
+          "accuracy": 0.890625
+        },
+        {
+          "paciente": "TCGA-BH-A0E6",
+          "n": 52,
+          "macro_f1": 0.850498796009632,
+          "accuracy": 0.8846153846153846
+        },
+        {
+          "paciente": "TCGA-BH-A0WA",
+          "n": 164,
+          "macro_f1": 0.3302564102564102,
+          "accuracy": 0.9817073170731707
+        },
+        {
+          "paciente": "TCGA-BH-A18G",
+          "n": 184,
+          "macro_f1": 0.6800248421640611,
+          "accuracy": 0.8260869565217391
+        },
+        {
+          "paciente": "TCGA-BH-A18V",
+          "n": 27,
+          "macro_f1": 0.32051282051282054,
+          "accuracy": 0.9259259259259259
+        },
+        {
+          "paciente": "TCGA-BH-A1EW",
+          "n": 95,
+          "macro_f1": 0.7679158448389217,
+          "accuracy": 0.9368421052631579
+        },
+        {
+          "paciente": "TCGA-BH-A1F6",
+          "n": 103,
+          "macro_f1": 0.8098476921288222,
+          "accuracy": 0.9611650485436893
+        },
+        {
+          "paciente": "TCGA-OL-A5D6",
+          "n": 2,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-OL-A5D7",
+          "n": 46,
+          "macro_f1": 0.9684873949579833,
+          "accuracy": 0.9565217391304348
+        },
+        {
+          "paciente": "TCGA-OL-A5RW",
+          "n": 47,
+          "macro_f1": 0.39716312056737585,
+          "accuracy": 0.5957446808510638
+        },
+        {
+          "paciente": "TCGA-OL-A66I",
+          "n": 42,
+          "macro_f1": 0.8481481481481481,
+          "accuracy": 0.9285714285714286
+        },
+        {
+          "paciente": "TCGA-OL-A66P",
+          "n": 172,
+          "macro_f1": 0.7139826516771364,
+          "accuracy": 0.75
+        },
+        {
+          "paciente": "TCGA-OL-A6VO",
+          "n": 215,
+          "macro_f1": 0.7817926717392477,
+          "accuracy": 0.8837209302325582
+        }
+      ]
+    },
+    {
+      "modelo": "resnet50",
+      "semilla": 6113,
+      "fase": "otro_validar_protocolo",
+      "ruta": "final/resnet50_6113",
+      "predicciones_sha256": "a89e0226864f4351eaed2714d38de64b07ab8f661188050ba5b59aef3289d8d8",
+      "metricas": {
+        "n": 2049,
+        "macro_f1": 0.8158570226223111,
+        "accuracy": 0.864812103465105,
+        "mcc": 0.7692105746584301,
+        "brier_multiclase_suma": 0.19820102007741644,
+        "ece_10": 0.023997877285851614,
+        "auc_por_clase": [
+          0.9627441426855983,
+          0.9848300270867654,
+          0.9218850167087227
+        ],
+        "ap_por_clase": [
+          0.965936579286282,
+          0.9683870007882003,
+          0.7534506226941957
+        ],
+        "matriz_confusion": [
+          [
+            1066,
+            16,
+            26
+          ],
+          [
+            55,
+            513,
+            29
+          ],
+          [
+            123,
+            28,
+            193
+          ]
+        ],
+        "calibracion": [
+          {
+            "bin": 3,
+            "limite_inferior": 0.3,
+            "limite_superior": 0.4,
+            "n": 11,
+            "accuracy": 0.2727272727272727,
+            "confianza": 0.3784890039400621
+          },
+          {
+            "bin": 4,
+            "limite_inferior": 0.4,
+            "limite_superior": 0.5,
+            "n": 83,
+            "accuracy": 0.5903614457831325,
+            "confianza": 0.463182844311358
+          },
+          {
+            "bin": 5,
+            "limite_inferior": 0.5,
+            "limite_superior": 0.6,
+            "n": 177,
+            "accuracy": 0.5649717514124294,
+            "confianza": 0.5503929954464153
+          },
+          {
+            "bin": 6,
+            "limite_inferior": 0.6,
+            "limite_superior": 0.7,
+            "n": 178,
+            "accuracy": 0.7191011235955056,
+            "confianza": 0.6522674815038617
+          },
+          {
+            "bin": 7,
+            "limite_inferior": 0.7,
+            "limite_superior": 0.8,
+            "n": 193,
+            "accuracy": 0.7772020725388601,
+            "confianza": 0.7534646141714383
+          },
+          {
+            "bin": 8,
+            "limite_inferior": 0.8,
+            "limite_superior": 0.9,
+            "n": 332,
+            "accuracy": 0.8644578313253012,
+            "confianza": 0.8539761990667826
+          },
+          {
+            "bin": 9,
+            "limite_inferior": 0.9,
+            "limite_superior": 1.0,
+            "n": 1075,
+            "accuracy": 0.9813953488372092,
+            "confianza": 0.9675214994230936
+          }
+        ]
+      },
+      "por_paciente": [
+        {
+          "paciente": "TCGA-AQ-A04J",
+          "n": 79,
+          "macro_f1": 0.7972267482459349,
+          "accuracy": 0.8227848101265823
+        },
+        {
+          "paciente": "TCGA-AQ-A54N",
+          "n": 116,
+          "macro_f1": 0.7704517704517704,
+          "accuracy": 0.9137931034482759
+        },
+        {
+          "paciente": "TCGA-BH-A0AV",
+          "n": 231,
+          "macro_f1": 0.8169226737622964,
+          "accuracy": 0.8354978354978355
+        },
+        {
+          "paciente": "TCGA-BH-A0B3",
+          "n": 87,
+          "macro_f1": 0.6260651629072681,
+          "accuracy": 0.7471264367816092
+        },
+        {
+          "paciente": "TCGA-BH-A0B9",
+          "n": 161,
+          "macro_f1": 0.8613505747126436,
+          "accuracy": 0.9192546583850931
+        },
+        {
+          "paciente": "TCGA-BH-A0BG",
+          "n": 72,
+          "macro_f1": 0.7382974782355588,
+          "accuracy": 0.875
+        },
+        {
+          "paciente": "TCGA-BH-A0BL",
+          "n": 26,
+          "macro_f1": 0.7063492063492064,
+          "accuracy": 0.7307692307692307
+        },
+        {
+          "paciente": "TCGA-BH-A0BW",
+          "n": 64,
+          "macro_f1": 0.8222222222222223,
+          "accuracy": 0.984375
+        },
+        {
+          "paciente": "TCGA-BH-A0E0",
+          "n": 64,
+          "macro_f1": 0.85,
+          "accuracy": 0.90625
+        },
+        {
+          "paciente": "TCGA-BH-A0E6",
+          "n": 52,
+          "macro_f1": 0.8392857142857143,
+          "accuracy": 0.8653846153846154
+        },
+        {
+          "paciente": "TCGA-BH-A0WA",
+          "n": 164,
+          "macro_f1": 0.49794238683127573,
+          "accuracy": 0.9878048780487805
+        },
+        {
+          "paciente": "TCGA-BH-A18G",
+          "n": 184,
+          "macro_f1": 0.6291429043722622,
+          "accuracy": 0.7717391304347826
+        },
+        {
+          "paciente": "TCGA-BH-A18V",
+          "n": 27,
+          "macro_f1": 0.3270440251572327,
+          "accuracy": 0.9629629629629629
+        },
+        {
+          "paciente": "TCGA-BH-A1EW",
+          "n": 95,
+          "macro_f1": 0.6287581699346405,
+          "accuracy": 0.9052631578947369
+        },
+        {
+          "paciente": "TCGA-BH-A1F6",
+          "n": 103,
+          "macro_f1": 0.788324420677362,
+          "accuracy": 0.9320388349514563
+        },
+        {
+          "paciente": "TCGA-OL-A5D6",
+          "n": 2,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-OL-A5D7",
+          "n": 46,
+          "macro_f1": 0.7553994275305751,
+          "accuracy": 0.8260869565217391
+        },
+        {
+          "paciente": "TCGA-OL-A5RW",
+          "n": 47,
+          "macro_f1": 0.56875,
+          "accuracy": 0.8723404255319149
+        },
+        {
+          "paciente": "TCGA-OL-A66I",
+          "n": 42,
+          "macro_f1": 0.8629629629629628,
+          "accuracy": 0.9523809523809523
+        },
+        {
+          "paciente": "TCGA-OL-A66P",
+          "n": 172,
+          "macro_f1": 0.6918767507002802,
+          "accuracy": 0.7383720930232558
+        },
+        {
+          "paciente": "TCGA-OL-A6VO",
+          "n": 215,
+          "macro_f1": 0.7717994951316264,
+          "accuracy": 0.8697674418604651
+        }
+      ]
+    },
+    {
+      "modelo": "resnet50",
+      "semilla": 6114,
+      "fase": "otro_validar_protocolo",
+      "ruta": "final/resnet50_6114",
+      "predicciones_sha256": "aa821f1dfc3a7f8c0d282f1a418d9d93d8435d7da92fd9980f16e3e539a0ed1a",
+      "metricas": {
+        "n": 2049,
+        "macro_f1": 0.7994295708885469,
+        "accuracy": 0.8535871156661786,
+        "mcc": 0.7505557303545881,
+        "brier_multiclase_suma": 0.2086600561648121,
+        "ece_10": 0.03880417003696755,
+        "auc_por_clase": [
+          0.9656162121101677,
+          0.9839348256433684,
+          0.9282837754893268
+        ],
+        "ap_por_clase": [
+          0.9694437960032708,
+          0.9655945426762166,
+          0.7643972053141382
+        ],
+        "matriz_confusion": [
+          [
+            1074,
+            18,
+            16
+          ],
+          [
+            73,
+            500,
+            24
+          ],
+          [
+            143,
+            26,
+            175
+          ]
+        ],
+        "calibracion": [
+          {
+            "bin": 3,
+            "limite_inferior": 0.3,
+            "limite_superior": 0.4,
+            "n": 8,
+            "accuracy": 0.125,
+            "confianza": 0.38243957608938217
+          },
+          {
+            "bin": 4,
+            "limite_inferior": 0.4,
+            "limite_superior": 0.5,
+            "n": 46,
+            "accuracy": 0.32608695652173914,
+            "confianza": 0.4659135691497637
+          },
+          {
+            "bin": 5,
+            "limite_inferior": 0.5,
+            "limite_superior": 0.6,
+            "n": 114,
+            "accuracy": 0.543859649122807,
+            "confianza": 0.5509179140392103
+          },
+          {
+            "bin": 6,
+            "limite_inferior": 0.6,
+            "limite_superior": 0.7,
+            "n": 125,
+            "accuracy": 0.6,
+            "confianza": 0.6468041768074035
+          },
+          {
+            "bin": 7,
+            "limite_inferior": 0.7,
+            "limite_superior": 0.8,
+            "n": 143,
+            "accuracy": 0.6783216783216783,
+            "confianza": 0.7536922213914511
+          },
+          {
+            "bin": 8,
+            "limite_inferior": 0.8,
+            "limite_superior": 0.9,
+            "n": 220,
+            "accuracy": 0.7727272727272727,
+            "confianza": 0.8541065617041155
+          },
+          {
+            "bin": 9,
+            "limite_inferior": 0.9,
+            "limite_superior": 1.0,
+            "n": 1393,
+            "accuracy": 0.9540559942569993,
+            "confianza": 0.9796709318599167
+          }
+        ]
+      },
+      "por_paciente": [
+        {
+          "paciente": "TCGA-AQ-A04J",
+          "n": 79,
+          "macro_f1": 0.8338434583807404,
+          "accuracy": 0.8607594936708861
+        },
+        {
+          "paciente": "TCGA-AQ-A54N",
+          "n": 116,
+          "macro_f1": 0.7915988529799272,
+          "accuracy": 0.9051724137931034
+        },
+        {
+          "paciente": "TCGA-BH-A0AV",
+          "n": 231,
+          "macro_f1": 0.7813433480100147,
+          "accuracy": 0.8095238095238095
+        },
+        {
+          "paciente": "TCGA-BH-A0B3",
+          "n": 87,
+          "macro_f1": 0.708974358974359,
+          "accuracy": 0.7931034482758621
+        },
+        {
+          "paciente": "TCGA-BH-A0B9",
+          "n": 161,
+          "macro_f1": 0.892053827398655,
+          "accuracy": 0.937888198757764
+        },
+        {
+          "paciente": "TCGA-BH-A0BG",
+          "n": 72,
+          "macro_f1": 0.7619047619047619,
+          "accuracy": 0.8611111111111112
+        },
+        {
+          "paciente": "TCGA-BH-A0BL",
+          "n": 26,
+          "macro_f1": 0.5706385118149824,
+          "accuracy": 0.5769230769230769
+        },
+        {
+          "paciente": "TCGA-BH-A0BW",
+          "n": 64,
+          "macro_f1": 0.7403820285176218,
+          "accuracy": 0.953125
+        },
+        {
+          "paciente": "TCGA-BH-A0E0",
+          "n": 64,
+          "macro_f1": 0.7737654320987654,
+          "accuracy": 0.9375
+        },
+        {
+          "paciente": "TCGA-BH-A0E6",
+          "n": 52,
+          "macro_f1": 0.7976190476190476,
+          "accuracy": 0.8461538461538461
+        },
+        {
+          "paciente": "TCGA-BH-A0WA",
+          "n": 164,
+          "macro_f1": 0.3302564102564102,
+          "accuracy": 0.9817073170731707
+        },
+        {
+          "paciente": "TCGA-BH-A18G",
+          "n": 184,
+          "macro_f1": 0.7436878812179534,
+          "accuracy": 0.8315217391304348
+        },
+        {
+          "paciente": "TCGA-BH-A18V",
+          "n": 27,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-BH-A1EW",
+          "n": 95,
+          "macro_f1": 0.5319200779727096,
+          "accuracy": 0.9263157894736842
+        },
+        {
+          "paciente": "TCGA-BH-A1F6",
+          "n": 103,
+          "macro_f1": 0.8178187403993856,
+          "accuracy": 0.970873786407767
+        },
+        {
+          "paciente": "TCGA-OL-A5D6",
+          "n": 2,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-OL-A5D7",
+          "n": 46,
+          "macro_f1": 0.9179879715691635,
+          "accuracy": 0.8913043478260869
+        },
+        {
+          "paciente": "TCGA-OL-A5RW",
+          "n": 47,
+          "macro_f1": 0.5119047619047619,
+          "accuracy": 0.6808510638297872
+        },
+        {
+          "paciente": "TCGA-OL-A66I",
+          "n": 42,
+          "macro_f1": 0.8467103467103466,
+          "accuracy": 0.9285714285714286
+        },
+        {
+          "paciente": "TCGA-OL-A66P",
+          "n": 172,
+          "macro_f1": 0.6050070266104538,
+          "accuracy": 0.6802325581395349
+        },
+        {
+          "paciente": "TCGA-OL-A6VO",
+          "n": 215,
+          "macro_f1": 0.5960111317254174,
+          "accuracy": 0.7767441860465116
+        }
+      ]
+    },
+    {
+      "modelo": "resnet50",
+      "semilla": 6115,
+      "fase": "otro_validar_protocolo",
+      "ruta": "final/resnet50_6115",
+      "predicciones_sha256": "367be26f1aa1fb198794dd4ee131ec7823b3e8e81811597806351ae608d9487a",
+      "metricas": {
+        "n": 2049,
+        "macro_f1": 0.7679333515603542,
+        "accuracy": 0.8428501708150318,
+        "mcc": 0.7311954034693521,
+        "brier_multiclase_suma": 0.22128878211620195,
+        "ece_10": 0.024635563206823915,
+        "auc_por_clase": [
+          0.9551843994214619,
+          0.9825597223952636,
+          0.8822802291481963
+        ],
+        "ap_por_clase": [
+          0.958776294021394,
+          0.9604778426300911,
+          0.6621104285822685
+        ],
+        "matriz_confusion": [
+          [
+            1046,
+            25,
+            37
+          ],
+          [
+            39,
+            541,
+            17
+          ],
+          [
+            154,
+            50,
+            140
+          ]
+        ],
+        "calibracion": [
+          {
+            "bin": 3,
+            "limite_inferior": 0.3,
+            "limite_superior": 0.4,
+            "n": 14,
+            "accuracy": 0.5,
+            "confianza": 0.38222435329641613
+          },
+          {
+            "bin": 4,
+            "limite_inferior": 0.4,
+            "limite_superior": 0.5,
+            "n": 95,
+            "accuracy": 0.42105263157894735,
+            "confianza": 0.46478549806695235
+          },
+          {
+            "bin": 5,
+            "limite_inferior": 0.5,
+            "limite_superior": 0.6,
+            "n": 176,
+            "accuracy": 0.5056818181818182,
+            "confianza": 0.548548599197106
+          },
+          {
+            "bin": 6,
+            "limite_inferior": 0.6,
+            "limite_superior": 0.7,
+            "n": 179,
+            "accuracy": 0.6983240223463687,
+            "confianza": 0.6503507371721321
+          },
+          {
+            "bin": 7,
+            "limite_inferior": 0.7,
+            "limite_superior": 0.8,
+            "n": 221,
+            "accuracy": 0.8099547511312217,
+            "confianza": 0.7517691901906044
+          },
+          {
+            "bin": 8,
+            "limite_inferior": 0.8,
+            "limite_superior": 0.9,
+            "n": 317,
+            "accuracy": 0.8391167192429022,
+            "confianza": 0.8552658324738031
+          },
+          {
+            "bin": 9,
+            "limite_inferior": 0.9,
+            "limite_superior": 1.0,
+            "n": 1047,
+            "accuracy": 0.9751671442215855,
+            "confianza": 0.9650766587644503
+          }
+        ]
+      },
+      "por_paciente": [
+        {
+          "paciente": "TCGA-AQ-A04J",
+          "n": 79,
+          "macro_f1": 0.8124320124320125,
+          "accuracy": 0.8481012658227848
+        },
+        {
+          "paciente": "TCGA-AQ-A54N",
+          "n": 116,
+          "macro_f1": 0.7986813186813185,
+          "accuracy": 0.9051724137931034
+        },
+        {
+          "paciente": "TCGA-BH-A0AV",
+          "n": 231,
+          "macro_f1": 0.6788167388167389,
+          "accuracy": 0.7575757575757576
+        },
+        {
+          "paciente": "TCGA-BH-A0B3",
+          "n": 87,
+          "macro_f1": 0.5796032217600845,
+          "accuracy": 0.7816091954022989
+        },
+        {
+          "paciente": "TCGA-BH-A0B9",
+          "n": 161,
+          "macro_f1": 0.8013629013629013,
+          "accuracy": 0.9192546583850931
+        },
+        {
+          "paciente": "TCGA-BH-A0BG",
+          "n": 72,
+          "macro_f1": 0.681440511307768,
+          "accuracy": 0.8333333333333334
+        },
+        {
+          "paciente": "TCGA-BH-A0BL",
+          "n": 26,
+          "macro_f1": 0.4492063492063492,
+          "accuracy": 0.4230769230769231
+        },
+        {
+          "paciente": "TCGA-BH-A0BW",
+          "n": 64,
+          "macro_f1": 0.5972451790633609,
+          "accuracy": 0.96875
+        },
+        {
+          "paciente": "TCGA-BH-A0E0",
+          "n": 64,
+          "macro_f1": 0.574537037037037,
+          "accuracy": 0.84375
+        },
+        {
+          "paciente": "TCGA-BH-A0E6",
+          "n": 52,
+          "macro_f1": 0.8551688360686662,
+          "accuracy": 0.8846153846153846
+        },
+        {
+          "paciente": "TCGA-BH-A0WA",
+          "n": 164,
+          "macro_f1": 0.3302564102564102,
+          "accuracy": 0.9817073170731707
+        },
+        {
+          "paciente": "TCGA-BH-A18G",
+          "n": 184,
+          "macro_f1": 0.5753467240554758,
+          "accuracy": 0.8043478260869565
+        },
+        {
+          "paciente": "TCGA-BH-A18V",
+          "n": 27,
+          "macro_f1": 0.3270440251572327,
+          "accuracy": 0.9629629629629629
+        },
+        {
+          "paciente": "TCGA-BH-A1EW",
+          "n": 95,
+          "macro_f1": 0.7254321847082029,
+          "accuracy": 0.9368421052631579
+        },
+        {
+          "paciente": "TCGA-BH-A1F6",
+          "n": 103,
+          "macro_f1": 0.8929864253393666,
+          "accuracy": 0.941747572815534
+        },
+        {
+          "paciente": "TCGA-OL-A5D6",
+          "n": 2,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-OL-A5D7",
+          "n": 46,
+          "macro_f1": 0.7939736346516009,
+          "accuracy": 0.8695652173913043
+        },
+        {
+          "paciente": "TCGA-OL-A5RW",
+          "n": 47,
+          "macro_f1": 0.37000000000000005,
+          "accuracy": 0.5319148936170213
+        },
+        {
+          "paciente": "TCGA-OL-A66I",
+          "n": 42,
+          "macro_f1": 0.9830687830687831,
+          "accuracy": 0.9761904761904762
+        },
+        {
+          "paciente": "TCGA-OL-A66P",
+          "n": 172,
+          "macro_f1": 0.6980054859696093,
+          "accuracy": 0.7267441860465116
+        },
+        {
+          "paciente": "TCGA-OL-A6VO",
+          "n": 215,
+          "macro_f1": 0.7099255912835504,
+          "accuracy": 0.8232558139534883
+        }
+      ]
+    },
+    {
+      "modelo": "resnet50",
+      "semilla": 6116,
+      "fase": "otro_validar_protocolo",
+      "ruta": "final/resnet50_6116",
+      "predicciones_sha256": "7a681fb68614e512dca9d55bf4ad1c1ca42c78f5effca1969fb28315de6ba499",
+      "metricas": {
+        "n": 2049,
+        "macro_f1": 0.820415035507974,
+        "accuracy": 0.8653001464128843,
+        "mcc": 0.7703087224753167,
+        "brier_multiclase_suma": 0.19315162375615405,
+        "ece_10": 0.019794622140724354,
+        "auc_por_clase": [
+          0.9664942817572517,
+          0.9842232281702359,
+          0.9213990997749437
+        ],
+        "ap_por_clase": [
+          0.9683060755227038,
+          0.9669182510802563,
+          0.7479723264054662
+        ],
+        "matriz_confusion": [
+          [
+            1064,
+            9,
+            35
+          ],
+          [
+            63,
+            509,
+            25
+          ],
+          [
+            124,
+            20,
+            200
+          ]
+        ],
+        "calibracion": [
+          {
+            "bin": 3,
+            "limite_inferior": 0.3,
+            "limite_superior": 0.4,
+            "n": 8,
+            "accuracy": 0.5,
+            "confianza": 0.3773379996418953
+          },
+          {
+            "bin": 4,
+            "limite_inferior": 0.4,
+            "limite_superior": 0.5,
+            "n": 73,
+            "accuracy": 0.5616438356164384,
+            "confianza": 0.4616076591080182
+          },
+          {
+            "bin": 5,
+            "limite_inferior": 0.5,
+            "limite_superior": 0.6,
+            "n": 127,
+            "accuracy": 0.4566929133858268,
+            "confianza": 0.552155194320078
+          },
+          {
+            "bin": 6,
+            "limite_inferior": 0.6,
+            "limite_superior": 0.7,
+            "n": 137,
+            "accuracy": 0.6642335766423357,
+            "confianza": 0.6532092033511531
+          },
+          {
+            "bin": 7,
+            "limite_inferior": 0.7,
+            "limite_superior": 0.8,
+            "n": 167,
+            "accuracy": 0.7125748502994012,
+            "confianza": 0.751186225942509
+          },
+          {
+            "bin": 8,
+            "limite_inferior": 0.8,
+            "limite_superior": 0.9,
+            "n": 268,
+            "accuracy": 0.8656716417910447,
+            "confianza": 0.8556771418496744
+          },
+          {
+            "bin": 9,
+            "limite_inferior": 0.9,
+            "limite_superior": 1.0,
+            "n": 1269,
+            "accuracy": 0.9676910953506698,
+            "confianza": 0.9751887859276095
+          }
+        ]
+      },
+      "por_paciente": [
+        {
+          "paciente": "TCGA-AQ-A04J",
+          "n": 79,
+          "macro_f1": 0.8023159636062861,
+          "accuracy": 0.8354430379746836
+        },
+        {
+          "paciente": "TCGA-AQ-A54N",
+          "n": 116,
+          "macro_f1": 0.9136141636141636,
+          "accuracy": 0.9568965517241379
+        },
+        {
+          "paciente": "TCGA-BH-A0AV",
+          "n": 231,
+          "macro_f1": 0.8476593476593477,
+          "accuracy": 0.8614718614718615
+        },
+        {
+          "paciente": "TCGA-BH-A0B3",
+          "n": 87,
+          "macro_f1": 0.7315555555555555,
+          "accuracy": 0.8505747126436781
+        },
+        {
+          "paciente": "TCGA-BH-A0B9",
+          "n": 161,
+          "macro_f1": 0.8366858237547893,
+          "accuracy": 0.906832298136646
+        },
+        {
+          "paciente": "TCGA-BH-A0BG",
+          "n": 72,
+          "macro_f1": 0.7328907855223644,
+          "accuracy": 0.8194444444444444
+        },
+        {
+          "paciente": "TCGA-BH-A0BL",
+          "n": 26,
+          "macro_f1": 0.6222222222222222,
+          "accuracy": 0.6153846153846154
+        },
+        {
+          "paciente": "TCGA-BH-A0BW",
+          "n": 64,
+          "macro_f1": 0.8832391713747646,
+          "accuracy": 0.96875
+        },
+        {
+          "paciente": "TCGA-BH-A0E0",
+          "n": 64,
+          "macro_f1": 0.7586466165413533,
+          "accuracy": 0.921875
+        },
+        {
+          "paciente": "TCGA-BH-A0E6",
+          "n": 52,
+          "macro_f1": 0.8461715818818253,
+          "accuracy": 0.8846153846153846
+        },
+        {
+          "paciente": "TCGA-BH-A0WA",
+          "n": 164,
+          "macro_f1": 0.49794238683127573,
+          "accuracy": 0.9878048780487805
+        },
+        {
+          "paciente": "TCGA-BH-A18G",
+          "n": 184,
+          "macro_f1": 0.7695702857694547,
+          "accuracy": 0.8532608695652174
+        },
+        {
+          "paciente": "TCGA-BH-A18V",
+          "n": 27,
+          "macro_f1": 0.3270440251572327,
+          "accuracy": 0.9629629629629629
+        },
+        {
+          "paciente": "TCGA-BH-A1EW",
+          "n": 95,
+          "macro_f1": 0.7325442701165245,
+          "accuracy": 0.9263157894736842
+        },
+        {
+          "paciente": "TCGA-BH-A1F6",
+          "n": 103,
+          "macro_f1": 0.7941905979924816,
+          "accuracy": 0.941747572815534
+        },
+        {
+          "paciente": "TCGA-OL-A5D6",
+          "n": 2,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-OL-A5D7",
+          "n": 46,
+          "macro_f1": 0.9353448275862069,
+          "accuracy": 0.9130434782608695
+        },
+        {
+          "paciente": "TCGA-OL-A5RW",
+          "n": 47,
+          "macro_f1": 0.5166028097062579,
+          "accuracy": 0.7872340425531915
+        },
+        {
+          "paciente": "TCGA-OL-A66I",
+          "n": 42,
+          "macro_f1": 0.8467103467103466,
+          "accuracy": 0.9285714285714286
+        },
+        {
+          "paciente": "TCGA-OL-A66P",
+          "n": 172,
+          "macro_f1": 0.6645467489321311,
+          "accuracy": 0.7151162790697675
+        },
+        {
+          "paciente": "TCGA-OL-A6VO",
+          "n": 215,
+          "macro_f1": 0.5673976608187135,
+          "accuracy": 0.7534883720930232
+        }
+      ]
+    },
+    {
+      "modelo": "resnet50",
+      "semilla": 6117,
+      "fase": "otro_validar_protocolo",
+      "ruta": "final/resnet50_6117",
+      "predicciones_sha256": "38c1bb18627887fe42af3c351bb42f05fde7b0e47f7b8964b624f4f9eab27df7",
+      "metricas": {
+        "n": 2049,
+        "macro_f1": 0.8039403426308697,
+        "accuracy": 0.8555392874572962,
+        "mcc": 0.7530286070432793,
+        "brier_multiclase_suma": 0.20815931772620436,
+        "ece_10": 0.014744212244591447,
+        "auc_por_clase": [
+          0.9579226723241654,
+          0.9853324242885686,
+          0.8910165041260316
+        ],
+        "ap_por_clase": [
+          0.9608723744130226,
+          0.9673446114975451,
+          0.6664682414084964
+        ],
+        "matriz_confusion": [
+          [
+            1030,
+            19,
+            59
+          ],
+          [
+            34,
+            536,
+            27
+          ],
+          [
+            134,
+            23,
+            187
+          ]
+        ],
+        "calibracion": [
+          {
+            "bin": 3,
+            "limite_inferior": 0.3,
+            "limite_superior": 0.4,
+            "n": 16,
+            "accuracy": 0.5625,
+            "confianza": 0.383833235129714
+          },
+          {
+            "bin": 4,
+            "limite_inferior": 0.4,
+            "limite_superior": 0.5,
+            "n": 77,
+            "accuracy": 0.4935064935064935,
+            "confianza": 0.4663252834375803
+          },
+          {
+            "bin": 5,
+            "limite_inferior": 0.5,
+            "limite_superior": 0.6,
+            "n": 143,
+            "accuracy": 0.5384615384615384,
+            "confianza": 0.5511834146259548
+          },
+          {
+            "bin": 6,
+            "limite_inferior": 0.6,
+            "limite_superior": 0.7,
+            "n": 154,
+            "accuracy": 0.6493506493506493,
+            "confianza": 0.6513151464524207
+          },
+          {
+            "bin": 7,
+            "limite_inferior": 0.7,
+            "limite_superior": 0.8,
+            "n": 183,
+            "accuracy": 0.726775956284153,
+            "confianza": 0.7538609866236077
+          },
+          {
+            "bin": 8,
+            "limite_inferior": 0.8,
+            "limite_superior": 0.9,
+            "n": 265,
+            "accuracy": 0.8679245283018868,
+            "confianza": 0.8542117051358493
+          },
+          {
+            "bin": 9,
+            "limite_inferior": 0.9,
+            "limite_superior": 1.0,
+            "n": 1211,
+            "accuracy": 0.9628406275805119,
+            "confianza": 0.9748530552763274
+          }
+        ]
+      },
+      "por_paciente": [
+        {
+          "paciente": "TCGA-AQ-A04J",
+          "n": 79,
+          "macro_f1": 0.778030303030303,
+          "accuracy": 0.810126582278481
+        },
+        {
+          "paciente": "TCGA-AQ-A54N",
+          "n": 116,
+          "macro_f1": 0.8429951690821255,
+          "accuracy": 0.9137931034482759
+        },
+        {
+          "paciente": "TCGA-BH-A0AV",
+          "n": 231,
+          "macro_f1": 0.6776233035418736,
+          "accuracy": 0.7489177489177489
+        },
+        {
+          "paciente": "TCGA-BH-A0B3",
+          "n": 87,
+          "macro_f1": 0.6891052610490043,
+          "accuracy": 0.7586206896551724
+        },
+        {
+          "paciente": "TCGA-BH-A0B9",
+          "n": 161,
+          "macro_f1": 0.8354771027184821,
+          "accuracy": 0.906832298136646
+        },
+        {
+          "paciente": "TCGA-BH-A0BG",
+          "n": 72,
+          "macro_f1": 0.7258849557522123,
+          "accuracy": 0.8472222222222222
+        },
+        {
+          "paciente": "TCGA-BH-A0BL",
+          "n": 26,
+          "macro_f1": 0.3819047619047619,
+          "accuracy": 0.4230769230769231
+        },
+        {
+          "paciente": "TCGA-BH-A0BW",
+          "n": 64,
+          "macro_f1": 0.8861340679522498,
+          "accuracy": 0.984375
+        },
+        {
+          "paciente": "TCGA-BH-A0E0",
+          "n": 64,
+          "macro_f1": 0.7653642653642653,
+          "accuracy": 0.890625
+        },
+        {
+          "paciente": "TCGA-BH-A0E6",
+          "n": 52,
+          "macro_f1": 0.7728101616047286,
+          "accuracy": 0.8269230769230769
+        },
+        {
+          "paciente": "TCGA-BH-A0WA",
+          "n": 164,
+          "macro_f1": 0.49794238683127573,
+          "accuracy": 0.9878048780487805
+        },
+        {
+          "paciente": "TCGA-BH-A18G",
+          "n": 184,
+          "macro_f1": 0.6787531108183282,
+          "accuracy": 0.8152173913043478
+        },
+        {
+          "paciente": "TCGA-BH-A18V",
+          "n": 27,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-BH-A1EW",
+          "n": 95,
+          "macro_f1": 0.5320327552986512,
+          "accuracy": 0.9368421052631579
+        },
+        {
+          "paciente": "TCGA-BH-A1F6",
+          "n": 103,
+          "macro_f1": 0.8757721345229924,
+          "accuracy": 0.9805825242718447
+        },
+        {
+          "paciente": "TCGA-OL-A5D6",
+          "n": 2,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-OL-A5D7",
+          "n": 46,
+          "macro_f1": 0.8121369422815473,
+          "accuracy": 0.8913043478260869
+        },
+        {
+          "paciente": "TCGA-OL-A5RW",
+          "n": 47,
+          "macro_f1": 0.4301572617946346,
+          "accuracy": 0.6382978723404256
+        },
+        {
+          "paciente": "TCGA-OL-A66I",
+          "n": 42,
+          "macro_f1": 0.9830687830687831,
+          "accuracy": 0.9761904761904762
+        },
+        {
+          "paciente": "TCGA-OL-A66P",
+          "n": 172,
+          "macro_f1": 0.8113161409250794,
+          "accuracy": 0.813953488372093
+        },
+        {
+          "paciente": "TCGA-OL-A6VO",
+          "n": 215,
+          "macro_f1": 0.7129026012123673,
+          "accuracy": 0.8372093023255814
+        }
+      ]
+    },
+    {
+      "modelo": "resnet50",
+      "semilla": 6118,
+      "fase": "otro_validar_protocolo",
+      "ruta": "final/resnet50_6118",
+      "predicciones_sha256": "36274cdf8434db0c9890724c9724191f8d556d7bb4c49e5233c78777dbfeee39",
+      "metricas": {
+        "n": 2049,
+        "macro_f1": 0.789229416382212,
+        "accuracy": 0.8199121522693997,
+        "mcc": 0.7167559769833143,
+        "brier_multiclase_suma": 0.2635065199427859,
+        "ece_10": 0.027331585270884952,
+        "auc_por_clase": [
+          0.959333530271583,
+          0.9716188841360153,
+          0.9015106049239583
+        ],
+        "ap_por_clase": [
+          0.9638309977923296,
+          0.9515795152932968,
+          0.6324689439596294
+        ],
+        "matriz_confusion": [
+          [
+            913,
+            35,
+            160
+          ],
+          [
+            8,
+            498,
+            91
+          ],
+          [
+            63,
+            12,
+            269
+          ]
+        ],
+        "calibracion": [
+          {
+            "bin": 3,
+            "limite_inferior": 0.3,
+            "limite_superior": 0.4,
+            "n": 16,
+            "accuracy": 0.25,
+            "confianza": 0.3789584618061781
+          },
+          {
+            "bin": 4,
+            "limite_inferior": 0.4,
+            "limite_superior": 0.5,
+            "n": 104,
+            "accuracy": 0.4230769230769231,
+            "confianza": 0.4614978206272309
+          },
+          {
+            "bin": 5,
+            "limite_inferior": 0.5,
+            "limite_superior": 0.6,
+            "n": 214,
+            "accuracy": 0.602803738317757,
+            "confianza": 0.5501384300606273
+          },
+          {
+            "bin": 6,
+            "limite_inferior": 0.6,
+            "limite_superior": 0.7,
+            "n": 193,
+            "accuracy": 0.7357512953367875,
+            "confianza": 0.6507314622711023
+          },
+          {
+            "bin": 7,
+            "limite_inferior": 0.7,
+            "limite_superior": 0.8,
+            "n": 249,
+            "accuracy": 0.714859437751004,
+            "confianza": 0.7558858444891781
+          },
+          {
+            "bin": 8,
+            "limite_inferior": 0.8,
+            "limite_superior": 0.9,
+            "n": 352,
+            "accuracy": 0.8636363636363636,
+            "confianza": 0.8519862433048812
+          },
+          {
+            "bin": 9,
+            "limite_inferior": 0.9,
+            "limite_superior": 1.0,
+            "n": 921,
+            "accuracy": 0.9543973941368078,
+            "confianza": 0.9630268057575703
+          }
+        ]
+      },
+      "por_paciente": [
+        {
+          "paciente": "TCGA-AQ-A04J",
+          "n": 79,
+          "macro_f1": 0.7395227740055326,
+          "accuracy": 0.759493670886076
+        },
+        {
+          "paciente": "TCGA-AQ-A54N",
+          "n": 116,
+          "macro_f1": 0.7673716677682308,
+          "accuracy": 0.8879310344827587
+        },
+        {
+          "paciente": "TCGA-BH-A0AV",
+          "n": 231,
+          "macro_f1": 0.7899887525555975,
+          "accuracy": 0.7922077922077922
+        },
+        {
+          "paciente": "TCGA-BH-A0B3",
+          "n": 87,
+          "macro_f1": 0.6656327543424317,
+          "accuracy": 0.6551724137931034
+        },
+        {
+          "paciente": "TCGA-BH-A0B9",
+          "n": 161,
+          "macro_f1": 0.658580133921587,
+          "accuracy": 0.7142857142857143
+        },
+        {
+          "paciente": "TCGA-BH-A0BG",
+          "n": 72,
+          "macro_f1": 0.7595726495726497,
+          "accuracy": 0.8055555555555556
+        },
+        {
+          "paciente": "TCGA-BH-A0BL",
+          "n": 26,
+          "macro_f1": 0.7916666666666666,
+          "accuracy": 0.8461538461538461
+        },
+        {
+          "paciente": "TCGA-BH-A0BW",
+          "n": 64,
+          "macro_f1": 0.6743961352657005,
+          "accuracy": 0.90625
+        },
+        {
+          "paciente": "TCGA-BH-A0E0",
+          "n": 64,
+          "macro_f1": 0.6761195793453858,
+          "accuracy": 0.78125
+        },
+        {
+          "paciente": "TCGA-BH-A0E6",
+          "n": 52,
+          "macro_f1": 0.8612276612276611,
+          "accuracy": 0.8846153846153846
+        },
+        {
+          "paciente": "TCGA-BH-A0WA",
+          "n": 164,
+          "macro_f1": 0.49367088607594933,
+          "accuracy": 0.9634146341463414
+        },
+        {
+          "paciente": "TCGA-BH-A18G",
+          "n": 184,
+          "macro_f1": 0.7595838922423429,
+          "accuracy": 0.8097826086956522
+        },
+        {
+          "paciente": "TCGA-BH-A18V",
+          "n": 27,
+          "macro_f1": 0.3270440251572327,
+          "accuracy": 0.9629629629629629
+        },
+        {
+          "paciente": "TCGA-BH-A1EW",
+          "n": 95,
+          "macro_f1": 0.5793150541023216,
+          "accuracy": 0.8526315789473684
+        },
+        {
+          "paciente": "TCGA-BH-A1F6",
+          "n": 103,
+          "macro_f1": 0.8786069651741294,
+          "accuracy": 0.9223300970873787
+        },
+        {
+          "paciente": "TCGA-OL-A5D6",
+          "n": 2,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-OL-A5D7",
+          "n": 46,
+          "macro_f1": 0.8296783625730993,
+          "accuracy": 0.9130434782608695
+        },
+        {
+          "paciente": "TCGA-OL-A5RW",
+          "n": 47,
+          "macro_f1": 0.2058823529411765,
+          "accuracy": 0.3617021276595745
+        },
+        {
+          "paciente": "TCGA-OL-A66I",
+          "n": 42,
+          "macro_f1": 0.7582256675279931,
+          "accuracy": 0.9047619047619048
+        },
+        {
+          "paciente": "TCGA-OL-A66P",
+          "n": 172,
+          "macro_f1": 0.8160193560033516,
+          "accuracy": 0.813953488372093
+        },
+        {
+          "paciente": "TCGA-OL-A6VO",
+          "n": 215,
+          "macro_f1": 0.740708084186345,
+          "accuracy": 0.8372093023255814
+        }
+      ]
+    },
+    {
+      "modelo": "resnet50",
+      "semilla": 6119,
+      "fase": "otro_validar_protocolo",
+      "ruta": "final/resnet50_6119",
+      "predicciones_sha256": "a17681a44d399cd509599eeb9a8b8f2a4032116943045201564bb2dc16622d83",
+      "metricas": {
+        "n": 2049,
+        "macro_f1": 0.789031592354159,
+        "accuracy": 0.8448023426061494,
+        "mcc": 0.7351381318790359,
+        "brier_multiclase_suma": 0.22750945098497552,
+        "ece_10": 0.010084394872799485,
+        "auc_por_clase": [
+          0.9526734367387028,
+          0.9766566994753381,
+          0.8928050194366774
+        ],
+        "ap_por_clase": [
+          0.9539332198147924,
+          0.9550470052007025,
+          0.6809046076290456
+        ],
+        "matriz_confusion": [
+          [
+            1071,
+            7,
+            30
+          ],
+          [
+            75,
+            479,
+            43
+          ],
+          [
+            142,
+            21,
+            181
+          ]
+        ],
+        "calibracion": [
+          {
+            "bin": 3,
+            "limite_inferior": 0.3,
+            "limite_superior": 0.4,
+            "n": 9,
+            "accuracy": 0.1111111111111111,
+            "confianza": 0.38231945368978715
+          },
+          {
+            "bin": 4,
+            "limite_inferior": 0.4,
+            "limite_superior": 0.5,
+            "n": 70,
+            "accuracy": 0.4714285714285714,
+            "confianza": 0.4600255003997258
+          },
+          {
+            "bin": 5,
+            "limite_inferior": 0.5,
+            "limite_superior": 0.6,
+            "n": 156,
+            "accuracy": 0.5448717948717948,
+            "confianza": 0.5489019724803094
+          },
+          {
+            "bin": 6,
+            "limite_inferior": 0.6,
+            "limite_superior": 0.7,
+            "n": 170,
+            "accuracy": 0.6764705882352942,
+            "confianza": 0.649427617297453
+          },
+          {
+            "bin": 7,
+            "limite_inferior": 0.7,
+            "limite_superior": 0.8,
+            "n": 233,
+            "accuracy": 0.776824034334764,
+            "confianza": 0.7527586914950686
+          },
+          {
+            "bin": 8,
+            "limite_inferior": 0.8,
+            "limite_superior": 0.9,
+            "n": 398,
+            "accuracy": 0.8567839195979899,
+            "confianza": 0.8565602939033029
+          },
+          {
+            "bin": 9,
+            "limite_inferior": 0.9,
+            "limite_superior": 1.0,
+            "n": 1013,
+            "accuracy": 0.9624876604146101,
+            "confianza": 0.9560695021079535
+          }
+        ]
+      },
+      "por_paciente": [
+        {
+          "paciente": "TCGA-AQ-A04J",
+          "n": 79,
+          "macro_f1": 0.747611405338897,
+          "accuracy": 0.7848101265822784
+        },
+        {
+          "paciente": "TCGA-AQ-A54N",
+          "n": 116,
+          "macro_f1": 0.8213250517598344,
+          "accuracy": 0.9310344827586207
+        },
+        {
+          "paciente": "TCGA-BH-A0AV",
+          "n": 231,
+          "macro_f1": 0.820013739871896,
+          "accuracy": 0.8398268398268398
+        },
+        {
+          "paciente": "TCGA-BH-A0B3",
+          "n": 87,
+          "macro_f1": 0.6790346907993966,
+          "accuracy": 0.8160919540229885
+        },
+        {
+          "paciente": "TCGA-BH-A0B9",
+          "n": 161,
+          "macro_f1": 0.8366858237547893,
+          "accuracy": 0.906832298136646
+        },
+        {
+          "paciente": "TCGA-BH-A0BG",
+          "n": 72,
+          "macro_f1": 0.7331691297208538,
+          "accuracy": 0.8611111111111112
+        },
+        {
+          "paciente": "TCGA-BH-A0BL",
+          "n": 26,
+          "macro_f1": 0.4069264069264069,
+          "accuracy": 0.6538461538461539
+        },
+        {
+          "paciente": "TCGA-BH-A0BW",
+          "n": 64,
+          "macro_f1": 0.7749766573295984,
+          "accuracy": 0.96875
+        },
+        {
+          "paciente": "TCGA-BH-A0E0",
+          "n": 64,
+          "macro_f1": 0.6459639126305793,
+          "accuracy": 0.84375
+        },
+        {
+          "paciente": "TCGA-BH-A0E6",
+          "n": 52,
+          "macro_f1": 0.8298871063576945,
+          "accuracy": 0.8653846153846154
+        },
+        {
+          "paciente": "TCGA-BH-A0WA",
+          "n": 164,
+          "macro_f1": 0.3292181069958848,
+          "accuracy": 0.975609756097561
+        },
+        {
+          "paciente": "TCGA-BH-A18G",
+          "n": 184,
+          "macro_f1": 0.6664245359160613,
+          "accuracy": 0.7989130434782609
+        },
+        {
+          "paciente": "TCGA-BH-A18V",
+          "n": 27,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-BH-A1EW",
+          "n": 95,
+          "macro_f1": 0.36000000000000004,
+          "accuracy": 0.8736842105263158
+        },
+        {
+          "paciente": "TCGA-BH-A1F6",
+          "n": 103,
+          "macro_f1": 0.8365530157264168,
+          "accuracy": 0.9320388349514563
+        },
+        {
+          "paciente": "TCGA-OL-A5D6",
+          "n": 2,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-OL-A5D7",
+          "n": 46,
+          "macro_f1": 0.9,
+          "accuracy": 0.8695652173913043
+        },
+        {
+          "paciente": "TCGA-OL-A5RW",
+          "n": 47,
+          "macro_f1": 0.44556451612903225,
+          "accuracy": 0.7021276595744681
+        },
+        {
+          "paciente": "TCGA-OL-A66I",
+          "n": 42,
+          "macro_f1": 0.766499582289056,
+          "accuracy": 0.8809523809523809
+        },
+        {
+          "paciente": "TCGA-OL-A66P",
+          "n": 172,
+          "macro_f1": 0.6602923199328234,
+          "accuracy": 0.7151162790697675
+        },
+        {
+          "paciente": "TCGA-OL-A6VO",
+          "n": 215,
+          "macro_f1": 0.6054958183990441,
+          "accuracy": 0.7534883720930232
+        }
+      ]
+    },
+    {
+      "modelo": "resnet50",
+      "semilla": 6120,
+      "fase": "otro_validar_protocolo",
+      "ruta": "final/resnet50_6120",
+      "predicciones_sha256": "73d09b4127a292040ca8b1f93b1fbe906d378d4cb57f8755579c75bf91cd7e1b",
+      "metricas": {
+        "n": 2049,
+        "macro_f1": 0.7246835500049315,
+        "accuracy": 0.8062469497315764,
+        "mcc": 0.667311889730609,
+        "brier_multiclase_suma": 0.265251582822118,
+        "ece_10": 0.038391945869995905,
+        "auc_por_clase": [
+          0.9517239130351383,
+          0.974505216624906,
+          0.8769573075086954
+        ],
+        "ap_por_clase": [
+          0.95726769837073,
+          0.938639258181855,
+          0.6363545399570391
+        ],
+        "matriz_confusion": [
+          [
+            1072,
+            13,
+            23
+          ],
+          [
+            115,
+            452,
+            30
+          ],
+          [
+            172,
+            44,
+            128
+          ]
+        ],
+        "calibracion": [
+          {
+            "bin": 3,
+            "limite_inferior": 0.3,
+            "limite_superior": 0.4,
+            "n": 14,
+            "accuracy": 0.42857142857142855,
+            "confianza": 0.3787490597793034
+          },
+          {
+            "bin": 4,
+            "limite_inferior": 0.4,
+            "limite_superior": 0.5,
+            "n": 77,
+            "accuracy": 0.4025974025974026,
+            "confianza": 0.4641088212465311
+          },
+          {
+            "bin": 5,
+            "limite_inferior": 0.5,
+            "limite_superior": 0.6,
+            "n": 160,
+            "accuracy": 0.4375,
+            "confianza": 0.5539922714233398
+          },
+          {
+            "bin": 6,
+            "limite_inferior": 0.6,
+            "limite_superior": 0.7,
+            "n": 175,
+            "accuracy": 0.5485714285714286,
+            "confianza": 0.6496725596700396
+          },
+          {
+            "bin": 7,
+            "limite_inferior": 0.7,
+            "limite_superior": 0.8,
+            "n": 205,
+            "accuracy": 0.7219512195121951,
+            "confianza": 0.7530056037553927
+          },
+          {
+            "bin": 8,
+            "limite_inferior": 0.8,
+            "limite_superior": 0.9,
+            "n": 330,
+            "accuracy": 0.8242424242424242,
+            "confianza": 0.8531588520064498
+          },
+          {
+            "bin": 9,
+            "limite_inferior": 0.9,
+            "limite_superior": 1.0,
+            "n": 1088,
+            "accuracy": 0.9457720588235294,
+            "confianza": 0.9650654167156009
+          }
+        ]
+      },
+      "por_paciente": [
+        {
+          "paciente": "TCGA-AQ-A04J",
+          "n": 79,
+          "macro_f1": 0.6903703703703704,
+          "accuracy": 0.7721518987341772
+        },
+        {
+          "paciente": "TCGA-AQ-A54N",
+          "n": 116,
+          "macro_f1": 0.6886395511921458,
+          "accuracy": 0.8620689655172413
+        },
+        {
+          "paciente": "TCGA-BH-A0AV",
+          "n": 231,
+          "macro_f1": 0.6218363800707528,
+          "accuracy": 0.7056277056277056
+        },
+        {
+          "paciente": "TCGA-BH-A0B3",
+          "n": 87,
+          "macro_f1": 0.5464665741383299,
+          "accuracy": 0.7701149425287356
+        },
+        {
+          "paciente": "TCGA-BH-A0B9",
+          "n": 161,
+          "macro_f1": 0.7376426285262191,
+          "accuracy": 0.8136645962732919
+        },
+        {
+          "paciente": "TCGA-BH-A0BG",
+          "n": 72,
+          "macro_f1": 0.6314726209463051,
+          "accuracy": 0.8055555555555556
+        },
+        {
+          "paciente": "TCGA-BH-A0BL",
+          "n": 26,
+          "macro_f1": 0.1435897435897436,
+          "accuracy": 0.19230769230769232
+        },
+        {
+          "paciente": "TCGA-BH-A0BW",
+          "n": 64,
+          "macro_f1": 0.49453551912568305,
+          "accuracy": 0.953125
+        },
+        {
+          "paciente": "TCGA-BH-A0E0",
+          "n": 64,
+          "macro_f1": 0.7382478632478633,
+          "accuracy": 0.921875
+        },
+        {
+          "paciente": "TCGA-BH-A0E6",
+          "n": 52,
+          "macro_f1": 0.7222222222222223,
+          "accuracy": 0.7884615384615384
+        },
+        {
+          "paciente": "TCGA-BH-A0WA",
+          "n": 164,
+          "macro_f1": 0.3022222222222222,
+          "accuracy": 0.8292682926829268
+        },
+        {
+          "paciente": "TCGA-BH-A18G",
+          "n": 184,
+          "macro_f1": 0.5549915656586268,
+          "accuracy": 0.7336956521739131
+        },
+        {
+          "paciente": "TCGA-BH-A18V",
+          "n": 27,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-BH-A1EW",
+          "n": 95,
+          "macro_f1": 0.6733850129198967,
+          "accuracy": 0.9052631578947369
+        },
+        {
+          "paciente": "TCGA-BH-A1F6",
+          "n": 103,
+          "macro_f1": 0.8178187403993856,
+          "accuracy": 0.970873786407767
+        },
+        {
+          "paciente": "TCGA-OL-A5D6",
+          "n": 2,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-OL-A5D7",
+          "n": 46,
+          "macro_f1": 0.7347670250896057,
+          "accuracy": 0.8043478260869565
+        },
+        {
+          "paciente": "TCGA-OL-A5RW",
+          "n": 47,
+          "macro_f1": 0.583554376657825,
+          "accuracy": 0.8936170212765957
+        },
+        {
+          "paciente": "TCGA-OL-A66I",
+          "n": 42,
+          "macro_f1": 0.8817966903073285,
+          "accuracy": 0.9761904761904762
+        },
+        {
+          "paciente": "TCGA-OL-A66P",
+          "n": 172,
+          "macro_f1": 0.6962547982155826,
+          "accuracy": 0.7325581395348837
+        },
+        {
+          "paciente": "TCGA-OL-A6VO",
+          "n": 215,
+          "macro_f1": 0.6416666666666667,
+          "accuracy": 0.8093023255813954
+        }
+      ]
+    },
+    {
+      "modelo": "resnet50",
+      "semilla": 6121,
+      "fase": "otro_validar_protocolo",
+      "ruta": "final/resnet50_6121",
+      "predicciones_sha256": "510cce13c3ace9e469cb172be75352ca45132adf8f6142af86674e987991a1a4",
+      "metricas": {
+        "n": 2049,
+        "macro_f1": 0.7720794289790115,
+        "accuracy": 0.8316251830161054,
+        "mcc": 0.7112508329152548,
+        "brier_multiclase_suma": 0.24696621392343293,
+        "ece_10": 0.043534838699491624,
+        "auc_por_clase": [
+          0.9479363684842532,
+          0.9787314672536235,
+          0.8789487144513402
+        ],
+        "ap_por_clase": [
+          0.9542168722324289,
+          0.9498635235754256,
+          0.5903678335395087
+        ],
+        "matriz_confusion": [
+          [
+            1038,
+            12,
+            58
+          ],
+          [
+            61,
+            493,
+            43
+          ],
+          [
+            144,
+            27,
+            173
+          ]
+        ],
+        "calibracion": [
+          {
+            "bin": 3,
+            "limite_inferior": 0.3,
+            "limite_superior": 0.4,
+            "n": 5,
+            "accuracy": 0.2,
+            "confianza": 0.389916855096817
+          },
+          {
+            "bin": 4,
+            "limite_inferior": 0.4,
+            "limite_superior": 0.5,
+            "n": 64,
+            "accuracy": 0.46875,
+            "confianza": 0.4704294507391751
+          },
+          {
+            "bin": 5,
+            "limite_inferior": 0.5,
+            "limite_superior": 0.6,
+            "n": 136,
+            "accuracy": 0.5661764705882353,
+            "confianza": 0.5485503414974493
+          },
+          {
+            "bin": 6,
+            "limite_inferior": 0.6,
+            "limite_superior": 0.7,
+            "n": 135,
+            "accuracy": 0.5703703703703704,
+            "confianza": 0.6536015881432428
+          },
+          {
+            "bin": 7,
+            "limite_inferior": 0.7,
+            "limite_superior": 0.8,
+            "n": 170,
+            "accuracy": 0.6823529411764706,
+            "confianza": 0.7463255380882936
+          },
+          {
+            "bin": 8,
+            "limite_inferior": 0.8,
+            "limite_superior": 0.9,
+            "n": 259,
+            "accuracy": 0.7644787644787645,
+            "confianza": 0.853838136527529
+          },
+          {
+            "bin": 9,
+            "limite_inferior": 0.9,
+            "limite_superior": 1.0,
+            "n": 1280,
+            "accuracy": 0.94140625,
+            "confianza": 0.9730414285790175
+          }
+        ]
+      },
+      "por_paciente": [
+        {
+          "paciente": "TCGA-AQ-A04J",
+          "n": 79,
+          "macro_f1": 0.7698027338429242,
+          "accuracy": 0.810126582278481
+        },
+        {
+          "paciente": "TCGA-AQ-A54N",
+          "n": 116,
+          "macro_f1": 0.7910628019323672,
+          "accuracy": 0.9051724137931034
+        },
+        {
+          "paciente": "TCGA-BH-A0AV",
+          "n": 231,
+          "macro_f1": 0.7054827450708457,
+          "accuracy": 0.7748917748917749
+        },
+        {
+          "paciente": "TCGA-BH-A0B3",
+          "n": 87,
+          "macro_f1": 0.5698854337152209,
+          "accuracy": 0.6436781609195402
+        },
+        {
+          "paciente": "TCGA-BH-A0B9",
+          "n": 161,
+          "macro_f1": 0.7636434620561605,
+          "accuracy": 0.8322981366459627
+        },
+        {
+          "paciente": "TCGA-BH-A0BG",
+          "n": 72,
+          "macro_f1": 0.7444653299916458,
+          "accuracy": 0.875
+        },
+        {
+          "paciente": "TCGA-BH-A0BL",
+          "n": 26,
+          "macro_f1": 0.5539682539682539,
+          "accuracy": 0.6153846153846154
+        },
+        {
+          "paciente": "TCGA-BH-A0BW",
+          "n": 64,
+          "macro_f1": 0.8222222222222223,
+          "accuracy": 0.984375
+        },
+        {
+          "paciente": "TCGA-BH-A0E0",
+          "n": 64,
+          "macro_f1": 0.6011264720942141,
+          "accuracy": 0.875
+        },
+        {
+          "paciente": "TCGA-BH-A0E6",
+          "n": 52,
+          "macro_f1": 0.8551688360686662,
+          "accuracy": 0.8846153846153846
+        },
+        {
+          "paciente": "TCGA-BH-A0WA",
+          "n": 164,
+          "macro_f1": 0.49794238683127573,
+          "accuracy": 0.9878048780487805
+        },
+        {
+          "paciente": "TCGA-BH-A18G",
+          "n": 184,
+          "macro_f1": 0.7209606466071984,
+          "accuracy": 0.8260869565217391
+        },
+        {
+          "paciente": "TCGA-BH-A18V",
+          "n": 27,
+          "macro_f1": 0.3270440251572327,
+          "accuracy": 0.9629629629629629
+        },
+        {
+          "paciente": "TCGA-BH-A1EW",
+          "n": 95,
+          "macro_f1": 0.41324575807334424,
+          "accuracy": 0.8947368421052632
+        },
+        {
+          "paciente": "TCGA-BH-A1F6",
+          "n": 103,
+          "macro_f1": 0.810266072856001,
+          "accuracy": 0.9611650485436893
+        },
+        {
+          "paciente": "TCGA-OL-A5D6",
+          "n": 2,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-OL-A5D7",
+          "n": 46,
+          "macro_f1": 0.9179879715691635,
+          "accuracy": 0.8913043478260869
+        },
+        {
+          "paciente": "TCGA-OL-A5RW",
+          "n": 47,
+          "macro_f1": 0.30618192974382574,
+          "accuracy": 0.46808510638297873
+        },
+        {
+          "paciente": "TCGA-OL-A66I",
+          "n": 42,
+          "macro_f1": 0.8467103467103466,
+          "accuracy": 0.9285714285714286
+        },
+        {
+          "paciente": "TCGA-OL-A66P",
+          "n": 172,
+          "macro_f1": 0.7303258373808005,
+          "accuracy": 0.7674418604651163
+        },
+        {
+          "paciente": "TCGA-OL-A6VO",
+          "n": 215,
+          "macro_f1": 0.5989778739778739,
+          "accuracy": 0.7534883720930232
+        }
+      ]
+    },
+    {
+      "modelo": "resnet50",
+      "semilla": 6122,
+      "fase": "otro_validar_protocolo",
+      "ruta": "final/resnet50_6122",
+      "predicciones_sha256": "3c43f663139eada2869c44aebbda03afea7763dbd9369140481869d931e6e151",
+      "metricas": {
+        "n": 2049,
+        "macro_f1": 0.8032104326102805,
+        "accuracy": 0.8482186432406051,
+        "mcc": 0.7409815632577584,
+        "brier_multiclase_suma": 0.21970893879695938,
+        "ece_10": 0.01191627854193176,
+        "auc_por_clase": [
+          0.9482384896626602,
+          0.9812353779918879,
+          0.8920923412671349
+        ],
+        "ap_por_clase": [
+          0.9406594542776374,
+          0.9626202556061235,
+          0.719628378563213
+        ],
+        "matriz_confusion": [
+          [
+            1038,
+            15,
+            55
+          ],
+          [
+            61,
+            493,
+            43
+          ],
+          [
+            122,
+            15,
+            207
+          ]
+        ],
+        "calibracion": [
+          {
+            "bin": 3,
+            "limite_inferior": 0.3,
+            "limite_superior": 0.4,
+            "n": 8,
+            "accuracy": 0.5,
+            "confianza": 0.39240967109799385
+          },
+          {
+            "bin": 4,
+            "limite_inferior": 0.4,
+            "limite_superior": 0.5,
+            "n": 65,
+            "accuracy": 0.4153846153846154,
+            "confianza": 0.4605370177672459
+          },
+          {
+            "bin": 5,
+            "limite_inferior": 0.5,
+            "limite_superior": 0.6,
+            "n": 169,
+            "accuracy": 0.5621301775147929,
+            "confianza": 0.552058636436801
+          },
+          {
+            "bin": 6,
+            "limite_inferior": 0.6,
+            "limite_superior": 0.7,
+            "n": 180,
+            "accuracy": 0.6333333333333333,
+            "confianza": 0.651159464319547
+          },
+          {
+            "bin": 7,
+            "limite_inferior": 0.7,
+            "limite_superior": 0.8,
+            "n": 196,
+            "accuracy": 0.7755102040816326,
+            "confianza": 0.7529960037494192
+          },
+          {
+            "bin": 8,
+            "limite_inferior": 0.8,
+            "limite_superior": 0.9,
+            "n": 251,
+            "accuracy": 0.8446215139442231,
+            "confianza": 0.8589429273548355
+          },
+          {
+            "bin": 9,
+            "limite_inferior": 0.9,
+            "limite_superior": 1.0,
+            "n": 1180,
+            "accuracy": 0.9610169491525423,
+            "confianza": 0.9675445541486902
+          }
+        ]
+      },
+      "por_paciente": [
+        {
+          "paciente": "TCGA-AQ-A04J",
+          "n": 79,
+          "macro_f1": 0.7742382424988085,
+          "accuracy": 0.810126582278481
+        },
+        {
+          "paciente": "TCGA-AQ-A54N",
+          "n": 116,
+          "macro_f1": 0.6637958532695375,
+          "accuracy": 0.8620689655172413
+        },
+        {
+          "paciente": "TCGA-BH-A0AV",
+          "n": 231,
+          "macro_f1": 0.8068966444317005,
+          "accuracy": 0.8138528138528138
+        },
+        {
+          "paciente": "TCGA-BH-A0B3",
+          "n": 87,
+          "macro_f1": 0.8308662280701755,
+          "accuracy": 0.9080459770114943
+        },
+        {
+          "paciente": "TCGA-BH-A0B9",
+          "n": 161,
+          "macro_f1": 0.800530031299262,
+          "accuracy": 0.8695652173913043
+        },
+        {
+          "paciente": "TCGA-BH-A0BG",
+          "n": 72,
+          "macro_f1": 0.7850529100529101,
+          "accuracy": 0.8611111111111112
+        },
+        {
+          "paciente": "TCGA-BH-A0BL",
+          "n": 26,
+          "macro_f1": 0.33370976849237716,
+          "accuracy": 0.34615384615384615
+        },
+        {
+          "paciente": "TCGA-BH-A0BW",
+          "n": 64,
+          "macro_f1": 0.6777777777777777,
+          "accuracy": 0.9375
+        },
+        {
+          "paciente": "TCGA-BH-A0E0",
+          "n": 64,
+          "macro_f1": 0.8030665073675826,
+          "accuracy": 0.921875
+        },
+        {
+          "paciente": "TCGA-BH-A0E6",
+          "n": 52,
+          "macro_f1": 0.7566526610644257,
+          "accuracy": 0.7884615384615384
+        },
+        {
+          "paciente": "TCGA-BH-A0WA",
+          "n": 164,
+          "macro_f1": 0.440303657694962,
+          "accuracy": 0.975609756097561
+        },
+        {
+          "paciente": "TCGA-BH-A18G",
+          "n": 184,
+          "macro_f1": 0.5754989931410143,
+          "accuracy": 0.7554347826086957
+        },
+        {
+          "paciente": "TCGA-BH-A18V",
+          "n": 27,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-BH-A1EW",
+          "n": 95,
+          "macro_f1": 0.8771241830065359,
+          "accuracy": 0.9368421052631579
+        },
+        {
+          "paciente": "TCGA-BH-A1F6",
+          "n": 103,
+          "macro_f1": 0.8028381642512077,
+          "accuracy": 0.9514563106796117
+        },
+        {
+          "paciente": "TCGA-OL-A5D6",
+          "n": 2,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-OL-A5D7",
+          "n": 46,
+          "macro_f1": 0.8617511520737328,
+          "accuracy": 0.8260869565217391
+        },
+        {
+          "paciente": "TCGA-OL-A5RW",
+          "n": 47,
+          "macro_f1": 0.5543608124253285,
+          "accuracy": 0.851063829787234
+        },
+        {
+          "paciente": "TCGA-OL-A66I",
+          "n": 42,
+          "macro_f1": 0.8561092654115909,
+          "accuracy": 0.9285714285714286
+        },
+        {
+          "paciente": "TCGA-OL-A66P",
+          "n": 172,
+          "macro_f1": 0.7829583020939114,
+          "accuracy": 0.7965116279069767
+        },
+        {
+          "paciente": "TCGA-OL-A6VO",
+          "n": 215,
+          "macro_f1": 0.6672948438634713,
+          "accuracy": 0.7767441860465116
+        }
+      ]
+    },
+    {
+      "modelo": "softmaxcnn_bn",
+      "semilla": 6113,
+      "fase": "otro_validar_protocolo",
+      "ruta": "final/softmaxcnn_bn_6113",
+      "predicciones_sha256": "1a99f8b9f6dde72e338281ec1dd967630e1d4f2e2f7be6a20e71a397393b0ec6",
+      "metricas": {
+        "n": 2049,
+        "macro_f1": 0.7650617120588804,
+        "accuracy": 0.8204001952171791,
+        "mcc": 0.6916961459249359,
+        "brier_multiclase_suma": 0.25915014590114976,
+        "ece_10": 0.027476893773365162,
+        "auc_por_clase": [
+          0.9472880068442436,
+          0.9516868086991432,
+          0.8907249539657641
+        ],
+        "ap_por_clase": [
+          0.9547545788192455,
+          0.9014964768399109,
+          0.666913841219575
+        ],
+        "matriz_confusion": [
+          [
+            1013,
+            51,
+            44
+          ],
+          [
+            78,
+            493,
+            26
+          ],
+          [
+            116,
+            53,
+            175
+          ]
+        ],
+        "calibracion": [
+          {
+            "bin": 3,
+            "limite_inferior": 0.3,
+            "limite_superior": 0.4,
+            "n": 21,
+            "accuracy": 0.3333333333333333,
+            "confianza": 0.37332207957903546
+          },
+          {
+            "bin": 4,
+            "limite_inferior": 0.4,
+            "limite_superior": 0.5,
+            "n": 109,
+            "accuracy": 0.5688073394495413,
+            "confianza": 0.4634723507483071
+          },
+          {
+            "bin": 5,
+            "limite_inferior": 0.5,
+            "limite_superior": 0.6,
+            "n": 172,
+            "accuracy": 0.5058139534883721,
+            "confianza": 0.5534179785916972
+          },
+          {
+            "bin": 6,
+            "limite_inferior": 0.6,
+            "limite_superior": 0.7,
+            "n": 184,
+            "accuracy": 0.6847826086956522,
+            "confianza": 0.649876680387103
+          },
+          {
+            "bin": 7,
+            "limite_inferior": 0.7,
+            "limite_superior": 0.8,
+            "n": 259,
+            "accuracy": 0.7104247104247104,
+            "confianza": 0.7497114437887568
+          },
+          {
+            "bin": 8,
+            "limite_inferior": 0.8,
+            "limite_superior": 0.9,
+            "n": 275,
+            "accuracy": 0.7963636363636364,
+            "confianza": 0.8538726488026706
+          },
+          {
+            "bin": 9,
+            "limite_inferior": 0.9,
+            "limite_superior": 1.0,
+            "n": 1029,
+            "accuracy": 0.967930029154519,
+            "confianza": 0.9712128789246488
+          }
+        ]
+      },
+      "por_paciente": [
+        {
+          "paciente": "TCGA-AQ-A04J",
+          "n": 79,
+          "macro_f1": 0.8370877096001473,
+          "accuracy": 0.8607594936708861
+        },
+        {
+          "paciente": "TCGA-AQ-A54N",
+          "n": 116,
+          "macro_f1": 0.7920289855072463,
+          "accuracy": 0.9137931034482759
+        },
+        {
+          "paciente": "TCGA-BH-A0AV",
+          "n": 231,
+          "macro_f1": 0.7113567426288693,
+          "accuracy": 0.7316017316017316
+        },
+        {
+          "paciente": "TCGA-BH-A0B3",
+          "n": 87,
+          "macro_f1": 0.7505898883851639,
+          "accuracy": 0.8390804597701149
+        },
+        {
+          "paciente": "TCGA-BH-A0B9",
+          "n": 161,
+          "macro_f1": 0.8785773176109674,
+          "accuracy": 0.937888198757764
+        },
+        {
+          "paciente": "TCGA-BH-A0BG",
+          "n": 72,
+          "macro_f1": 0.6510170277612138,
+          "accuracy": 0.5972222222222222
+        },
+        {
+          "paciente": "TCGA-BH-A0BL",
+          "n": 26,
+          "macro_f1": 0.31786731786731787,
+          "accuracy": 0.3076923076923077
+        },
+        {
+          "paciente": "TCGA-BH-A0BW",
+          "n": 64,
+          "macro_f1": 0.5972451790633609,
+          "accuracy": 0.96875
+        },
+        {
+          "paciente": "TCGA-BH-A0E0",
+          "n": 64,
+          "macro_f1": 0.6253354804079442,
+          "accuracy": 0.828125
+        },
+        {
+          "paciente": "TCGA-BH-A0E6",
+          "n": 52,
+          "macro_f1": 0.9297839506172839,
+          "accuracy": 0.9423076923076923
+        },
+        {
+          "paciente": "TCGA-BH-A0WA",
+          "n": 164,
+          "macro_f1": 0.3302564102564102,
+          "accuracy": 0.9817073170731707
+        },
+        {
+          "paciente": "TCGA-BH-A18G",
+          "n": 184,
+          "macro_f1": 0.5622792386765558,
+          "accuracy": 0.7065217391304348
+        },
+        {
+          "paciente": "TCGA-BH-A18V",
+          "n": 27,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-BH-A1EW",
+          "n": 95,
+          "macro_f1": 0.6198458574181117,
+          "accuracy": 0.9157894736842105
+        },
+        {
+          "paciente": "TCGA-BH-A1F6",
+          "n": 103,
+          "macro_f1": 0.8992907801418438,
+          "accuracy": 0.9514563106796117
+        },
+        {
+          "paciente": "TCGA-OL-A5D6",
+          "n": 2,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-OL-A5D7",
+          "n": 46,
+          "macro_f1": 0.9353448275862069,
+          "accuracy": 0.9130434782608695
+        },
+        {
+          "paciente": "TCGA-OL-A5RW",
+          "n": 47,
+          "macro_f1": 0.583554376657825,
+          "accuracy": 0.8936170212765957
+        },
+        {
+          "paciente": "TCGA-OL-A66I",
+          "n": 42,
+          "macro_f1": 0.7687134502923976,
+          "accuracy": 0.8095238095238095
+        },
+        {
+          "paciente": "TCGA-OL-A66P",
+          "n": 172,
+          "macro_f1": 0.6008508665159683,
+          "accuracy": 0.6802325581395349
+        },
+        {
+          "paciente": "TCGA-OL-A6VO",
+          "n": 215,
+          "macro_f1": 0.5520697167755991,
+          "accuracy": 0.7395348837209302
+        }
+      ]
+    },
+    {
+      "modelo": "softmaxcnn_bn",
+      "semilla": 6114,
+      "fase": "otro_validar_protocolo",
+      "ruta": "final/softmaxcnn_bn_6114",
+      "predicciones_sha256": "3dfb6f69915d9d5e23edf4a78cd144414b59f90b764f7455bba7a404a500a4d6",
+      "metricas": {
+        "n": 2049,
+        "macro_f1": 0.7445468296904002,
+        "accuracy": 0.8184480234260615,
+        "mcc": 0.6882139142461957,
+        "brier_multiclase_suma": 0.269395567305996,
+        "ece_10": 0.0600759462358429,
+        "auc_por_clase": [
+          0.9471057750223474,
+          0.9533630041852975,
+          0.8762463343108504
+        ],
+        "ap_por_clase": [
+          0.9490612509568164,
+          0.910257553035379,
+          0.6699570765156766
+        ],
+        "matriz_confusion": [
+          [
+            1071,
+            19,
+            18
+          ],
+          [
+            105,
+            463,
+            29
+          ],
+          [
+            146,
+            55,
+            143
+          ]
+        ],
+        "calibracion": [
+          {
+            "bin": 3,
+            "limite_inferior": 0.3,
+            "limite_superior": 0.4,
+            "n": 11,
+            "accuracy": 0.45454545454545453,
+            "confianza": 0.3795227083292874
+          },
+          {
+            "bin": 4,
+            "limite_inferior": 0.4,
+            "limite_superior": 0.5,
+            "n": 56,
+            "accuracy": 0.39285714285714285,
+            "confianza": 0.46136848628520966
+          },
+          {
+            "bin": 5,
+            "limite_inferior": 0.5,
+            "limite_superior": 0.6,
+            "n": 157,
+            "accuracy": 0.49044585987261147,
+            "confianza": 0.547829874761545
+          },
+          {
+            "bin": 6,
+            "limite_inferior": 0.6,
+            "limite_superior": 0.7,
+            "n": 140,
+            "accuracy": 0.6285714285714286,
+            "confianza": 0.6502886891365052
+          },
+          {
+            "bin": 7,
+            "limite_inferior": 0.7,
+            "limite_superior": 0.8,
+            "n": 140,
+            "accuracy": 0.6571428571428571,
+            "confianza": 0.7514143202986036
+          },
+          {
+            "bin": 8,
+            "limite_inferior": 0.8,
+            "limite_superior": 0.9,
+            "n": 230,
+            "accuracy": 0.7434782608695653,
+            "confianza": 0.8543488673541857
+          },
+          {
+            "bin": 9,
+            "limite_inferior": 0.9,
+            "limite_superior": 1.0,
+            "n": 1315,
+            "accuracy": 0.929277566539924,
+            "confianza": 0.9807496404919788
+          }
+        ]
+      },
+      "por_paciente": [
+        {
+          "paciente": "TCGA-AQ-A04J",
+          "n": 79,
+          "macro_f1": 0.7929255711127486,
+          "accuracy": 0.8227848101265823
+        },
+        {
+          "paciente": "TCGA-AQ-A54N",
+          "n": 116,
+          "macro_f1": 0.8351938895417157,
+          "accuracy": 0.9310344827586207
+        },
+        {
+          "paciente": "TCGA-BH-A0AV",
+          "n": 231,
+          "macro_f1": 0.6556434599156118,
+          "accuracy": 0.7272727272727273
+        },
+        {
+          "paciente": "TCGA-BH-A0B3",
+          "n": 87,
+          "macro_f1": 0.6831604358321915,
+          "accuracy": 0.8160919540229885
+        },
+        {
+          "paciente": "TCGA-BH-A0B9",
+          "n": 161,
+          "macro_f1": 0.8815651810002093,
+          "accuracy": 0.9316770186335404
+        },
+        {
+          "paciente": "TCGA-BH-A0BG",
+          "n": 72,
+          "macro_f1": 0.775403608736942,
+          "accuracy": 0.8194444444444444
+        },
+        {
+          "paciente": "TCGA-BH-A0BL",
+          "n": 26,
+          "macro_f1": 0.27360681114551083,
+          "accuracy": 0.2692307692307692
+        },
+        {
+          "paciente": "TCGA-BH-A0BW",
+          "n": 64,
+          "macro_f1": 0.5474254742547425,
+          "accuracy": 0.953125
+        },
+        {
+          "paciente": "TCGA-BH-A0E0",
+          "n": 64,
+          "macro_f1": 0.5791666666666667,
+          "accuracy": 0.859375
+        },
+        {
+          "paciente": "TCGA-BH-A0E6",
+          "n": 52,
+          "macro_f1": 0.8795447738843966,
+          "accuracy": 0.9038461538461539
+        },
+        {
+          "paciente": "TCGA-BH-A0WA",
+          "n": 164,
+          "macro_f1": 0.49794238683127573,
+          "accuracy": 0.9878048780487805
+        },
+        {
+          "paciente": "TCGA-BH-A18G",
+          "n": 184,
+          "macro_f1": 0.7062751441250881,
+          "accuracy": 0.7880434782608695
+        },
+        {
+          "paciente": "TCGA-BH-A18V",
+          "n": 27,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-BH-A1EW",
+          "n": 95,
+          "macro_f1": 0.6052730696798493,
+          "accuracy": 0.9052631578947369
+        },
+        {
+          "paciente": "TCGA-BH-A1F6",
+          "n": 103,
+          "macro_f1": 0.8023041474654379,
+          "accuracy": 0.9514563106796117
+        },
+        {
+          "paciente": "TCGA-OL-A5D6",
+          "n": 2,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-OL-A5D7",
+          "n": 46,
+          "macro_f1": 0.8812888637648388,
+          "accuracy": 0.8478260869565217
+        },
+        {
+          "paciente": "TCGA-OL-A5RW",
+          "n": 47,
+          "macro_f1": 0.5547619047619047,
+          "accuracy": 0.8723404255319149
+        },
+        {
+          "paciente": "TCGA-OL-A66I",
+          "n": 42,
+          "macro_f1": 0.6971704623878536,
+          "accuracy": 0.7142857142857143
+        },
+        {
+          "paciente": "TCGA-OL-A66P",
+          "n": 172,
+          "macro_f1": 0.49509070040172665,
+          "accuracy": 0.622093023255814
+        },
+        {
+          "paciente": "TCGA-OL-A6VO",
+          "n": 215,
+          "macro_f1": 0.46213991769547325,
+          "accuracy": 0.6930232558139535
+        }
+      ]
+    },
+    {
+      "modelo": "softmaxcnn_bn",
+      "semilla": 6115,
+      "fase": "otro_validar_protocolo",
+      "ruta": "final/softmaxcnn_bn_6115",
+      "predicciones_sha256": "6fcff75898654b458677153f2ba3ec05b9d15732edd50e62bdbfea44a6d3cccd",
+      "metricas": {
+        "n": 2049,
+        "macro_f1": 0.7674119689177235,
+        "accuracy": 0.8243045387994143,
+        "mcc": 0.6994324185674999,
+        "brier_multiclase_suma": 0.25594032677176853,
+        "ece_10": 0.04339158453552708,
+        "auc_por_clase": [
+          0.9476812439335985,
+          0.959155280534906,
+          0.8891461501739071
+        ],
+        "ap_por_clase": [
+          0.9487445719853921,
+          0.9192020824355035,
+          0.6956218885905475
+        ],
+        "matriz_confusion": [
+          [
+            1067,
+            15,
+            26
+          ],
+          [
+            105,
+            438,
+            54
+          ],
+          [
+            131,
+            29,
+            184
+          ]
+        ],
+        "calibracion": [
+          {
+            "bin": 3,
+            "limite_inferior": 0.3,
+            "limite_superior": 0.4,
+            "n": 7,
+            "accuracy": 0.5714285714285714,
+            "confianza": 0.3866550198623112
+          },
+          {
+            "bin": 4,
+            "limite_inferior": 0.4,
+            "limite_superior": 0.5,
+            "n": 73,
+            "accuracy": 0.4520547945205479,
+            "confianza": 0.4600795544173619
+          },
+          {
+            "bin": 5,
+            "limite_inferior": 0.5,
+            "limite_superior": 0.6,
+            "n": 154,
+            "accuracy": 0.474025974025974,
+            "confianza": 0.5511562185628074
+          },
+          {
+            "bin": 6,
+            "limite_inferior": 0.6,
+            "limite_superior": 0.7,
+            "n": 155,
+            "accuracy": 0.632258064516129,
+            "confianza": 0.6468991837193889
+          },
+          {
+            "bin": 7,
+            "limite_inferior": 0.7,
+            "limite_superior": 0.8,
+            "n": 174,
+            "accuracy": 0.6896551724137931,
+            "confianza": 0.7520879191913824
+          },
+          {
+            "bin": 8,
+            "limite_inferior": 0.8,
+            "limite_superior": 0.9,
+            "n": 239,
+            "accuracy": 0.8158995815899581,
+            "confianza": 0.8581965822555031
+          },
+          {
+            "bin": 9,
+            "limite_inferior": 0.9,
+            "limite_superior": 1.0,
+            "n": 1247,
+            "accuracy": 0.9350441058540497,
+            "confianza": 0.976672351360321
+          }
+        ]
+      },
+      "por_paciente": [
+        {
+          "paciente": "TCGA-AQ-A04J",
+          "n": 79,
+          "macro_f1": 0.7258844278452122,
+          "accuracy": 0.759493670886076
+        },
+        {
+          "paciente": "TCGA-AQ-A54N",
+          "n": 116,
+          "macro_f1": 0.7729458782090362,
+          "accuracy": 0.9137931034482759
+        },
+        {
+          "paciente": "TCGA-BH-A0AV",
+          "n": 231,
+          "macro_f1": 0.8382907198696672,
+          "accuracy": 0.8484848484848485
+        },
+        {
+          "paciente": "TCGA-BH-A0B3",
+          "n": 87,
+          "macro_f1": 0.6205792258423837,
+          "accuracy": 0.8160919540229885
+        },
+        {
+          "paciente": "TCGA-BH-A0B9",
+          "n": 161,
+          "macro_f1": 0.7975830946802048,
+          "accuracy": 0.8695652173913043
+        },
+        {
+          "paciente": "TCGA-BH-A0BG",
+          "n": 72,
+          "macro_f1": 0.6938394938394938,
+          "accuracy": 0.7916666666666666
+        },
+        {
+          "paciente": "TCGA-BH-A0BL",
+          "n": 26,
+          "macro_f1": 0.32349896480331264,
+          "accuracy": 0.34615384615384615
+        },
+        {
+          "paciente": "TCGA-BH-A0BW",
+          "n": 64,
+          "macro_f1": 0.5555555555555555,
+          "accuracy": 0.96875
+        },
+        {
+          "paciente": "TCGA-BH-A0E0",
+          "n": 64,
+          "macro_f1": 0.5465148378191856,
+          "accuracy": 0.78125
+        },
+        {
+          "paciente": "TCGA-BH-A0E6",
+          "n": 52,
+          "macro_f1": 0.8441531060126884,
+          "accuracy": 0.8653846153846154
+        },
+        {
+          "paciente": "TCGA-BH-A0WA",
+          "n": 164,
+          "macro_f1": 0.49794238683127573,
+          "accuracy": 0.9878048780487805
+        },
+        {
+          "paciente": "TCGA-BH-A18G",
+          "n": 184,
+          "macro_f1": 0.6674948240165631,
+          "accuracy": 0.7717391304347826
+        },
+        {
+          "paciente": "TCGA-BH-A18V",
+          "n": 27,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-BH-A1EW",
+          "n": 95,
+          "macro_f1": 0.7958089668615984,
+          "accuracy": 0.9473684210526315
+        },
+        {
+          "paciente": "TCGA-BH-A1F6",
+          "n": 103,
+          "macro_f1": 0.960096400774367,
+          "accuracy": 0.9514563106796117
+        },
+        {
+          "paciente": "TCGA-OL-A5D6",
+          "n": 2,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-OL-A5D7",
+          "n": 46,
+          "macro_f1": 0.9,
+          "accuracy": 0.8695652173913043
+        },
+        {
+          "paciente": "TCGA-OL-A5RW",
+          "n": 47,
+          "macro_f1": 0.6147042564953012,
+          "accuracy": 0.9361702127659575
+        },
+        {
+          "paciente": "TCGA-OL-A66I",
+          "n": 42,
+          "macro_f1": 0.7342047930283225,
+          "accuracy": 0.7142857142857143
+        },
+        {
+          "paciente": "TCGA-OL-A66P",
+          "n": 172,
+          "macro_f1": 0.5769499543084449,
+          "accuracy": 0.6627906976744186
+        },
+        {
+          "paciente": "TCGA-OL-A6VO",
+          "n": 215,
+          "macro_f1": 0.4239632228137975,
+          "accuracy": 0.6697674418604651
+        }
+      ]
+    },
+    {
+      "modelo": "softmaxcnn_bn",
+      "semilla": 6116,
+      "fase": "otro_validar_protocolo",
+      "ruta": "final/softmaxcnn_bn_6116",
+      "predicciones_sha256": "ed80c3ede6dc45e01d06f2f1614580e5d4f331b4201eecebb5100fcf2ecbceed",
+      "metricas": {
+        "n": 2049,
+        "macro_f1": 0.7450489878492931,
+        "accuracy": 0.8174719375305027,
+        "mcc": 0.6869540089204157,
+        "brier_multiclase_suma": 0.27409807483469373,
+        "ece_10": 0.06114428752570575,
+        "auc_por_clase": [
+          0.9326902787955053,
+          0.9465370931793955,
+          0.8820466480256426
+        ],
+        "ap_por_clase": [
+          0.9329972451919951,
+          0.8958089557661095,
+          0.670094929473013
+        ],
+        "matriz_confusion": [
+          [
+            1064,
+            32,
+            12
+          ],
+          [
+            107,
+            474,
+            16
+          ],
+          [
+            160,
+            47,
+            137
+          ]
+        ],
+        "calibracion": [
+          {
+            "bin": 3,
+            "limite_inferior": 0.3,
+            "limite_superior": 0.4,
+            "n": 14,
+            "accuracy": 0.35714285714285715,
+            "confianza": 0.3760032206773758
+          },
+          {
+            "bin": 4,
+            "limite_inferior": 0.4,
+            "limite_superior": 0.5,
+            "n": 60,
+            "accuracy": 0.38333333333333336,
+            "confianza": 0.46371801346540453
+          },
+          {
+            "bin": 5,
+            "limite_inferior": 0.5,
+            "limite_superior": 0.6,
+            "n": 140,
+            "accuracy": 0.5285714285714286,
+            "confianza": 0.5490885147026607
+          },
+          {
+            "bin": 6,
+            "limite_inferior": 0.6,
+            "limite_superior": 0.7,
+            "n": 117,
+            "accuracy": 0.5897435897435898,
+            "confianza": 0.6518900170285478
+          },
+          {
+            "bin": 7,
+            "limite_inferior": 0.7,
+            "limite_superior": 0.8,
+            "n": 158,
+            "accuracy": 0.6455696202531646,
+            "confianza": 0.7510672924639303
+          },
+          {
+            "bin": 8,
+            "limite_inferior": 0.8,
+            "limite_superior": 0.9,
+            "n": 247,
+            "accuracy": 0.757085020242915,
+            "confianza": 0.8539507543509789
+          },
+          {
+            "bin": 9,
+            "limite_inferior": 0.9,
+            "limite_superior": 1.0,
+            "n": 1313,
+            "accuracy": 0.9253617669459253,
+            "confianza": 0.9782631581554136
+          }
+        ]
+      },
+      "por_paciente": [
+        {
+          "paciente": "TCGA-AQ-A04J",
+          "n": 79,
+          "macro_f1": 0.8311835748792271,
+          "accuracy": 0.8607594936708861
+        },
+        {
+          "paciente": "TCGA-AQ-A54N",
+          "n": 116,
+          "macro_f1": 0.8292625959292627,
+          "accuracy": 0.9310344827586207
+        },
+        {
+          "paciente": "TCGA-BH-A0AV",
+          "n": 231,
+          "macro_f1": 0.6586863273208731,
+          "accuracy": 0.7402597402597403
+        },
+        {
+          "paciente": "TCGA-BH-A0B3",
+          "n": 87,
+          "macro_f1": 0.6497879558948262,
+          "accuracy": 0.8160919540229885
+        },
+        {
+          "paciente": "TCGA-BH-A0B9",
+          "n": 161,
+          "macro_f1": 0.8529052646699705,
+          "accuracy": 0.9254658385093167
+        },
+        {
+          "paciente": "TCGA-BH-A0BG",
+          "n": 72,
+          "macro_f1": 0.7269266681031388,
+          "accuracy": 0.875
+        },
+        {
+          "paciente": "TCGA-BH-A0BL",
+          "n": 26,
+          "macro_f1": 0.27989417989417986,
+          "accuracy": 0.2692307692307692
+        },
+        {
+          "paciente": "TCGA-BH-A0BW",
+          "n": 64,
+          "macro_f1": 0.5474254742547425,
+          "accuracy": 0.953125
+        },
+        {
+          "paciente": "TCGA-BH-A0E0",
+          "n": 64,
+          "macro_f1": 0.6055746468117602,
+          "accuracy": 0.890625
+        },
+        {
+          "paciente": "TCGA-BH-A0E6",
+          "n": 52,
+          "macro_f1": 0.9125230802650157,
+          "accuracy": 0.9230769230769231
+        },
+        {
+          "paciente": "TCGA-BH-A0WA",
+          "n": 164,
+          "macro_f1": 0.3302564102564102,
+          "accuracy": 0.9817073170731707
+        },
+        {
+          "paciente": "TCGA-BH-A18G",
+          "n": 184,
+          "macro_f1": 0.7500394011032309,
+          "accuracy": 0.7989130434782609
+        },
+        {
+          "paciente": "TCGA-BH-A18V",
+          "n": 27,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-BH-A1EW",
+          "n": 95,
+          "macro_f1": 0.5637721755368814,
+          "accuracy": 0.8736842105263158
+        },
+        {
+          "paciente": "TCGA-BH-A1F6",
+          "n": 103,
+          "macro_f1": 0.9069945094294581,
+          "accuracy": 0.9611650485436893
+        },
+        {
+          "paciente": "TCGA-OL-A5D6",
+          "n": 2,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-OL-A5D7",
+          "n": 46,
+          "macro_f1": 0.9,
+          "accuracy": 0.8695652173913043
+        },
+        {
+          "paciente": "TCGA-OL-A5RW",
+          "n": 47,
+          "macro_f1": 0.5758454106280193,
+          "accuracy": 0.8936170212765957
+        },
+        {
+          "paciente": "TCGA-OL-A66I",
+          "n": 42,
+          "macro_f1": 0.5488888888888889,
+          "accuracy": 0.5952380952380952
+        },
+        {
+          "paciente": "TCGA-OL-A66P",
+          "n": 172,
+          "macro_f1": 0.47569775718201507,
+          "accuracy": 0.6046511627906976
+        },
+        {
+          "paciente": "TCGA-OL-A6VO",
+          "n": 215,
+          "macro_f1": 0.4882129008342601,
+          "accuracy": 0.6604651162790698
+        }
+      ]
+    },
+    {
+      "modelo": "softmaxcnn_bn",
+      "semilla": 6117,
+      "fase": "otro_validar_protocolo",
+      "ruta": "final/softmaxcnn_bn_6117",
+      "predicciones_sha256": "fb2a1bbde28e02992ae5079b98381180f5f733077e1469d5ab3a5ebe3a66eee7",
+      "metricas": {
+        "n": 2049,
+        "macro_f1": 0.7678923046011654,
+        "accuracy": 0.8272327964860908,
+        "mcc": 0.7030056127180467,
+        "brier_multiclase_suma": 0.25486204944914453,
+        "ece_10": 0.061999275240448966,
+        "auc_por_clase": [
+          0.9406202403925464,
+          0.9602915864907642,
+          0.9049256632339904
+        ],
+        "ap_por_clase": [
+          0.9455322929361005,
+          0.9232540526870108,
+          0.7222047708224313
+        ],
+        "matriz_confusion": [
+          [
+            1037,
+            49,
+            22
+          ],
+          [
+            75,
+            497,
+            25
+          ],
+          [
+            150,
+            33,
+            161
+          ]
+        ],
+        "calibracion": [
+          {
+            "bin": 3,
+            "limite_inferior": 0.3,
+            "limite_superior": 0.4,
+            "n": 11,
+            "accuracy": 0.18181818181818182,
+            "confianza": 0.3832887790419839
+          },
+          {
+            "bin": 4,
+            "limite_inferior": 0.4,
+            "limite_superior": 0.5,
+            "n": 59,
+            "accuracy": 0.4745762711864407,
+            "confianza": 0.45910707116127014
+          },
+          {
+            "bin": 5,
+            "limite_inferior": 0.5,
+            "limite_superior": 0.6,
+            "n": 118,
+            "accuracy": 0.5,
+            "confianza": 0.5508917105399956
+          },
+          {
+            "bin": 6,
+            "limite_inferior": 0.6,
+            "limite_superior": 0.7,
+            "n": 114,
+            "accuracy": 0.5877192982456141,
+            "confianza": 0.6541207824882708
+          },
+          {
+            "bin": 7,
+            "limite_inferior": 0.7,
+            "limite_superior": 0.8,
+            "n": 146,
+            "accuracy": 0.684931506849315,
+            "confianza": 0.7456149748743397
+          },
+          {
+            "bin": 8,
+            "limite_inferior": 0.8,
+            "limite_superior": 0.9,
+            "n": 239,
+            "accuracy": 0.7573221757322176,
+            "confianza": 0.8560685380732165
+          },
+          {
+            "bin": 9,
+            "limite_inferior": 0.9,
+            "limite_superior": 1.0,
+            "n": 1362,
+            "accuracy": 0.9236417033773862,
+            "confianza": 0.9808168117607917
+          }
+        ]
+      },
+      "por_paciente": [
+        {
+          "paciente": "TCGA-AQ-A04J",
+          "n": 79,
+          "macro_f1": 0.7717315064024142,
+          "accuracy": 0.810126582278481
+        },
+        {
+          "paciente": "TCGA-AQ-A54N",
+          "n": 116,
+          "macro_f1": 0.7465465465465465,
+          "accuracy": 0.9051724137931034
+        },
+        {
+          "paciente": "TCGA-BH-A0AV",
+          "n": 231,
+          "macro_f1": 0.7694667476385662,
+          "accuracy": 0.7748917748917749
+        },
+        {
+          "paciente": "TCGA-BH-A0B3",
+          "n": 87,
+          "macro_f1": 0.6156736446591519,
+          "accuracy": 0.7816091954022989
+        },
+        {
+          "paciente": "TCGA-BH-A0B9",
+          "n": 161,
+          "macro_f1": 0.913768115942029,
+          "accuracy": 0.9627329192546584
+        },
+        {
+          "paciente": "TCGA-BH-A0BG",
+          "n": 72,
+          "macro_f1": 0.7328907855223644,
+          "accuracy": 0.8194444444444444
+        },
+        {
+          "paciente": "TCGA-BH-A0BL",
+          "n": 26,
+          "macro_f1": 0.4527591973244147,
+          "accuracy": 0.46153846153846156
+        },
+        {
+          "paciente": "TCGA-BH-A0BW",
+          "n": 64,
+          "macro_f1": 0.8222222222222223,
+          "accuracy": 0.984375
+        },
+        {
+          "paciente": "TCGA-BH-A0E0",
+          "n": 64,
+          "macro_f1": 0.6127777777777778,
+          "accuracy": 0.890625
+        },
+        {
+          "paciente": "TCGA-BH-A0E6",
+          "n": 52,
+          "macro_f1": 0.835858585858586,
+          "accuracy": 0.8653846153846154
+        },
+        {
+          "paciente": "TCGA-BH-A0WA",
+          "n": 164,
+          "macro_f1": 0.49794238683127573,
+          "accuracy": 0.9878048780487805
+        },
+        {
+          "paciente": "TCGA-BH-A18G",
+          "n": 184,
+          "macro_f1": 0.5501684480179104,
+          "accuracy": 0.6847826086956522
+        },
+        {
+          "paciente": "TCGA-BH-A18V",
+          "n": 27,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-BH-A1EW",
+          "n": 95,
+          "macro_f1": 0.7032828282828283,
+          "accuracy": 0.8947368421052632
+        },
+        {
+          "paciente": "TCGA-BH-A1F6",
+          "n": 103,
+          "macro_f1": 0.8871955630576321,
+          "accuracy": 0.941747572815534
+        },
+        {
+          "paciente": "TCGA-OL-A5D6",
+          "n": 2,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-OL-A5D7",
+          "n": 46,
+          "macro_f1": 0.8197115384615384,
+          "accuracy": 0.782608695652174
+        },
+        {
+          "paciente": "TCGA-OL-A5RW",
+          "n": 47,
+          "macro_f1": 0.56875,
+          "accuracy": 0.8723404255319149
+        },
+        {
+          "paciente": "TCGA-OL-A66I",
+          "n": 42,
+          "macro_f1": 0.8235042735042736,
+          "accuracy": 0.8333333333333334
+        },
+        {
+          "paciente": "TCGA-OL-A66P",
+          "n": 172,
+          "macro_f1": 0.6395564382654751,
+          "accuracy": 0.7093023255813954
+        },
+        {
+          "paciente": "TCGA-OL-A6VO",
+          "n": 215,
+          "macro_f1": 0.4818812733008317,
+          "accuracy": 0.7209302325581395
+        }
+      ]
+    },
+    {
+      "modelo": "softmaxcnn_bn",
+      "semilla": 6118,
+      "fase": "otro_validar_protocolo",
+      "ruta": "final/softmaxcnn_bn_6118",
+      "predicciones_sha256": "8f56e9a4460cea161542aef81aefec53786cf665b74c5bd1e2406e4456005f79",
+      "metricas": {
+        "n": 2049,
+        "macro_f1": 0.7846891971092873,
+        "accuracy": 0.8413860419716935,
+        "mcc": 0.7282485134571517,
+        "brier_multiclase_suma": 0.2416960728651994,
+        "ece_10": 0.039253209846202425,
+        "auc_por_clase": [
+          0.9472103185412247,
+          0.9706210113930533,
+          0.8842341267134964
+        ],
+        "ap_por_clase": [
+          0.9518806214192053,
+          0.9337848377566823,
+          0.7070297668531065
+        ],
+        "matriz_confusion": [
+          [
+            1050,
+            36,
+            22
+          ],
+          [
+            77,
+            506,
+            14
+          ],
+          [
+            127,
+            49,
+            168
+          ]
+        ],
+        "calibracion": [
+          {
+            "bin": 3,
+            "limite_inferior": 0.3,
+            "limite_superior": 0.4,
+            "n": 2,
+            "accuracy": 0.0,
+            "confianza": 0.3673877716064453
+          },
+          {
+            "bin": 4,
+            "limite_inferior": 0.4,
+            "limite_superior": 0.5,
+            "n": 51,
+            "accuracy": 0.45098039215686275,
+            "confianza": 0.46121376519109686
+          },
+          {
+            "bin": 5,
+            "limite_inferior": 0.5,
+            "limite_superior": 0.6,
+            "n": 116,
+            "accuracy": 0.5172413793103449,
+            "confianza": 0.5492164518298774
+          },
+          {
+            "bin": 6,
+            "limite_inferior": 0.6,
+            "limite_superior": 0.7,
+            "n": 156,
+            "accuracy": 0.6217948717948718,
+            "confianza": 0.6488280903834563
+          },
+          {
+            "bin": 7,
+            "limite_inferior": 0.7,
+            "limite_superior": 0.8,
+            "n": 172,
+            "accuracy": 0.7383720930232558,
+            "confianza": 0.7536437646594158
+          },
+          {
+            "bin": 8,
+            "limite_inferior": 0.8,
+            "limite_superior": 0.9,
+            "n": 250,
+            "accuracy": 0.78,
+            "confianza": 0.8542641801834107
+          },
+          {
+            "bin": 9,
+            "limite_inferior": 0.9,
+            "limite_superior": 1.0,
+            "n": 1302,
+            "accuracy": 0.9385560675883257,
+            "confianza": 0.977000066303804
+          }
+        ]
+      },
+      "por_paciente": [
+        {
+          "paciente": "TCGA-AQ-A04J",
+          "n": 79,
+          "macro_f1": 0.7273041759327897,
+          "accuracy": 0.759493670886076
+        },
+        {
+          "paciente": "TCGA-AQ-A54N",
+          "n": 116,
+          "macro_f1": 0.8629716673194935,
+          "accuracy": 0.9396551724137931
+        },
+        {
+          "paciente": "TCGA-BH-A0AV",
+          "n": 231,
+          "macro_f1": 0.7150153561361438,
+          "accuracy": 0.7359307359307359
+        },
+        {
+          "paciente": "TCGA-BH-A0B3",
+          "n": 87,
+          "macro_f1": 0.7413324979114453,
+          "accuracy": 0.8620689655172413
+        },
+        {
+          "paciente": "TCGA-BH-A0B9",
+          "n": 161,
+          "macro_f1": 0.9136486701704093,
+          "accuracy": 0.9565217391304348
+        },
+        {
+          "paciente": "TCGA-BH-A0BG",
+          "n": 72,
+          "macro_f1": 0.7163662026047347,
+          "accuracy": 0.7916666666666666
+        },
+        {
+          "paciente": "TCGA-BH-A0BL",
+          "n": 26,
+          "macro_f1": 0.3591093117408907,
+          "accuracy": 0.34615384615384615
+        },
+        {
+          "paciente": "TCGA-BH-A0BW",
+          "n": 64,
+          "macro_f1": 0.6612021857923497,
+          "accuracy": 0.96875
+        },
+        {
+          "paciente": "TCGA-BH-A0E0",
+          "n": 64,
+          "macro_f1": 0.6094845360824742,
+          "accuracy": 0.890625
+        },
+        {
+          "paciente": "TCGA-BH-A0E6",
+          "n": 52,
+          "macro_f1": 0.8830928597854236,
+          "accuracy": 0.9038461538461539
+        },
+        {
+          "paciente": "TCGA-BH-A0WA",
+          "n": 164,
+          "macro_f1": 0.3302564102564102,
+          "accuracy": 0.9817073170731707
+        },
+        {
+          "paciente": "TCGA-BH-A18G",
+          "n": 184,
+          "macro_f1": 0.631772401838141,
+          "accuracy": 0.7771739130434783
+        },
+        {
+          "paciente": "TCGA-BH-A18V",
+          "n": 27,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-BH-A1EW",
+          "n": 95,
+          "macro_f1": 0.6818181818181818,
+          "accuracy": 0.9052631578947369
+        },
+        {
+          "paciente": "TCGA-BH-A1F6",
+          "n": 103,
+          "macro_f1": 0.915130023640662,
+          "accuracy": 0.970873786407767
+        },
+        {
+          "paciente": "TCGA-OL-A5D6",
+          "n": 2,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-OL-A5D7",
+          "n": 46,
+          "macro_f1": 0.775095785440613,
+          "accuracy": 0.8478260869565217
+        },
+        {
+          "paciente": "TCGA-OL-A5RW",
+          "n": 47,
+          "macro_f1": 0.6350806451612904,
+          "accuracy": 0.9574468085106383
+        },
+        {
+          "paciente": "TCGA-OL-A66I",
+          "n": 42,
+          "macro_f1": 0.8575952075310228,
+          "accuracy": 0.8809523809523809
+        },
+        {
+          "paciente": "TCGA-OL-A66P",
+          "n": 172,
+          "macro_f1": 0.5970219153779829,
+          "accuracy": 0.686046511627907
+        },
+        {
+          "paciente": "TCGA-OL-A6VO",
+          "n": 215,
+          "macro_f1": 0.5529745601063032,
+          "accuracy": 0.772093023255814
+        }
+      ]
+    },
+    {
+      "modelo": "softmaxcnn_bn",
+      "semilla": 6119,
+      "fase": "otro_validar_protocolo",
+      "ruta": "final/softmaxcnn_bn_6119",
+      "predicciones_sha256": "e409e0064fb1694a2d0b37287519a21c171ff850796146b0ef080bb6820d6bee",
+      "metricas": {
+        "n": 2049,
+        "macro_f1": 0.7741894981322169,
+        "accuracy": 0.838457784285017,
+        "mcc": 0.7228610544737788,
+        "brier_multiclase_suma": 0.22363742923784383,
+        "ece_10": 0.018625622830663203,
+        "auc_por_clase": [
+          0.9621312682951159,
+          0.9727586509221958,
+          0.8848973607038124
+        ],
+        "ap_por_clase": [
+          0.9628166081010424,
+          0.9406619162260274,
+          0.6818128025452947
+        ],
+        "matriz_confusion": [
+          [
+            1061,
+            13,
+            34
+          ],
+          [
+            66,
+            488,
+            43
+          ],
+          [
+            126,
+            49,
+            169
+          ]
+        ],
+        "calibracion": [
+          {
+            "bin": 3,
+            "limite_inferior": 0.3,
+            "limite_superior": 0.4,
+            "n": 14,
+            "accuracy": 0.21428571428571427,
+            "confianza": 0.3831487787621362
+          },
+          {
+            "bin": 4,
+            "limite_inferior": 0.4,
+            "limite_superior": 0.5,
+            "n": 79,
+            "accuracy": 0.35443037974683544,
+            "confianza": 0.46441086938109577
+          },
+          {
+            "bin": 5,
+            "limite_inferior": 0.5,
+            "limite_superior": 0.6,
+            "n": 168,
+            "accuracy": 0.49404761904761907,
+            "confianza": 0.5485172853583381
+          },
+          {
+            "bin": 6,
+            "limite_inferior": 0.6,
+            "limite_superior": 0.7,
+            "n": 178,
+            "accuracy": 0.6966292134831461,
+            "confianza": 0.6525395164329014
+          },
+          {
+            "bin": 7,
+            "limite_inferior": 0.7,
+            "limite_superior": 0.8,
+            "n": 201,
+            "accuracy": 0.7512437810945274,
+            "confianza": 0.7524931985347425
+          },
+          {
+            "bin": 8,
+            "limite_inferior": 0.8,
+            "limite_superior": 0.9,
+            "n": 295,
+            "accuracy": 0.8305084745762712,
+            "confianza": 0.855108388197624
+          },
+          {
+            "bin": 9,
+            "limite_inferior": 0.9,
+            "limite_superior": 1.0,
+            "n": 1114,
+            "accuracy": 0.9730700179533214,
+            "confianza": 0.9707321524620056
+          }
+        ]
+      },
+      "por_paciente": [
+        {
+          "paciente": "TCGA-AQ-A04J",
+          "n": 79,
+          "macro_f1": 0.7362770227789331,
+          "accuracy": 0.7721518987341772
+        },
+        {
+          "paciente": "TCGA-AQ-A54N",
+          "n": 116,
+          "macro_f1": 0.8150048875855328,
+          "accuracy": 0.9224137931034483
+        },
+        {
+          "paciente": "TCGA-BH-A0AV",
+          "n": 231,
+          "macro_f1": 0.6987025966063096,
+          "accuracy": 0.7575757575757576
+        },
+        {
+          "paciente": "TCGA-BH-A0B3",
+          "n": 87,
+          "macro_f1": 0.849015873015873,
+          "accuracy": 0.8850574712643678
+        },
+        {
+          "paciente": "TCGA-BH-A0B9",
+          "n": 161,
+          "macro_f1": 0.7965437022266534,
+          "accuracy": 0.8819875776397516
+        },
+        {
+          "paciente": "TCGA-BH-A0BG",
+          "n": 72,
+          "macro_f1": 0.7589016488099057,
+          "accuracy": 0.8333333333333334
+        },
+        {
+          "paciente": "TCGA-BH-A0BL",
+          "n": 26,
+          "macro_f1": 0.23227513227513227,
+          "accuracy": 0.23076923076923078
+        },
+        {
+          "paciente": "TCGA-BH-A0BW",
+          "n": 64,
+          "macro_f1": 0.5474254742547425,
+          "accuracy": 0.953125
+        },
+        {
+          "paciente": "TCGA-BH-A0E0",
+          "n": 64,
+          "macro_f1": 0.5625,
+          "accuracy": 0.84375
+        },
+        {
+          "paciente": "TCGA-BH-A0E6",
+          "n": 52,
+          "macro_f1": 0.8612276612276611,
+          "accuracy": 0.8846153846153846
+        },
+        {
+          "paciente": "TCGA-BH-A0WA",
+          "n": 164,
+          "macro_f1": 0.49794238683127573,
+          "accuracy": 0.9878048780487805
+        },
+        {
+          "paciente": "TCGA-BH-A18G",
+          "n": 184,
+          "macro_f1": 0.5929727958046542,
+          "accuracy": 0.7554347826086957
+        },
+        {
+          "paciente": "TCGA-BH-A18V",
+          "n": 27,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-BH-A1EW",
+          "n": 95,
+          "macro_f1": 0.6771241830065359,
+          "accuracy": 0.9263157894736842
+        },
+        {
+          "paciente": "TCGA-BH-A1F6",
+          "n": 103,
+          "macro_f1": 0.9695048309178743,
+          "accuracy": 0.9611650485436893
+        },
+        {
+          "paciente": "TCGA-OL-A5D6",
+          "n": 2,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-OL-A5D7",
+          "n": 46,
+          "macro_f1": 0.9,
+          "accuracy": 0.8695652173913043
+        },
+        {
+          "paciente": "TCGA-OL-A5RW",
+          "n": 47,
+          "macro_f1": 0.56875,
+          "accuracy": 0.8723404255319149
+        },
+        {
+          "paciente": "TCGA-OL-A66I",
+          "n": 42,
+          "macro_f1": 0.8561092654115909,
+          "accuracy": 0.9285714285714286
+        },
+        {
+          "paciente": "TCGA-OL-A66P",
+          "n": 172,
+          "macro_f1": 0.6437246963562753,
+          "accuracy": 0.7093023255813954
+        },
+        {
+          "paciente": "TCGA-OL-A6VO",
+          "n": 215,
+          "macro_f1": 0.6890389958800421,
+          "accuracy": 0.7906976744186046
+        }
+      ]
+    },
+    {
+      "modelo": "softmaxcnn_bn",
+      "semilla": 6120,
+      "fase": "otro_validar_protocolo",
+      "ruta": "final/softmaxcnn_bn_6120",
+      "predicciones_sha256": "3165b6ed37bf837099f28fdad5b850e94b0fe0e757a1734014ad7fb2fa0928a1",
+      "metricas": {
+        "n": 2049,
+        "macro_f1": 0.7977974526506985,
+        "accuracy": 0.8452903855539288,
+        "mcc": 0.7362716738654266,
+        "brier_multiclase_suma": 0.2375260958859495,
+        "ece_10": 0.04527777625386918,
+        "auc_por_clase": [
+          0.9465125624863325,
+          0.9713650899123717,
+          0.8921417854463616
+        ],
+        "ap_por_clase": [
+          0.9431285892245918,
+          0.9439593627256079,
+          0.728664206120618
+        ],
+        "matriz_confusion": [
+          [
+            1072,
+            11,
+            25
+          ],
+          [
+            108,
+            471,
+            18
+          ],
+          [
+            123,
+            32,
+            189
+          ]
+        ],
+        "calibracion": [
+          {
+            "bin": 3,
+            "limite_inferior": 0.3,
+            "limite_superior": 0.4,
+            "n": 12,
+            "accuracy": 0.4166666666666667,
+            "confianza": 0.38012201090653736
+          },
+          {
+            "bin": 4,
+            "limite_inferior": 0.4,
+            "limite_superior": 0.5,
+            "n": 44,
+            "accuracy": 0.5454545454545454,
+            "confianza": 0.4681178331375122
+          },
+          {
+            "bin": 5,
+            "limite_inferior": 0.5,
+            "limite_superior": 0.6,
+            "n": 126,
+            "accuracy": 0.5317460317460317,
+            "confianza": 0.5502281496449123
+          },
+          {
+            "bin": 6,
+            "limite_inferior": 0.6,
+            "limite_superior": 0.7,
+            "n": 136,
+            "accuracy": 0.625,
+            "confianza": 0.6524302722776637
+          },
+          {
+            "bin": 7,
+            "limite_inferior": 0.7,
+            "limite_superior": 0.8,
+            "n": 143,
+            "accuracy": 0.7272727272727273,
+            "confianza": 0.7498235485770486
+          },
+          {
+            "bin": 8,
+            "limite_inferior": 0.8,
+            "limite_superior": 0.9,
+            "n": 239,
+            "accuracy": 0.7907949790794979,
+            "confianza": 0.8564658426839438
+          },
+          {
+            "bin": 9,
+            "limite_inferior": 0.9,
+            "limite_superior": 1.0,
+            "n": 1349,
+            "accuracy": 0.9325426241660489,
+            "confianza": 0.9799506631579727
+          }
+        ]
+      },
+      "por_paciente": [
+        {
+          "paciente": "TCGA-AQ-A04J",
+          "n": 79,
+          "macro_f1": 0.8017332691381801,
+          "accuracy": 0.8227848101265823
+        },
+        {
+          "paciente": "TCGA-AQ-A54N",
+          "n": 116,
+          "macro_f1": 0.9231147540983606,
+          "accuracy": 0.9568965517241379
+        },
+        {
+          "paciente": "TCGA-BH-A0AV",
+          "n": 231,
+          "macro_f1": 0.8489643825009678,
+          "accuracy": 0.8614718614718615
+        },
+        {
+          "paciente": "TCGA-BH-A0B3",
+          "n": 87,
+          "macro_f1": 0.8027049441786284,
+          "accuracy": 0.8850574712643678
+        },
+        {
+          "paciente": "TCGA-BH-A0B9",
+          "n": 161,
+          "macro_f1": 0.8359076222257534,
+          "accuracy": 0.9006211180124224
+        },
+        {
+          "paciente": "TCGA-BH-A0BG",
+          "n": 72,
+          "macro_f1": 0.6877788877788878,
+          "accuracy": 0.7777777777777778
+        },
+        {
+          "paciente": "TCGA-BH-A0BL",
+          "n": 26,
+          "macro_f1": 0.3591093117408907,
+          "accuracy": 0.34615384615384615
+        },
+        {
+          "paciente": "TCGA-BH-A0BW",
+          "n": 64,
+          "macro_f1": 0.6612021857923497,
+          "accuracy": 0.96875
+        },
+        {
+          "paciente": "TCGA-BH-A0E0",
+          "n": 64,
+          "macro_f1": 0.6930788509735878,
+          "accuracy": 0.890625
+        },
+        {
+          "paciente": "TCGA-BH-A0E6",
+          "n": 52,
+          "macro_f1": 0.8314913844325608,
+          "accuracy": 0.8846153846153846
+        },
+        {
+          "paciente": "TCGA-BH-A0WA",
+          "n": 164,
+          "macro_f1": 0.49794238683127573,
+          "accuracy": 0.9878048780487805
+        },
+        {
+          "paciente": "TCGA-BH-A18G",
+          "n": 184,
+          "macro_f1": 0.6233762514267424,
+          "accuracy": 0.7717391304347826
+        },
+        {
+          "paciente": "TCGA-BH-A18V",
+          "n": 27,
+          "macro_f1": 0.3270440251572327,
+          "accuracy": 0.9629629629629629
+        },
+        {
+          "paciente": "TCGA-BH-A1EW",
+          "n": 95,
+          "macro_f1": 0.7214874115326605,
+          "accuracy": 0.9263157894736842
+        },
+        {
+          "paciente": "TCGA-BH-A1F6",
+          "n": 103,
+          "macro_f1": 0.9003345498783455,
+          "accuracy": 0.9514563106796117
+        },
+        {
+          "paciente": "TCGA-OL-A5D6",
+          "n": 2,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-OL-A5D7",
+          "n": 46,
+          "macro_f1": 0.696551724137931,
+          "accuracy": 0.8478260869565217
+        },
+        {
+          "paciente": "TCGA-OL-A5RW",
+          "n": 47,
+          "macro_f1": 0.5988455988455988,
+          "accuracy": 0.9148936170212766
+        },
+        {
+          "paciente": "TCGA-OL-A66I",
+          "n": 42,
+          "macro_f1": 0.9,
+          "accuracy": 0.8571428571428571
+        },
+        {
+          "paciente": "TCGA-OL-A66P",
+          "n": 172,
+          "macro_f1": 0.583447150418007,
+          "accuracy": 0.6802325581395349
+        },
+        {
+          "paciente": "TCGA-OL-A6VO",
+          "n": 215,
+          "macro_f1": 0.4850190266800847,
+          "accuracy": 0.7069767441860465
+        }
+      ]
+    },
+    {
+      "modelo": "softmaxcnn_bn",
+      "semilla": 6121,
+      "fase": "otro_validar_protocolo",
+      "ruta": "final/softmaxcnn_bn_6121",
+      "predicciones_sha256": "bae4ef98ff3b6d7f0ea9eef56eed62b667d78d2961bc45bb111dfac380341358",
+      "metricas": {
+        "n": 2049,
+        "macro_f1": 0.7354895243921947,
+        "accuracy": 0.8003904343582235,
+        "mcc": 0.6577459539040015,
+        "brier_multiclase_suma": 0.29945879998778874,
+        "ece_10": 0.058402529310865946,
+        "auc_por_clase": [
+          0.9162208381129224,
+          0.9448032171878676,
+          0.8496743504057833
+        ],
+        "ap_por_clase": [
+          0.9108456723046617,
+          0.8978549709879162,
+          0.6352772824437473
+        ],
+        "matriz_confusion": [
+          [
+            987,
+            86,
+            35
+          ],
+          [
+            72,
+            506,
+            19
+          ],
+          [
+            137,
+            60,
+            147
+          ]
+        ],
+        "calibracion": [
+          {
+            "bin": 3,
+            "limite_inferior": 0.3,
+            "limite_superior": 0.4,
+            "n": 19,
+            "accuracy": 0.21052631578947367,
+            "confianza": 0.38094700951325267
+          },
+          {
+            "bin": 4,
+            "limite_inferior": 0.4,
+            "limite_superior": 0.5,
+            "n": 100,
+            "accuracy": 0.56,
+            "confianza": 0.4569262105226517
+          },
+          {
+            "bin": 5,
+            "limite_inferior": 0.5,
+            "limite_superior": 0.6,
+            "n": 160,
+            "accuracy": 0.55,
+            "confianza": 0.5491278395056725
+          },
+          {
+            "bin": 6,
+            "limite_inferior": 0.6,
+            "limite_superior": 0.7,
+            "n": 189,
+            "accuracy": 0.6031746031746031,
+            "confianza": 0.6485894808062801
+          },
+          {
+            "bin": 7,
+            "limite_inferior": 0.7,
+            "limite_superior": 0.8,
+            "n": 181,
+            "accuracy": 0.7016574585635359,
+            "confianza": 0.7522428450663445
+          },
+          {
+            "bin": 8,
+            "limite_inferior": 0.8,
+            "limite_superior": 0.9,
+            "n": 259,
+            "accuracy": 0.7799227799227799,
+            "confianza": 0.854143385491316
+          },
+          {
+            "bin": 9,
+            "limite_inferior": 0.9,
+            "limite_superior": 1.0,
+            "n": 1141,
+            "accuracy": 0.9193689745836985,
+            "confianza": 0.9798592121636627
+          }
+        ]
+      },
+      "por_paciente": [
+        {
+          "paciente": "TCGA-AQ-A04J",
+          "n": 79,
+          "macro_f1": 0.8021978021978023,
+          "accuracy": 0.8227848101265823
+        },
+        {
+          "paciente": "TCGA-AQ-A54N",
+          "n": 116,
+          "macro_f1": 0.8735079462519609,
+          "accuracy": 0.9396551724137931
+        },
+        {
+          "paciente": "TCGA-BH-A0AV",
+          "n": 231,
+          "macro_f1": 0.5819916695138797,
+          "accuracy": 0.645021645021645
+        },
+        {
+          "paciente": "TCGA-BH-A0B3",
+          "n": 87,
+          "macro_f1": 0.6596506941334527,
+          "accuracy": 0.7586206896551724
+        },
+        {
+          "paciente": "TCGA-BH-A0B9",
+          "n": 161,
+          "macro_f1": 0.794515960230246,
+          "accuracy": 0.8695652173913043
+        },
+        {
+          "paciente": "TCGA-BH-A0BG",
+          "n": 72,
+          "macro_f1": 0.6374269005847952,
+          "accuracy": 0.8194444444444444
+        },
+        {
+          "paciente": "TCGA-BH-A0BL",
+          "n": 26,
+          "macro_f1": 0.3638262322472849,
+          "accuracy": 0.34615384615384615
+        },
+        {
+          "paciente": "TCGA-BH-A0BW",
+          "n": 64,
+          "macro_f1": 0.7723132969034608,
+          "accuracy": 0.96875
+        },
+        {
+          "paciente": "TCGA-BH-A0E0",
+          "n": 64,
+          "macro_f1": 0.5917388438018596,
+          "accuracy": 0.78125
+        },
+        {
+          "paciente": "TCGA-BH-A0E6",
+          "n": 52,
+          "macro_f1": 0.90098090052718,
+          "accuracy": 0.9230769230769231
+        },
+        {
+          "paciente": "TCGA-BH-A0WA",
+          "n": 164,
+          "macro_f1": 0.3302564102564102,
+          "accuracy": 0.9817073170731707
+        },
+        {
+          "paciente": "TCGA-BH-A18G",
+          "n": 184,
+          "macro_f1": 0.5145090458760037,
+          "accuracy": 0.6358695652173914
+        },
+        {
+          "paciente": "TCGA-BH-A18V",
+          "n": 27,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-BH-A1EW",
+          "n": 95,
+          "macro_f1": 0.6395989974937343,
+          "accuracy": 0.9052631578947369
+        },
+        {
+          "paciente": "TCGA-BH-A1F6",
+          "n": 103,
+          "macro_f1": 0.9549910873440286,
+          "accuracy": 0.941747572815534
+        },
+        {
+          "paciente": "TCGA-OL-A5D6",
+          "n": 2,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-OL-A5D7",
+          "n": 46,
+          "macro_f1": 0.9521531100478469,
+          "accuracy": 0.9347826086956522
+        },
+        {
+          "paciente": "TCGA-OL-A5RW",
+          "n": 47,
+          "macro_f1": 0.5758454106280193,
+          "accuracy": 0.8936170212765957
+        },
+        {
+          "paciente": "TCGA-OL-A66I",
+          "n": 42,
+          "macro_f1": 0.7242618741976893,
+          "accuracy": 0.8571428571428571
+        },
+        {
+          "paciente": "TCGA-OL-A66P",
+          "n": 172,
+          "macro_f1": 0.5749578699022582,
+          "accuracy": 0.6627906976744186
+        },
+        {
+          "paciente": "TCGA-OL-A6VO",
+          "n": 215,
+          "macro_f1": 0.521058201058201,
+          "accuracy": 0.7348837209302326
+        }
+      ]
+    },
+    {
+      "modelo": "softmaxcnn_bn",
+      "semilla": 6122,
+      "fase": "otro_validar_protocolo",
+      "ruta": "final/softmaxcnn_bn_6122",
+      "predicciones_sha256": "4fd8c9d0c37b48e02423d0b457ab6575e164329e062d0ba06033edd8b12554c2",
+      "metricas": {
+        "n": 2049,
+        "macro_f1": 0.7601115235781398,
+        "accuracy": 0.8272327964860908,
+        "mcc": 0.7032266550536069,
+        "brier_multiclase_suma": 0.24782594043228734,
+        "ece_10": 0.03985370210521452,
+        "auc_por_clase": [
+          0.9482902818646729,
+          0.9653697781838486,
+          0.8723658187274093
+        ],
+        "ap_por_clase": [
+          0.9515004264938911,
+          0.9295348947990509,
+          0.6375541502409665
+        ],
+        "matriz_confusion": [
+          [
+            1032,
+            32,
+            44
+          ],
+          [
+            67,
+            509,
+            21
+          ],
+          [
+            131,
+            59,
+            154
+          ]
+        ],
+        "calibracion": [
+          {
+            "bin": 3,
+            "limite_inferior": 0.3,
+            "limite_superior": 0.4,
+            "n": 14,
+            "accuracy": 0.21428571428571427,
+            "confianza": 0.37297628607068745
+          },
+          {
+            "bin": 4,
+            "limite_inferior": 0.4,
+            "limite_superior": 0.5,
+            "n": 73,
+            "accuracy": 0.4383561643835616,
+            "confianza": 0.46358394010426246
+          },
+          {
+            "bin": 5,
+            "limite_inferior": 0.5,
+            "limite_superior": 0.6,
+            "n": 163,
+            "accuracy": 0.48466257668711654,
+            "confianza": 0.5503930961427513
+          },
+          {
+            "bin": 6,
+            "limite_inferior": 0.6,
+            "limite_superior": 0.7,
+            "n": 146,
+            "accuracy": 0.6712328767123288,
+            "confianza": 0.6508523115556534
+          },
+          {
+            "bin": 7,
+            "limite_inferior": 0.7,
+            "limite_superior": 0.8,
+            "n": 167,
+            "accuracy": 0.7005988023952096,
+            "confianza": 0.748047490319806
+          },
+          {
+            "bin": 8,
+            "limite_inferior": 0.8,
+            "limite_superior": 0.9,
+            "n": 244,
+            "accuracy": 0.7745901639344263,
+            "confianza": 0.8522787106330277
+          },
+          {
+            "bin": 9,
+            "limite_inferior": 0.9,
+            "limite_superior": 1.0,
+            "n": 1242,
+            "accuracy": 0.9476650563607085,
+            "confianza": 0.9774777508204302
+          }
+        ]
+      },
+      "por_paciente": [
+        {
+          "paciente": "TCGA-AQ-A04J",
+          "n": 79,
+          "macro_f1": 0.8143016403885969,
+          "accuracy": 0.8481012658227848
+        },
+        {
+          "paciente": "TCGA-AQ-A54N",
+          "n": 116,
+          "macro_f1": 0.7572905525846703,
+          "accuracy": 0.896551724137931
+        },
+        {
+          "paciente": "TCGA-BH-A0AV",
+          "n": 231,
+          "macro_f1": 0.6151615029663811,
+          "accuracy": 0.7142857142857143
+        },
+        {
+          "paciente": "TCGA-BH-A0B3",
+          "n": 87,
+          "macro_f1": 0.663339297485639,
+          "accuracy": 0.7816091954022989
+        },
+        {
+          "paciente": "TCGA-BH-A0B9",
+          "n": 161,
+          "macro_f1": 0.8900712458896601,
+          "accuracy": 0.9316770186335404
+        },
+        {
+          "paciente": "TCGA-BH-A0BG",
+          "n": 72,
+          "macro_f1": 0.7046221322537112,
+          "accuracy": 0.8055555555555556
+        },
+        {
+          "paciente": "TCGA-BH-A0BL",
+          "n": 26,
+          "macro_f1": 0.27989417989417986,
+          "accuracy": 0.2692307692307692
+        },
+        {
+          "paciente": "TCGA-BH-A0BW",
+          "n": 64,
+          "macro_f1": 0.8861340679522498,
+          "accuracy": 0.984375
+        },
+        {
+          "paciente": "TCGA-BH-A0E0",
+          "n": 64,
+          "macro_f1": 0.5879188065541697,
+          "accuracy": 0.875
+        },
+        {
+          "paciente": "TCGA-BH-A0E6",
+          "n": 52,
+          "macro_f1": 0.8987654320987654,
+          "accuracy": 0.9230769230769231
+        },
+        {
+          "paciente": "TCGA-BH-A0WA",
+          "n": 164,
+          "macro_f1": 0.49794238683127573,
+          "accuracy": 0.9878048780487805
+        },
+        {
+          "paciente": "TCGA-BH-A18G",
+          "n": 184,
+          "macro_f1": 0.574163106477353,
+          "accuracy": 0.7228260869565217
+        },
+        {
+          "paciente": "TCGA-BH-A18V",
+          "n": 27,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-BH-A1EW",
+          "n": 95,
+          "macro_f1": 0.56043673731535,
+          "accuracy": 0.8947368421052632
+        },
+        {
+          "paciente": "TCGA-BH-A1F6",
+          "n": 103,
+          "macro_f1": 0.873015873015873,
+          "accuracy": 0.970873786407767
+        },
+        {
+          "paciente": "TCGA-OL-A5D6",
+          "n": 2,
+          "macro_f1": 0.3333333333333333,
+          "accuracy": 1.0
+        },
+        {
+          "paciente": "TCGA-OL-A5D7",
+          "n": 46,
+          "macro_f1": 0.9353448275862069,
+          "accuracy": 0.9130434782608695
+        },
+        {
+          "paciente": "TCGA-OL-A5RW",
+          "n": 47,
+          "macro_f1": 0.4809241526067791,
+          "accuracy": 0.723404255319149
+        },
+        {
+          "paciente": "TCGA-OL-A66I",
+          "n": 42,
+          "macro_f1": 0.8386243386243386,
+          "accuracy": 0.9047619047619048
+        },
+        {
+          "paciente": "TCGA-OL-A66P",
+          "n": 172,
+          "macro_f1": 0.6986793342766658,
+          "accuracy": 0.7383720930232558
+        },
+        {
+          "paciente": "TCGA-OL-A6VO",
+          "n": 215,
+          "macro_f1": 0.5321458024080489,
+          "accuracy": 0.7395348837209302
+        }
+      ]
+    }
+  ],
+  "limitaciones": [
+    "Validación utilizada para ajuste: no es test independiente",
+    "No se agrupan configuraciones de búsqueda con semillas de piloto",
+    "Sin inferencia confirmatoria por paciente ni ajuste de temperatura",
+    "No evalúa reserva ni accede a checkpoints"
+  ]
+}

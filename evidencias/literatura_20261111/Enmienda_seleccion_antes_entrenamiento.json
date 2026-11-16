@@ -1,0 +1,29 @@
+{
+  "estado": "SELECCION_BIBLIOGRAFICA_V1_PENDIENTE_PERFIL_NUEVOS",
+  "seleccion": [
+    "resnet18",
+    "mobilenetv3_small_100",
+    "efficientnet_b0",
+    "deit_tiny_patch16_224",
+    "swin_tiny_patch4_window7_224",
+    "mobilevit_xxs",
+    "mixer_s16_224",
+    "convnext_tiny",
+    "inception_v3",
+    "sequencer2d_s"
+  ],
+  "entran": [
+    "convnext_tiny",
+    "inception_v3",
+    "sequencer2d_s"
+  ],
+  "salen": [
+    "resnext50_32x4d",
+    "mobilevit_xs",
+    "resmlp_12_224"
+  ],
+  "no_modificar_cuaderno_en_ejecucion": true,
+  "paso5": "Esperar revisión de código y perfil de entrantes",
+  "revision_sistematica": "Base institucional heredada verificada; identidad global de estudios e historial exacto limitados",
+  "e1": "Sin modificaciones"
+}

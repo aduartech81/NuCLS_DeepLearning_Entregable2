@@ -1,0 +1,39 @@
+{
+  "paciente": "TCGA-BH-A1EW",
+  "archivo": "validation/tumor_nonMitotic/TCGA-BH-A1EW-DX1_id-5ea40ad0ddda5f839899478d_left-68009_top-46017_bottom-46290_right-68301__26.png",
+  "clase_real": "tumor_nonMitotic",
+  "clase_predicha": "lymphocyte",
+  "p_tumor": "0.19364647567272186",
+  "p_linfocito": "0.5608277320861816",
+  "p_estroma": "0.24552574753761292",
+  "modelo": "softmaxcnn_bn",
+  "semilla": 6113,
+  "acierto": false,
+  "imagen": "TCGA-BH-A1EW-DX1_id-5ea40ad0ddda5f839899478d_left-68009_top-46017_bottom-46290_right-68301",
+  "fila": "26",
+  "tipo": "rectangle",
+  "sha_anotaciones": "b56020bb94b3685c65f12c5d9114f5eeb588aa74006e40cf7232b95714865909",
+  "sha_predicciones": "1a99f8b9f6dde72e338281ec1dd967630e1d4f2e2f7be6a20e71a397393b0ec6",
+  "fuente_predicciones": "final/softmaxcnn_bn_6113/predicciones_validacion.csv",
+  "anotacion": {
+    "": "26",
+    "raw_classification": "tumor",
+    "main_classification": "tumor_nonMitotic",
+    "super_classification": "tumor_any",
+    "type": "rectangle",
+    "xmin": "230",
+    "ymin": "69",
+    "xmax": "253",
+    "ymax": "104",
+    "coords_x": "230,253,253,230,230",
+    "coords_y": "69,69,104,104,69"
+  },
+  "sha_campo": "0d8fddd219713cd0aac0f6f231f9c4cbae8b6f2ae0d4606c23cc1f8464fee3c2",
+  "sha_visualizacion": "08db76b393bbf23aef60313e1451b4704453ed447bedc1630ecddebbafc375cb",
+  "dimensiones_campo": [
+    365,
+    341
+  ],
+  "vista": "Campo original con núcleo objetivo señalado; no se afirma que el campo completo sea la entrada de128px del modelo",
+  "revision_humana_nueva": false
+}

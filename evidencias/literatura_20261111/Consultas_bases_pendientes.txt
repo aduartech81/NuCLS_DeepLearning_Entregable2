@@ -1,0 +1,15 @@
+CONSULTAS PARA CERRAR LA EXTENSIÓN SISTEMÁTICA E2
+Fecha de preparación: 2026-11-11. Estado: NO EJECUTADAS EN LAS BASES. No inventar conteos.
+
+Scopus (2019–2026; conservar aparte fundacionales anteriores por rastreo de citas):
+TITLE-ABS-KEY ((nuclei OR nucleus OR nuclear OR cell) AND (histopatholog* OR "digital pathology") AND (classif* OR recogn*) AND ("deep learning" OR transformer* OR "neural network*" OR "MLP-Mixer" OR "MobileViT" OR "ConvNeXt" OR "Sequencer")) AND PUBYEAR > 2018 AND PUBYEAR < 2027
+
+IEEE Xplore, Advanced Search (aplicar filtro 2019–2026 en interfaz y registrar el filtro):
+(("All Metadata":nuclei OR "All Metadata":nucleus OR "All Metadata":cell) AND ("All Metadata":histopathology OR "All Metadata":"digital pathology") AND ("All Metadata":classification) AND ("All Metadata":"deep learning" OR "All Metadata":transformer OR "All Metadata":"neural network"))
+
+Tres búsquedas de mecanismos para replicar en cada base adaptando campos:
+("self-attention" OR transformer) AND ("machine translation" OR language) AND (transfer OR adaptation)
+(convolution AND attention) AND (speech OR audio) AND (transfer OR adaptation)
+(patch AND transformer) AND ("time series" OR forecasting) AND (transfer OR adaptation)
+
+Guardar fecha/hora, cadena exacta ejecutada, filtros, total mostrado y exportación CSV/RIS con DOI/título/resumen/identificador. Si una base rechaza sintaxis, guardar la versión corregida efectivamente ejecutada. Deduplicar DOI normalizado y luego título/año con adjudicación manual. Cruzar con el corpus E1: no sumar otra vez sus 1717 registros ni sus lecturas. Conservar categorías: nuevo, ya E1, duplicado interno, excluido, no recuperado, lectura pendiente, incluido. NR no significa cero. No hay segundo revisor independiente ni kappa calculado.

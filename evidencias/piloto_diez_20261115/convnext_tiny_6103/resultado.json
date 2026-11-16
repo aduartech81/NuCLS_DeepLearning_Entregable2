@@ -1,0 +1,59 @@
+{
+  "modelo": "convnext_tiny",
+  "semilla": 6103,
+  "mejor_epoca": 19,
+  "epocas_ejecutadas": 24,
+  "parametros": 27822435,
+  "segundos": 3124.566864147001,
+  "validacion": {
+    "macro_f1": 0.7826644843242946,
+    "accuracy": 0.8257686676427526,
+    "balanced_accuracy": 0.7719930166977763,
+    "confusion": [
+      [
+        1028,
+        14,
+        66
+      ],
+      [
+        94,
+        440,
+        63
+      ],
+      [
+        103,
+        17,
+        224
+      ]
+    ],
+    "clases": [
+      {
+        "clase": "tumor_nonMitotic",
+        "precision": 0.8391836734693877,
+        "recall": 0.927797833935018,
+        "f1": 0.8812687526789541,
+        "soporte": 1108
+      },
+      {
+        "clase": "lymphocyte",
+        "precision": 0.9341825902335457,
+        "recall": 0.7370184254606366,
+        "f1": 0.8239700374531835,
+        "soporte": 597
+      },
+      {
+        "clase": "nonTILnonMQ_stromal",
+        "precision": 0.6345609065155807,
+        "recall": 0.6511627906976745,
+        "f1": 0.6427546628407461,
+        "soporte": 344
+      }
+    ]
+  },
+  "val_loss": 0.47850998703766706,
+  "lr": 0.001,
+  "weight_decay": 0.0001,
+  "inferencia_ms_por_recorte_mediana": 1.4565017656309465,
+  "inferencia_batch": 32,
+  "estado": "FASE_COMPLETADA_VALIDACION"
+}

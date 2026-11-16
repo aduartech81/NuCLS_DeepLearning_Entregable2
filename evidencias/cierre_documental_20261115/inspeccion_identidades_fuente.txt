@@ -1,0 +1,15 @@
+from pathlib import Path
+import csv,re,unicodedata,difflib,collections,json
+r=Path('evidencias/literatura_20261111')
+def read(f):return list(csv.DictReader((r/f).open(encoding='utf-8-sig')))
+def norm(s):return re.sub(r'[^a-z0-9]','',unicodedata.normalize('NFKD',s.lower()))
+h=read('Cruce_dominio_E1_E2_20261112.csv');base=read('base_heredada/cribado_unificado.csv');ad=read('base_heredada/adjudicacion_sintesis_20261108.csv')
+titles={'H1':'From modern CNNs to vision transformers: Assessing the performance, robustness, and classification strategies of deep learning models in histopathology','H2':'Time to Embrace Natural Language Processing (NLP)-based Digital Pathology: Benchmarking NLP- and Convolutional Neural Network-based Deep Learning Pipelines','H4':'A multilayer perceptron-based model applied to histopathology image classification of lung adenocarcinoma subtypes','H6':'The value of deep neural networks in the pathological classification of thyroid tumors','H7':'ViT-DeiT: An Ensemble Model for Breast Cancer Histopathological Images Classification'}
+for x in h:
+ t=titles.get(x['id_e2'],x['titulo']);ranks=sorted([(difflib.SequenceMatcher(None,norm(t),norm(b['titulo'])).ratio(),b['id'],b['titulo']) for b in base],reverse=True)[:2];print(x['id_e2'],t,'\n',ranks)
+for col in ['doi','titulo']:
+ d=collections.defaultdict(list)
+ for x in ad:
+  if x[col]:d[norm(x[col])].append(x['id'])
+ print('duplicates',col,[v for v in d.values() if len(v)>1])
+print(collections.Counter(x['grupo_sintesis'] for x in ad))

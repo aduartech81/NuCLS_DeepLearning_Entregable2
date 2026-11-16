@@ -1,0 +1,13 @@
+﻿id_e2,doi,titulo,id_e1,coincidencia,titulo_e1,decision
+H1,10.1016/j.media.2023.102809,Springenberg et al. (2023),,Sin coincidencia exacta; revisar título y versiones,,No acredita novedad ni elegibilidad global
+H2,10.48550/arXiv.2302.10406,"Cen et al. (2023), preprint",,Sin coincidencia exacta; revisar título y versiones,,No acredita novedad ni elegibilidad global
+H3,10.1155/acis/4540418,Sanchez-Torres et al. (2026),LIT-0214,DOI exacto,A Comparative Analysis of Machine Learning and Deep Learning Approaches for Multiclass Nucleus Classification in Histological Images,No sumar como nuevo
+H4,10.3389/fonc.2023.1172234,Liu et al. (2023),,Sin coincidencia exacta; revisar título y versiones,,No acredita novedad ni elegibilidad global
+H5,10.1016/j.jpi.2024.100377,DeVoe et al. (2024),LIT-0490,DOI exacto,Evaluation of the precision and accuracy in the classification of breast histopathology images using the MobileNetV3 model,No sumar como nuevo
+H6,10.1186/s13000-023-01380-2,Deng et al. (2023),,Sin coincidencia exacta; revisar título y versiones,,No acredita novedad ni elegibilidad global
+H7,10.1109/ICAISC56366.2023.10085467,"Alotaibi et al. (2023), ICAISC; preprint 2022 asociado",,Sin coincidencia exacta; revisar título y versiones,,No acredita novedad ni elegibilidad global
+H8,10.1016/j.media.2024.103143,"Hörst et al. (2024), CellViT",LIT-0668,DOI exacto,CellViT: Vision Transformers for precise cell segmentation and classification,No sumar como nuevo
+H9,10.48550/arXiv.2511.13615,Tissue Aware Nuclei Detection and Classification Model for Histopathology Images,,Sin coincidencia exacta; revisar título y versiones,,No acredita novedad ni elegibilidad global
+H10,10.48550/arXiv.2511.05170,MUSE: Multi-Scale Dense Self-Distillation for Nucleus Detection and Classification,,Sin coincidencia exacta; revisar título y versiones,,No acredita novedad ni elegibilidad global
+H11,10.48550/arXiv.2611.02671,TME-ContextNet: Class-Conditioned Spatial Supervision and Grouped Decoding for Joint Nuclei Instance Segmentation and Classification,,Sin coincidencia exacta; revisar título y versiones,,No acredita novedad ni elegibilidad global
+H12 / LIT-0747,10.1117/12.2581108,A Multi-Scale Conditional Deep Model for Tumor Cell Ratio Counting,LIT-0747,DOI exacto,A multi-scale conditional deep model for tumor cell ratio counting,No sumar como nuevo

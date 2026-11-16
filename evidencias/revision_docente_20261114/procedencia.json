@@ -1,0 +1,6 @@
+{
+  "fuente_eda": "E1/book/02_desarrollo_v2.md",
+  "sha256": "c541901f5804cae1cce2a262cf7c53ce823ecb3e27c47b63bfbc07af02217054",
+  "alcance": "Reutilización documental de EDA heredado; no se recalcularon imágenes ni dHash en esta revisión.",
+  "adamw": "Prueba local CPU float32, foreach verdadero y falso. No ejecutada en GPU Colab."
+}

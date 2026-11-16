@@ -1,0 +1,487 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NuCLS · Estado del arte E2</title><style>*{box-sizing:border-box}body{margin:0;background:#eef3f5;color:#193243;font:17px/1.65 system-ui,-apple-system,sans-serif}header{background:#123548;color:white;padding:64px max(5vw,24px);border-bottom:7px solid #24b1aa}header small{letter-spacing:.17em;color:#8fe1dc}header h1{font-size:clamp(34px,5vw,58px);line-height:1.08;max-width:980px;margin:20px 0}header p{max-width:900px;color:#d5e5ec}main{max-width:1200px;margin:30px auto;padding:40px 48px;background:white;box-shadow:0 8px 36px #122f4010}h1{font-size:30px}h2{margin-top:56px;padding-top:20px;border-top:2px solid #d9e8ee;color:#126f76}h3{margin-top:36px;color:#123548}a{color:#087e86;text-decoration-thickness:1px;text-underline-offset:3px}table{display:block;overflow:auto;border-collapse:collapse;width:100%;font-size:13px;line-height:1.5;margin:24px 0}th{background:#173d50;color:white;text-align:left;min-width:120px}td,th{padding:13px 15px;border:1px solid #dce7eb;vertical-align:top}tr:nth-child(even){background:#f3f8fa}code{background:#eef4f7;padding:3px 5px;border-radius:4px;overflow-wrap:anywhere;font-size:.88em}svg{width:100%;height:auto;margin:8px 0}li{margin:10px 0}strong{color:#124b5d}.cards{display:flex;gap:16px;flex-wrap:wrap}.cards span{padding:15px 24px;background:#ffffff12;border:1px solid #ffffff30;border-radius:10px}.cards b{font-size:26px;margin-right:10px}@media(max-width:700px){main{padding:22px 18px;margin:0}header{padding:36px 20px}table{font-size:12px}}@media print{body,main{background:white;box-shadow:none}main{padding:0;max-width:none}header{padding:20px}table{display:table;font-size:9px}h2,h3{break-after:avoid}svg{max-height:95px}a{color:inherit}}</style><header><small>NUCLS / ENTREGABLE 2 / INVESTIGACIÓN REPRODUCIBLE</small><h1>Diez modelos.<br>Cinco familias.<br>Una comparación trazable.</h1><p>Selección bibliográfica y síntesis crítica · 12 noviembre 2026 · Versión independiente del Entregable 1</p><div class="cards"><span><b>20</b>candidatos evaluados</span><span><b>10</b>seleccionados</span><span><b>12</b>referencias de dominio</span><span><b>66</b>corridas base completas</span></div></header><main><h1 id="nucls-estado-del-arte-y-seleccion-del-entregable-2">NuCLS · Estado del arte y selección del Entregable 2</h1>
+<p><strong>Corte bibliográfico: 11 de noviembre de 2026. Selección bibliográfica v1, condicionada a perfil GPU.</strong></p>
+<p>La comparación se amplía de tres bases a diez arquitecturas adicionales y dos referencias no profundas. Este documento justifica los candidatos; no presenta entrenamientos adicionales aún inexistentes ni declara concluida la extensión sistemática. Los artefactos y resultados del Entregable 1 permanecen separados.</p>
+<h2 id="1-problema-alcance-y-pregunta">1. Problema, alcance y pregunta</h2>
+<p>El objetivo experimental es clasificar recortes nucleares de NuCLS en las tres clases ya definidas por el protocolo, manteniendo las particiones por paciente y TSS. Una mejora de accuracy sobre tejidos completos no demuestra una mejora de macro-F1 en núcleos: cambian unidad de observación, etiquetas, contexto, balance y origen de las imágenes.</p>
+<p><strong>Pregunta:</strong> bajo el mismo conjunto de desarrollo y presupuesto declarado, ¿qué mecanismos arquitectónicos mejoran el macro-F1 y la estabilidad frente a ResNet50, y a qué costo computacional? El criterio de relevancia práctica propuesto es δ=0.02; la potencia y el número final de semillas deben recalcularse para los contrastes nuevos.</p>
+<p>Las 66 corridas base están completas, con 22 semillas por modelo. En validación: CNN-BN 0.7600±0.0219, DenseNet121 0.7846±0.0217 y ResNet50 0.7922±0.0227 (media±DE). ResNet50−DenseNet121 tiene Δ=0.00765 y p t pareado con Holm=0.1745: no permite afirmar superioridad entre esas dos bases. Son resultados de desarrollo condicionados a la selección, no evidencia clínica independiente. Fuente: análisis local <code>Estadistica_E2_22</code>, generado desde el índice de las 66 corridas.</p>
+<p>La reserva ya observada en E1 no puede convertirse en una prueba nueva e intacta por cambiar el nombre de la fase. El cierre de E2 confirma que no se volvió a evaluar. Ninguna selección aquí usa nuevas métricas de reserva.</p>
+<h2 id="2-evidencia-por-nivel-de-proximidad">2. Evidencia por nivel de proximidad</h2>
+<p>Se distinguen tres niveles: clasificación de núcleos; clasificación de tejidos o biomarcadores a partir de histología; y diseño general de arquitecturas en imágenes naturales. El tercer nivel aporta mecanismos y reproducibilidad, no validación específica en NuCLS. CellViT pertenece al contexto nuclear contemporáneo, pero resolver segmentación y clasificación conjunta exige una tarea distinta a recibir un recorte RGB ya delimitado. <a href="https://doi.org/10.1016/j.media.2024.103143">CellViT</a>.</p>
+<p>La comparación controlada de Springenberg et al. permite separar inicialización desde cero y preentrenamiento. Sus barras reportan error estándar, no desviación estándar. Es una base más útil para diseñar el benchmark que ordenar porcentajes de artículos heterogéneos. <a href="https://doi.org/10.1016/j.media.2023.102809">Estudio</a>.</p>
+<p>La evidencia de dominio externo de Cen et al. es relevante para la robustez, aunque predice biomarcadores colorrectales y no clases nucleares. Conservamos su condición de preprint y no equiparamos folds con semillas independientes. <a href="https://doi.org/10.48550/arXiv.2302.10406">Estudio</a>.</p>
+<p>La siguiente matriz resume la extracción; los campos completos de reproducibilidad y riesgo están en <code>Extraccion_estudios_histopatologia.csv</code>. NR significa no establecido en esta extracción, no ausencia demostrada.</p>
+<table>
+<thead>
+<tr>
+<th>Estudio / DOI</th>
+<th>Tarea y diseño</th>
+<th>Resultado relevante</th>
+<th>Límite de transferencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doi.org/10.1016/j.media.2023.102809">H1</a></td>
+<td>PCam y cuatro conjuntos de histopatología; clasificación de parches; Particiones de cada dataset; auditoría por paciente pendiente por conjunto</td>
+<td>PCam desde cero: accuracy InceptionV3 88.57±0.48%; ConvNeXt-T 78.50±1.72%; Swin-T 80.29±0.39%; ± es error estándar</td>
+<td>Moderado: múltiples tareas, pero no núcleos NuCLS; preentrenamiento cambia resultados</td>
+</tr>
+<tr>
+<td><a href="https://doi.org/10.48550/arXiv.2302.10406">H2</a></td>
+<td>Predicción de biomarcadores colorrectales a partir de WSI; MCO desarrollo; TCGA externo; una WSI/paciente; agregación de tiles</td>
+<td>MSI AUROC: MobileViT .829 [ .765,.888 ]; Sequencer2D .843 [ .779,.901 ]</td>
+<td>Moderado: validación externa favorable; tarea molecular y variantes distintas. Swin reportado 48.84M no es Swin-Tiny</td>
+</tr>
+<tr>
+<td><a href="https://doi.org/10.1155/acis/4540418">H3</a></td>
+<td>PanNuke, clasificación nuclear de cinco clases; Folds 1/2/3 para train/val/test</td>
+<td>F1 reportado R50 con contexto 75.89%; sin contexto 70.58%. Promedio de F1 no homologado a macro-F1 NuCLS</td>
+<td>Moderado/incierto: problema cercano, pero etiquetas, contexto y preentrenamiento diferentes</td>
+</tr>
+<tr>
+<td><a href="https://doi.org/10.3389/fonc.2023.1172234">H4</a></td>
+<td>Pulmón privado; 780 casos y 8712 imágenes derivadas; tres clases; 7842 train / 870 test; separación por paciente no establecida en extracción</td>
+<td>MLP-Mixer accuracy 92.43%; F1 88.97%; no atribuirle los resultados de MIM</td>
+<td>Incierto/alto para transferir: datos privados, variante Mixer NR; aumento descrito solo en train; no afirmar fuga comprobada</td>
+</tr>
+<tr>
+<td><a href="https://doi.org/10.1016/j.jpi.2024.100377">H5</a></td>
+<td>BreakHis, ocho clases y análisis binario; 75/15/10%; agrupación por paciente no demostrada en extracción</td>
+<td>F1 binario .98; imágenes externas de Internet accuracy &lt;.60</td>
+<td>Incierto: variante Large no valida Small; evidencia explícita de caída externa</td>
+</tr>
+<tr>
+<td><a href="https://doi.org/10.1186/s13000-023-01380-2">H6</a></td>
+<td>799 imágenes de tiroides, 559 pacientes, seis clases; 70% train+val / 30% test; agrupación por paciente no establecida</td>
+<td>ResNeXt50: 202 aciertos de 243 imágenes test; accuracy derivada 83.13%</td>
+<td>Incierto: más de una imagen/paciente; no confirmar fuga; cardinalidad/ancho exactos NR</td>
+</tr>
+<tr>
+<td><a href="https://doi.org/10.1109/ICAISC56366.2023.10085467">H7</a></td>
+<td>BreakHis ocho clases; 80/20% tras balanceo; separación por paciente y validación de ajuste no establecidas</td>
+<td>DeiT solo F1 97.43%; ensemble 98.12%; no atribuir ensemble a DeiT-Tiny</td>
+<td>Incierto/alto: preentrenado y variante DeiT no precisada; no trasladar resultado a Tiny desde cero</td>
+</tr>
+<tr>
+<td><a href="https://doi.org/10.1016/j.media.2024.103143">H8</a></td>
+<td>Segmentación y clasificación de células; No extraída para este contraste</td>
+<td>No se utiliza una cifra para clasificar recortes</td>
+<td>Fuera del Top10 operativo por tarea/entrada, no por calidad; referente contemporáneo</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-seleccion-reproducible-de-los-diez-candidatos">3. Selección reproducible de los diez candidatos</h2>
+<p>Se evaluaron <strong>20 candidatos arquitectónicos</strong>, que no equivalen a 20 artículos incluidos por PRISMA. El conjunto es deliberado, construido por rastreo de referencias y búsquedas complementarias; no pretende ser un censo de toda la literatura. Se priorizan 2019–2026; ResNet e Inception se conservan como controles fundacionales con aplicaciones histológicas.</p>
+<p><strong>Elegibilidad operativa de esta fase:</strong> clasificador de recortes RGB, arquitectura definida, variante compacta (cupo de aproximadamente 30M parámetros con cabeza de tres clases), implementación disponible en timm 1.0.22 y sin pesos externos. Estos límites responden al presupuesto actual y restringen el alcance de las conclusiones: no prueban inferioridad de modelos mayores o fundacionales. Una sola variante por artículo fundacional evita gastar dos cupos en MobileViT. Se conserva XXS por menor tamaño, no por rendimiento aún no medido.</p>
+<p>El puntaje descriptivo es <code>S = 20C + 15A + 35E + 20K + 10F</code>:</p>
+<ul>
+<li><code>C</code>: log(1+citas/año), dividido por el máximo de los elegibles. Año inclusivo desde la primera versión; una sola ficha OpenAlex por obra, sin sumar preprint y conferencia. Captura guardada, no conteo permanente.</li>
+<li><code>A</code>: max(0, 1−(2026−año)/12). Premia actualidad sin eliminar controles antiguos.</li>
+<li><code>E</code>: proximidad y calidad de la evidencia, entre 0 y 1. 0: sin aplicación localizada; 0.3: aplicación indirecta o variante sin precisar y validación limitada; 0.4: modelo nominal coincidente con detalles incompletos; 0.5: familia/escala cercana con prueba externa; 0.6: coincidencia de familia y tamaño o comparador bien identificado; 0.8: variante exacta con repeticiones y comparación desde cero; 1: tarea nuclear directamente comparable. El valor 1 de CellViT solo expresa proximidad temática y no elimina su exclusión por tarea conjunta.</li>
+<li><code>K</code>: 1 para implementación local registrada y reproducible en la versión fijada; 0 si no cumple ese criterio operativo. No se afirma que un artículo sin registro timm carezca de código.</li>
+<li><code>F</code>: inverso del número de candidatos elegibles de la familia. Se maximiza la suma de los diez puntajes con al menos cuatro familias.</li>
+</ul>
+<p>El juicio de E y los pesos son explícitos pero subjetivos; no son una escala validada ni un metaanálisis. Se fijaron durante la revisión, antes de obtener resultados del Top10. El código y la instantánea permiten reproducir la decisión. No se suman porcentajes de tareas incompatibles para formar un ranking de rendimiento.</p>
+<table>
+<thead>
+<tr>
+<th>Modelo seleccionado</th>
+<th>Familia</th>
+<th>Puntaje</th>
+<th>Parámetros E2 (M)</th>
+<th>Artículo original</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Swin-Tiny</td>
+<td>Atención</td>
+<td>79.43</td>
+<td>27.516</td>
+<td><a href="https://doi.org/10.1109/iccv48922.2021.00986">Fuente</a></td>
+</tr>
+<tr>
+<td>ConvNeXt-Tiny</td>
+<td>CNN</td>
+<td>75.01</td>
+<td>27.822</td>
+<td><a href="https://doi.org/10.1109/cvpr52688.2022.01167">Fuente</a></td>
+</tr>
+<tr>
+<td>MobileViT-XXS</td>
+<td>Híbrida CNN-atención</td>
+<td>68.01</td>
+<td>0.952</td>
+<td><a href="https://doi.org/10.48550/arxiv.2110.02178">Fuente</a></td>
+</tr>
+<tr>
+<td>InceptionV3</td>
+<td>CNN</td>
+<td>66.90</td>
+<td>21.792</td>
+<td><a href="https://doi.org/10.1109/cvpr.2016.308">Fuente</a></td>
+</tr>
+<tr>
+<td>EfficientNet-B0</td>
+<td>CNN</td>
+<td>64.66</td>
+<td>4.011</td>
+<td><a href="https://doi.org/10.48550/arxiv.1905.11946">Fuente</a></td>
+</tr>
+<tr>
+<td>ResNet18</td>
+<td>CNN</td>
+<td>63.92</td>
+<td>11.178</td>
+<td><a href="https://doi.org/10.1109/cvpr.2016.90">Fuente</a></td>
+</tr>
+<tr>
+<td>Sequencer2D-S</td>
+<td>Recurrente</td>
+<td>63.60</td>
+<td>27.268</td>
+<td><a href="https://doi.org/10.52202/068431-2768">Fuente</a></td>
+</tr>
+<tr>
+<td>MLP-Mixer-S/16</td>
+<td>MLP visual</td>
+<td>56.34</td>
+<td>17.475</td>
+<td><a href="https://doi.org/10.48550/arxiv.2105.01601">Fuente</a></td>
+</tr>
+<tr>
+<td>DeiT-Tiny</td>
+<td>Atención</td>
+<td>56.08</td>
+<td>5.500</td>
+<td><a href="https://doi.org/10.48550/arxiv.2012.12877">Fuente</a></td>
+</tr>
+<tr>
+<td>MobileNetV3-Small</td>
+<td>CNN</td>
+<td>52.95</td>
+<td>1.521</td>
+<td><a href="https://doi.org/10.1109/iccv.2019.00140">Fuente</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Resultado:</strong> cinco familias: CNN, atención, híbrida CNN-atención, MLP visual y recurrente. CNN residual, eficiente, multirrama y ConvNeXt se cuentan como una sola familia; las variantes no inflan la diversidad.</p>
+<p><strong>Sensibilidad:</strong> nueve candidatos permanecen en los cuatro escenarios probados. MobileNetV3-Small y ResNeXt50 intercambian el último cupo al aumentar el peso de evidencia o diversidad. Su diferencia principal es solo 0.55 puntos; MobileNetV3 no es una ganadora concluyente. Se conserva en la selección principal por el criterio fijado y el costo, con ResNeXt50 como primera alternativa documentada. No cambiar de candidato después de mirar resultados para favorecer una conclusión.</p>
+<p><strong>Cambio respecto al cuaderno provisional:</strong> entran ConvNeXt-Tiny, InceptionV3 y Sequencer2D-S; salen ResNeXt50, MobileViT-XS y ResMLP-S12. La elección de ResMLP como homónimo en otros artículos no prueba uso de la arquitectura de Touvron. El cuaderno que se está perfilando no se modifica durante la ejecución. Esta lista requiere una nueva configuración antes de iniciar el entrenamiento largo; deben medirse los tres modelos entrantes y congelar la lista efectiva.</p>
+<h3 id="candidatos-no-seleccionados">Candidatos no seleccionados</h3>
+<table>
+<thead>
+<tr>
+<th>Candidato</th>
+<th>Decisión</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>resnext50_32x4d</td>
+<td>Menor puntaje bajo la regla principal; ver sensibilidad y evidencia</td>
+</tr>
+<tr>
+<td>mobilevit_xs</td>
+<td>Una variante por artículo fundacional; XXS conserva el mecanismo con menor costo</td>
+</tr>
+<tr>
+<td>resmlp_12_224</td>
+<td>Menor puntaje bajo la regla principal; ver sensibilidad y evidencia</td>
+</tr>
+<tr>
+<td>vgg16</td>
+<td>Modelo denso de alto tamaño; fuera del cupo compacto operativo de esta fase</td>
+</tr>
+<tr>
+<td>vit_base_patch16_224</td>
+<td>85.8M en H2; fuera del cupo compacto operativo de esta fase</td>
+</tr>
+<tr>
+<td>cmt</td>
+<td>Sin implementación registrada en timm 1.0.22; integración y validación adicionales</td>
+</tr>
+<tr>
+<td>vmamba</td>
+<td>No registrado en timm 1.0.22; no confundir con MambaOut</td>
+</tr>
+<tr>
+<td>cellvit</td>
+<td>Segmentación y clasificación conjunta; requiere máscaras y cambia la tarea</td>
+</tr>
+<tr>
+<td>ctranspath</td>
+<td>Representaciones preentrenadas externas; fuera del contraste desde cero</td>
+</tr>
+<tr>
+<td>uni</td>
+<td>Representaciones preentrenadas externas; fuera del contraste desde cero</td>
+</tr>
+</tbody>
+</table>
+<h2 id="4-fichas-tecnicas-de-los-diez-modelos">4. Fichas técnicas de los diez modelos</h2>
+<p>Las cifras originales se incluyen con su tarea y régimen. <strong>No se comparan numéricamente con macro-F1 NuCLS.</strong> Los parámetros E2 se contaron sobre timm 1.0.22, entrada128 y cabeza3, sin preentrenamiento. Los FLOPs/MAdds citados corresponden al artículo, no al perfil E2. Tiempo, memoria y latencia de GPU siguen pendientes del perfil real. Los diagramas son esquemas propios; no sustituyen la definición completa del código.</p>
+<h3 id="41-resnet18">4.1. ResNet18</h3>
+<p><a href="https://doi.org/10.1109/cvpr.2016.90">Artículo original: Deep Residual Learning for Image Recognition</a>. Familia: <strong>CNN</strong>. Implementación: <code>resnet18</code>.</p>
+<p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 135" role="img" aria-label="ResNet18"><rect width="1000" height="135" fill="#eff5f8" rx="15"/><rect x="15.0" y="38" width="226.0" height="62" rx="10" fill="#173d50"/><text x="128.0" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">Conv7×7</text><text x="252.0" y="75" text-anchor="middle" fill="#127f87" font-size="22">→</text><rect x="263.0" y="38" width="226.0" height="62" rx="10" fill="#173d50"/><text x="376.0" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">4 etapas residuales</text><text x="500.0" y="75" text-anchor="middle" fill="#127f87" font-size="22">→</text><rect x="511.0" y="38" width="226.0" height="62" rx="10" fill="#173d50"/><text x="624.0" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">promedio global</text><text x="748.0" y="75" text-anchor="middle" fill="#127f87" font-size="22">→</text><rect x="759.0" y="38" width="226.0" height="62" rx="10" fill="#173d50"/><text x="872.0" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">3 logits</text></svg></p>
+<p>BasicBlock [2,2,2,2], canales 64/128/256/512. Conexión residual facilita optimización. Controla profundidad frente a ResNet50 heredado.</p>
+<p><strong>Operación esencial:</strong> <code>y = ReLU(F(x) + P(x)); P ajusta dimensiones cuando es necesario.</code></p>
+<p><strong>Resultado original:</strong> ImageNet, error top-1 27.88%, prueba 10-crop (tabla 2); no compararlo con accuracy single-crop.</p>
+<p><strong>Costo:</strong> 1.8G FLOPs a 224 en la arquitectura original; costo E2 por medir. E2: <strong>11,178,051 parámetros</strong>.</p>
+<p><strong>Aplicación y cautela:</strong> H2; antecedente E1 no contado como nuevo estudio. Reduce profundidad, pero downsampling temprano puede borrar detalle nuclear. Fundacional 2015/2016 justificado como control residual.</p>
+<h3 id="42-mobilenetv3-small">4.2. MobileNetV3-Small</h3>
+<p><a href="https://doi.org/10.1109/iccv.2019.00140">Artículo original: Searching for MobileNetV3</a>. Familia: <strong>CNN</strong>. Implementación: <code>mobilenetv3_small_100</code>.</p>
+<p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 135" role="img" aria-label="MobileNetV3-Small"><rect width="1000" height="135" fill="#eff5f8" rx="15"/><rect x="15.0" y="38" width="176.4" height="62" rx="10" fill="#173d50"/><text x="103.2" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">Conv</text><text x="202.4" y="75" text-anchor="middle" fill="#127f87" font-size="22">→</text><rect x="213.4" y="38" width="176.4" height="62" rx="10" fill="#173d50"/><text x="301.6" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">bloques invertidos + SE</text><text x="400.8" y="75" text-anchor="middle" fill="#127f87" font-size="22">→</text><rect x="411.8" y="38" width="176.4" height="62" rx="10" fill="#173d50"/><text x="500.0" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">proyección</text><text x="599.2" y="75" text-anchor="middle" fill="#127f87" font-size="22">→</text><rect x="610.2" y="38" width="176.4" height="62" rx="10" fill="#173d50"/><text x="698.4000000000001" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">promedio</text><text x="797.6" y="75" text-anchor="middle" fill="#127f87" font-size="22">→</text><rect x="808.6" y="38" width="176.4" height="62" rx="10" fill="#173d50"/><text x="896.8000000000001" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">3 logits</text></svg></p>
+<p>Inverted residual, convolución depthwise, SE y h-swish; variante Small 1.0. Diseño orientado a eficiencia; separa costo de capacidad.</p>
+<p><strong>Operación esencial:</strong> <code>h-swish(x) = x ReLU6(x+3)/6; SE(X) = X ⊙ sigmoid(W₂ ReLU(W₁ GAP(X))).</code></p>
+<p><strong>Resultado original:</strong> ImageNet top-1 67.4%; 2.5M parámetros y 56M MAdds en la tabla principal original a 224.</p>
+<p><strong>Costo:</strong> 56M MAdds originales no equivalen automáticamente a FLOPs ni a latencia T4. E2: <strong>1,520,931 parámetros</strong>.</p>
+<p><strong>Aplicación y cautela:</strong> H5. La aplicación H5 usa Large con cabeza modificada, no Small. Selección por mecanismo y costo, con apoyo de dominio indirecto.</p>
+<h3 id="43-efficientnet-b0">4.3. EfficientNet-B0</h3>
+<p><a href="https://doi.org/10.48550/arxiv.1905.11946">Artículo original: EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks</a>. Familia: <strong>CNN</strong>. Implementación: <code>efficientnet_b0</code>.</p>
+<p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 135" role="img" aria-label="EfficientNet-B0"><rect width="1000" height="135" fill="#eff5f8" rx="15"/><rect x="15.0" y="38" width="176.4" height="62" rx="10" fill="#173d50"/><text x="103.2" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">Stem</text><text x="202.4" y="75" text-anchor="middle" fill="#127f87" font-size="22">→</text><rect x="213.4" y="38" width="176.4" height="62" rx="10" fill="#173d50"/><text x="301.6" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">etapas MBConv + SE</text><text x="400.8" y="75" text-anchor="middle" fill="#127f87" font-size="22">→</text><rect x="411.8" y="38" width="176.4" height="62" rx="10" fill="#173d50"/><text x="500.0" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">conv1×1</text><text x="599.2" y="75" text-anchor="middle" fill="#127f87" font-size="22">→</text><rect x="610.2" y="38" width="176.4" height="62" rx="10" fill="#173d50"/><text x="698.4000000000001" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">promedio</text><text x="797.6" y="75" text-anchor="middle" fill="#127f87" font-size="22">→</text><rect x="808.6" y="38" width="176.4" height="62" rx="10" fill="#173d50"/><text x="896.8000000000001" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">3 logits</text></svg></p>
+<p>MBConv con SE; red base del escalamiento compuesto. Balance de profundidad, ancho y resolución; referencia eficiente frente a redes residuales.</p>
+<p><strong>Operación esencial:</strong> <code>d=α^φ, w=β^φ, r=γ^φ; αβ²γ²≈2. B0 corresponde al punto base.</code></p>
+<p><strong>Resultado original:</strong> ImageNet top-1 77.1%, 5.3M y 0.39B FLOPs (tabla 2).</p>
+<p><strong>Costo:</strong> 0.39B a resolución original; no extrapolar tiempos al entrenamiento de E2. E2: <strong>4,011,391 parámetros</strong>.</p>
+<p><strong>Aplicación y cautela:</strong> H2, familia y tamaño compatibles. Usar B0 a 128 rompe la resolución de referencia; cuatro ajustes no reproducen la búsqueda arquitectónica original.</p>
+<h3 id="44-deit-tiny">4.4. DeiT-Tiny</h3>
+<p><a href="https://doi.org/10.48550/arxiv.2012.12877">Artículo original: Training data-efficient image transformers &amp; distillation through attention</a>. Familia: <strong>Atención</strong>. Implementación: <code>deit_tiny_patch16_224</code>.</p>
+<p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 135" role="img" aria-label="DeiT-Tiny"><rect width="1000" height="135" fill="#eff5f8" rx="15"/><rect x="15.0" y="38" width="226.0" height="62" rx="10" fill="#173d50"/><text x="128.0" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">Parches16</text><text x="252.0" y="75" text-anchor="middle" fill="#127f87" font-size="22">→</text><rect x="263.0" y="38" width="226.0" height="62" rx="10" fill="#173d50"/><text x="376.0" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">posición + CLS</text><text x="500.0" y="75" text-anchor="middle" fill="#127f87" font-size="22">→</text><rect x="511.0" y="38" width="226.0" height="62" rx="10" fill="#173d50"/><text x="624.0" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">12 bloques de atención</text><text x="748.0" y="75" text-anchor="middle" fill="#127f87" font-size="22">→</text><rect x="759.0" y="38" width="226.0" height="62" rx="10" fill="#173d50"/><text x="872.0" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">3 logits</text></svg></p>
+<p>12 bloques; dimensión 192; 3 cabezas; parches16; sin token de destilación en esta variante. Referencia de atención global compacta.</p>
+<p><strong>Operación esencial:</strong> <code>Attention(Q,K,V)=softmax(QKᵀ/√d)V; z′=z+MSA(LN(z)); z″=z′+MLP(LN(z′)).</code></p>
+<p><strong>Resultado original:</strong> ImageNet top-1 72.2% para Tiny sin destilación; no atribuirle el resultado de modelos mayores.</p>
+<p><strong>Costo:</strong> Atención O(N²D); a128 hay64 parches, frente a196 a224, más CLS. E2: <strong>5,499,651 parámetros</strong>.</p>
+<p><strong>Aplicación y cautela:</strong> H7. E2 omite la receta completa y la destilación del artículo; H7 no identifica Tiny. Rendimiento negativo no refuta toda la familia.</p>
+<h3 id="45-swin-tiny">4.5. Swin-Tiny</h3>
+<p><a href="https://doi.org/10.1109/iccv48922.2021.00986">Artículo original: Swin Transformer: Hierarchical Vision Transformer using Shifted Windows</a>. Familia: <strong>Atención</strong>. Implementación: <code>swin_tiny_patch4_window7_224</code>.</p>
+<p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 135" role="img" aria-label="Swin-Tiny"><rect width="1000" height="135" fill="#eff5f8" rx="15"/><rect x="15.0" y="38" width="176.4" height="62" rx="10" fill="#173d50"/><text x="103.2" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">Parches4</text><text x="202.4" y="75" text-anchor="middle" fill="#127f87" font-size="22">→</text><rect x="213.4" y="38" width="176.4" height="62" rx="10" fill="#173d50"/><text x="301.6" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">ventanas/desplazamiento</text><text x="400.8" y="75" text-anchor="middle" fill="#127f87" font-size="22">→</text><rect x="411.8" y="38" width="176.4" height="62" rx="10" fill="#173d50"/><text x="500.0" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">merging ×3</text><text x="599.2" y="75" text-anchor="middle" fill="#127f87" font-size="22">→</text><rect x="610.2" y="38" width="176.4" height="62" rx="10" fill="#173d50"/><text x="698.4000000000001" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">promedio</text><text x="797.6" y="75" text-anchor="middle" fill="#127f87" font-size="22">→</text><rect x="808.6" y="38" width="176.4" height="62" rx="10" fill="#173d50"/><text x="896.8000000000001" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">3 logits</text></svg></p>
+<p>Dim96; etapas [2,2,6,2]; atención local y ventanas desplazadas; patch merging. Conecta ventanas vecinas y construye jerarquía espacial.</p>
+<p><strong>Operación esencial:</strong> <code>W-MSA / SW-MSA alternadas; ventanas de tamaño M: costo de atención O(N M² D).</code></p>
+<p><strong>Resultado original:</strong> ImageNet top-1 81.3%, ≈29M y 4.5G FLOPs en tabla 1 original.</p>
+<p><strong>Costo:</strong> Costo aproximadamente lineal en tokens a ventana fija; implementación puede requerir padding. E2: <strong>27,515,901 parámetros</strong>.</p>
+<p><strong>Aplicación y cautela:</strong> H1 exacto; H2 usa otra escala. 128 cambia la geometría y las últimas ventanas; validar adaptación sin prometer equivalencia a224. No contar Swin como CNN adicional.</p>
+<h3 id="46-mobilevit-xxs">4.6. MobileViT-XXS</h3>
+<p><a href="https://doi.org/10.48550/arxiv.2110.02178">Artículo original: MobileViT: Light-weight, General-purpose, and Mobile-friendly Vision Transformer</a>. Familia: <strong>Híbrida CNN-atención</strong>. Implementación: <code>mobilevit_xxs</code>.</p>
+<p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 135" role="img" aria-label="MobileViT-XXS"><rect width="1000" height="135" fill="#eff5f8" rx="15"/><rect x="15.0" y="38" width="143.33333333333334" height="62" rx="10" fill="#173d50"/><text x="86.66666666666667" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">Conv local</text><text x="169.33333333333334" y="75" text-anchor="middle" fill="#127f87" font-size="22">→</text><rect x="180.33333333333334" y="38" width="143.33333333333334" height="62" rx="10" fill="#173d50"/><text x="252.0" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">unfold</text><text x="334.6666666666667" y="75" text-anchor="middle" fill="#127f87" font-size="22">→</text><rect x="345.6666666666667" y="38" width="143.33333333333334" height="62" rx="10" fill="#173d50"/><text x="417.33333333333337" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">atención</text><text x="500.0" y="75" text-anchor="middle" fill="#127f87" font-size="22">→</text><rect x="511.0" y="38" width="143.33333333333334" height="62" rx="10" fill="#173d50"/><text x="582.6666666666666" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">fold/fusión</text><text x="665.3333333333334" y="75" text-anchor="middle" fill="#127f87" font-size="22">→</text><rect x="676.3333333333334" y="38" width="143.33333333333334" height="62" rx="10" fill="#173d50"/><text x="748.0" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">promedio</text><text x="830.6666666666667" y="75" text-anchor="middle" fill="#127f87" font-size="22">→</text><rect x="841.6666666666667" y="38" width="143.33333333333334" height="62" rx="10" fill="#173d50"/><text x="913.3333333333334" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">3 logits</text></svg></p>
+<p>Convoluciones locales, bloques invertidos y transformadores sobre parches; XXS. Integra sesgo local y comunicación global en una red pequeña.</p>
+<p><strong>Operación esencial:</strong> <code>Xlocal=Conv(X); Z=Unfold(Xlocal); Y=Fuse(X,Fold(Transformer(Z))).</code></p>
+<p><strong>Resultado original:</strong> ImageNet top-1 69.0% y ≈1.3M parámetros en la configuración original XXS.</p>
+<p><strong>Costo:</strong> Costos dependen del despliegue de parches; medir GPU, no inferir latencia por parámetros. E2: <strong>951,987 parámetros</strong>.</p>
+<p><strong>Aplicación y cautela:</strong> H2. H2 evalúa MobileViT de ≈4.94M, no XXS. XS no ocupa un segundo cupo: misma propuesta fundacional.</p>
+<h3 id="47-mlp-mixer-s16">4.7. MLP-Mixer-S/16</h3>
+<p><a href="https://doi.org/10.48550/arxiv.2105.01601">Artículo original: MLP-Mixer: An all-MLP Architecture for Vision</a>. Familia: <strong>MLP visual</strong>. Implementación: <code>mixer_s16_224</code>.</p>
+<p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 135" role="img" aria-label="MLP-Mixer-S/16"><rect width="1000" height="135" fill="#eff5f8" rx="15"/><rect x="15.0" y="38" width="176.4" height="62" rx="10" fill="#173d50"/><text x="103.2" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">Parches16</text><text x="202.4" y="75" text-anchor="middle" fill="#127f87" font-size="22">→</text><rect x="213.4" y="38" width="176.4" height="62" rx="10" fill="#173d50"/><text x="301.6" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">mezcla de tokens</text><text x="400.8" y="75" text-anchor="middle" fill="#127f87" font-size="22">→</text><rect x="411.8" y="38" width="176.4" height="62" rx="10" fill="#173d50"/><text x="500.0" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">mezcla de canales ×8</text><text x="599.2" y="75" text-anchor="middle" fill="#127f87" font-size="22">→</text><rect x="610.2" y="38" width="176.4" height="62" rx="10" fill="#173d50"/><text x="698.4000000000001" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">promedio</text><text x="797.6" y="75" text-anchor="middle" fill="#127f87" font-size="22">→</text><rect x="808.6" y="38" width="176.4" height="62" rx="10" fill="#173d50"/><text x="896.8000000000001" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">3 logits</text></svg></p>
+<p>8 bloques; ancho512; token-MLP y channel-MLP; parches16. Control de mezcla global sin autoatención; no confundir con MIM.</p>
+<p><strong>Operación esencial:</strong> <code>U=X+[W₂ σ(W₁ LN(X)ᵀ)]ᵀ; Y=U+W₄ σ(W₃ LN(U)).</code></p>
+<p><strong>Resultado original:</strong> S/16: top-1 73.83% en tabla 3 bajo preentrenamiento JFT-300M, no desde cero en ImageNet.</p>
+<p><strong>Costo:</strong> Token-MLP depende de N: cambiar224 a128 modifica las matrices y su número de parámetros. E2: <strong>17,475,075 parámetros</strong>.</p>
+<p><strong>Aplicación y cautela:</strong> H4. La evidencia H4 no precisa S/16. E2 desde cero es una adaptación; no reproduce el régimen de datos original.</p>
+<h3 id="48-convnext-tiny">4.8. ConvNeXt-Tiny</h3>
+<p><a href="https://doi.org/10.1109/cvpr52688.2022.01167">Artículo original: A ConvNet for the 2020s</a>. Familia: <strong>CNN</strong>. Implementación: <code>convnext_tiny</code>.</p>
+<p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 135" role="img" aria-label="ConvNeXt-Tiny"><rect width="1000" height="135" fill="#eff5f8" rx="15"/><rect x="15.0" y="38" width="226.0" height="62" rx="10" fill="#173d50"/><text x="128.0" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">Stem4</text><text x="252.0" y="75" text-anchor="middle" fill="#127f87" font-size="22">→</text><rect x="263.0" y="38" width="226.0" height="62" rx="10" fill="#173d50"/><text x="376.0" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">4 etapas ConvNeXt</text><text x="500.0" y="75" text-anchor="middle" fill="#127f87" font-size="22">→</text><rect x="511.0" y="38" width="226.0" height="62" rx="10" fill="#173d50"/><text x="624.0" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">normalización/promedio</text><text x="748.0" y="75" text-anchor="middle" fill="#127f87" font-size="22">→</text><rect x="759.0" y="38" width="226.0" height="62" rx="10" fill="#173d50"/><text x="872.0" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">3 logits</text></svg></p>
+<p>Etapas [3,3,9,3], canales96/192/384/768; depthwise7×7, LN, GELU. Moderniza la CNN; permite contrastar si atención es necesaria.</p>
+<p><strong>Operación esencial:</strong> <code>y=x+γ·PW₂(GELU(PW₁(LN(DW₇×₇(x))))).</code></p>
+<p><strong>Resultado original:</strong> ImageNet top-1 82.1%, ≈29M y 4.5G FLOPs a224 (tabla 1).</p>
+<p><strong>Costo:</strong> Convolución depthwise reduce costo espacial; parámetros medidos aparte para3clases. E2: <strong>27,822,435 parámetros</strong>.</p>
+<p><strong>Aplicación y cautela:</strong> H1. CNN pura, no una nueva familia híbrida. El régimen desde cero pequeño puede perder ventajas del preentrenamiento.</p>
+<h3 id="49-inceptionv3">4.9. InceptionV3</h3>
+<p><a href="https://doi.org/10.1109/cvpr.2016.308">Artículo original: Rethinking the Inception Architecture for Computer Vision</a>. Familia: <strong>CNN</strong>. Implementación: <code>inception_v3</code>.</p>
+<p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 135" role="img" aria-label="InceptionV3"><rect width="1000" height="135" fill="#eff5f8" rx="15"/><rect x="15.0" y="38" width="119.71428571428571" height="62" rx="10" fill="#173d50"/><text x="74.85714285714286" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">Stem</text><text x="145.71428571428572" y="75" text-anchor="middle" fill="#127f87" font-size="22">→</text><rect x="156.71428571428572" y="38" width="119.71428571428571" height="62" rx="10" fill="#173d50"/><text x="216.57142857142858" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">Inception A</text><text x="287.42857142857144" y="75" text-anchor="middle" fill="#127f87" font-size="22">→</text><rect x="298.42857142857144" y="38" width="119.71428571428571" height="62" rx="10" fill="#173d50"/><text x="358.2857142857143" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">reducción</text><text x="429.14285714285717" y="75" text-anchor="middle" fill="#127f87" font-size="22">→</text><rect x="440.14285714285717" y="38" width="119.71428571428571" height="62" rx="10" fill="#173d50"/><text x="500.0" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">B</text><text x="570.8571428571429" y="75" text-anchor="middle" fill="#127f87" font-size="22">→</text><rect x="581.8571428571429" y="38" width="119.71428571428571" height="62" rx="10" fill="#173d50"/><text x="641.7142857142858" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">reducción</text><text x="712.5714285714286" y="75" text-anchor="middle" fill="#127f87" font-size="22">→</text><rect x="723.5714285714287" y="38" width="119.71428571428571" height="62" rx="10" fill="#173d50"/><text x="783.4285714285716" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">C</text><text x="854.2857142857143" y="75" text-anchor="middle" fill="#127f87" font-size="22">→</text><rect x="865.2857142857143" y="38" width="119.71428571428571" height="62" rx="10" fill="#173d50"/><text x="925.1428571428572" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">promedio/3 logits</text></svg></p>
+<p>Ramas paralelas y convoluciones factorizadas; reducción de escala; cabeza auxiliar desactivada en E2. Agregación multiescala, útil para contrastar textura y contexto.</p>
+<p><strong>Operación esencial:</strong> <code>y=Concat(f₁(x),f₂(x),…,fₖ(x)); una conv n×n se factoriza mediante 1×n y n×1.</code></p>
+<p><strong>Resultado original:</strong> Artículo: error top-1 21.2% y top-5 5.6%, evaluación de un modelo/una vista.</p>
+<p><strong>Costo:</strong> ≈5B multiply-adds originales, entrada299; no equiparar con FLOPs medidos a128. E2: <strong>21,791,715 parámetros</strong>.</p>
+<p><strong>Aplicación y cautela:</strong> H1. Fundacional2015/2016 justificado por comparación histológica directa. A128 se reduce mucho la resolución interna; arquitectura ejecutable no implica óptima.</p>
+<h3 id="410-sequencer2d-s">4.10. Sequencer2D-S</h3>
+<p><a href="https://doi.org/10.52202/068431-2768">Artículo original: Sequencer: Deep LSTM for Image Classification</a>. Familia: <strong>Recurrente</strong>. Implementación: <code>sequencer2d_s</code>.</p>
+<p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 135" role="img" aria-label="Sequencer2D-S"><rect width="1000" height="135" fill="#eff5f8" rx="15"/><rect x="15.0" y="38" width="176.4" height="62" rx="10" fill="#173d50"/><text x="103.2" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">Parches</text><text x="202.4" y="75" text-anchor="middle" fill="#127f87" font-size="22">→</text><rect x="213.4" y="38" width="176.4" height="62" rx="10" fill="#173d50"/><text x="301.6" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">BiLSTM vertical/horizontal</text><text x="400.8" y="75" text-anchor="middle" fill="#127f87" font-size="22">→</text><rect x="411.8" y="38" width="176.4" height="62" rx="10" fill="#173d50"/><text x="500.0" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">fusión+MLP</text><text x="599.2" y="75" text-anchor="middle" fill="#127f87" font-size="22">→</text><rect x="610.2" y="38" width="176.4" height="62" rx="10" fill="#173d50"/><text x="698.4000000000001" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">etapas</text><text x="797.6" y="75" text-anchor="middle" fill="#127f87" font-size="22">→</text><rect x="808.6" y="38" width="176.4" height="62" rx="10" fill="#173d50"/><text x="896.8000000000001" y="74" text-anchor="middle" fill="white" font-size="13" font-family="Arial">3 logits</text></svg></p>
+<p>Bloques de BiLSTM vertical y horizontal con fusión de canales y MLP. Familia recurrente; contexto global sin autoatención.</p>
+<p><strong>Operación esencial:</strong> <code>hᵥ=BiLSTMᵥ(LN(X)); hₕ=BiLSTMₕ(LN(X)); U=X+Linear([hᵥ;hₕ]); Y=U+MLP(LN(U)).</code></p>
+<p><strong>Resultado original:</strong> ImageNet top-1 82.3%, ≈28M, 8.4G FLOPs a224 (tabla 1).</p>
+<p><strong>Costo:</strong> El artículo reporta menor throughput que varias alternativas; costo depende de longitud y paralelización. E2: <strong>27,267,843 parámetros</strong>.</p>
+<p><strong>Aplicación y cautela:</strong> H2, tamaño concordante; variante exacta no explicitada. Prueba CPU a128 correcta. GPU/determinismo de LSTM aún deben comprobarse; no prometer rapidez a partir de parámetros.</p>
+<h2 id="5-sintesis-critica-y-brecha-comprobable">5. Síntesis crítica y brecha comprobable</h2>
+<p>El corpus revisado respalda comparar mecanismos, pero no demuestra que alguno de estos diez sea óptimo para NuCLS. Las amenazas recurrentes son: reportar un único ajuste, no precisar la variante, particionar imágenes sin demostrar agrupación por paciente, comparar preentrenamiento con entrenamiento desde cero y tratar accuracy o F1 no especificado como macro-F1. La disponibilidad de una arquitectura ejecutable tampoco prueba la equidad del ajuste.</p>
+<p>En E2 la brecha verificable se formula de manera acotada: <strong>falta medir, bajo este protocolo de NuCLS, si la ventaja en validación de una arquitectura nueva sobre ResNet50 excede δ=0.02, se sostiene entre semillas y pacientes y compensa su costo.</strong> No se afirma que nadie lo haya estudiado en toda la literatura. La hipótesis se refuta si la mejora es menor, inestable o incompatible con el presupuesto.</p>
+<p>La caída de rendimiento de E1 entre validación y reserva motiva el análisis por paciente/TSS. Variar semillas cuantifica aleatoriedad de entrenamiento; no aumenta el número de pacientes. La unidad de remuestreo para generalización debe respetar pacientes y, cuando el tamaño lo permita, sitio. Analizar solo el intervalo más favorable produciría una interpretación incompleta.</p>
+<p>El experimento desde cero y resolución128 controla dos fuentes de variación, pero favorece ciertos sesgos inductivos. No reproduce recetas de ImageNet con cientos de épocas, fuerte aumento o destilación. La grilla de cuatro configuraciones es una fase exploratoria limitada; no cumple por sí sola todos los rangos de búsqueda de la guía. Si un óptimo cae en el borde, se reportará y se justificará una ampliación en desarrollo, sin consultar la reserva.</p>
+<h2 id="6-mecanismos-transferibles-para-e3">6. Mecanismos transferibles para E3</h2>
+<p>Las fuentes siguientes provienen de otras modalidades. Son propuestas de adaptación, no componentes ya entrenados ni resultados obtenidos.</p>
+<table>
+<thead>
+<tr>
+<th>Mecanismo / fuente</th>
+<th>Origen</th>
+<th>Adaptación propuesta</th>
+<th>Riesgo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://arxiv.org/abs/1706.03762">Autoatención</a></td>
+<td>Traducción automática / lenguaje</td>
+<td>Q,K,V sobre parches 2D con posición espacial</td>
+<td>Atención no garantiza invariancia a rotaciones; costo cuadrático</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2005.08100">Convolución + atención</a></td>
+<td>Reconocimiento de voz, Conformer</td>
+<td>Sustituir conv1D temporal por conv2D espacial y controlar tamaño de ventana</td>
+<td>Orden temporal no equivale a vecindad bidimensional</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2211.14730">Parches y preentrenamiento enmascarado</a></td>
+<td>Series temporales, PatchTST</td>
+<td>Enmascarar parches del train; mantener dependencia RGB</td>
+<td>Independencia de canales temporales no justificable automáticamente para RGB</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/2312.00752">Estado selectivo</a></td>
+<td>Modelado de secuencias/lenguaje, Mamba</td>
+<td>Recorridos 2D multidireccionales, no aplanamiento único sin control</td>
+<td>Sesgo del orden de lectura; implementación adicional y comparación de costos</td>
+</tr>
+</tbody>
+</table>
+<h2 id="7-trazabilidad-de-busqueda-y-conciliacion-prisma-de-e2">7. Trazabilidad de búsqueda y conciliación PRISMA de E2</h2>
+<p>E2 extiende la revisión de E1, como establece la sección 3 de la guía. Se reutilizan las exportaciones del 7 de noviembre de Scopus (1.097), Web of Science (328) e IEEE Xplore (292). Los tres originales se localizaron y sus SHA256 coinciden con la procedencia registrada en E1. Se incluyen copias en <code>base_heredada/</code>; E1 permanece intacto. No se ha repetido ninguna búsqueda para esta conciliación.</p>
+<table>
+<thead>
+<tr>
+<th>Etapa heredada</th>
+<th style="text-align: right;">Registros o informes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Identificados en tres bases</td>
+<td style="text-align: right;">1.717</td>
+</tr>
+<tr>
+<td>Fuera del periodo 2018–2026</td>
+<td style="text-align: right;">69</td>
+</tr>
+<tr>
+<td>Duplicados por DOI retirados</td>
+<td style="text-align: right;">318</td>
+</tr>
+<tr>
+<td>Unidades de cribado</td>
+<td style="text-align: right;">1.330</td>
+</tr>
+<tr>
+<td>Exclusiones explícitas por título/resumen</td>
+<td style="text-align: right;">820</td>
+</tr>
+<tr>
+<td>Derivados a contexto o metodología</td>
+<td style="text-align: right;">330</td>
+</tr>
+<tr>
+<td>Duplicado tardío</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td>Informes con lectura documentada</td>
+<td style="text-align: right;">166</td>
+</tr>
+<tr>
+<td>Informes no recuperados al corte E1</td>
+<td style="text-align: right;">13</td>
+</tr>
+</tbody>
+</table>
+<p>Conciliación: <strong>1.717 = 69 + 318 + 1.330</strong> y <strong>1.330 = 820 + 330 + 1 + 166 + 13</strong>. Las 166 lecturas se clasifican en 21 informes focales, 83 sistemas conjuntos/contextuales, 49 tareas adyacentes, 12 fuentes secundarias y un informe con alerta editorial. Estos son informes y categorías documentales, no un total de estudios independientes incluidos.</p>
+<p>En E2 se recuperó el manuscrito de LIT-0747: <strong>13 = 1 recuperado + 12 no recuperados</strong>. Los 12 se mantienen como no recuperados, con motivo individual; no bloquean por sí solos el cierre documental y no se excluyen por pertinencia sin lectura. El corte histórico de E1 no se recalcula. La recuperación nueva no cambia automáticamente sus 166 lecturas ni sus capas de síntesis.</p>
+<p>La extensión focalizada contiene 12 referencias de dominio; cuatro coinciden por DOI con E1. No se suman las otras ocho como nuevas sin adjudicar títulos y versiones. Las consultas OpenAlex y el descubrimiento web se conservan como canales complementarios, separados de las tres exportaciones institucionales. Sus totales y PDFs no equivalen a estudios cribados.</p>
+<p><strong>Límites que permanecen:</strong> la consulta comunicada de E1 y las exportaciones no acreditan todos los filtros y cadenas exactas ejecutados en cada plataforma. Falta el historial original, no una repetición obligatoria de la búsqueda. Tampoco existe una cifra global adjudicada de estudios únicos incluidos: se conserva NR. La entrega describe una revisión crítica dirigida con flujo adaptado, sin presentarla como una revisión sistemática exhaustiva plenamente cerrada. No hay segundo revisor independiente ni kappa.</p>
+<p>Las consultas propuestas de 2019–2026 se archivan como propuestas no ejecutadas; no sustituyen retrospectivamente el periodo 2018–2026 de la base heredada. La consulta y descarga de 21 PDFs y de textos HTML documentada en los manifiestos se refiere a extracción focalizada, no lectura integral de todos los suplementos.</p>
+<h2 id="8-puerta-de-entrada-al-entrenamiento">8. Puerta de entrada al entrenamiento</h2>
+<ol>
+<li>Conservar el cierre y las 66 corridas base; exportar el paquete completo de evidencia de las rutas antiguas y nuevas.</li>
+<li>Terminar el perfil de los candidatos provisionales sin lanzar el paso5. Conservar las mediciones útiles de los siete candidatos que permanecen.</li>
+<li>Generar una revisión separada del cuaderno con la selección bibliográfica y perfilar ConvNeXt, Inception y Sequencer, incluyendo GPU y determinismo. No cambiar el código embebido mientras se ejecuta.</li>
+<li>Fijar manifiesto, versión, particiones, presupuesto y política de parada. Cualquier exclusión por recursos se documenta antes de comparar métricas.</li>
+<li>Realizar búsqueda y piloto. Cinco semillas no bastan para todas las pruebas: Wilcoxon bilateral exacto con n=5 tiene p mínimo0.0625. Estimar R con potencia, multiplicidad y diferencias pareadas; 22 bases no justifican automáticamente R=22 para diez contrastes nuevos.</li>
+<li>Mantener las tres bases, clasificador trivial y no profundo en la comparación; reportar costo y evidencia ejecutada. El dashboard y libro de E1 no se reemplazan.</li>
+</ol>
+<h2 id="archivos-de-respaldo">Archivos de respaldo</h2>
+<ul>
+<li><code>Seleccion_20_candidatos.csv</code>, <code>Top10_seleccionado.csv</code>, <code>seleccion.json</code>: decisiones, puntajes, sensibilidad e identificadores.</li>
+<li><code>Extraccion_estudios_histopatologia.csv</code>: tarea, partición, métricas, repeticiones, ajuste y riesgo.</li>
+<li><code>Registro_busquedas.csv</code>, <code>metadatos/</code>, <code>Consultas_bases_pendientes.txt</code>: trazabilidad y trabajo pendiente.</li>
+<li><code>Transferencia_mecanismos_E3.csv</code>: hipótesis de transferencia.</li>
+<li><code>parametros.json</code>, <code>compatibilidad_nuevos.json</code>: verificaciones locales, no benchmark GPU.</li>
+<li><code>recuperacion*.json</code>: URL, páginas y hash de PDFs; los textos completos no se redistribuyen en este paquete.</li>
+</ul>
+<p><strong>Estado de esta versión:</strong> capítulo y selección bibliográfica preparados; extensión documental conciliada con limitaciones; validación operativa aún abierta. No hay resultados inventados de modelos adicionales.</p>
+<h2 id="9-implementacion-preparada-y-decisiones-pendientes-11-de-noviembre">9. Implementación preparada y decisiones pendientes (11 de noviembre)</h2>
+<p>El complemento <code>NuCLS_E2_Tres_Nuevos_V1.ipynb</code> incluye solo ConvNeXt-Tiny, InceptionV3 y Sequencer2D-S. Su código y salida son independientes de la búsqueda provisional. Mantiene el mismo motor de entrenamiento, sin cambiar los datos del Entregable1. La configuración seleccionada para cada candidato se decidirá únicamente con train/validación.</p>
+<p><strong>Comparabilidad:</strong> conserva batch32, AdamW, float32, clipping5, máximo25 épocas, mínimo5, paciencia5, la grilla lr∈{0.0001,0.001}×weight_decay∈{0,0.0001} y semilla7001. Esto iguala el número de intentos, no garantiza igual tiempo de cómputo ni ajuste óptimo para cada familia. La resolución128 y entrenamiento desde cero son restricciones del protocolo, no replicaciones literales de las recetas de los artículos.</p>
+<p><strong>Cobertura y conservación:</strong> los siete modelos comunes siguen en la carpeta de la búsqueda actual; sus corridas completas no se vuelven a ejecutar en este complemento. Los otros tres candidatos provisionales se conservan como exploratorios. Para integrar resultados se exige coincidencia de datos, entorno, preprocesamiento, semillas e hiperparámetros; una discrepancia no se corrige copiando métricas como si provinieran del mismo protocolo.</p>
+<p><strong>Pruebas ejecutadas localmente:</strong> los tres modelos producen logits de forma2×3 con imágenes2×3×128×128; retropropagación y gradientes finitos. Se verificaron seis pruebas de protección y continuidad. El motor se conservó idéntico al bloque anterior. El entorno local de prueba no es Colab: no acredita latencia, memoria o determinismo CUDA. El perfil real debe ejecutarse en la GPU antes de iniciar las12 corridas de búsqueda. El piloto posterior de15 corridas es opcional y exige autorización separada.</p>
+<p><strong>Trazabilidad de hipótesis:</strong> <code>Trazabilidad_tres_modelos.csv</code> conecta artículos, variantes, adaptaciones y tres ablaciones propuestas. Una ablación de resolución cambia el costo y el contenido visible; una de kernel cambia FLOPs; una de ejes recurrentes cambia la capacidad. Deben declarar estas diferencias y no presentarse como comparaciones perfectamente aisladas. Las ablaciones no se han ejecutado ni se incluyen en el presupuesto de búsqueda.</p>
+<p><strong>Presupuesto:</strong> el perfil mide pasos de entrenamiento por modelo. La estimación incluye12 búsquedas y15 pilotos y excluye validación, escritura, evaluación adicional y el benchmark final. No se promete terminar el programa completo en ocho horas. Si el plazo obliga a recortar, debe registrarse una enmienda y reportar las tareas incompletas, sin convertir el piloto en confirmatorio.</p>
+<p>El archivo <code>Referencias_Top10.bib</code> permite incorporar las diez fuentes arquitectónicas al libro. Se reutilizan las tres exportaciones institucionales de E1; permanecen limitaciones de historial e identidad global de estudios.</p>
+<h2 id="10-ampliacion-bibliografica-y-conciliacion-del-11-de-noviembre">10. Ampliación bibliográfica y conciliación del 11 de noviembre</h2>
+<p>La síntesis de dominio contiene ahora doce referencias: las ocho fichas anteriores y cuatro extracciones complementarias. Son lecturas focalizadas de métodos y resultados, no una declaración de revisión integral ni el total de estudios incluidos en el PRISMA global.</p>
+<p><strong>Recuperación documentada:</strong> de los trece informes que permanecían no recuperados al corte de E1, se recuperó el manuscrito de autor de LIT-0747; quedan doce sin texto recuperado en esta ampliación. El registro histórico de E1 permanece intacto. Recuperar una versión de autor no certifica identidad de todos sus resultados con la versión editorial.</p>
+<h3 id="h9-tissue-aware-nuclei-detection-and-classification-model-for-histopathology-images">H9: Tissue Aware Nuclei Detection and Classification Model for Histopathology Images</h3>
+<p>Preprint v1, 2025. ConvNeXt y contexto tisular con Virchow-2; PUMA; detección y clasificación por puntos. <strong>Límite de interpretación:</strong> Preentrenamiento y tarea conjunta; no comparación directa con recortes NuCLS desde cero. <a href="https://arxiv.org/html/2511.13615v1">Texto consultado</a>.</p>
+<h3 id="h10-muse-multi-scale-dense-self-distillation-for-nucleus-detection-and-classification">H10: MUSE: Multi-Scale Dense Self-Distillation for Nucleus Detection and Classification</h3>
+<p>Preprint v2, 2025. Autodestilación local por coordenadas nucleares y contexto multiescala; ajuste posterior para detección y clasificación. <strong>Límite de interpretación:</strong> Utiliza datos de preentrenamiento adicionales; no incorporar sus métricas como resultados del Top 10. <a href="https://arxiv.org/html/2511.05170v2">Texto consultado</a>.</p>
+<h3 id="h11-tme-contextnet-class-conditioned-spatial-supervision-and-grouped-decoding-for-joint-nuclei-instance-segmentation-and-classification">H11: TME-ContextNet: Class-Conditioned Spatial Supervision and Grouped Decoding for Joint Nuclei Instance Segmentation and Classification</h3>
+<p>Preprint v2, 2026-11-03. Supervisión espacial condicionada por clase y decodificación agrupada para segmentación y clasificación nuclear. <strong>Límite de interpretación:</strong> Tarea conjunta y supervisión adicional; las métricas de segmentación no equivalen al macro-F1 del clasificador. <a href="https://arxiv.org/html/2611.02671v2">Texto consultado</a>.</p>
+<h3 id="h12-lit-0747-a-multi-scale-conditional-deep-model-for-tumor-cell-ratio-counting">H12 / LIT-0747: A Multi-Scale Conditional Deep Model for Tumor Cell Ratio Counting</h3>
+<p>Manuscrito de autor v1, 2021. 100 casos pulmonares, 131 ROI; partición 70/10/20 con ROI de una lámina en el mismo subconjunto. Combina detección/clasificación y segmentación tumoral a distintas escalas. <strong>Límite de interpretación:</strong> Umbrales ajustados con train y validación. F1 definido a partir de precisión y recall medios, distinto del promedio de F1 por clase; no comparar directamente con nuestro macro-F1. <a href="https://arxiv.org/pdf/2101.11731v1">Texto consultado</a>.</p>
+<p><strong>Corrección de versiones de H7:</strong> ViT-DeiT cuenta con publicación en ICAISC 2023, DOI <a href="https://doi.org/10.1109/ICAISC56366.2023.10085467">10.1109/ICAISC56366.2023.10085467</a>, confirmada en la <a href="https://tinnguyen-lab.com/home/publication/2023/conference/vit-deit/">página del laboratorio de los autores</a>. El preprint de 2022 es otra versión del mismo estudio: no se cuentan dos estudios. Esta corrección no identifica la variante DeiT como Tiny ni elimina las dudas sobre separación por paciente.</p>
+<p><strong>Síntesis crítica:</strong> estos trabajos refuerzan el interés por contexto multiescala, supervisión espacial y preentrenamiento especializado. No permiten anticipar qué arquitectura vencerá bajo nuestro protocolo común de recortes a128 y entrenamiento desde cero. Se incorporan como contexto y posibles líneas posteriores, sin cambiar los candidatos ni la búsqueda activa.</p>
+<h3 id="estado-del-flujo-prisma-e2">Estado del flujo PRISMA E2</h3>
+<table>
+<thead>
+<tr>
+<th>Etapa verificable</th>
+<th>Cantidad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Informes no recuperados al corte histórico E1</td>
+<td>13</td>
+</tr>
+<tr>
+<td>Manuscritos de esos informes recuperados en esta ampliación</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Informes heredados aún no recuperados</td>
+<td>12</td>
+</tr>
+<tr>
+<td>Referencias de dominio con extracción focalizada en la síntesis E2</td>
+<td>12</td>
+</tr>
+<tr>
+<td>Nuevas exportaciones en esta conciliación (se reutilizan las tres heredadas)</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Estudios incluidos en el flujo global E2</td>
+<td>Pendiente</td>
+</tr>
+</tbody>
+</table>
+<p>Las tres exportaciones heredadas se verificaron; no se requieren búsquedas repetidas. El total global de estudios únicos continúa no determinado. Se conserva el flujo adaptado de E1 y se documenta por separado la extensión focalizada de E2.</p>
+<h2 id="11-conciliacion-documental-del-12-de-noviembre">11. Conciliación documental del 12 de noviembre</h2>
+<p><img alt="Flujo parcial de la revisión E2" src="diagramas/PRISMA_E2_parcial.svg" /></p>
+<p>Se cruzaron los DOI de las <strong>12 referencias de dominio</strong> con los 1.330 registros unificados de E1: <strong>4 coincidencias exactas</strong>. Las demás referencias requieren cotejo de títulos y versiones antes de considerarse nuevas; un DOI ausente no prueba novedad. El archivo <code>Cruce_dominio_E1_E2_20261112.csv</code> conserva ambas identidades. Este cruce no altera elegibilidad ni el corte de E1.</p>
+<p>La búsqueda complementaria volvió sobre cuatro informes pendientes. Se conservaron seis cadenas distintas en <code>Registro_recuperacion_20261112.csv</code>; no son seis estudios ni exportaciones de bases. No se verificó una nueva recuperación de texto completo: se mantiene la conciliación <strong>13 = 1 recuperado + 12 no recuperados</strong>.</p>
+<p>Para LIT-0791, la <a href="https://www.behravans.com/cell-type-count/">página del laboratorio</a> describe un encoder InceptionResNetV2 y decodificadores de densidad, conteo y segmentación. La <a href="https://uef.cris.fi/en/publications/b73a92bf-acb7-4fda-a1c3-08df43df018d">ficha institucional UEF</a> identifica las actas de 2023 y el DOI. Estas fuentes aclaran que su objetivo principal es contar células; no permiten extraer resultados ni sustituir la lectura del artículo. Por tanto, permanece como no recuperado.</p>
+<h3 id="como-interpretar-conjuntamente-la-evidencia">Cómo interpretar conjuntamente la evidencia</h3>
+<p>La síntesis distingue tres niveles: comparaciones de familias sobre parches histológicos; análisis nuclear con contexto o segmentación conjunta; y predicción sobre láminas con agregación de regiones. Los tres informan decisiones de diseño, pero sus métricas no forman una clasificación común. En particular, accuracy de parches, AUROC de biomarcadores y calidad de segmentación no sustituyen el macro-F1 nuclear de E2.</p>
+<p>La selección de diez modelos evalúa mecanismos representativos bajo restricciones explícitas. No prueba que sean los diez más frecuentes ni que los resultados de variantes grandes se transfieran a variantes pequeñas. El reporte separará variante, resolución, preentrenamiento, unidad de partición, número de repeticiones y costo. La falta de una descripción en el artículo se registra como no reportada, no como evidencia de que el control no se realizó.</p>
+<p>La comparación final debe mostrar tanto variación entre semillas como incertidumbre por paciente. La reserva histórica ya fue observada en E1: no puede describirse como una prueba inédita. Las decisiones de selección y ajuste siguen limitadas a desarrollo. Ninguna conclusión bibliográfica de esta actualización depende del rendimiento que esté produciendo Colab.</p>
+<h3 id="cierre-documental-y-limites-de-e2">Cierre documental y límites de E2</h3>
+<p>La revisión de los originales confirmó que las exportaciones institucionales ya existen y se heredan de E1. Se corrige la indicación anterior de que era obligatorio repetirlas. La sección 7 muestra la conciliación y las copias verificadas. Los 12 no recuperados son una limitación declarada. Permanecen pendientes el historial exacto por plataforma y la adjudicación de estudios únicos; no se inventa una cifra global de incluidos.</p></main></html>

@@ -1,0 +1,18 @@
+[
+  {
+    "archivo": "export_ffbfc8d4-7498-40b8-a656-5075c99e2758_2026-11-07T110435.838331344.csv",
+    "sha256": "f7b0c651b337c5ebd62324126030a85d362453d99b23b11d74ddd5aaed045449",
+    "bytes": 15520660
+  },
+  {
+    "archivo": "savedrecs.txt",
+    "sha256": "05dee1305c67b6739eeff2108399b44259effa7837730c9ff14ab1f2f6d2754e",
+    "bytes": 2818286
+  },
+  {
+    "archivo": "export2026.11.07-08.45.55.csv",
+    "sha256": "f9e06e57217195d920ccbd56c088b2b726c67c9c91d74ed0faef2671896dbfb8",
+    "bytes": 780564
+  }
+]
+
