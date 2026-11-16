@@ -1,5 +1,8 @@
 # Validación de los modelos base — 22 semillas
 
+> Actualización online del 16 de noviembre de 2026: consultar el [cierre de reserva y estadística](14_cierre_reserva.md). Los análisis de validación que siguen conservan su alcance original.
+
+
 Análisis exploratorio posterior al cierre. Semillas pareadas 6101–6122; misma partición. La validación seleccionó época y antes hiperparámetros: no es prueba independiente. Los intervalos entre semillas no representan incertidumbre entre pacientes. Reserva no evaluada en esta continuación.
 
 |Modelo|Media|DE|IC95 entre semillas|

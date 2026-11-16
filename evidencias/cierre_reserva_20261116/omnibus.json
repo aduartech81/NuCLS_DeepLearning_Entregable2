@@ -1,0 +1,23 @@
+{
+  "Friedman": {
+    "estadistico": 48.68571428571431,
+    "p": 2.3736216658532503e-06
+  },
+  "CD95": 8.159475334017964,
+  "rangos": {
+    "softmaxcnn_bn": 10.8,
+    "densenet121": 4.8,
+    "resnet50": 3.4,
+    "resnet18": 10.0,
+    "mobilenetv3_small_100": 4.4,
+    "efficientnet_b0": 3.4,
+    "deit_tiny_patch16_224": 6.8,
+    "swin_tiny_patch4_window7_224": 11.0,
+    "mobilevit_xxs": 6.0,
+    "mixer_s16_224": 7.0,
+    "convnext_tiny": 10.0,
+    "inception_v3": 1.2,
+    "sequencer2d_s": 12.2
+  },
+  "nota": "Semillas como bloques condicionadas a partición; no equivalencia ni inferencia de población. Nemenyi se interpreta tras omnibus."
+}

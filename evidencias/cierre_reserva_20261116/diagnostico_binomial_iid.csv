@@ -1,0 +1,14 @@
+modelo,semilla,p0_train,aciertos,n,p_binomial_iid,nota,p_Holm13_iid
+softmaxcnn_bn,6101,0.4798816975032671,499,969,0.01566501726143565,Diagnóstico iid condicionado a prevalencia train; pacientes no independientes por recorte,0.0626600690457426
+densenet121,6101,0.4798816975032671,827,969,9.20044517234256e-131,Diagnóstico iid condicionado a prevalencia train; pacientes no independientes por recorte,1.0120489689576815e-129
+resnet50,6101,0.4798816975032671,835,969,2.824960507190955e-137,Diagnóstico iid condicionado a prevalencia train; pacientes no independientes por recorte,3.389952608629146e-136
+resnet18,6101,0.4798816975032671,753,969,2.967974767546493e-80,Diagnóstico iid condicionado a prevalencia train; pacientes no independientes por recorte,2.6711772907918437e-79
+mobilenetv3_small_100,6101,0.4798816975032671,810,969,1.1403983239046517e-117,Diagnóstico iid condicionado a prevalencia train; pacientes no independientes por recorte,1.1403983239046518e-116
+efficientnet_b0,6101,0.4798816975032671,739,969,2.036298433929509e-72,Diagnóstico iid condicionado a prevalencia train; pacientes no independientes por recorte,1.6290387471436072e-71
+deit_tiny_patch16_224,6101,0.4798816975032671,664,969,3.0163899628380543e-38,Diagnóstico iid condicionado a prevalencia train; pacientes no independientes por recorte,2.111472973986638e-37
+swin_tiny_patch4_window7_224,6101,0.4798816975032671,489,969,0.06547700635913811,Diagnóstico iid condicionado a prevalencia train; pacientes no independientes por recorte,0.19643101907741434
+mobilevit_xxs,6101,0.4798816975032671,515,969,0.0007334976482134912,Diagnóstico iid condicionado a prevalencia train; pacientes no independientes por recorte,0.003667488241067456
+mixer_s16_224,6101,0.4798816975032671,579,969,1.3526561906842261e-13,Diagnóstico iid condicionado a prevalencia train; pacientes no independientes por recorte,8.115937144105357e-13
+convnext_tiny,6101,0.4798816975032671,453,969,0.7892826154295247,Diagnóstico iid condicionado a prevalencia train; pacientes no independientes por recorte,1.0
+inception_v3,6101,0.4798816975032671,868,969,7.91464880002756e-167,Diagnóstico iid condicionado a prevalencia train; pacientes no independientes por recorte,1.0289043440035829e-165
+sequencer2d_s,6101,0.4798816975032671,377,969,0.999999994687233,Diagnóstico iid condicionado a prevalencia train; pacientes no independientes por recorte,1.0

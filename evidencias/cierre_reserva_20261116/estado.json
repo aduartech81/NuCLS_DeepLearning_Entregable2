@@ -1,0 +1,9 @@
+{
+  "estado": "CIERRE_RESERVA_Y_ESTADISTICA_COMPLETADO",
+  "fase": "final",
+  "corridas": 65,
+  "baselines": {
+    "mayoritaria": "EVALUADA_REGLA_TRAIN",
+    "logistica": "EVALUADA_MODELO_GUARDADO_SIN_FIT"
+  }
+}

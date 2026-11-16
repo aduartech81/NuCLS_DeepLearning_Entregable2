@@ -1,5 +1,8 @@
 # Discusión, paper guía y gap
 
+> Actualización online del 16 de noviembre de 2026: consultar el [cierre de reserva y estadística](14_cierre_reserva.md). Los análisis de validación que siguen conservan su alcance original.
+
+
 La diferencia de validación ResNet50–DenseNet121 con 22 semillas no resulta concluyente en las pruebas pareadas corregidas. Esto no demuestra equivalencia. La superioridad respecto a la CNN-BN aparece en desarrollo, condicionado al proceso de selección y la partición. El análisis de las 22 semillas base usa validación. El cierre previsto evaluará la reserva heredada tras congelar el lote y declarará su exposición previa en E1.
 
 ## Propuesta de paper guía

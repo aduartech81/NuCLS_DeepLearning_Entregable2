@@ -14,4 +14,7 @@ Esta edición integra **diez modelos adicionales con cinco semillas por modelo**
 4. Imágenes, anotaciones, aciertos y discrepancias.
 5. Discusión, alcance científico y reproducibilidad.
 
-La inferencia se interpreta según su unidad de análisis. La variabilidad entre semillas no equivale a incertidumbre entre pacientes. Los resultados aquí tabulados son de validación; no se presentan como evaluación independiente en reserva.
+La inferencia se interpreta según su unidad de análisis. La variabilidad entre semillas no equivale a incertidumbre entre pacientes. Los resultados de desarrollo se distinguen del cierre de la reserva histórica, ya consultada en E1.
+
+
+**Actualización online · 16 de noviembre de 2026:** [cierre de reserva y estadística](14_cierre_reserva.md), 13 modelos y 65 evaluaciones. Complementa la versión entregada sin sustituir su archivo.

@@ -1,0 +1,18 @@
+{
+  "pacientes_reserva": 6,
+  "prueba_expuesta_E1": true,
+  "Wilcoxon_cinco_pares": "p mínimo bilateral exacto 0,0625",
+  "inferencia": "Semillas condicionadas a partición; diagnósticos iid no sustituyen contraste agrupado",
+  "no_incluido": [
+    "Réplicas nuevas de entrenamiento",
+    "Ablaciones",
+    "Réplica PCam",
+    "Techo multi-rater",
+    "Cobertura conforme independiente",
+    "Nueva ejecución de robustez/Grad-CAM"
+  ],
+  "baselines": {
+    "mayoritaria": "EVALUADA_REGLA_TRAIN",
+    "logistica": "EVALUADA_MODELO_GUARDADO_SIN_FIT"
+  }
+}

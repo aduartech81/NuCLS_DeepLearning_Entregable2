@@ -19,3 +19,8 @@ ResNet50 conserva su papel de baseline. Los intervalos entre semillas están con
 ## Cuaderno ejecutado
 
 Se incluye `colab/ejecutados/NuCLS_E2_Cola_Unica_Ejecutado.ipynb`, con diez celdas de código con salidas y sin errores registrados. Su salida final acredita `COLA_EXPLORATORIA_COMPLETADA`; no acredita evaluación de reserva.
+
+
+## Actualización online · 16 de noviembre de 2026
+
+Se incorpora el cierre de reserva (13 modelos, cinco semillas comunes, 65 evaluaciones), con estadística y evidencia descargable. La publicación complementa la versión entregada el 15 de noviembre; su ZIP permanece inalterado. Véase `book/14_cierre_reserva.md`.

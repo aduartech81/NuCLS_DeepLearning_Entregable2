@@ -1,0 +1,14 @@
+modelo,brecha_media,limite_superior95_unilateral,delta_g,p_inferior_margen,nota,p_Holm13
+softmaxcnn_bn,0.050018891001588274,0.07511602235192757,0.02,0.9683446042722739,Margen operativo definido para cierre; selección en validación. Ausencia de significación no prueba ausencia de sobreajuste.,1.0
+densenet121,0.04517050221395782,0.06549386815263769,0.02,0.9712186532211566,Margen operativo definido para cierre; selección en validación. Ausencia de significación no prueba ausencia de sobreajuste.,1.0
+resnet50,0.05406148199234608,0.07066503670852768,0.02,0.994031813913902,Margen operativo definido para cierre; selección en validación. Ausencia de significación no prueba ausencia de sobreajuste.,1.0
+resnet18,0.05764702371015307,0.08146979661361162,0.02,0.985964471696838,Margen operativo definido para cierre; selección en validación. Ausencia de significación no prueba ausencia de sobreajuste.,1.0
+mobilenetv3_small_100,0.04886381413604317,0.05901863924465312,0.02,0.9981277500827931,Margen operativo definido para cierre; selección en validación. Ausencia de significación no prueba ausencia de sobreajuste.,1.0
+efficientnet_b0,0.040786510135020305,0.056325156794353785,0.02,0.9768450867128303,Margen operativo definido para cierre; selección en validación. Ausencia de significación no prueba ausencia de sobreajuste.,1.0
+deit_tiny_patch16_224,0.02581229207987439,0.06514426835845682,0.02,0.6157571397224154,Margen operativo definido para cierre; selección en validación. Ausencia de significación no prueba ausencia de sobreajuste.,1.0
+swin_tiny_patch4_window7_224,0.05123350867766809,0.07236512068170212,0.02,0.9827590588342001,Margen operativo definido para cierre; selección en validación. Ausencia de significación no prueba ausencia de sobreajuste.,1.0
+mobilevit_xxs,0.054333573875277666,0.07294140705489328,0.02,0.9914736433365681,Margen operativo definido para cierre; selección en validación. Ausencia de significación no prueba ausencia de sobreajuste.,1.0
+mixer_s16_224,0.0360012454571891,0.05146416052619629,0.02,0.953985755409351,Margen operativo definido para cierre; selección en validación. Ausencia de significación no prueba ausencia de sobreajuste.,1.0
+convnext_tiny,0.0534646877695875,0.0728012845117876,0.02,0.9894856518227194,Margen operativo definido para cierre; selección en validación. Ausencia de significación no prueba ausencia de sobreajuste.,1.0
+inception_v3,0.029599328153401605,0.04355628246680499,0.02,0.891767058750655,Margen operativo definido para cierre; selección en validación. Ausencia de significación no prueba ausencia de sobreajuste.,1.0
+sequencer2d_s,0.050275349151043855,0.0702458155258668,0.02,0.9840409001067126,Margen operativo definido para cierre; selección en validación. Ausencia de significación no prueba ausencia de sobreajuste.,1.0

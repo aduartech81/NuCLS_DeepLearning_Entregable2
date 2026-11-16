@@ -1,5 +1,8 @@
 # Reproducibilidad
 
+> Actualización online del 16 de noviembre de 2026: consultar el [cierre de reserva y estadística](14_cierre_reserva.md). Los análisis de validación que siguen conservan su alcance original.
+
+
 El paquete conserva resultados, historias, predicciones y huellas SHA256. Los archivos originales y las métricas recalculadas permiten contrastar los valores del informe. Los checkpoints no se redistribuyen en este paquete.
 
 ## Organización

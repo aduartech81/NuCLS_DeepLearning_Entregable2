@@ -1,0 +1,20 @@
+{
+  "estadistico": 41.11648351648353,
+  "p": 4.68532944471263e-05,
+  "rangos": {
+    "softmaxcnn_bn": 10.4,
+    "densenet121": 7.6,
+    "resnet50": 5.8,
+    "resnet18": 3.4,
+    "mobilenetv3_small_100": 6.8,
+    "efficientnet_b0": 2.0,
+    "deit_tiny_patch16_224": 10.8,
+    "swin_tiny_patch4_window7_224": 8.2,
+    "mobilevit_xxs": 6.8,
+    "mixer_s16_224": 6.4,
+    "convnext_tiny": 9.6,
+    "inception_v3": 1.6,
+    "sequencer2d_s": 11.6
+  },
+  "nota": "Exploratorio: checkpoint y configuración seleccionados con validación"
+}
