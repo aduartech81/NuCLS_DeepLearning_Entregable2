@@ -90,7 +90,7 @@ El juicio de E y los pesos son explícitos pero subjetivos; no son una escala va
 
 ## 4. Fichas técnicas de los diez modelos
 
-Las cifras originales se incluyen con su tarea y régimen. **No se comparan numéricamente con macro-F1 NuCLS.** Los parámetros E2 se contaron sobre timm 1.0.22, entrada128 y cabeza3, sin preentrenamiento. Los FLOPs/MAdds citados corresponden al artículo, no al perfil E2. Tiempo, memoria y latencia de GPU siguen pendientes del perfil real. Los diagramas son esquemas propios; no sustituyen la definición completa del código.
+Las cifras originales se incluyen con su tarea y régimen. **No se comparan numéricamente con macro-F1 NuCLS.** Los parámetros E2 se contaron sobre timm 1.0.22, entrada128 y cabeza3, sin preentrenamiento. Los FLOPs/MAdds citados corresponden al artículo, no al perfil E2. Tiempo, memoria y latencia de GPU requieren medición empírica específica. Los diagramas son esquemas propios; no sustituyen la definición completa del código.
 
 ### 4.1. ResNet18
 
@@ -349,7 +349,7 @@ Las tres exportaciones heredadas se verificaron; no se requieren búsquedas repe
 
 Se cruzaron los DOI de las **12 referencias de dominio** con los 1.330 registros unificados de E1: **4 coincidencias exactas**. Las demás referencias requieren cotejo de títulos y versiones antes de considerarse nuevas; un DOI ausente no prueba novedad. El archivo `Cruce_dominio_E1_E2_20261112.csv` conserva ambas identidades. Este cruce no altera elegibilidad ni el corte de E1.
 
-La búsqueda complementaria volvió sobre cuatro informes pendientes. Se conservaron seis cadenas distintas en `Registro_recuperacion_20261112.csv`; no son seis estudios ni exportaciones de bases. No se verificó una nueva recuperación de texto completo: se mantiene la conciliación **13 = 1 recuperado + 12 no recuperados**.
+La búsqueda complementaria volvió sobre cuatro informes no recuperados. Se conservaron seis cadenas distintas en `Registro_recuperacion_20261112.csv`; no son seis estudios ni exportaciones de bases. No se verificó una nueva recuperación de texto completo: se mantiene la conciliación **13 = 1 recuperado + 12 no recuperados**.
 
 Para LIT-0791, la [página del laboratorio](https://www.behravans.com/cell-type-count/) describe un encoder InceptionResNetV2 y decodificadores de densidad, conteo y segmentación. La [ficha institucional UEF](https://uef.cris.fi/en/publications/b73a92bf-acb7-4fda-a1c3-08df43df018d) identifica las actas de 2023 y el DOI. Estas fuentes aclaran que su objetivo principal es contar células; no permiten extraer resultados ni sustituir la lectura del artículo. Por tanto, permanece como no recuperado.
 

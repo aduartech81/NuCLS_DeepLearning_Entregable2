@@ -70,7 +70,7 @@ EfficientNet-B0 obtiene el mayor valor seleccionado en esta búsqueda (0,8245), 
 
 Las configuraciones0 y1 (lr0,0001; weight decay0 frente a0,0001) tienen exactamente el mismo macro-F1 en los diez candidatos. En ResNet18 y ConvNeXt se compararon las historias y coinciden las métricas por época, con tiempos distintos. Los archivos registran weight decay diferente. La verificación local de AdamW explica esta coincidencia mediante el redondeo float32 del factor de decaimiento, descrito a continuación. No se afirma que sean trayectorias independientes ni se cambia la receta ya ejecutada.
 
-Las evidencias y sus enlaces están en `evidencias/drive_20261114/`. Se preservan los archivos originales en Drive y se distingue este análisis de búsqueda de la estadística base y del piloto pendiente.
+Las evidencias y sus enlaces están en `evidencias/drive_20261114/`. Se preservan los archivos originales en Drive y se distingue este análisis de búsqueda de la estadística base y del piloto multisemilla.
 
 ## Configuraciones efectivas de AdamW
 
@@ -78,6 +78,6 @@ La grilla ejecutó cuatro intentos nominales. Con lr=10⁻⁴ y weight decay=10�
 
 La duplicación afecta por igual a la grilla común y no justifica repetir ahora la búsqueda ni ampliar el espacio tras ver resultados. Se conserva el costo de los cuatro intentos; no se cuentan los empates como réplicas independientes. La verificación local CPU y su versión están en `evidencias/revision_docente_20261114/adamw_verificado.json`; no se atribuye a una prueba nueva en la GPU activa.
 
-## Reserva de E2
+## Alcance de la evaluación
 
-**Pendiente de recepción.** La tabla del lote común de 13 modelos × 5 semillas se integrará desde el cierre verificado, sin reemplazar este análisis de desarrollo ni mezclar máximos de búsqueda con medias. Véase el [Alcance y reproducibilidad](07_reproducibilidad.md).
+Las tablas de esta edición corresponden a desarrollo y validación. No contienen resultados de reserva de E2. La reserva histórica se distingue del conjunto empleado para seleccionar época e hiperparámetros; su exposición previa en E1 limita cualquier interpretación como prueba inédita. Véase [Alcance y reproducibilidad](07_reproducibilidad.md).
