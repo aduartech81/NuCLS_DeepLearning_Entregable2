@@ -67,3 +67,6 @@ El cierre conserva por semilla AUC, AP, MCC, Brier, ECE fijo y adaptativo, pendi
 - [Verificación de publicación y hashes](../evidencias/cierre_reserva_20261116/verificacion_publicacion.json)
 
 Las 65 matrices de confusión reproducen el macro-F1 registrado; medias, desviaciones, Friedman, t pareado y Holm fueron recalculados para esta publicación. Los demás resultados se incorporan de los archivos del cierre. Esta actualización no incorpora resultados de los experimentos posteriores que seguían en ejecución.
+
+
+Consultar también [calibración, generalización y costo](15_calibracion_costo.md), con gráficos y tablas del mismo cierre.
