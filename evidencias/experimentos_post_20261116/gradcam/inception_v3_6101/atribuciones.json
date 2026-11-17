@@ -1,0 +1,962 @@
+[
+  {
+    "archivo": "validation/tumor_nonMitotic/TCGA-AQ-A04J-DX1_id-5ea40996ddda5f8398980f76_left-65125_top-14600_bottom-14922_right-65427__1.png",
+    "paciente": "TCGA-AQ-A04J",
+    "objetivo": 0,
+    "capa": "Mixed_7c.branch_pool.conv",
+    "rango_original": 0.0,
+    "mapa_constante": true,
+    "borrado": [
+      {
+        "fraccion": 0,
+        "prob_borrado_cam": 0.9961708188056946,
+        "prob_borrado_aleatorio": 0.9961708188056946
+      },
+      {
+        "fraccion": 0.1,
+        "prob_borrado_cam": 0.9954491257667542,
+        "prob_borrado_aleatorio": 0.9931803941726685
+      },
+      {
+        "fraccion": 0.25,
+        "prob_borrado_cam": 0.9860928654670715,
+        "prob_borrado_aleatorio": 0.9924571514129639
+      },
+      {
+        "fraccion": 0.5,
+        "prob_borrado_cam": 0.8122896552085876,
+        "prob_borrado_aleatorio": 0.9876547455787659
+      },
+      {
+        "fraccion": 0.75,
+        "prob_borrado_cam": 0.7331722378730774,
+        "prob_borrado_aleatorio": 0.9926234483718872
+      },
+      {
+        "fraccion": 1.0,
+        "prob_borrado_cam": 0.8174076676368713,
+        "prob_borrado_aleatorio": 0.8174076676368713
+      }
+    ]
+  },
+  {
+    "archivo": "validation/tumor_nonMitotic/TCGA-AQ-A54N-DX1_id-5ea40a47ddda5f839898d34a_left-32674_top-27548_bottom-27865_right-32968__0.png",
+    "paciente": "TCGA-AQ-A54N",
+    "objetivo": 0,
+    "capa": "Mixed_7c.branch_pool.conv",
+    "rango_original": 0.0,
+    "mapa_constante": true,
+    "borrado": [
+      {
+        "fraccion": 0,
+        "prob_borrado_cam": 0.9877989292144775,
+        "prob_borrado_aleatorio": 0.9877989292144775
+      },
+      {
+        "fraccion": 0.1,
+        "prob_borrado_cam": 0.9857648015022278,
+        "prob_borrado_aleatorio": 0.9760147929191589
+      },
+      {
+        "fraccion": 0.25,
+        "prob_borrado_cam": 0.9585756659507751,
+        "prob_borrado_aleatorio": 0.9645191431045532
+      },
+      {
+        "fraccion": 0.5,
+        "prob_borrado_cam": 0.8828169703483582,
+        "prob_borrado_aleatorio": 0.9780340790748596
+      },
+      {
+        "fraccion": 0.75,
+        "prob_borrado_cam": 0.8246296048164368,
+        "prob_borrado_aleatorio": 0.986170768737793
+      },
+      {
+        "fraccion": 1.0,
+        "prob_borrado_cam": 0.8174076676368713,
+        "prob_borrado_aleatorio": 0.8174076676368713
+      }
+    ]
+  },
+  {
+    "archivo": "validation/tumor_nonMitotic/TCGA-BH-A0AV-DX1_id-5ea4099dddda5f8398981d96_left-78165_top-58700_bottom-58987_right-78476__0.png",
+    "paciente": "TCGA-BH-A0AV",
+    "objetivo": 0,
+    "capa": "Mixed_7c.branch_pool.conv",
+    "rango_original": 0.0,
+    "mapa_constante": true,
+    "borrado": [
+      {
+        "fraccion": 0,
+        "prob_borrado_cam": 0.9683718085289001,
+        "prob_borrado_aleatorio": 0.9683718085289001
+      },
+      {
+        "fraccion": 0.1,
+        "prob_borrado_cam": 0.9699693322181702,
+        "prob_borrado_aleatorio": 0.8745539784431458
+      },
+      {
+        "fraccion": 0.25,
+        "prob_borrado_cam": 0.8852916955947876,
+        "prob_borrado_aleatorio": 0.7634018659591675
+      },
+      {
+        "fraccion": 0.5,
+        "prob_borrado_cam": 0.6344884634017944,
+        "prob_borrado_aleatorio": 0.8024095296859741
+      },
+      {
+        "fraccion": 0.75,
+        "prob_borrado_cam": 0.6190498471260071,
+        "prob_borrado_aleatorio": 0.9007237553596497
+      },
+      {
+        "fraccion": 1.0,
+        "prob_borrado_cam": 0.8174076676368713,
+        "prob_borrado_aleatorio": 0.8174076676368713
+      }
+    ]
+  },
+  {
+    "archivo": "validation/tumor_nonMitotic/TCGA-BH-A0B3-DX1_id-5ea40a41ddda5f839898cda9_left-85597_top-42427_bottom-42727_right-85887__1.png",
+    "paciente": "TCGA-BH-A0B3",
+    "objetivo": 0,
+    "capa": "Mixed_7c.branch_pool.conv",
+    "rango_original": 0.0,
+    "mapa_constante": true,
+    "borrado": [
+      {
+        "fraccion": 0,
+        "prob_borrado_cam": 0.9485281109809875,
+        "prob_borrado_aleatorio": 0.9485281109809875
+      },
+      {
+        "fraccion": 0.1,
+        "prob_borrado_cam": 0.9320695400238037,
+        "prob_borrado_aleatorio": 0.9101407527923584
+      },
+      {
+        "fraccion": 0.25,
+        "prob_borrado_cam": 0.7814189195632935,
+        "prob_borrado_aleatorio": 0.9714258313179016
+      },
+      {
+        "fraccion": 0.5,
+        "prob_borrado_cam": 0.6236519813537598,
+        "prob_borrado_aleatorio": 0.9666088819503784
+      },
+      {
+        "fraccion": 0.75,
+        "prob_borrado_cam": 0.8576991558074951,
+        "prob_borrado_aleatorio": 0.9652734994888306
+      },
+      {
+        "fraccion": 1.0,
+        "prob_borrado_cam": 0.8174076676368713,
+        "prob_borrado_aleatorio": 0.8174076676368713
+      }
+    ]
+  },
+  {
+    "archivo": "validation/tumor_nonMitotic/TCGA-BH-A0B9-DX1_id-5ea409afddda5f8398984518_left-65731_top-58455_bottom-58757_right-66063__3.png",
+    "paciente": "TCGA-BH-A0B9",
+    "objetivo": 0,
+    "capa": "Mixed_7c.branch_pool.conv",
+    "rango_original": 0.0,
+    "mapa_constante": true,
+    "borrado": [
+      {
+        "fraccion": 0,
+        "prob_borrado_cam": 0.8808919191360474,
+        "prob_borrado_aleatorio": 0.8808919191360474
+      },
+      {
+        "fraccion": 0.1,
+        "prob_borrado_cam": 0.8521106839179993,
+        "prob_borrado_aleatorio": 0.9133998155593872
+      },
+      {
+        "fraccion": 0.25,
+        "prob_borrado_cam": 0.4654368758201599,
+        "prob_borrado_aleatorio": 0.9554710984230042
+      },
+      {
+        "fraccion": 0.5,
+        "prob_borrado_cam": 0.14840644598007202,
+        "prob_borrado_aleatorio": 0.9541956782341003
+      },
+      {
+        "fraccion": 0.75,
+        "prob_borrado_cam": 0.6957327127456665,
+        "prob_borrado_aleatorio": 0.9235554337501526
+      },
+      {
+        "fraccion": 1.0,
+        "prob_borrado_cam": 0.8174076676368713,
+        "prob_borrado_aleatorio": 0.8174076676368713
+      }
+    ]
+  },
+  {
+    "archivo": "validation/tumor_nonMitotic/TCGA-BH-A0BG-DX1_id-5ea40b3addda5f839899a696_left-64998_top-28272_bottom-28600_right-65304__1.png",
+    "paciente": "TCGA-BH-A0BG",
+    "objetivo": 0,
+    "capa": "Mixed_7c.branch_pool.conv",
+    "rango_original": 0.0,
+    "mapa_constante": true,
+    "borrado": [
+      {
+        "fraccion": 0,
+        "prob_borrado_cam": 0.9837504029273987,
+        "prob_borrado_aleatorio": 0.9837504029273987
+      },
+      {
+        "fraccion": 0.1,
+        "prob_borrado_cam": 0.9775821566581726,
+        "prob_borrado_aleatorio": 0.98748779296875
+      },
+      {
+        "fraccion": 0.25,
+        "prob_borrado_cam": 0.9728633761405945,
+        "prob_borrado_aleatorio": 0.991813063621521
+      },
+      {
+        "fraccion": 0.5,
+        "prob_borrado_cam": 0.8715953230857849,
+        "prob_borrado_aleatorio": 0.9963698387145996
+      },
+      {
+        "fraccion": 0.75,
+        "prob_borrado_cam": 0.7710252404212952,
+        "prob_borrado_aleatorio": 0.9867761731147766
+      },
+      {
+        "fraccion": 1.0,
+        "prob_borrado_cam": 0.8174076676368713,
+        "prob_borrado_aleatorio": 0.8174076676368713
+      }
+    ]
+  },
+  {
+    "archivo": "validation/tumor_nonMitotic/TCGA-BH-A0BL-DX1_id-5ea40977ddda5f839897c4d8_left-30574_top-45399_bottom-45700_right-30857__4.png",
+    "paciente": "TCGA-BH-A0BL",
+    "objetivo": 0,
+    "capa": "Mixed_7c.branch_pool.conv",
+    "rango_original": 0.0,
+    "mapa_constante": true,
+    "borrado": [
+      {
+        "fraccion": 0,
+        "prob_borrado_cam": 0.9462453722953796,
+        "prob_borrado_aleatorio": 0.9462453722953796
+      },
+      {
+        "fraccion": 0.1,
+        "prob_borrado_cam": 0.931490421295166,
+        "prob_borrado_aleatorio": 0.7906686067581177
+      },
+      {
+        "fraccion": 0.25,
+        "prob_borrado_cam": 0.8836844563484192,
+        "prob_borrado_aleatorio": 0.620874285697937
+      },
+      {
+        "fraccion": 0.5,
+        "prob_borrado_cam": 0.6861135363578796,
+        "prob_borrado_aleatorio": 0.7939740419387817
+      },
+      {
+        "fraccion": 0.75,
+        "prob_borrado_cam": 0.6988024711608887,
+        "prob_borrado_aleatorio": 0.9520604014396667
+      },
+      {
+        "fraccion": 1.0,
+        "prob_borrado_cam": 0.8174076676368713,
+        "prob_borrado_aleatorio": 0.8174076676368713
+      }
+    ]
+  },
+  {
+    "archivo": "validation/tumor_nonMitotic/TCGA-BH-A0BW-DX1_id-5ea4098cddda5f839897f8c4_left-44086_top-35419_bottom-35720_right-44445__0.png",
+    "paciente": "TCGA-BH-A0BW",
+    "objetivo": 0,
+    "capa": "Mixed_7c.branch_pool.conv",
+    "rango_original": 0.0,
+    "mapa_constante": true,
+    "borrado": [
+      {
+        "fraccion": 0,
+        "prob_borrado_cam": 0.8114979863166809,
+        "prob_borrado_aleatorio": 0.8114979863166809
+      },
+      {
+        "fraccion": 0.1,
+        "prob_borrado_cam": 0.798261821269989,
+        "prob_borrado_aleatorio": 0.815420389175415
+      },
+      {
+        "fraccion": 0.25,
+        "prob_borrado_cam": 0.4673825204372406,
+        "prob_borrado_aleatorio": 0.8957592248916626
+      },
+      {
+        "fraccion": 0.5,
+        "prob_borrado_cam": 0.7041803002357483,
+        "prob_borrado_aleatorio": 0.9512509107589722
+      },
+      {
+        "fraccion": 0.75,
+        "prob_borrado_cam": 0.8184193968772888,
+        "prob_borrado_aleatorio": 0.9719579815864563
+      },
+      {
+        "fraccion": 1.0,
+        "prob_borrado_cam": 0.8174076676368713,
+        "prob_borrado_aleatorio": 0.8174076676368713
+      }
+    ]
+  },
+  {
+    "archivo": "validation/lymphocyte/TCGA-AQ-A04J-DX1_id-5ea40996ddda5f8398980f76_left-65775_top-12950_bottom-13304_right-66085__20.png",
+    "paciente": "TCGA-AQ-A04J",
+    "objetivo": 1,
+    "capa": "Mixed_7c.branch_pool.conv",
+    "rango_original": 0.0,
+    "mapa_constante": true,
+    "borrado": [
+      {
+        "fraccion": 0,
+        "prob_borrado_cam": 0.8626811504364014,
+        "prob_borrado_aleatorio": 0.8626811504364014
+      },
+      {
+        "fraccion": 0.1,
+        "prob_borrado_cam": 0.8502088785171509,
+        "prob_borrado_aleatorio": 0.6442438960075378
+      },
+      {
+        "fraccion": 0.25,
+        "prob_borrado_cam": 0.8542390465736389,
+        "prob_borrado_aleatorio": 0.09589403122663498
+      },
+      {
+        "fraccion": 0.5,
+        "prob_borrado_cam": 0.4255715012550354,
+        "prob_borrado_aleatorio": 0.017103901132941246
+      },
+      {
+        "fraccion": 0.75,
+        "prob_borrado_cam": 0.007402717135846615,
+        "prob_borrado_aleatorio": 0.0026320440229028463
+      },
+      {
+        "fraccion": 1.0,
+        "prob_borrado_cam": 0.001056551467627287,
+        "prob_borrado_aleatorio": 0.001056551467627287
+      }
+    ]
+  },
+  {
+    "archivo": "validation/lymphocyte/TCGA-AQ-A54N-DX1_id-5ea40a47ddda5f839898d34a_left-34950_top-26780_bottom-27096_right-35285__13.png",
+    "paciente": "TCGA-AQ-A54N",
+    "objetivo": 2,
+    "capa": "Mixed_7c.branch_pool.conv",
+    "rango_original": 0.0,
+    "mapa_constante": true,
+    "borrado": [
+      {
+        "fraccion": 0,
+        "prob_borrado_cam": 0.5313759446144104,
+        "prob_borrado_aleatorio": 0.5313759446144104
+      },
+      {
+        "fraccion": 0.1,
+        "prob_borrado_cam": 0.6515197157859802,
+        "prob_borrado_aleatorio": 0.5813066363334656
+      },
+      {
+        "fraccion": 0.25,
+        "prob_borrado_cam": 0.660500168800354,
+        "prob_borrado_aleatorio": 0.4101034104824066
+      },
+      {
+        "fraccion": 0.5,
+        "prob_borrado_cam": 0.7645882964134216,
+        "prob_borrado_aleatorio": 0.15572206676006317
+      },
+      {
+        "fraccion": 0.75,
+        "prob_borrado_cam": 0.49504971504211426,
+        "prob_borrado_aleatorio": 0.0980898067355156
+      },
+      {
+        "fraccion": 1.0,
+        "prob_borrado_cam": 0.1815357655286789,
+        "prob_borrado_aleatorio": 0.1815357655286789
+      }
+    ]
+  },
+  {
+    "archivo": "validation/lymphocyte/TCGA-BH-A0AV-DX1_id-5ea4099dddda5f8398981d96_left-78435_top-59721_bottom-60005_right-78705__19.png",
+    "paciente": "TCGA-BH-A0AV",
+    "objetivo": 1,
+    "capa": "Mixed_7c.branch_pool.conv",
+    "rango_original": 0.0,
+    "mapa_constante": true,
+    "borrado": [
+      {
+        "fraccion": 0,
+        "prob_borrado_cam": 0.668030858039856,
+        "prob_borrado_aleatorio": 0.668030858039856
+      },
+      {
+        "fraccion": 0.1,
+        "prob_borrado_cam": 0.6797459125518799,
+        "prob_borrado_aleatorio": 0.06596669554710388
+      },
+      {
+        "fraccion": 0.25,
+        "prob_borrado_cam": 0.7790850400924683,
+        "prob_borrado_aleatorio": 0.006784332450479269
+      },
+      {
+        "fraccion": 0.5,
+        "prob_borrado_cam": 0.6966201663017273,
+        "prob_borrado_aleatorio": 0.0014942304696887732
+      },
+      {
+        "fraccion": 0.75,
+        "prob_borrado_cam": 0.004292892757803202,
+        "prob_borrado_aleatorio": 0.000491933838929981
+      },
+      {
+        "fraccion": 1.0,
+        "prob_borrado_cam": 0.001056551467627287,
+        "prob_borrado_aleatorio": 0.001056551467627287
+      }
+    ]
+  },
+  {
+    "archivo": "validation/lymphocyte/TCGA-BH-A0B3-DX1_id-5ea40a41ddda5f839898cda9_left-83799_top-42424_bottom-42708_right-84062__7.png",
+    "paciente": "TCGA-BH-A0B3",
+    "objetivo": 1,
+    "capa": "Mixed_7c.branch_pool.conv",
+    "rango_original": 0.0,
+    "mapa_constante": true,
+    "borrado": [
+      {
+        "fraccion": 0,
+        "prob_borrado_cam": 0.7393787503242493,
+        "prob_borrado_aleatorio": 0.7393787503242493
+      },
+      {
+        "fraccion": 0.1,
+        "prob_borrado_cam": 0.7153812646865845,
+        "prob_borrado_aleatorio": 0.49666956067085266
+      },
+      {
+        "fraccion": 0.25,
+        "prob_borrado_cam": 0.6944034695625305,
+        "prob_borrado_aleatorio": 0.2262011468410492
+      },
+      {
+        "fraccion": 0.5,
+        "prob_borrado_cam": 0.16057586669921875,
+        "prob_borrado_aleatorio": 0.007875357754528522
+      },
+      {
+        "fraccion": 0.75,
+        "prob_borrado_cam": 0.0037967655807733536,
+        "prob_borrado_aleatorio": 0.0006356427329592407
+      },
+      {
+        "fraccion": 1.0,
+        "prob_borrado_cam": 0.001056551467627287,
+        "prob_borrado_aleatorio": 0.001056551467627287
+      }
+    ]
+  },
+  {
+    "archivo": "validation/lymphocyte/TCGA-BH-A0B9-DX1_id-5ea409afddda5f8398984518_left-64252_top-62573_bottom-62859_right-64522__2.png",
+    "paciente": "TCGA-BH-A0B9",
+    "objetivo": 1,
+    "capa": "Mixed_7c.branch_pool.conv",
+    "rango_original": 0.0,
+    "mapa_constante": true,
+    "borrado": [
+      {
+        "fraccion": 0,
+        "prob_borrado_cam": 0.9992327690124512,
+        "prob_borrado_aleatorio": 0.9992327690124512
+      },
+      {
+        "fraccion": 0.1,
+        "prob_borrado_cam": 0.9987032413482666,
+        "prob_borrado_aleatorio": 0.9542620778083801
+      },
+      {
+        "fraccion": 0.25,
+        "prob_borrado_cam": 0.9932678937911987,
+        "prob_borrado_aleatorio": 0.7002498507499695
+      },
+      {
+        "fraccion": 0.5,
+        "prob_borrado_cam": 0.8008643388748169,
+        "prob_borrado_aleatorio": 0.009586749598383904
+      },
+      {
+        "fraccion": 0.75,
+        "prob_borrado_cam": 0.005031029228121042,
+        "prob_borrado_aleatorio": 0.0002706063096411526
+      },
+      {
+        "fraccion": 1.0,
+        "prob_borrado_cam": 0.001056551467627287,
+        "prob_borrado_aleatorio": 0.001056551467627287
+      }
+    ]
+  },
+  {
+    "archivo": "validation/lymphocyte/TCGA-BH-A0BG-DX1_id-5ea40b3addda5f839899a696_left-65035_top-29826_bottom-30098_right-65316__7.png",
+    "paciente": "TCGA-BH-A0BG",
+    "objetivo": 1,
+    "capa": "Mixed_7c.branch_pool.conv",
+    "rango_original": 0.0,
+    "mapa_constante": true,
+    "borrado": [
+      {
+        "fraccion": 0,
+        "prob_borrado_cam": 0.8247172236442566,
+        "prob_borrado_aleatorio": 0.8247172236442566
+      },
+      {
+        "fraccion": 0.1,
+        "prob_borrado_cam": 0.8407664895057678,
+        "prob_borrado_aleatorio": 0.5682665705680847
+      },
+      {
+        "fraccion": 0.25,
+        "prob_borrado_cam": 0.7685544490814209,
+        "prob_borrado_aleatorio": 0.2255166918039322
+      },
+      {
+        "fraccion": 0.5,
+        "prob_borrado_cam": 0.27480533719062805,
+        "prob_borrado_aleatorio": 0.004177052527666092
+      },
+      {
+        "fraccion": 0.75,
+        "prob_borrado_cam": 0.0048683579079806805,
+        "prob_borrado_aleatorio": 0.00024430316989310086
+      },
+      {
+        "fraccion": 1.0,
+        "prob_borrado_cam": 0.001056551467627287,
+        "prob_borrado_aleatorio": 0.001056551467627287
+      }
+    ]
+  },
+  {
+    "archivo": "validation/lymphocyte/TCGA-BH-A0BL-DX1_id-5ea40977ddda5f839897c4d8_left-30574_top-45399_bottom-45700_right-30857__11.png",
+    "paciente": "TCGA-BH-A0BL",
+    "objetivo": 0,
+    "capa": "Mixed_7c.branch_pool.conv",
+    "rango_original": 0.0,
+    "mapa_constante": true,
+    "borrado": [
+      {
+        "fraccion": 0,
+        "prob_borrado_cam": 0.5028169751167297,
+        "prob_borrado_aleatorio": 0.5028169751167297
+      },
+      {
+        "fraccion": 0.1,
+        "prob_borrado_cam": 0.4956296980381012,
+        "prob_borrado_aleatorio": 0.7057003974914551
+      },
+      {
+        "fraccion": 0.25,
+        "prob_borrado_cam": 0.3612447679042816,
+        "prob_borrado_aleatorio": 0.7122367024421692
+      },
+      {
+        "fraccion": 0.5,
+        "prob_borrado_cam": 0.4624614417552948,
+        "prob_borrado_aleatorio": 0.7753263115882874
+      },
+      {
+        "fraccion": 0.75,
+        "prob_borrado_cam": 0.806519091129303,
+        "prob_borrado_aleatorio": 0.9323369264602661
+      },
+      {
+        "fraccion": 1.0,
+        "prob_borrado_cam": 0.8174076676368713,
+        "prob_borrado_aleatorio": 0.8174076676368713
+      }
+    ]
+  },
+  {
+    "archivo": "validation/lymphocyte/TCGA-BH-A0BW-DX1_id-5ea4098cddda5f839897f8c4_left-44902_top-32878_bottom-33175_right-45187__17.png",
+    "paciente": "TCGA-BH-A0BW",
+    "objetivo": 2,
+    "capa": "Mixed_7c.branch_pool.conv",
+    "rango_original": 0.0,
+    "mapa_constante": true,
+    "borrado": [
+      {
+        "fraccion": 0,
+        "prob_borrado_cam": 0.45213133096694946,
+        "prob_borrado_aleatorio": 0.45213133096694946
+      },
+      {
+        "fraccion": 0.1,
+        "prob_borrado_cam": 0.4570181369781494,
+        "prob_borrado_aleatorio": 0.47669413685798645
+      },
+      {
+        "fraccion": 0.25,
+        "prob_borrado_cam": 0.4815061092376709,
+        "prob_borrado_aleatorio": 0.3229900300502777
+      },
+      {
+        "fraccion": 0.5,
+        "prob_borrado_cam": 0.4341895282268524,
+        "prob_borrado_aleatorio": 0.15126541256904602
+      },
+      {
+        "fraccion": 0.75,
+        "prob_borrado_cam": 0.2010510265827179,
+        "prob_borrado_aleatorio": 0.13427375257015228
+      },
+      {
+        "fraccion": 1.0,
+        "prob_borrado_cam": 0.1815357655286789,
+        "prob_borrado_aleatorio": 0.1815357655286789
+      }
+    ]
+  },
+  {
+    "archivo": "validation/nonTILnonMQ_stromal/TCGA-AQ-A04J-DX1_id-5ea40996ddda5f8398980f76_left-65125_top-14600_bottom-14922_right-65427__24.png",
+    "paciente": "TCGA-AQ-A04J",
+    "objetivo": 0,
+    "capa": "Mixed_7c.branch_pool.conv",
+    "rango_original": 0.0,
+    "mapa_constante": true,
+    "borrado": [
+      {
+        "fraccion": 0,
+        "prob_borrado_cam": 0.593456506729126,
+        "prob_borrado_aleatorio": 0.593456506729126
+      },
+      {
+        "fraccion": 0.1,
+        "prob_borrado_cam": 0.5051513910293579,
+        "prob_borrado_aleatorio": 0.7472488284111023
+      },
+      {
+        "fraccion": 0.25,
+        "prob_borrado_cam": 0.33264070749282837,
+        "prob_borrado_aleatorio": 0.8614153861999512
+      },
+      {
+        "fraccion": 0.5,
+        "prob_borrado_cam": 0.20592257380485535,
+        "prob_borrado_aleatorio": 0.9442102313041687
+      },
+      {
+        "fraccion": 0.75,
+        "prob_borrado_cam": 0.7425792217254639,
+        "prob_borrado_aleatorio": 0.9388852119445801
+      },
+      {
+        "fraccion": 1.0,
+        "prob_borrado_cam": 0.8174076676368713,
+        "prob_borrado_aleatorio": 0.8174076676368713
+      }
+    ]
+  },
+  {
+    "archivo": "validation/nonTILnonMQ_stromal/TCGA-AQ-A54N-DX1_id-5ea40a47ddda5f839898d34a_left-34465_top-29828_bottom-30187_right-34776__7.png",
+    "paciente": "TCGA-AQ-A54N",
+    "objetivo": 2,
+    "capa": "Mixed_7c.branch_pool.conv",
+    "rango_original": 0.0,
+    "mapa_constante": true,
+    "borrado": [
+      {
+        "fraccion": 0,
+        "prob_borrado_cam": 0.8717431426048279,
+        "prob_borrado_aleatorio": 0.8717431426048279
+      },
+      {
+        "fraccion": 0.1,
+        "prob_borrado_cam": 0.8904680609703064,
+        "prob_borrado_aleatorio": 0.8152524828910828
+      },
+      {
+        "fraccion": 0.25,
+        "prob_borrado_cam": 0.9385375380516052,
+        "prob_borrado_aleatorio": 0.6479666233062744
+      },
+      {
+        "fraccion": 0.5,
+        "prob_borrado_cam": 0.9193837642669678,
+        "prob_borrado_aleatorio": 0.5945767760276794
+      },
+      {
+        "fraccion": 0.75,
+        "prob_borrado_cam": 0.3984529376029968,
+        "prob_borrado_aleatorio": 0.22783800959587097
+      },
+      {
+        "fraccion": 1.0,
+        "prob_borrado_cam": 0.1815357655286789,
+        "prob_borrado_aleatorio": 0.1815357655286789
+      }
+    ]
+  },
+  {
+    "archivo": "validation/nonTILnonMQ_stromal/TCGA-BH-A0AV-DX1_id-5ea4099dddda5f8398981d96_left-78418_top-58176_bottom-58466_right-78738__17.png",
+    "paciente": "TCGA-BH-A0AV",
+    "objetivo": 0,
+    "capa": "Mixed_7c.branch_pool.conv",
+    "rango_original": 0.0,
+    "mapa_constante": true,
+    "borrado": [
+      {
+        "fraccion": 0,
+        "prob_borrado_cam": 0.971738874912262,
+        "prob_borrado_aleatorio": 0.971738874912262
+      },
+      {
+        "fraccion": 0.1,
+        "prob_borrado_cam": 0.9726768136024475,
+        "prob_borrado_aleatorio": 0.970834493637085
+      },
+      {
+        "fraccion": 0.25,
+        "prob_borrado_cam": 0.9722499847412109,
+        "prob_borrado_aleatorio": 0.9086769819259644
+      },
+      {
+        "fraccion": 0.5,
+        "prob_borrado_cam": 0.8852089047431946,
+        "prob_borrado_aleatorio": 0.9354147911071777
+      },
+      {
+        "fraccion": 0.75,
+        "prob_borrado_cam": 0.7600272297859192,
+        "prob_borrado_aleatorio": 0.9063099026679993
+      },
+      {
+        "fraccion": 1.0,
+        "prob_borrado_cam": 0.8174076676368713,
+        "prob_borrado_aleatorio": 0.8174076676368713
+      }
+    ]
+  },
+  {
+    "archivo": "validation/nonTILnonMQ_stromal/TCGA-BH-A0B3-DX1_id-5ea40a41ddda5f839898cda9_left-83799_top-42424_bottom-42708_right-84062__3.png",
+    "paciente": "TCGA-BH-A0B3",
+    "objetivo": 2,
+    "capa": "Mixed_7c.branch_pool.conv",
+    "rango_original": 0.0,
+    "mapa_constante": true,
+    "borrado": [
+      {
+        "fraccion": 0,
+        "prob_borrado_cam": 0.7850461006164551,
+        "prob_borrado_aleatorio": 0.7850461006164551
+      },
+      {
+        "fraccion": 0.1,
+        "prob_borrado_cam": 0.790980339050293,
+        "prob_borrado_aleatorio": 0.8262363076210022
+      },
+      {
+        "fraccion": 0.25,
+        "prob_borrado_cam": 0.6546754837036133,
+        "prob_borrado_aleatorio": 0.8092416524887085
+      },
+      {
+        "fraccion": 0.5,
+        "prob_borrado_cam": 0.8827612400054932,
+        "prob_borrado_aleatorio": 0.5137927532196045
+      },
+      {
+        "fraccion": 0.75,
+        "prob_borrado_cam": 0.5332140326499939,
+        "prob_borrado_aleatorio": 0.33086079359054565
+      },
+      {
+        "fraccion": 1.0,
+        "prob_borrado_cam": 0.1815357655286789,
+        "prob_borrado_aleatorio": 0.1815357655286789
+      }
+    ]
+  },
+  {
+    "archivo": "validation/nonTILnonMQ_stromal/TCGA-BH-A0B9-DX1_id-5ea409afddda5f8398984518_left-64252_top-62573_bottom-62859_right-64522__56.png",
+    "paciente": "TCGA-BH-A0B9",
+    "objetivo": 2,
+    "capa": "Mixed_7c.branch_pool.conv",
+    "rango_original": 0.0,
+    "mapa_constante": true,
+    "borrado": [
+      {
+        "fraccion": 0,
+        "prob_borrado_cam": 0.9421047568321228,
+        "prob_borrado_aleatorio": 0.9421047568321228
+      },
+      {
+        "fraccion": 0.1,
+        "prob_borrado_cam": 0.9459335803985596,
+        "prob_borrado_aleatorio": 0.9380812644958496
+      },
+      {
+        "fraccion": 0.25,
+        "prob_borrado_cam": 0.9399834871292114,
+        "prob_borrado_aleatorio": 0.9157553315162659
+      },
+      {
+        "fraccion": 0.5,
+        "prob_borrado_cam": 0.9617425203323364,
+        "prob_borrado_aleatorio": 0.6203542947769165
+      },
+      {
+        "fraccion": 0.75,
+        "prob_borrado_cam": 0.31977787613868713,
+        "prob_borrado_aleatorio": 0.1709216833114624
+      },
+      {
+        "fraccion": 1.0,
+        "prob_borrado_cam": 0.1815357655286789,
+        "prob_borrado_aleatorio": 0.1815357655286789
+      }
+    ]
+  },
+  {
+    "archivo": "validation/nonTILnonMQ_stromal/TCGA-BH-A0BG-DX1_id-5ea40b3addda5f839899a696_left-65035_top-29826_bottom-30098_right-65316__12.png",
+    "paciente": "TCGA-BH-A0BG",
+    "objetivo": 2,
+    "capa": "Mixed_7c.branch_pool.conv",
+    "rango_original": 0.0,
+    "mapa_constante": true,
+    "borrado": [
+      {
+        "fraccion": 0,
+        "prob_borrado_cam": 0.9000699520111084,
+        "prob_borrado_aleatorio": 0.9000699520111084
+      },
+      {
+        "fraccion": 0.1,
+        "prob_borrado_cam": 0.9225099682807922,
+        "prob_borrado_aleatorio": 0.8497825264930725
+      },
+      {
+        "fraccion": 0.25,
+        "prob_borrado_cam": 0.9114927053451538,
+        "prob_borrado_aleatorio": 0.613308846950531
+      },
+      {
+        "fraccion": 0.5,
+        "prob_borrado_cam": 0.916774332523346,
+        "prob_borrado_aleatorio": 0.06311962008476257
+      },
+      {
+        "fraccion": 0.75,
+        "prob_borrado_cam": 0.7563040852546692,
+        "prob_borrado_aleatorio": 0.05302159860730171
+      },
+      {
+        "fraccion": 1.0,
+        "prob_borrado_cam": 0.1815357655286789,
+        "prob_borrado_aleatorio": 0.1815357655286789
+      }
+    ]
+  },
+  {
+    "archivo": "validation/nonTILnonMQ_stromal/TCGA-BH-A0BL-DX1_id-5ea40977ddda5f839897c4d8_left-28546_top-44875_bottom-45156_right-28831__0.png",
+    "paciente": "TCGA-BH-A0BL",
+    "objetivo": 0,
+    "capa": "Mixed_7c.branch_pool.conv",
+    "rango_original": 0.0,
+    "mapa_constante": true,
+    "borrado": [
+      {
+        "fraccion": 0,
+        "prob_borrado_cam": 0.6722451448440552,
+        "prob_borrado_aleatorio": 0.6722451448440552
+      },
+      {
+        "fraccion": 0.1,
+        "prob_borrado_cam": 0.6876716613769531,
+        "prob_borrado_aleatorio": 0.16568365693092346
+      },
+      {
+        "fraccion": 0.25,
+        "prob_borrado_cam": 0.6497450470924377,
+        "prob_borrado_aleatorio": 0.19413912296295166
+      },
+      {
+        "fraccion": 0.5,
+        "prob_borrado_cam": 0.2767379581928253,
+        "prob_borrado_aleatorio": 0.4510136842727661
+      },
+      {
+        "fraccion": 0.75,
+        "prob_borrado_cam": 0.5783713459968567,
+        "prob_borrado_aleatorio": 0.7713527679443359
+      },
+      {
+        "fraccion": 1.0,
+        "prob_borrado_cam": 0.8174076676368713,
+        "prob_borrado_aleatorio": 0.8174076676368713
+      }
+    ]
+  },
+  {
+    "archivo": "validation/nonTILnonMQ_stromal/TCGA-BH-A0BW-DX1_id-5ea4098cddda5f839897f8c4_left-44902_top-32878_bottom-33175_right-45187__15.png",
+    "paciente": "TCGA-BH-A0BW",
+    "objetivo": 2,
+    "capa": "Mixed_7c.branch_pool.conv",
+    "rango_original": 0.0,
+    "mapa_constante": true,
+    "borrado": [
+      {
+        "fraccion": 0,
+        "prob_borrado_cam": 0.856745719909668,
+        "prob_borrado_aleatorio": 0.856745719909668
+      },
+      {
+        "fraccion": 0.1,
+        "prob_borrado_cam": 0.8478292226791382,
+        "prob_borrado_aleatorio": 0.7836527228355408
+      },
+      {
+        "fraccion": 0.25,
+        "prob_borrado_cam": 0.8477476835250854,
+        "prob_borrado_aleatorio": 0.6153454184532166
+      },
+      {
+        "fraccion": 0.5,
+        "prob_borrado_cam": 0.8791459798812866,
+        "prob_borrado_aleatorio": 0.16038644313812256
+      },
+      {
+        "fraccion": 0.75,
+        "prob_borrado_cam": 0.39432889223098755,
+        "prob_borrado_aleatorio": 0.020228663459420204
+      },
+      {
+        "fraccion": 1.0,
+        "prob_borrado_cam": 0.1815357655286789,
+        "prob_borrado_aleatorio": 0.1815357655286789
+      }
+    ]
+  }
+]

@@ -1,0 +1,85 @@
+{
+  "modelo": "inception_v3",
+  "n": 33,
+  "archivos": [
+    "train/tumor_nonMitotic/TCGA-A1-A0SP-DX1_id-5ea4095addda5f8398977ebc_left-11371_top-54469_bottom-54761_right-11671__1.png",
+    "train/tumor_nonMitotic/TCGA-A1-A0SP-DX1_id-5ea4095addda5f8398977ebc_left-11371_top-54469_bottom-54761_right-11671__9.png",
+    "train/tumor_nonMitotic/TCGA-A1-A0SP-DX1_id-5ea4095addda5f8398977ebc_left-11371_top-54469_bottom-54761_right-11671__11.png",
+    "train/tumor_nonMitotic/TCGA-A1-A0SP-DX1_id-5ea4095addda5f8398977ebc_left-11371_top-54469_bottom-54761_right-11671__12.png",
+    "train/tumor_nonMitotic/TCGA-A1-A0SP-DX1_id-5ea4095addda5f8398977ebc_left-11371_top-54469_bottom-54761_right-11671__14.png",
+    "train/tumor_nonMitotic/TCGA-A1-A0SP-DX1_id-5ea4095addda5f8398977ebc_left-11371_top-54469_bottom-54761_right-11671__16.png",
+    "train/tumor_nonMitotic/TCGA-A1-A0SP-DX1_id-5ea4095addda5f8398977ebc_left-11371_top-54469_bottom-54761_right-11671__17.png",
+    "train/tumor_nonMitotic/TCGA-A1-A0SP-DX1_id-5ea4095addda5f8398977ebc_left-11371_top-54469_bottom-54761_right-11671__19.png",
+    "train/tumor_nonMitotic/TCGA-A1-A0SP-DX1_id-5ea4095addda5f8398977ebc_left-11371_top-54469_bottom-54761_right-11671__20.png",
+    "train/tumor_nonMitotic/TCGA-A1-A0SP-DX1_id-5ea4095addda5f8398977ebc_left-11371_top-54469_bottom-54761_right-11671__22.png",
+    "train/tumor_nonMitotic/TCGA-A1-A0SP-DX1_id-5ea4095addda5f8398977ebc_left-11371_top-54469_bottom-54761_right-11671__25.png",
+    "train/lymphocyte/TCGA-A1-A0SP-DX1_id-5ea4095addda5f8398977ebc_left-11391_top-53955_bottom-54237_right-11688__7.png",
+    "train/lymphocyte/TCGA-A1-A0SP-DX1_id-5ea4095addda5f8398977ebc_left-11391_top-53955_bottom-54237_right-11688__15.png",
+    "train/lymphocyte/TCGA-A1-A0SP-DX1_id-5ea4095addda5f8398977ebc_left-11391_top-53955_bottom-54237_right-11688__17.png",
+    "train/lymphocyte/TCGA-A1-A0SP-DX1_id-5ea4095addda5f8398977ebc_left-11391_top-53955_bottom-54237_right-11688__18.png",
+    "train/lymphocyte/TCGA-A1-A0SP-DX1_id-5ea4095addda5f8398977ebc_left-11391_top-53955_bottom-54237_right-11688__22.png",
+    "train/lymphocyte/TCGA-A1-A0SP-DX1_id-5ea4095addda5f8398977ebc_left-11391_top-53955_bottom-54237_right-11688__23.png",
+    "train/lymphocyte/TCGA-A1-A0SP-DX1_id-5ea4095addda5f8398977ebc_left-11391_top-53955_bottom-54237_right-11688__29.png",
+    "train/lymphocyte/TCGA-A1-A0SP-DX1_id-5ea4095addda5f8398977ebc_left-11391_top-53955_bottom-54237_right-11688__31.png",
+    "train/lymphocyte/TCGA-A1-A0SP-DX1_id-5ea4095addda5f8398977ebc_left-11391_top-53955_bottom-54237_right-11688__37.png",
+    "train/lymphocyte/TCGA-A1-A0SP-DX1_id-5ea4095addda5f8398977ebc_left-11391_top-53955_bottom-54237_right-11688__38.png",
+    "train/lymphocyte/TCGA-A1-A0SP-DX1_id-5ea4095addda5f8398977ebc_left-11391_top-53955_bottom-54237_right-11688__40.png",
+    "train/nonTILnonMQ_stromal/TCGA-A1-A0SP-DX1_id-5ea4095addda5f8398977ebc_left-11391_top-53955_bottom-54237_right-11688__0.png",
+    "train/nonTILnonMQ_stromal/TCGA-A1-A0SP-DX1_id-5ea4095addda5f8398977ebc_left-11391_top-53955_bottom-54237_right-11688__12.png",
+    "train/nonTILnonMQ_stromal/TCGA-A1-A0SP-DX1_id-5ea4095addda5f8398977ebc_left-11391_top-53955_bottom-54237_right-11688__14.png",
+    "train/nonTILnonMQ_stromal/TCGA-A1-A0SP-DX1_id-5ea4095addda5f8398977ebc_left-11391_top-53955_bottom-54237_right-11688__26.png",
+    "train/nonTILnonMQ_stromal/TCGA-A1-A0SP-DX1_id-5ea4095addda5f8398977ebc_left-11391_top-53955_bottom-54237_right-11688__28.png",
+    "train/nonTILnonMQ_stromal/TCGA-A1-A0SP-DX1_id-5ea4095addda5f8398977ebc_left-11391_top-53955_bottom-54237_right-11688__32.png",
+    "train/nonTILnonMQ_stromal/TCGA-A1-A0SP-DX1_id-5ea4095addda5f8398977ebc_left-11391_top-53955_bottom-54237_right-11688__36.png",
+    "train/nonTILnonMQ_stromal/TCGA-A1-A0SP-DX1_id-5ea4095addda5f8398977ebc_left-11391_top-53955_bottom-54237_right-11688__46.png",
+    "train/nonTILnonMQ_stromal/TCGA-A1-A0SP-DX1_id-5ea4095addda5f8398977ebc_left-11917_top-54733_bottom-54999_right-12199__0.png",
+    "train/nonTILnonMQ_stromal/TCGA-A1-A0SP-DX1_id-5ea4095addda5f8398977ebc_left-11917_top-54733_bottom-54999_right-12199__1.png",
+    "train/nonTILnonMQ_stromal/TCGA-A1-A0SP-DX1_id-5ea4095addda5f8398977ebc_left-11917_top-54733_bottom-54999_right-12199__6.png"
+  ],
+  "semilla": 8201,
+  "criterio": "accuracy>=0.99 tres controles consecutivos; máximo300 pasos",
+  "superado": true,
+  "historia": [
+    {
+      "paso": 10,
+      "loss": 0.03554892912507057,
+      "accuracy_lote": 0.3333333432674408
+    },
+    {
+      "paso": 20,
+      "loss": 0.00021483258751686662,
+      "accuracy_lote": 0.27272728085517883
+    },
+    {
+      "paso": 30,
+      "loss": 0.00015210159472189844,
+      "accuracy_lote": 0.575757622718811
+    },
+    {
+      "paso": 40,
+      "loss": 3.127687887172215e-05,
+      "accuracy_lote": 0.7272727489471436
+    },
+    {
+      "paso": 50,
+      "loss": 8.676878678670619e-06,
+      "accuracy_lote": 0.9090909361839294
+    },
+    {
+      "paso": 60,
+      "loss": 4.761118816531962e-06,
+      "accuracy_lote": 1.0
+    },
+    {
+      "paso": 70,
+      "loss": 3.2656000712449895e-06,
+      "accuracy_lote": 1.0
+    },
+    {
+      "paso": 80,
+      "loss": 2.4166911316569895e-06,
+      "accuracy_lote": 1.0
+    }
+  ],
+  "nota": "Control positivo de capacidad/pipeline; no mide generalización ni ruido de etiquetas."
+}

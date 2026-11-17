@@ -1,0 +1,4 @@
+modelo,mapas,constantes,pares_validos,correlacion_mediana,ventaja_borrado_auc_media
+inception_v3,48,48,0,,
+efficientnet_b0,48,0,24,0.5552128035079669,0.06828148634067474
+resnet18,48,1,23,0.6641885008467963,-0.025049022775772

@@ -1,0 +1,13 @@
+modelo,fraccion_retenida,error_retenidos,nota
+efficientnet_b0,0.24974200206398348,0.008264462809917356,Curva descriptiva; no garantía de cobertura conforme
+efficientnet_b0,0.49948400412796695,0.04132231404958678,Curva descriptiva; no garantía de cobertura conforme
+efficientnet_b0,0.7492260061919505,0.07988980716253444,Curva descriptiva; no garantía de cobertura conforme
+efficientnet_b0,1.0,0.13828689370485037,Curva descriptiva; no garantía de cobertura conforme
+inception_v3,0.24974200206398348,0.004132231404958678,Curva descriptiva; no garantía de cobertura conforme
+inception_v3,0.49948400412796695,0.01652892561983471,Curva descriptiva; no garantía de cobertura conforme
+inception_v3,0.7492260061919505,0.05234159779614325,Curva descriptiva; no garantía de cobertura conforme
+inception_v3,1.0,0.12074303405572756,Curva descriptiva; no garantía de cobertura conforme
+resnet18,0.24974200206398348,0.02066115702479339,Curva descriptiva; no garantía de cobertura conforme
+resnet18,0.49948400412796695,0.1115702479338843,Curva descriptiva; no garantía de cobertura conforme
+resnet18,0.7492260061919505,0.29338842975206614,Curva descriptiva; no garantía de cobertura conforme
+resnet18,1.0,0.4066047471620227,Curva descriptiva; no garantía de cobertura conforme

@@ -1,0 +1,4 @@
+modelo_a,modelo_b,errores_a,errores_b,errores_compartidos,jaccard_error,desacuerdo
+efficientnet_b0,inception_v3,134,117,91,0.56875,0.07739938080495357
+efficientnet_b0,resnet18,134,394,98,0.22790697674418606,0.3570691434468524
+inception_v3,resnet18,117,394,89,0.2109004739336493,0.36016511867905054

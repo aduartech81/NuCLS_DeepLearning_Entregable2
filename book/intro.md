@@ -18,3 +18,6 @@ La inferencia se interpreta según su unidad de análisis. La variabilidad entre
 
 
 **Actualización online · 16 de noviembre de 2026:** [cierre de reserva y estadística](14_cierre_reserva.md), 13 modelos y 65 evaluaciones. Complementa la versión entregada sin sustituir su archivo.
+
+
+**Ampliación online · 16 de noviembre de 2026:** [ablaciones, ensambles y Grad-CAM](16_experimentos_post.md), con evidencia verificada y límites de interpretación. El ZIP entregado permanece como versión de entrega.

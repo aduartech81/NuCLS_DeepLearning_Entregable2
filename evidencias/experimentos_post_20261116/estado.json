@@ -1,0 +1,10 @@
+{
+  "estado": "BLOQUES_SOLICITADOS_COMPLETADOS",
+  "bloques": [
+    "sanidad",
+    "gradcam",
+    "ablaciones"
+  ],
+  "reserva_evaluada": false,
+  "nota": "Revisar resultados de sanidad y aplicabilidad de Grad-CAM; no acredita PCam, techo o revisión humana"
+}

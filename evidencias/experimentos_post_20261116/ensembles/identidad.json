@@ -1,0 +1,23 @@
+{
+  "plan_sha256": "615771e04a75d8f61d9f4cd15d8aa8a14e9d11509fa603a31ea72a1e741ecd90",
+  "top3": [
+    "inception_v3",
+    "efficientnet_b0",
+    "resnet18"
+  ],
+  "codigo": {
+    "ensembles.py": "76f6afdc32ffdb9b171f95a63e9ad3e901640fafee3af1c91e32257b54bda8fc",
+    "replica_pcam.py": "63089c4d8a794e372f926a7f857f2e71afb2f73fd09dd4220e9a380544b7205c",
+    "modelos_tres.py": "693c09f3886f1d8a881928500ab295f66bad6477d9042fbfc6374a064986a25e",
+    "techo_multirater.py": "f17de08f923d5ead3ae4c4592dabb3385de561e3380b77bb6c13d28d71249f64",
+    "cierre_unico.py": "68c26c9832d7a0d377e0a24a908340c65e9eec07e121c9811a523655176e9755",
+    "experimentos.py": "627bde1d69529c0cfe2b4376bf9ed304d04818a6bbf75de46977cf0f100f9d0e",
+    "test_estadistica.py": "b6afe0506493b498c0ab336bbff6225ad9a8211f782dfac5e1c621790e82b018",
+    "modelos_siete.py": "0f37be31519e0b73daf1901ab0a9afcd85486d97bbc91dda7e9300b99e071660",
+    "test_transformaciones.py": "8ea4b5ac431976bc0068fa93eb4ef40e7ada188826c5e31a87cead85dc1dd5e1",
+    "estadistica_cierre.py": "a1ea614864a66ec3adff553f598559719ee7d76172aa0e2ab5aa5f82d43fac83",
+    "core_v2.py": "af55fd33279b0a02852e1d5cc6c154d369a918029defb258a2a805d3971ed8f5",
+    "test_reanudacion.py": "52519238ac48808495087cbfeb493c707fd6a8e8716f7a9c1cd0cd1bfbebb5ef",
+    "candidatos_v2.py": "0bd4d7acd1fb00124b8c6f7bc37390c6ade4efd411f7e1d7bbe00d38efce0e10"
+  }
+}

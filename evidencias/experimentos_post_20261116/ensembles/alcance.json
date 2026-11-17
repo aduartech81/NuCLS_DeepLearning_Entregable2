@@ -1,0 +1,6 @@
+{
+  "alcance": "Reserva heredada E1: análisis secundario de probabilidades congeladas; no nueva inferencia, selección ni ajuste",
+  "bootstrap_paciente": 2000,
+  "seleccion": "Definida exclusivamente con validación; pesos uniformes",
+  "nota": "MI entre semillas es un indicador de desacuerdo, no separa inequívocamente incertidumbre epistémica y aleatoria. Revisión humana pendiente. IC condicionado al protocolo y partición."
+}

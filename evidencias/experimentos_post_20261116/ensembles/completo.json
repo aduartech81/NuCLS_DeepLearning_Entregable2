@@ -1,0 +1,21 @@
+{
+  "archivos": {
+    "identidad.json": "d93613c22796efa7cae163485484c98c6c3f8182bbba1b893ef81bb172b17fae",
+    "efficientnet_b0_metricas.json": "51f1dc6ca2e3a8226474176db13f40670a3c9239f606efbcd7928d800b5e99e1",
+    "efficientnet_b0_incertidumbre.csv": "15aebe15ac3c8c98b3bfc6f22de013515492b59939b80ae83c4f6dbbb40cc759",
+    "efficientnet_b0_revision_errores.csv": "3885a5f0652c96d35c9e06fa4d3b2282329ec78b2c6309087fe290e1343073c1",
+    "inception_v3_metricas.json": "e89a4d894f36db7d29c45657ff07ca8895e1f43e87a11e7935be6e233142d1e3",
+    "inception_v3_incertidumbre.csv": "3b3ef952465f2f8129dd21ea54528ee88c3bda13ad22cfffc5103a744fc4b0e8",
+    "inception_v3_revision_errores.csv": "2149f83d25490b737cf868d40f5f34282f9e47c2a48873c90624d1e73155774d",
+    "resnet18_metricas.json": "f695e95c180c39266119a2342cad12a134fdf5d7ea6ce30db56063e0b478f6e7",
+    "resnet18_incertidumbre.csv": "0da5cea514e9c0b9cad993b91e734ef4c124bfbb716a4bd4a2726d6dde4162c2",
+    "resnet18_revision_errores.csv": "bb07301b87df61c34dc53d749ce83c602a437bf82771b7486119c38637796a56",
+    "resumen_ensembles.csv": "2961bc94dd933d12e87b3c373b31c3a8682b651ac754b4d7c395742faffb01fd",
+    "calibracion_subgrupos.csv": "bbea2db4b1772b31a07c2a2632f4f081b046d1bca4671adc5feac7089656e89b",
+    "riesgo_retencion.csv": "3181ea8e88007fce48e602c4f420627387a1d0e515992663ec5c700246810079",
+    "errores_compartidos.csv": "113b7a83791f3ccf98a37f1b3c12d1c0c0aad6d5a76a86041c35ff34cbf7dd08",
+    "limitacion_agregacion_por_paciente.csv": "a3b5589eeb7051ede75668468128f00e527dce22bf3f86da91434cf612d849df",
+    "alcance.json": "4a2fe8fb3a45619d43a10473aab9aafc51fb0237e861e537c0cc7986b4a48661",
+    "LEER_REVISION.txt": "6bc3f927ae9d9742c8897c0503e9adb4a90943e16be60d166fdf2f157815b35e"
+  }
+}
