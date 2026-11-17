@@ -19,7 +19,7 @@ Los cuadernos sin salidas son procedimientos reproducibles y no se contabilizan 
 
 La selección de hiperparámetros y época utiliza validación. Las 22 semillas de las bases y las cinco de los candidatos tienen denominadores distintos y se presentan por separado. El baseline permanece fijado antes de la comparación. La reserva heredada fue consultada en E1, circunstancia que debe acompañar cualquier evaluación posterior.
 
-La inspección ilustrada utiliza anotaciones originales; no constituye adjudicación histológica independiente, techo multi-rater ni revisión de cien errores por modelo. La réplica externa y las ablaciones no forman parte de los resultados tabulados en esta edición.
+La inspección ilustrada utiliza anotaciones originales; no constituye adjudicación histológica independiente, techo multi-rater ni revisión de cien errores por modelo. La ampliación online incorpora 15 ablaciones, ensambles y el diagnóstico de Grad-CAM en el [capítulo de experimentos](16_experimentos_post.md). La réplica externa PCam todavía no cuenta aquí con un cierre verificado.
 
 ## Cuaderno ejecutado
 

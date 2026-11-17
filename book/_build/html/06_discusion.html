@@ -172,6 +172,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="14_cierre_reserva.html">Cierre de reserva y estadística</a></li>
 <li class="toctree-l1"><a class="reference internal" href="15_calibracion_costo.html">Calibración, generalización y costo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="16_experimentos_post.html">Ablaciones, ensambles e interpretabilidad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="17_correcciones_e2.html">Trazabilidad de correcciones de E2</a></li>
 <li class="toctree-l1"><a class="reference internal" href="13_piloto_diez.html">Diez modelos: resultados con cinco semillas</a></li>
 <li class="toctree-l1"><a class="reference internal" href="12_galeria_histologica.html">Galería ampliada: imágenes limpias, anotaciones y predicciones</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Discusión, paper guía y gap</a></li>
@@ -345,7 +346,7 @@ document.write(`
 <blockquote>
 <div><p>Actualización online del 16 de noviembre de 2026: consultar el <a class="reference internal" href="14_cierre_reserva.html"><span class="doc std std-doc">cierre de reserva y estadística</span></a>. Los análisis de validación que siguen conservan su alcance original.</p>
 </div></blockquote>
-<p>La diferencia de validación ResNet50–DenseNet121 con 22 semillas no resulta concluyente en las pruebas pareadas corregidas. Esto no demuestra equivalencia. La superioridad respecto a la CNN-BN aparece en desarrollo, condicionado al proceso de selección y la partición. El análisis de las 22 semillas base usa validación. El cierre previsto evaluará la reserva heredada tras congelar el lote y declarará su exposición previa en E1.</p>
+<p>La diferencia de validación ResNet50–DenseNet121 con 22 semillas no resulta concluyente en las pruebas pareadas corregidas. Esto no demuestra equivalencia. La superioridad respecto a la CNN-BN aparece en desarrollo, condicionado al proceso de selección y la partición. El análisis de las 22 semillas base usa validación. El cierre evaluó cinco semillas comunes de las trece arquitecturas en la reserva heredada, con su exposición previa en E1 declarada; véase el capítulo de cierre.</p>
 <section id="propuesta-de-paper-guia">
 <h2>Propuesta de paper guía<a class="headerlink" href="#propuesta-de-paper-guia" title="Permalink to this heading">#</a></h2>
 <p>Springenberg et al. (2023), <em>From Modern CNNs to Vision Transformers</em>, DOI 10.1016/j.media.2023.102809, ofrece una comparación de arquitecturas y condiciones de entrenamiento en histopatología. Se propone como guía del protocolo comparativo. Entrenar variantes a128 en NuCLS no replica por sí mismo sus resultados en PCam: cambian datos, tarea y receta. Esta edición no aporta una réplica numérica externa del artículo; su uso es metodológico y comparativo.</p>
@@ -361,7 +362,7 @@ document.write(`
 </section>
 <section id="lectura-conjunta-de-desarrollo-y-prueba">
 <h2>Lectura conjunta de desarrollo y prueba<a class="headerlink" href="#lectura-conjunta-de-desarrollo-y-prueba" title="Permalink to this heading">#</a></h2>
-<p>La discusión final confrontará, por cada arquitectura, la media y dispersión de validación con la reserva. Un descenso es compatible con desplazamiento de dominio, sobreajuste de selección o heterogeneidad clínica; el diagnóstico adversarial heredado (AUC 0,7097) aporta contexto pero no identifica por sí solo una causa. No se atribuirá una diferencia a la familia arquitectónica sin considerar receta, número de semillas y seis pacientes de reserva.</p>
+<p>El capítulo de calibración y costo confronta, por cada arquitectura, la media de validación con la reserva. Un descenso es compatible con desplazamiento de dominio, sobreajuste de selección o heterogeneidad clínica; el diagnóstico adversarial heredado (AUC 0,7097) aporta contexto pero no identifica por sí solo una causa. No se atribuye una diferencia a la familia arquitectónica sin considerar receta, número de semillas y seis pacientes de reserva.</p>
 <p>La elección de lr en el borde superior de la grilla limita la búsqueda. La receta común controla presupuesto, pero no neutraliza diferencias de inductive bias o necesidad de warmup, scheduler y preentrenamiento. No se ampliará retrospectivamente la grilla por los resultados de reserva.</p>
 </section>
 <section id="variabilidad-observada-en-diez-candidatos">

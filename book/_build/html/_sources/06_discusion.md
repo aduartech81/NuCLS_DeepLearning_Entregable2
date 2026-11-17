@@ -3,7 +3,7 @@
 > Actualización online del 16 de noviembre de 2026: consultar el [cierre de reserva y estadística](14_cierre_reserva.md). Los análisis de validación que siguen conservan su alcance original.
 
 
-La diferencia de validación ResNet50–DenseNet121 con 22 semillas no resulta concluyente en las pruebas pareadas corregidas. Esto no demuestra equivalencia. La superioridad respecto a la CNN-BN aparece en desarrollo, condicionado al proceso de selección y la partición. El análisis de las 22 semillas base usa validación. El cierre previsto evaluará la reserva heredada tras congelar el lote y declarará su exposición previa en E1.
+La diferencia de validación ResNet50–DenseNet121 con 22 semillas no resulta concluyente en las pruebas pareadas corregidas. Esto no demuestra equivalencia. La superioridad respecto a la CNN-BN aparece en desarrollo, condicionado al proceso de selección y la partición. El análisis de las 22 semillas base usa validación. El cierre evaluó cinco semillas comunes de las trece arquitecturas en la reserva heredada, con su exposición previa en E1 declarada; véase el capítulo de cierre.
 
 ## Propuesta de paper guía
 
@@ -21,7 +21,7 @@ Compartir resolución, intentos y criterio de parada no garantiza una receta igu
 
 ## Lectura conjunta de desarrollo y prueba
 
-La discusión final confrontará, por cada arquitectura, la media y dispersión de validación con la reserva. Un descenso es compatible con desplazamiento de dominio, sobreajuste de selección o heterogeneidad clínica; el diagnóstico adversarial heredado (AUC 0,7097) aporta contexto pero no identifica por sí solo una causa. No se atribuirá una diferencia a la familia arquitectónica sin considerar receta, número de semillas y seis pacientes de reserva.
+El capítulo de calibración y costo confronta, por cada arquitectura, la media de validación con la reserva. Un descenso es compatible con desplazamiento de dominio, sobreajuste de selección o heterogeneidad clínica; el diagnóstico adversarial heredado (AUC 0,7097) aporta contexto pero no identifica por sí solo una causa. No se atribuye una diferencia a la familia arquitectónica sin considerar receta, número de semillas y seis pacientes de reserva.
 
 La elección de lr en el borde superior de la grilla limita la búsqueda. La receta común controla presupuesto, pero no neutraliza diferencias de inductive bias o necesidad de warmup, scheduler y preentrenamiento. No se ampliará retrospectivamente la grilla por los resultados de reserva.
 

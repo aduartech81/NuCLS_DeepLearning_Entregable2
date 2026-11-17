@@ -21,3 +21,6 @@ La inferencia se interpreta según su unidad de análisis. La variabilidad entre
 
 
 **Ampliación online · 16 de noviembre de 2026:** [ablaciones, ensambles y Grad-CAM](16_experimentos_post.md), con evidencia verificada y límites de interpretación. El ZIP entregado permanece como versión de entrega.
+
+
+**17 de noviembre de 2026:** [tabla de trazabilidad de correcciones de E2](17_correcciones_e2.md), con evidencias, impacto y límites para la transición a E3.
